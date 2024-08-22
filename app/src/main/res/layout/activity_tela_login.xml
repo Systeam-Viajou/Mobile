@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Telas.TelasEntrada.TelaLogin">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="396dp"
+        android:layout_height="198dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081"
+        app:srcCompat="@drawable/viajoou" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="413dp"
+        android:layout_height="245dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="548dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fundoimagens__1_" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="317dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fundo_input"
+        android:drawableLeft="@drawable/cadeado"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/spartan"
+        android:hint="Senha"
+        android:inputType="numberPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="317dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#805CD8"
+        android:fontFamily="@font/spartan_bold"
+        android:text="Entrar"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/spartan_bold"
+        android:text="Esqueceu sua senha?"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="317dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/fundo_input"
+        android:drawableLeft="@drawable/icons"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/spartan"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="167dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="-6dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/spartan"
+        android:text="Mantenha conectado"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberPassword" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:srcCompat="@drawable/divisao" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
