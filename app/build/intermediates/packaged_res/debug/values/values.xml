@@ -16,6 +16,7 @@
     </string-array>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/spartan</item>
+        <item>@font/spartan_bold</item>
     </array>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>

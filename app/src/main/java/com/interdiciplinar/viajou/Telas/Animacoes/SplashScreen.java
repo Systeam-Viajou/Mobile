@@ -1,6 +1,7 @@
 package com.interdiciplinar.viajou.Telas.Animacoes;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.motion.widget.MotionLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,7 +23,10 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
                 abrirTela();
             }
-        }, 1000);
+        }, 2000);
+
+
+
     }
     private void abrirTela() {
         Intent intent = new Intent(SplashScreen.this, TelaLogin.class);

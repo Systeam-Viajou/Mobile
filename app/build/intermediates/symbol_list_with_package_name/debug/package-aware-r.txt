@@ -2989,6 +2989,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable apple
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -3000,15 +3001,18 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable cadeado
+drawable cordinha
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable divisao
+drawable facebook
 drawable fundo_input
 drawable fundoimagens
 drawable fundoimagens__1_
+drawable google
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3111,6 +3115,7 @@ drawable tooltip_frame_light
 drawable viajoou
 drawable viajoubranco
 font spartan
+font spartan_bold
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3209,7 +3214,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id button
+id btEntrar
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3337,9 +3342,13 @@ id ignore
 id ignoreRequest
 id image
 id imageView
-id imageView2
 id imageView3
 id imageView4
+id imageView5
+id imageView6
+id imageView7
+id imageView8
+id imageView9
 id immediateStop
 id included
 id indeterminate
@@ -3569,6 +3578,8 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView3
+id textView4
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3820,6 +3831,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap iconapp
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description
