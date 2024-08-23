@@ -29,7 +29,7 @@
         android:ems="10"
         android:fontFamily="@font/spartan"
         android:hint="Senha"
-        android:inputType="numberPassword"
+        android:inputType="text|textPassword"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.431"
@@ -116,10 +116,12 @@
         android:layout_width="347dp"
         android:layout_height="167dp"
         android:layout_marginTop="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/facebook"
+        app:layout_constraintVertical_bias="0.333"
         app:srcCompat="@drawable/cordinha" />
 
     <TextView
@@ -127,23 +129,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginBottom="32dp"
         android:fontFamily="@font/spartan"
         android:text="Não está registrado?"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/facebook" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/cadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="32dp"
         android:fontFamily="@font/spartan_bold"
+        android:onClick="telaCadastro"
         android:text="Cadastre-se"
         android:textColor="#000000"
-        app:layout_constraintStart_toEndOf="@+id/txt"
-        app:layout_constraintTop_toBottomOf="@+id/facebook" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt" />
 
     <ImageView
         android:id="@+id/apple"

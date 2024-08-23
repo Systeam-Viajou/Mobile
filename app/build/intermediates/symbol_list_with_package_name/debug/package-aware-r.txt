@@ -3196,6 +3196,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id apple
 id arc
 id asConfigured
 id async
@@ -3217,6 +3218,7 @@ id bounceStart
 id btEntrar
 id buttonPanel
 id cache_measures
+id cadastrar
 id callMeasure
 id cancel_button
 id carryVelocity
@@ -3228,7 +3230,6 @@ id center_vertical
 id chain
 id chain2
 id chains
-id checkBox
 id checkbox
 id checked
 id chronometer
@@ -3289,20 +3290,21 @@ id easeInOut
 id easeOut
 id east
 id edge
-id editTextNumberPassword
-id editTextTextEmailAddress
 id edit_query
 id edit_text_id
 id elastic
+id email
 id embed
 id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id escape
+id esqueceuSenha
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id facebook
 id fade
 id fill
 id fill_horizontal
@@ -3323,6 +3325,7 @@ id fullscreen_header
 id ghost_view
 id ghost_view_holder
 id gone
+id google
 id graph
 id graph_wrap
 id group_divider
@@ -3345,8 +3348,6 @@ id imageView
 id imageView3
 id imageView4
 id imageView5
-id imageView6
-id imageView7
 id imageView8
 id imageView9
 id immediateStop
@@ -3370,6 +3371,7 @@ id linear
 id listMode
 id list_item
 id m3_side_sheet
+id mantenhaConectado
 id marquee
 id masked
 id match_constraint
@@ -3518,6 +3520,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id senha
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3577,9 +3580,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
-id textView3
-id textView4
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3608,6 +3608,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txt
 id unchecked
 id uniform
 id unlabeled
