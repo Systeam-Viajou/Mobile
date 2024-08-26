@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Viajou"
         tools:targetApi="31">
         <activity
+            android:name=".Telas.TelasPrincipais.TelaEventos"
+            android:exported="false" />
+        <activity
             android:name=".Telas.TelasPrincipais.TelaHome"
             android:exported="false" />
         <activity
