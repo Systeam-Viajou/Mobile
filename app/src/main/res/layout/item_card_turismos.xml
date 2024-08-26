@@ -2,8 +2,8 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="140dp"
-    android:layout_height="200dp"
+    android:layout_width="125dp"
+    android:layout_height="180dp"
     android:layout_margin="30dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,11 +12,11 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imgCardHome"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
-            android:src="@drawable/imgcardhome"
+            android:src="@drawable/imgcardturismos"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
