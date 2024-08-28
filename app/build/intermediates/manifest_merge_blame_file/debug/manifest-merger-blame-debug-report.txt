@@ -31,8 +31,8 @@
 22        android:extractNativeLibs="false"
 23        android:fullBackupContent="@xml/backup_rules"
 23-->C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\app\src\main\AndroidManifest.xml:8:9-54
-24        android:icon="@mipmap/iconapp"
-24-->C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\app\src\main\AndroidManifest.xml:9:9-39
+24        android:icon="@mipmap/ic_launcher"
+24-->C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\app\src\main\AndroidManifest.xml:9:9-43
 25        android:label="@string/app_name"
 25-->C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\app\src\main\AndroidManifest.xml:10:9-41
 26        android:supportsRtl="true"
