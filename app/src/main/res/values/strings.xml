@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Viajou</string>
+
+    <string name="selecione_genero">Selecione o seu gênero</string>
+    <string-array name="opcoes_genero">
+        <item>Selecione o seu gênero</item>
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Outro</item>
+        <item>Prefiro não informar</item>
+    </string-array>
+
 </resources>
