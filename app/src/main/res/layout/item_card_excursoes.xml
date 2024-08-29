@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="356dp"
+    android:layout_height="200dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/empresaCardExcursoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Nome empresa"
+            android:textColor="#686868"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/dataCardExcrusoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="DD/MM/YYYY"
+            android:textColor="#686868"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/locCardExcursoes" />
+
+        <TextView
+            android:id="@+id/locCardExcursoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Endereço"
+            android:textColor="#686868"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toBottomOf="@+id/qntdPessoas" />
+
+        <TextView
+            android:id="@+id/barra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="/"
+            android:textColor="#686868"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/qntdPessoas"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/imgCardExcursoes"
+            android:layout_width="175dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/imgcardexcursoes" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Título"
+            android:textColor="#805CD8"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/imgCardExcursoes"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="3dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/linha_arredondada"
+            android:backgroundTint="#3A9D93"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="11dp"
+            app:layout_constraintStart_toEndOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/iconpersoncardexcursoes" />
+
+        <Button
+            android:id="@+id/btMaisInfoCardExcursoes"
+            android:layout_width="123dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#805CD8"
+            android:text="Mais informações"
+            android:textAlignment="center"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toStartOf="@+id/imgCardExcursoes"
+            app:layout_constraintHorizontal_bias="0.589"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empresaCardExcursoes" />
+
+        <TextView
+            android:id="@+id/qntdPessoas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="9"
+            android:textColor="#686868"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/maxPessoas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="20"
+            android:textColor="#686868"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/barra"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10"
+            app:srcCompat="@drawable/iconloccardexcursoes" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+            app:srcCompat="@drawable/iconhoracardexcursoes" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7"
+            app:srcCompat="@drawable/iconmoneycardexcursoes" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="R$"
+            android:textColor="#686868"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toBottomOf="@+id/dataCardExcrusoes" />
+
+        <TextView
+            android:id="@+id/precoCardExcursoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="150"
+            android:textColor="#686868"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/dataCardExcrusoes" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:srcCompat="@drawable/iconempresacardexcursoes" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout></androidx.cardview.widget.CardView>
