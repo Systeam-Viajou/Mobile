@@ -11,11 +11,11 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imgCardHome"
+            android:id="@+id/shapeableImageView"
             android:layout_width="140dp"
             android:layout_height="140dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY"
             android:src="@drawable/imgcardhome"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -24,14 +24,16 @@
             app:shapeAppearanceOverlay="@style/redondo" />
 
         <TextView
-            android:id="@+id/tituloCardT"
+            android:id="@+id/tituloCardH"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:fontFamily="@font/spartan"
             android:text="Título"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgCardHome" />
+            app:layout_constraintTop_toBottomOf="@+id/shapeableImageView" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
