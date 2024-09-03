@@ -25,10 +25,10 @@ com.interdiciplinar.viajou.app-appcompat-resources-1.7.0-23 C:\Users\joaopedro-i
 com.interdiciplinar.viajou.app-core-ktx-1.13.0-24 C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\e58cd6a1bc85758c2a75831a526f0ee5\transformed\core-ktx-1.13.0\res
 com.interdiciplinar.viajou.app-annotation-experimental-1.4.0-25 C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\ed5f83a0c60dc464d04aa79205395bcf\transformed\annotation-experimental-1.4.0\res
 com.interdiciplinar.viajou.app-material-1.12.0-26 C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\fce6cbf64b6aefd900fe3a60fc1df73b\transformed\material-1.12.0\res
-com.interdiciplinar.viajou.app-pngs-27 C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\app\build\generated\res\pngs\debug
-com.interdiciplinar.viajou.app-resValues-28 C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\app\build\generated\res\resValues\debug
-com.interdiciplinar.viajou.app-packageDebugResources-29 C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.interdiciplinar.viajou.app-packageDebugResources-30 C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.interdiciplinar.viajou.app-merged_res-31 C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\app\build\intermediates\merged_res\debug
-com.interdiciplinar.viajou.app-debug-32 C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\app\src\debug\res
-com.interdiciplinar.viajou.app-main-33 C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\app\src\main\res
+com.interdiciplinar.viajou.app-pngs-27 C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\build\generated\res\pngs\debug
+com.interdiciplinar.viajou.app-resValues-28 C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\build\generated\res\resValues\debug
+com.interdiciplinar.viajou.app-packageDebugResources-29 C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.interdiciplinar.viajou.app-packageDebugResources-30 C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.interdiciplinar.viajou.app-merged_res-31 C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\build\intermediates\merged_res\debug
+com.interdiciplinar.viajou.app-debug-32 C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\debug\res
+com.interdiciplinar.viajou.app-main-33 C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\res
