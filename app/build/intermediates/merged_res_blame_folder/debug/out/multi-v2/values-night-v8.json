@@ -4,7 +4,7 @@
             "outputFile": "com.interdiciplinar.viajou.app-mergeDebugResources-29:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\joaopedro-ieg\\AndroidProjetos\\Viajou\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\joaopedro-ieg\\AndroidProjetos\\Viajou\\Mobile\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
