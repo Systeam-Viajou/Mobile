@@ -3087,10 +3087,13 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
 drawable iconacsses
 drawable iconempresacardexcursoes
+<<<<<<< HEAD
 drawable iconeventosnavbar
 drawable iconexcursoesnavbar
 drawable iconfigurinhasnavbar
 drawable iconhomenavbar
+=======
+>>>>>>> eaf0b429eb92ebc757b0ff203b6f94f58aebe165
 drawable iconhoracardexcursoes
 drawable iconloccardexcursoes
 drawable iconmoneycardexcursoes
@@ -3179,6 +3182,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rotate_right
 drawable spinner_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3193,6 +3197,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id ContinuarSms
 id FUNCTION
 id META
 id NO_DEBUG
@@ -3203,7 +3208,11 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+<<<<<<< HEAD
 id TituloCardEvento
+=======
+id Usuario
+>>>>>>> eaf0b429eb92ebc757b0ff203b6f94f58aebe165
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3331,13 +3340,18 @@ id continuousVelocity
 id coordinator
 id cos
 id counterclockwise
+id cpf
 id cradle
 id currentState
 id custom
 id customPanel
 id cut
 id dataCardEventos
+<<<<<<< HEAD
 id dataCardExcursoes
+=======
+id dataCardExcrusoes
+>>>>>>> eaf0b429eb92ebc757b0ff203b6f94f58aebe165
 id dataNasc
 id dataNascLayout
 id date_picker_actions
@@ -3386,15 +3400,27 @@ id enterAlways
 id enterAlwaysCollapsed
 id escape
 id esqueceuSenha
+<<<<<<< HEAD
 id eventos
 id excursoes
+=======
+id et_digit1
+id et_digit2
+id et_digit3
+id et_digit4
+id et_digit5
+id et_digit6
+>>>>>>> eaf0b429eb92ebc757b0ff203b6f94f58aebe165
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id facebook
 id fade
 id fadeCardEventos
+<<<<<<< HEAD
 id figurinhas
+=======
+>>>>>>> eaf0b429eb92ebc757b0ff203b6f94f58aebe165
 id fill
 id fill_horizontal
 id fill_vertical
@@ -3415,7 +3441,6 @@ id fullscreen_header
 id ghost_view
 id ghost_view_holder
 id gone
-id google
 id graph
 id graph_wrap
 id group_divider
@@ -3430,12 +3455,15 @@ id honorRequest
 id horizontal_only
 id icon
 id iconAcssesEventos
+<<<<<<< HEAD
 id iconAcssesExcur
 id iconDataExcursoes
 id iconEmpresaExcursoes
 id iconLocExcursoes
 id iconPerfilExcursoes
 id iconPrecoExcursoes
+=======
+>>>>>>> eaf0b429eb92ebc757b0ff203b6f94f58aebe165
 id icon_group
 id ifRoom
 id ignore
@@ -3443,16 +3471,24 @@ id ignoreRequest
 id image
 id imageCalendar
 id imageView
+id imageView10
+id imageView11
+id imageView12
 id imageView2
 id imageView3
 id imageView4
 id imageView5
+id imageView6
+id imageView7
 id imageView8
 id imageView9
 id imgCardEventos
 id imgCardExcursoes
 id imgCardHome
+<<<<<<< HEAD
 id imgCardTurismos
+=======
+>>>>>>> eaf0b429eb92ebc757b0ff203b6f94f58aebe165
 id imgLinha
 id immediateStop
 id included
@@ -3475,9 +3511,14 @@ id linear
 id listMode
 id list_item
 id locCardExcursoes
+<<<<<<< HEAD
 id localCardEvento
 id locale
 id ltr
+=======
+id localEvento
+id login
+>>>>>>> eaf0b429eb92ebc757b0ff203b6f94f58aebe165
 id m3_side_sheet
 id mantenhaConectado
 id marquee
@@ -3505,7 +3546,11 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+<<<<<<< HEAD
 id maxPessoasCardExcur
+=======
+id maxPessoas
+>>>>>>> eaf0b429eb92ebc757b0ff203b6f94f58aebe165
 id mesCardEventos
 id message
 id middle
@@ -3556,6 +3601,7 @@ id neverCompleteToStart
 id noScroll
 id noState
 id nome
+id nomeEvento
 id none
 id normal
 id north
@@ -3600,7 +3646,11 @@ id precoCardExcursoes
 id pressed
 id progress_circular
 id progress_horizontal
+<<<<<<< HEAD
 id qntdPessoasCardExcur
+=======
+id qntdPessoas
+>>>>>>> eaf0b429eb92ebc757b0ff203b6f94f58aebe165
 id radio
 id ratio
 id rectangles
@@ -3623,6 +3673,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id search_badge
 id search_bar
@@ -3638,6 +3689,7 @@ id select_dialog_listview
 id selected
 id selection_type
 id senha
+id shapeableImageView
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3703,7 +3755,16 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+<<<<<<< HEAD
 id textView2
+=======
+id textView
+id textView14
+id textView15
+id textView2
+id textView3
+id textView4
+>>>>>>> eaf0b429eb92ebc757b0ff203b6f94f58aebe165
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3717,9 +3778,14 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+<<<<<<< HEAD
 id tituloCardExcursoes
 id tituloCardHome
 id tituloCardTurismo
+=======
+id tituloCardH
+id tituloCardT
+>>>>>>> eaf0b429eb92ebc757b0ff203b6f94f58aebe165
 id toggle
 id top
 id topPanel
@@ -3879,8 +3945,13 @@ layout abc_tooltip
 layout activity_main
 layout activity_splash_screen
 layout activity_tela_cadastro
+layout activity_tela_eventos
+layout activity_tela_excursoes
+layout activity_tela_home
 layout activity_tela_login
 layout activity_tela_pesquisa
+layout activity_tela_sms
+layout activity_tela_turismos
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

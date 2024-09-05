@@ -12,7 +12,23 @@
         android:theme="@style/Theme.FragmentAndroid"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".MainActivity"
+=======
+            android:name=".Telas.TelasEntrada.TelaSMS"
+            android:exported="false" />
+        <activity
+            android:name=".Telas.TelasPrincipais.TelaExcursoes"
+            android:exported="false" />
+        <activity
+            android:name=".Telas.TelasPrincipais.TelaTurismos"
+            android:exported="false" />
+        <activity
+            android:name=".Telas.TelasPrincipais.TelaEventos"
+            android:exported="false" />
+        <activity
+            android:name=".Telas.TelasPrincipais.TelaHome"
+>>>>>>> eaf0b429eb92ebc757b0ff203b6f94f58aebe165
             android:exported="false" />
         <activity
             android:name=".Telas.TelasEntrada.TelaLogin"
