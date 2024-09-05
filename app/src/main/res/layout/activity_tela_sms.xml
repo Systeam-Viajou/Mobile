@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
     tools:context=".Telas.TelasEntrada.TelaSMS">
 
     <Button
@@ -46,14 +48,12 @@
         android:id="@+id/et_digit1"
         android:layout_width="50dp"
         android:layout_height="60dp"
-        android:layout_marginStart="10dp"
         android:layout_marginTop="42dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/fundo_input"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toStartOf="@+id/et_digit2"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <EditText
@@ -67,12 +67,13 @@
         android:inputType="text"
         app:layout_constraintEnd_toStartOf="@+id/et_digit5"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
     <EditText
         android:id="@+id/et_digit3"
         android:layout_width="50dp"
         android:layout_height="60dp"
         android:layout_marginTop="42dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="10dp"
         android:background="@drawable/fundo_input"
         android:ems="10"
         android:inputType="text"
@@ -96,7 +97,7 @@
         android:layout_width="50dp"
         android:layout_height="60dp"
         android:layout_marginTop="42dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="17dp"
         android:background="@drawable/fundo_input"
         android:ems="10"
         android:inputType="text"
@@ -135,23 +136,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
-        android:text="-"
-        android:textColor="#575656"
-        android:textSize="48sp"
-        app:layout_constraintStart_toEndOf="@+id/et_digit3"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-    <TextView
         android:id="@+id/textView4"
         android:layout_width="93dp"
         android:layout_height="21dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="10dp"
         android:drawableLeft="@drawable/rotate_right"
         android:drawablePadding="4dp"
         android:fontFamily="@font/spartan"
