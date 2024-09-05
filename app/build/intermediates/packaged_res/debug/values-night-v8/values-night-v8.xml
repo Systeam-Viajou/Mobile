@@ -3,5 +3,34 @@
     <style name="Base.Theme.Viajou" parent="Theme.Material3.DayNight.NoActionBar">
         
         
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+    <style name="BottomNavigationView.Active" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fillColor">#000</item>
+    </style>
+    <style name="BottomNavigationView.Inactive" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fillColor">#000</item>
+    </style>
+    <style name="Theme.FragmentAndroid" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">#8D0EC8</item>
+        <item name="colorPrimaryVariant">#000000</item>
+        <item name="colorOnPrimary">@color/black</item>
+        
+        <item name="colorSecondary">#8D0EC8</item>
+        <item name="colorSecondaryVariant">#00CB75F3</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+    <style name="Theme.Viajou" parent="Base.Theme.Viajou"/>
+    <style name="redondo" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15dp</item>
+        <item name="color">@color/white</item>
     </style>
 </resources>

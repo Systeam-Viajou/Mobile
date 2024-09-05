@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/iconhomenavbar"/>
+    <item
+        android:id="@+id/turismos"
+        android:title="Turismos"
+        android:icon="@drawable/iconturismonavbar"/>
+    <item
+        android:id="@+id/eventos"
+        android:title="Eventos"
+        android:icon="@drawable/iconeventosnavbar"/>
+    <item
+        android:id="@+id/excursoes"
+        android:title="Excursões"
+        android:icon="@drawable/iconexcursoesnavbar"/>
+    <item
+        android:id="@+id/figurinhas"
+        android:title="Figurinhas"
+        android:icon="@drawable/iconfigurinhasnavbar"/>
+</menu>
