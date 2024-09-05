@@ -27,6 +27,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.Viajou" >
         <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaSMS"
+            android:exported="false" />
+        <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaExcursoes"
+            android:exported="false" />
+        <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaTurismos"
             android:exported="false" />
         <activity

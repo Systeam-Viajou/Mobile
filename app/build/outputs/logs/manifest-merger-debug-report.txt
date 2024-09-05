@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:2:1-47:12
+ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:2:1-53:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\fce6cbf64b6aefd900fe3a60fc1df73b\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a6e68506650abc6faf7ed06ed00b784\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\d77a961f18daa0058d8d754b6bfc7135\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:2:1-7:12
@@ -56,8 +56,8 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\joaoped
 	xmlns:android
 		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:5:5-45:19
-INJECTED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:5:5-45:19
+ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:5:5-51:19
+INJECTED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:5:5-51:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\fce6cbf64b6aefd900fe3a60fc1df73b\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\fce6cbf64b6aefd900fe3a60fc1df73b\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a6e68506650abc6faf7ed06ed00b784\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -94,64 +94,76 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\joaopedro-ieg\.gra
 		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:12:9-44
 	android:dataExtractionRules
 		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaTurismos
+activity#com.interdiciplinar.viajou.Telas.TelasEntrada.TelaSMS
 ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:14:9-16:40
 	android:exported
 		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:16:13-37
 	android:name
-		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:15:13-63
-activity#com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaEventos
+		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:15:13-55
+activity#com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaExcursoes
 ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:17:9-19:40
 	android:exported
 		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:18:13-62
-activity#com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaHome
+		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:18:13-64
+activity#com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaTurismos
 ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
 		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:21:13-59
-activity#com.interdiciplinar.viajou.Telas.TelasEntrada.TelaLogin
+		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:21:13-63
+activity#com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaEventos
 ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:23:9-25:40
 	android:exported
 		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:24:13-57
-activity#com.interdiciplinar.viajou.Telas.TelasEntrada.TelaCadastro
+		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:24:13-62
+activity#com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaHome
 ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:26:9-28:40
 	android:exported
 		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:27:13-60
-activity#com.interdiciplinar.viajou.Telas.TelasEntrada.TelaPesquisa
+		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:27:13-59
+activity#com.interdiciplinar.viajou.Telas.TelasEntrada.TelaLogin
 ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:29:9-31:40
 	android:exported
 		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:30:13-60
-activity#com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen
-ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:32:9-40:20
+		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:30:13-57
+activity#com.interdiciplinar.viajou.Telas.TelasEntrada.TelaCadastro
+ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:32:9-34:40
 	android:exported
-		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:34:13-36
+		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:33:13-57
+		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:33:13-60
+activity#com.interdiciplinar.viajou.Telas.TelasEntrada.TelaPesquisa
+ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:35:9-37:40
+	android:exported
+		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:37:13-37
+	android:name
+		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:36:13-60
+activity#com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen
+ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:38:9-46:20
+	android:exported
+		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:40:13-36
+	android:name
+		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:39:13-57
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:35:13-39:29
+ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:41:13-45:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:36:17-69
+ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:42:17-69
 	android:name
-		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:36:25-66
+		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:42:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:38:17-77
+ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:44:17-77
 	android:name
-		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:38:27-74
+		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:44:27-74
 meta-data#preloaded_fonts
-ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:42:9-44:57
+ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:48:9-50:57
 	android:resource
-		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:44:13-54
+		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:50:13-54
 	android:name
-		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:43:13-43
+		ADDED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml:49:13-43
 uses-sdk
 INJECTED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\joaopedro-ieg\AndroidProjetos\Viajou\Mobile\app\src\main\AndroidManifest.xml

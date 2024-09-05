@@ -1,10 +1,12 @@
 package com.interdiciplinar.viajou.Telas.TelasEntrada;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -29,6 +31,15 @@ public class TelaCadastro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_cadastro);
+
+        Button bt = findViewById(R.id.button);
+        bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TelaCadastro.this, TelaSMS.class);
+                startActivity(intent);
+            }
+        });
 
         TextInputLayout dataNascLayout = findViewById(R.id.dataNascLayout);
 

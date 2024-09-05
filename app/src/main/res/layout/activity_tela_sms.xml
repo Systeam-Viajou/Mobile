@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Telas.TelasEntrada.TelaSMS">
+
+    <Button
+        android:id="@+id/ContinuarSms"
+        android:layout_width="363dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="73dp"
+        android:backgroundTint="#805CD8"
+        android:fontFamily="@font/spartan_bold"
+        android:text="Verificar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_digit2" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/viajoupequeno" />
+
+    <EditText
+        android:id="@+id/et_digit2"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/fundo_input"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/et_digit3"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <EditText
+        android:id="@+id/et_digit1"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/fundo_input"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/et_digit2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <EditText
+        android:id="@+id/et_digit4"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/fundo_input"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/et_digit5"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+    <EditText
+        android:id="@+id/et_digit3"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/fundo_input"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/et_digit4"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <EditText
+        android:id="@+id/et_digit5"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/fundo_input"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/et_digit6"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <EditText
+        android:id="@+id/et_digit6"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/fundo_input"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="73dp"
+        android:fontFamily="@font/spartan_bold"
+        android:text="Verifique o seu SMS"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="309dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/spartan"
+        android:text="Insira o código de 6 dígitos que enviamos para o seu SMS"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="-"
+        android:textColor="#575656"
+        android:textSize="48sp"
+        app:layout_constraintStart_toEndOf="@+id/et_digit3"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="93dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:drawableLeft="@drawable/rotate_right"
+        android:drawablePadding="4dp"
+        android:fontFamily="@font/spartan"
+        android:text="Reenviar"
+        android:textColor="#382469"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_digit6" />
+</androidx.constraintlayout.widget.ConstraintLayout>
