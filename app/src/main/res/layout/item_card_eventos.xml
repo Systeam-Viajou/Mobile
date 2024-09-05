@@ -50,9 +50,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/dataCardEventos" />
 
+        <View
+            android:id="@+id/linhaEventos"
+            android:layout_width="2dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/linha_arredondada"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/dataCardEventos"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/TituloCardEvento"
-            android:layout_width="238dp"
+            android:layout_width="245dp"
             android:layout_height="31dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/spartan_bold"
@@ -60,20 +71,9 @@
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.23"
-            app:layout_constraintStart_toEndOf="@+id/imgLinha"
+            app:layout_constraintHorizontal_bias="0.289"
+            app:layout_constraintStart_toEndOf="@+id/linhaEventos"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imgLinha"
-            android:layout_width="2dp"
-            android:layout_height="58dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.051"
-            app:layout_constraintStart_toEndOf="@+id/dataCardEventos"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/linhacardeventos" />
 
         <TextView
             android:id="@+id/dataCardEventos"
@@ -90,15 +90,15 @@
 
         <TextView
             android:id="@+id/localCardEvento"
-            android:layout_width="238dp"
+            android:layout_width="245dp"
             android:layout_height="18dp"
             android:layout_marginTop="3dp"
             android:fontFamily="@font/spartan"
             android:text="Endereço"
             android:textColor="#FFFDFD"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.23"
-            app:layout_constraintStart_toEndOf="@+id/imgLinha"
+            app:layout_constraintHorizontal_bias="0.289"
+            app:layout_constraintStart_toEndOf="@+id/linhaEventos"
             app:layout_constraintTop_toBottomOf="@+id/TituloCardEvento" />
 
         <ImageView
