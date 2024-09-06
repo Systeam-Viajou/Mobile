@@ -1,35 +1,19 @@
-<<<<<<< HEAD
-#Thu Sep 05 15:42:02 BRT 2024
+#Fri Sep 06 09:08:14 BRT 2024
 base.0=C\:\\Users\\evellynnakamura-ieg\\AndroidStudios\\AppViajou\\Mobile\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\evellynnakamura-ieg\\AndroidStudios\\AppViajou\\Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\evellynnakamura-ieg\\AndroidStudios\\AppViajou\\Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
 base.3=C\:\\Users\\evellynnakamura-ieg\\AndroidStudios\\AppViajou\\Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
 base.4=C\:\\Users\\evellynnakamura-ieg\\AndroidStudios\\AppViajou\\Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
 base.5=C\:\\Users\\evellynnakamura-ieg\\AndroidStudios\\AppViajou\\Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-=======
-#Thu Sep 05 07:10:05 BRT 2024
-base.0=C\:\\Users\\joaopedro-ieg\\AndroidProjetos\\Viajou\\Mobile\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\joaopedro-ieg\\AndroidProjetos\\Viajou\\Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\joaopedro-ieg\\AndroidProjetos\\Viajou\\Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
-base.3=C\:\\Users\\joaopedro-ieg\\AndroidProjetos\\Viajou\\Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
-base.4=C\:\\Users\\joaopedro-ieg\\AndroidProjetos\\Viajou\\Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
->>>>>>> eaf0b429eb92ebc757b0ff203b6f94f58aebe165
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=10/classes.dex
 path.3=13/classes.dex
-<<<<<<< HEAD
 path.4=1/classes.dex
 path.5=6/classes.dex
-=======
-path.4=6/classes.dex
->>>>>>> eaf0b429eb92ebc757b0ff203b6f94f58aebe165
 renamed.0=classes.dex
 renamed.1=classes2.dex
 renamed.2=classes3.dex
 renamed.3=classes4.dex
 renamed.4=classes5.dex
-<<<<<<< HEAD
 renamed.5=classes6.dex
-=======
->>>>>>> eaf0b429eb92ebc757b0ff203b6f94f58aebe165

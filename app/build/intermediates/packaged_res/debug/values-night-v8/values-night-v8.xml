@@ -14,7 +14,7 @@
         <item name="android:textSize">12sp</item>
         <item name="android:fillColor">#000</item>
     </style>
-    <style name="Theme.FragmentAndroid" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.FragmentAndroid" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">#8D0EC8</item>
         <item name="colorPrimaryVariant">#000000</item>
