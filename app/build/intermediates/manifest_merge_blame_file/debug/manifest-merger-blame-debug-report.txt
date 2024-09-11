@@ -20,7 +20,7 @@
 15-->[androidx.core:core:1.13.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\aaf657dd371bfc48f1473d56cd508ae8\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:5:5-42:19
+17-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:5:5-44:19
 18        android:allowBackup="true"
 18-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -42,8 +42,8 @@
 28-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:12:9-53
 29        <activity
 29-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:14:9-16:40
-30            android:name="com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen"
-30-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:15:13-57
+30            android:name="com.interdiciplinar.viajou.MainActivity"
+30-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:15:13-41
 31            android:exported="false" />
 31-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:16:13-37
 32        <activity
@@ -53,126 +53,130 @@
 34            android:exported="false" />
 34-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:19:13-37
 35        <activity
-35-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:20:9-22:40
+35-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:20:9-23:40
 36            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaLogin"
 36-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:21:13-57
-37            android:exported="false" />
-37-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:22:13-37
-38        <activity
-38-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:23:9-25:40
-39            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaCadastro"
-39-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:24:13-60
-40            android:exported="false" />
-40-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:25:13-37
-41        <activity
-41-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:26:9-28:40
-42            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaPesquisa"
-42-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:27:13-60
-43            android:exported="false" />
-43-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:28:13-37
-44        <activity
-44-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:29:9-37:20
-45            android:name="com.interdiciplinar.viajou.MainActivity"
-45-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:30:13-41
-46            android:exported="true" >
-46-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:31:13-36
-47            <intent-filter>
-47-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:32:13-36:29
-48                <action android:name="android.intent.action.MAIN" />
-48-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:33:17-69
-48-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:33:25-66
-49
-50                <category android:name="android.intent.category.LAUNCHER" />
-50-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:35:17-77
-50-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:35:27-74
-51            </intent-filter>
-52        </activity>
-53
-54        <meta-data
-54-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:39:9-41:57
-55            android:name="preloaded_fonts"
-55-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:40:13-43
-56            android:resource="@array/preloaded_fonts" />
-56-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:41:13-54
-57
-58        <provider
-58-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-59            android:name="androidx.startup.InitializationProvider"
-59-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-60            android:authorities="com.interdiciplinar.viajou.androidx-startup"
-60-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-61            android:exported="false" >
-61-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-62            <meta-data
-62-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-63                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-64                android:value="androidx.startup" />
-64-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-65            <meta-data
-65-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\90e800b5334f3277e7ac4e5d7420cebc\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-66                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-66-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\90e800b5334f3277e7ac4e5d7420cebc\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-67                android:value="androidx.startup" />
-67-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\90e800b5334f3277e7ac4e5d7420cebc\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-68            <meta-data
-68-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-69                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-70                android:value="androidx.startup" />
-70-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-71        </provider>
-72
-73        <uses-library
-73-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-74            android:name="androidx.window.extensions"
-74-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-75            android:required="false" />
-75-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-76        <uses-library
-76-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-77            android:name="androidx.window.sidecar"
-77-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-78            android:required="false" />
-78-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-79
-80        <receiver
-80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-81            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-82            android:directBootAware="false"
-82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-83            android:enabled="true"
-83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-84            android:exported="true"
-84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-85            android:permission="android.permission.DUMP" >
-85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-86            <intent-filter>
-86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-87                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-88            </intent-filter>
-89            <intent-filter>
-89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-90                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-91            </intent-filter>
-92            <intent-filter>
-92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-93                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-93-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-93-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-94            </intent-filter>
-95            <intent-filter>
-95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-96                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-97            </intent-filter>
-98        </receiver>
-99    </application>
-100
-101</manifest>
+37            android:exported="false"
+37-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:23:13-37
+38            android:theme="@style/Base.Theme.Viajou" />
+38-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:22:13-53
+39        <activity
+39-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:24:9-27:40
+40            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaCadastro"
+40-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:25:13-60
+41            android:exported="false"
+41-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:27:13-37
+42            android:theme="@style/Base.Theme.Viajou" />
+42-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:26:13-53
+43        <activity
+43-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:28:9-30:40
+44            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaPesquisa"
+44-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:29:13-60
+45            android:exported="false" />
+45-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:30:13-37
+46        <activity
+46-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:31:9-39:20
+47            android:name="com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen"
+47-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:32:13-57
+48            android:exported="true" >
+48-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:33:13-36
+49            <intent-filter>
+49-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:34:13-38:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:35:17-69
+50-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:35:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:37:17-77
+52-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:37:27-74
+53            </intent-filter>
+54        </activity>
+55
+56        <meta-data
+56-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:41:9-43:57
+57            android:name="preloaded_fonts"
+57-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:42:13-43
+58            android:resource="@array/preloaded_fonts" />
+58-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:43:13-54
+59
+60        <provider
+60-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+61            android:name="androidx.startup.InitializationProvider"
+61-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+62            android:authorities="com.interdiciplinar.viajou.androidx-startup"
+62-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+63            android:exported="false" >
+63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+64            <meta-data
+64-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+65                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+65-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+66                android:value="androidx.startup" />
+66-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+67            <meta-data
+67-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\90e800b5334f3277e7ac4e5d7420cebc\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+68                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+68-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\90e800b5334f3277e7ac4e5d7420cebc\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+69                android:value="androidx.startup" />
+69-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\90e800b5334f3277e7ac4e5d7420cebc\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+70            <meta-data
+70-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+71                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+72                android:value="androidx.startup" />
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+73        </provider>
+74
+75        <uses-library
+75-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+76            android:name="androidx.window.extensions"
+76-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+77            android:required="false" />
+77-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+78        <uses-library
+78-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+79            android:name="androidx.window.sidecar"
+79-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+80            android:required="false" />
+80-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+81
+82        <receiver
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+83            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+84            android:directBootAware="false"
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+85            android:enabled="true"
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+86            android:exported="true"
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+87            android:permission="android.permission.DUMP" >
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+89                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+90            </intent-filter>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+92                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+93            </intent-filter>
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+95                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+96            </intent-filter>
+97            <intent-filter>
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+98                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+99            </intent-filter>
+100        </receiver>
+101    </application>
+102
+103</manifest>

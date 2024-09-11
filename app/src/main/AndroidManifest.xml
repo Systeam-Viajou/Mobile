@@ -16,15 +16,19 @@
             android:exported="false" />
         <activity
             android:name=".Telas.TelasEntrada.TelaSMS"
+            android:theme="@style/Base.Theme.Viajou"
             android:exported="false" />
         <activity
             android:name=".Telas.TelasEntrada.TelaLogin"
+            android:theme="@style/Base.Theme.Viajou"
             android:exported="false" />
         <activity
             android:name=".Telas.TelasEntrada.TelaCadastro"
+            android:theme="@style/Base.Theme.Viajou"
             android:exported="false" />
         <activity
             android:name=".Telas.TelasEntrada.TelaPesquisa"
+            android:theme="@style/Base.Theme.Viajou"
             android:exported="false" />
         <activity
             android:name=".Telas.Animacoes.SplashScreen"

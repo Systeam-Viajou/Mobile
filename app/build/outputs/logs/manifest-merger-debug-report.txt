@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:2:1-46:12
 MERGED from [androidx.databinding:viewbinding:8.2.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a7ea71d12caf945bcd2c02c01d9b3b3\transformed\viewbinding-8.2.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\011dfff7d0578365659881eb7709f76f\transformed\navigation-common-2.7.7\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.7.7] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\c96f6ac26b14654abaca8e279fe9e447\transformed\navigation-runtime-2.7.7\AndroidManifest.xml:17:1-22:12
@@ -69,8 +69,8 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\evellyn
 	xmlns:android
 		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:5:5-42:19
-INJECTED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:5:5-42:19
+ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:5:5-44:19
+INJECTED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:5:5-44:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\fce6cbf64b6aefd900fe3a60fc1df73b\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\fce6cbf64b6aefd900fe3a60fc1df73b\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a6e68506650abc6faf7ed06ed00b784\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -109,12 +109,12 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\evellynnakamura-ie
 		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:12:9-53
 	android:dataExtractionRules
 		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen
+activity#com.interdiciplinar.viajou.MainActivity
 ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:14:9-16:40
 	android:exported
 		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:16:13-37
 	android:name
-		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:15:13-57
+		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:15:13-41
 activity#com.interdiciplinar.viajou.Telas.TelasEntrada.TelaSMS
 ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:17:9-19:40
 	android:exported
@@ -122,45 +122,49 @@ ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\
 	android:name
 		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:18:13-55
 activity#com.interdiciplinar.viajou.Telas.TelasEntrada.TelaLogin
-ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:20:9-22:40
+ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:20:9-23:40
 	android:exported
-		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:22:13-37
+		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:23:13-37
+	android:theme
+		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:22:13-53
 	android:name
 		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:21:13-57
 activity#com.interdiciplinar.viajou.Telas.TelasEntrada.TelaCadastro
-ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:23:9-25:40
+ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:24:9-27:40
 	android:exported
-		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:25:13-37
+		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:27:13-37
+	android:theme
+		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:26:13-53
 	android:name
-		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:24:13-60
+		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:25:13-60
 activity#com.interdiciplinar.viajou.Telas.TelasEntrada.TelaPesquisa
-ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:26:9-28:40
+ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:28:9-30:40
 	android:exported
-		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:28:13-37
+		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:27:13-60
-activity#com.interdiciplinar.viajou.MainActivity
-ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:29:9-37:20
+		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:29:13-60
+activity#com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen
+ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:31:9-39:20
 	android:exported
-		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:31:13-36
+		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:33:13-36
 	android:name
-		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:30:13-41
+		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:32:13-57
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:32:13-36:29
+ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:34:13-38:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:33:17-69
+ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:35:17-69
 	android:name
-		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:33:25-66
+		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:35:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:35:17-77
+ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:37:17-77
 	android:name
-		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:35:27-74
+		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:37:27-74
 meta-data#preloaded_fonts
-ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:39:9-41:57
+ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:41:9-43:57
 	android:resource
-		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:41:13-54
+		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:43:13-54
 	android:name
-		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:40:13-43
+		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:42:13-43
 uses-sdk
 INJECTED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml
