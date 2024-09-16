@@ -27,11 +27,16 @@
         android:testOnly="true"
         android:theme="@style/Theme.FragmentAndroid" >
         <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaCadastro2"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
             android:name="com.interdiciplinar.viajou.MainActivity"
             android:exported="false" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaSMS"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaLogin"
             android:exported="false"
@@ -42,7 +47,8 @@
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaPesquisa"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen"
             android:exported="true" >

@@ -12,6 +12,8 @@ drawable borda_card_excursoes
 drawable cadeado
 drawable calendar
 drawable calendario
+drawable carregando
+drawable carregandocompleto
 drawable cordinha
 drawable divisao
 drawable facebook
@@ -44,6 +46,7 @@ drawable imgcardhome
 drawable imgcardturismos
 drawable linha_arredondada
 drawable linhacardeventos
+drawable microsoftvetor
 drawable rotate_right
 drawable spinner_background
 drawable vector
@@ -54,7 +57,6 @@ font spartan
 font spartan_bold
 id ContinuarSms
 id TituloCardEvento
-id Usuario
 id apple
 id barra
 id bottomNavigationView
@@ -97,6 +99,7 @@ id imageView2
 id imageView3
 id imageView4
 id imageView5
+id imageView7
 id imageView8
 id imageView9
 id imgCardEventos
@@ -114,7 +117,6 @@ id nome
 id precoCardExcursoes
 id qntdPessoasCardExcur
 id recyclerView
-id scrollView2
 id senha
 id sobrenome
 id spinnerGenero
@@ -123,17 +125,18 @@ id telefone
 id textView14
 id textView15
 id textView2
-id textView3
 id textView4
 id tituloCardExcursoes
 id tituloCardHome
 id tituloCardTurismo
 id turismos
 id txt
+id username
 id view2
 layout activity_main
 layout activity_splash_screen
 layout activity_tela_cadastro
+layout activity_tela_cadastro2
 layout activity_tela_login
 layout activity_tela_pesquisa
 layout activity_tela_sms
@@ -146,6 +149,7 @@ layout item_card_eventos
 layout item_card_excursoes
 layout item_card_home
 layout item_card_turismos
+layout item_carrossel_home
 layout spinner_dropdown_item
 layout spinner_item
 menu bottom_nav_menu

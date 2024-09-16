@@ -3051,6 +3051,8 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable cadeado
 drawable calendar
 drawable calendario
+drawable carregando
+drawable carregandocompleto
 drawable cordinha
 drawable design_fab_background
 drawable design_ic_visibility
@@ -3128,6 +3130,7 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable microsoftvetor
 drawable mtrl_bottomsheet_drag_handle
 drawable mtrl_checkbox_button
 drawable mtrl_checkbox_button_checked_unchecked
@@ -3206,7 +3209,6 @@ id SYM
 id TOP_END
 id TOP_START
 id TituloCardEvento
-id Usuario
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3456,6 +3458,7 @@ id imageView2
 id imageView3
 id imageView4
 id imageView5
+id imageView7
 id imageView8
 id imageView9
 id imgCardEventos
@@ -3633,7 +3636,6 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
-id scrollView2
 id scrollable
 id search_badge
 id search_bar
@@ -3717,7 +3719,6 @@ id textTop
 id textView14
 id textView15
 id textView2
-id textView3
 id textView4
 id text_input_end_icon
 id text_input_error_icon
@@ -3757,6 +3758,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username
 id vertical_only
 id view2
 id view_offset_helper
@@ -3894,6 +3896,7 @@ layout abc_tooltip
 layout activity_main
 layout activity_splash_screen
 layout activity_tela_cadastro
+layout activity_tela_cadastro2
 layout activity_tela_login
 layout activity_tela_pesquisa
 layout activity_tela_sms
@@ -3924,6 +3927,7 @@ layout item_card_eventos
 layout item_card_excursoes
 layout item_card_home
 layout item_card_turismos
+layout item_carrossel_home
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

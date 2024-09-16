@@ -142,7 +142,6 @@
         android:layout_marginStart="3dp"
         android:layout_marginBottom="32dp"
         android:fontFamily="@font/spartan_bold"
-        android:onClick="telaCadastro"
         android:text="Cadastre-se"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -150,22 +149,22 @@
 
     <ImageView
         android:id="@+id/apple"
-        android:layout_width="59dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
         app:circularflow_defaultAngle="24112"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintHorizontal_bias="0.259"
         app:layout_constraintStart_toEndOf="@+id/facebook"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:srcCompat="@drawable/apple" />
+        app:srcCompat="@drawable/microsoftvetor" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="69dp"
         android:layout_height="70dp"
         android:layout_marginStart="84dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@drawable/google" />

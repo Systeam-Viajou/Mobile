@@ -36,7 +36,7 @@ public class TelaCadastro extends AppCompatActivity {
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TelaCadastro.this, TelaSMS.class);
+                Intent intent = new Intent(TelaCadastro.this, TelaCadastro2.class);
                 startActivity(intent);
             }
         });

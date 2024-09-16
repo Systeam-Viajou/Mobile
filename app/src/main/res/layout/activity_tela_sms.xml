@@ -8,9 +8,9 @@
 
     <Button
         android:id="@+id/ContinuarSms"
-        android:layout_width="363dp"
+        android:layout_width="350dp"
         android:layout_height="53dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginTop="130dp"
         android:backgroundTint="#805CD8"
         android:fontFamily="@font/spartan_bold"
         android:text="Verificar"
@@ -46,14 +46,12 @@
         android:id="@+id/et_digit1"
         android:layout_width="50dp"
         android:layout_height="60dp"
-        android:layout_marginStart="10dp"
         android:layout_marginTop="42dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/fundo_input"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toStartOf="@+id/et_digit2"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <EditText
@@ -67,12 +65,13 @@
         android:inputType="text"
         app:layout_constraintEnd_toStartOf="@+id/et_digit5"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
     <EditText
         android:id="@+id/et_digit3"
         android:layout_width="50dp"
         android:layout_height="60dp"
         android:layout_marginTop="42dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="10dp"
         android:background="@drawable/fundo_input"
         android:ems="10"
         android:inputType="text"
@@ -96,7 +95,7 @@
         android:layout_width="50dp"
         android:layout_height="60dp"
         android:layout_marginTop="42dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/fundo_input"
         android:ems="10"
         android:inputType="text"
@@ -133,18 +132,6 @@
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
-        android:text="-"
-        android:textColor="#575656"
-        android:textSize="48sp"
-        app:layout_constraintStart_toEndOf="@+id/et_digit3"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <TextView
         android:id="@+id/textView4"
