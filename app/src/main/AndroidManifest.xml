@@ -34,6 +34,21 @@
             android:name=".Telas.TelasEntrada.TelaPesquisa"
             android:exported="false"
             android:theme="@style/Base.Theme.Viajou" />
+        <activity android:name=".Telas.TelasPrincipais.TelaEventosFragment"
+            android:theme="@style/Base.Theme.Viajou"
+            android:exported="false"/>
+        <activity android:name=".Telas.TelasPrincipais.TelaExcursoesFragment"
+            android:theme="@style/Base.Theme.Viajou"
+            android:exported="false"/>
+        <activity android:name=".Telas.TelasPrincipais.TelaFigurinhasFragment"
+            android:theme="@style/Base.Theme.Viajou"
+            android:exported="false"/>
+        <activity android:name=".Telas.TelasPrincipais.TelaHomeFragment"
+            android:theme="@style/Base.Theme.Viajou"
+            android:exported="false"/>
+        <activity android:name=".Telas.TelasPrincipais.TelaTurismosFragment"
+            android:theme="@style/Base.Theme.Viajou"
+            android:exported="false"/>
         <activity
             android:name=".Telas.Animacoes.SplashScreen"
             android:exported="true">
