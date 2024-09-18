@@ -33,13 +33,6 @@ public class TelaCadastro extends AppCompatActivity {
         setContentView(R.layout.activity_tela_cadastro);
 
         Button bt = findViewById(R.id.button);
-        bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(TelaCadastro.this, TelaCadastro2.class);
-                startActivity(intent);
-            }
-        });
 
         TextInputLayout dataNascLayout = findViewById(R.id.dataNascLayout);
 
@@ -121,7 +114,18 @@ public class TelaCadastro extends AppCompatActivity {
                 // Ação quando nada é selecionado
             }
         });
-    }
 
+        bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putString("nome", ((TextInputEditText) findViewById(R.id.nome)).getText().toString());
+                Intent intent = new Intent(TelaCadastro.this, TelaCadastro2.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
+
+    }
 
 }

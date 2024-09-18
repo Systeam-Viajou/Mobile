@@ -16,7 +16,7 @@ public class TelaSMS extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_sms);
 
-        Button bt = findViewById(R.id.ContinuarSms);
+        Button bt = findViewById(R.id.btContinuar);
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

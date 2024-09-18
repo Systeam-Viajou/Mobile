@@ -28,7 +28,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Viajou</string>
+    <string name="gcm_defaultSenderId" translatable="false">998764126277</string>
+    <string name="google_api_key" translatable="false">AIzaSyA1wUgV0_6IHPHCMwYw_PiE1YzBqLE1c4Y</string>
+    <string name="google_app_id" translatable="false">1:998764126277:android:8fe7f152ced9ee1e78c32c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA1wUgV0_6IHPHCMwYw_PiE1YzBqLE1c4Y</string>
+    <string name="google_storage_bucket" translatable="false">viajou-5d783.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="project_id" translatable="false">viajou-5d783</string>
     <string name="selecione_genero">Selecione o seu gênero</string>
     <style name="Base.Theme.Viajou" parent="Theme.Material3.DayNight.NoActionBar">
         

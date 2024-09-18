@@ -351,7 +351,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/ContinuarSms"
+        android:id="@+id/btContinuar"
         android:layout_width="348dp"
         android:layout_height="58dp"
         android:layout_marginTop="40dp"

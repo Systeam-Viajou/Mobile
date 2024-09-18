@@ -19,10 +19,10 @@
         app:srcCompat="@drawable/viajoou" />
 
     <EditText
-        android:id="@+id/senha"
+        android:id="@+id/senhaLayout"
         android:layout_width="317dp"
         android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/fundo_input"
         android:drawableLeft="@drawable/cadeado"
         android:drawablePadding="10dp"
@@ -34,10 +34,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintTop_toBottomOf="@+id/emailLayout" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/emailLayout"
         android:layout_width="317dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -67,7 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/senha" />
+        app:layout_constraintTop_toBottomOf="@+id/senhaLayout" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -95,7 +95,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toEndOf="@+id/mantenhaConectado"
-        app:layout_constraintTop_toBottomOf="@+id/senha" />
+        app:layout_constraintTop_toBottomOf="@+id/senhaLayout" />
 
     <CheckBox
         android:id="@+id/mantenhaConectado"
@@ -109,7 +109,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/senha" />
+        app:layout_constraintTop_toBottomOf="@+id/senhaLayout" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -188,5 +188,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/fundoimagens__1_" />
+
+    <TextView
+        android:id="@+id/msgErroEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="3dp"
+        android:drawableLeft="@drawable/erroicon"
+        android:drawablePadding="3dp"
+        android:fontFamily="@font/spartan"
+        android:text="Email invalido ou inexistente."
+        android:textColor="#FF0000"
+        android:textSize="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/msgErroSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="3dp"
+        android:drawableLeft="@drawable/erroicon"
+        android:drawablePadding="3dp"
+        android:fontFamily="@font/spartan"
+        android:text="Senha invalida ou inexistente."
+        android:textColor="#FF0000"
+        android:textSize="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/senhaLayout"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

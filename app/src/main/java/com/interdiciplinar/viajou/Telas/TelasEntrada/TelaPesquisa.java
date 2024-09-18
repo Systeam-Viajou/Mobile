@@ -7,6 +7,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.interdiciplinar.viajou.R;
@@ -49,8 +50,6 @@ public class TelaPesquisa extends AppCompatActivity {
         exposicoesImage.setVisibility(View.INVISIBLE);
         apresentacoesImage.setVisibility(View.INVISIBLE);
         feirasImage.setVisibility(View.INVISIBLE);
-
-
 
         showCard.setOnClickListener(new View.OnClickListener() {
             @Override

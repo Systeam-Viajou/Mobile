@@ -35,13 +35,14 @@
             android:hint="Username">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/spartan" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/email"
+            android:id="@+id/emailLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="16dp"
@@ -49,9 +50,11 @@
             android:hint="Email">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/spartan" />
+                android:fontFamily="@font/spartan"
+                android:inputType="text|textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -70,7 +73,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/senha"
+            android:id="@+id/senhaLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="16dp"
@@ -78,10 +81,11 @@
             android:hint="Senha">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/senha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content                                                                                                                  "
                 android:fontFamily="@font/spartan"
-                android:inputType="number" />
+                android:inputType="text|textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -96,12 +100,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/spartan"
-                android:inputType="number" />
+                android:inputType="text|textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tituloCardExcursoes"
+        android:id="@+id/textView"
         android:layout_width="335dp"
         android:layout_height="35dp"
         android:layout_marginBottom="10dp"
@@ -133,7 +137,7 @@
         android:layout_width="275dp"
         android:layout_height="10dp"
         android:layout_marginBottom="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/tituloCardExcursoes"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/carregandocompleto" />
