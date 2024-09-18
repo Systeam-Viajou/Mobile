@@ -1,9 +1,5 @@
 package com.interdiciplinar.viajou.Telas.TelasEntrada;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.FirebaseAuthInvalidUserException;
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.interdiciplinar.viajou.MainActivity;
 import com.interdiciplinar.viajou.R;
