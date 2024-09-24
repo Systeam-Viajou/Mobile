@@ -64,7 +64,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/TituloCardEvento"
+            android:id="@+id/tituloCardEvento"
             android:layout_width="245dp"
             android:layout_height="31dp"
             android:layout_marginTop="16dp"
@@ -101,7 +101,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.289"
             app:layout_constraintStart_toEndOf="@+id/linhaEventos"
-            app:layout_constraintTop_toBottomOf="@+id/TituloCardEvento" />
+            app:layout_constraintTop_toBottomOf="@+id/tituloCardEvento" />
 
         <ImageView
             android:id="@+id/iconAcssesEventos"
