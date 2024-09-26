@@ -4,6 +4,364 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
     tools:context=".Telas.TelasEntrada.TelaPesquisa">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/viajoupequeno" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="274dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/spartan"
+        android:text="Selecione os tipos de evento que você gosta: "
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/show"
+        android:layout_width="344dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="25dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/showLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borda_card_pesquisa">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="115dp"
+                android:layout_height="96dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/showfoto" />
+
+            <TextView
+                android:id="@+id/titu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="Show"
+                android:textColor="#382469"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="196dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/spartan"
+                android:text="Musicas ao vivo, teatro, dança entre outros."
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img1"
+                app:layout_constraintTop_toBottomOf="@+id/titu1" />
+
+            <ImageView
+                android:id="@+id/imgShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/joia" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/festival"
+        android:layout_width="344dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="14dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/festivalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borda_card_pesquisa">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="115dp"
+                android:layout_height="96dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/festivalfoto" />
+
+            <TextView
+                android:id="@+id/titu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="Festival"
+                android:textColor="#382469"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="183dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/spartan"
+                android:text="Festivais gastronômicos, de dança, de música,  cultural e exposições."
+                android:textAlignment="center"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img2"
+                app:layout_constraintTop_toBottomOf="@+id/titu2" />
+
+            <ImageView
+                android:id="@+id/imgFestival"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/joia" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/exposicoes"
+        android:layout_width="344dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="14dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/festival">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/exposicoesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borda_card_pesquisa">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="115dp"
+                android:layout_height="96dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/exposicoesfoto" />
+
+            <TextView
+                android:id="@+id/titu3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="Exposições"
+                android:textColor="#382469"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="175dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/spartan"
+                android:text="Arte contemporânea, fotografias, esculturas"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img3"
+                app:layout_constraintTop_toBottomOf="@+id/titu3" />
+
+            <ImageView
+                android:id="@+id/imgExposicoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/joia" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/apresentacoes"
+        android:layout_width="344dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="14dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exposicoes">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/apresentacoesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borda_card_pesquisa">
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="115dp"
+                android:layout_height="96dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/apresentacaoesfoto" />
+
+            <TextView
+                android:id="@+id/titu4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="Apresentações"
+                android:textColor="#382469"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="175dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/spartan"
+                android:text="Teatro, música, dança e espetáculos culturais."
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img4"
+                app:layout_constraintTop_toBottomOf="@+id/titu4" />
+
+            <ImageView
+                android:id="@+id/imgApresentacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/joia" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/feiras"
+        android:layout_width="344dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="14dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apresentacoes">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/feirasLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borda_card_pesquisa">
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="115dp"
+                android:layout_height="96dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/feirafoto" />
+
+            <TextView
+                android:id="@+id/titu5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="Feiras"
+                android:textColor="#382469"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="177dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/spartan"
+                android:text="Eventos de negócios, artesanato, tecnologia e produtos regionais"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img5"
+                app:layout_constraintTop_toBottomOf="@+id/titu5" />
+
+            <ImageView
+                android:id="@+id/imgFeiras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/joia" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/ContinuarSms"
+        android:layout_width="348dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#805CD8"
+        android:fontFamily="@font/spartan_bold"
+        android:text="Entrar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feiras" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

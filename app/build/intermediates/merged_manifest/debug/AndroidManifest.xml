@@ -31,7 +31,7 @@
             android:exported="false"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
-            android:name="com.interdiciplinar.viajou.MainActivity"
+            android:name="com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen"
             android:exported="false" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaSMS"
@@ -50,7 +50,27 @@
             android:exported="false"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
-            android:name="com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen"
+            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaEventosFragment"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaExcursoesFragment"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaFigurinhasFragment"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaHomeFragment"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaTurismosFragment"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
+            android:name="com.interdiciplinar.viajou.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
