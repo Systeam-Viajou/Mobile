@@ -16,7 +16,7 @@
             android:exported="false"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Telas.Animacoes.SplashScreen"
             android:exported="false" />
         <activity
             android:name=".Telas.TelasEntrada.TelaSMS"
@@ -50,7 +50,7 @@
             android:theme="@style/Base.Theme.Viajou"
             android:exported="false"/>
         <activity
-            android:name=".Telas.Animacoes.SplashScreen"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
