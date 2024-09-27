@@ -18,6 +18,9 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Locale;
 
+import java.text.DateFormatSymbols;
+
+
 public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoViewHolder> {
 
     private List<Evento> eventos;
@@ -50,9 +53,19 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
             holder.iconAcssesEventos.setVisibility(View.GONE);
         }
 
-        // Formatando a data (dia e mês abreviado em português)
+        // Formatando a data (dia e mês abreviado em português sem ponto final)
         SimpleDateFormat dayFormat = new SimpleDateFormat("dd", Locale.getDefault());
-        SimpleDateFormat monthFormat = new SimpleDateFormat("MMM", new Locale("pt", "BR")); // Mês abreviado em português
+        SimpleDateFormat monthFormat = new SimpleDateFormat("MMM", new Locale("pt", "BR"));
+
+        // Personalizando os meses sem o ponto final
+        DateFormatSymbols dfs = new DateFormatSymbols(new Locale("pt", "BR")) {
+            @Override
+            public String[] getShortMonths() {
+                return new String[]{"jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"};
+            }
+        };
+        monthFormat.setDateFormatSymbols(dfs);
+
         String dia = dayFormat.format(evento.getData_inicio());
         String mes = monthFormat.format(evento.getData_inicio());
 
