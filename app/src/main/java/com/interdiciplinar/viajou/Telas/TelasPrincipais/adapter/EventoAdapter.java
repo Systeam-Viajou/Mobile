@@ -74,7 +74,7 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
 
         // Carregando imagem com Glide (imagem dinâmica a partir de uma URL)
         Glide.with(context)
-                .load("URL_DA_IMAGEM_AQUI") // Substitua pela URL da imagem correspondente ao evento
+                .load("https://lets.events/blog/wp-content/uploads/2022/12/direito-de-imagem-em-eventos.jpg") // Substitua pela URL da imagem correspondente ao evento
                 .into(holder.imgCardEventos);
     }
 

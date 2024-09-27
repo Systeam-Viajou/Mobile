@@ -68,6 +68,10 @@ public class TelaEventosFragment extends Fragment {
         eventos.add(mockEvento("Exposição de Arte", "Museu do Ipiranga, São Paulo", false, getRandomDate()));
         eventos.add(mockEvento("Feira de Tecnologia", "Lollapalooza, São Paulo", true, getRandomDate()));
         eventos.add(mockEvento("Maratona Solidária", "Parque Ibirapuera, São Paulo", false, getRandomDate()));
+        eventos.add(mockEvento("CCXP", "Rodovia dos imigrantes, São Paulo", true, getRandomDate()));
+        eventos.add(mockEvento("Bienal do livro", "Distrito Anhembi, São Paulo", true, getRandomDate()));
+        eventos.add(mockEvento("Só Track Boa Festival", "Neo Quimica Arena, São Paulo", false, getRandomDate()));
+
 
         return eventos;
     }
