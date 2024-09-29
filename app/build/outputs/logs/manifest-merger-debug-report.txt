@@ -128,12 +128,12 @@ ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\
 		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:19:13-53
 	android:name
 		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:17:13-61
-activity#com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen
+activity#com.interdiciplinar.viajou.MainActivity
 ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
 		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:21:13-57
+		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:21:13-41
 activity#com.interdiciplinar.viajou.Telas.TelasEntrada.TelaSMS
 ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:23:9-26:56
 	android:exported
@@ -206,12 +206,12 @@ ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\
 		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:52:13-53
 	android:name
 		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:51:19-77
-activity#com.interdiciplinar.viajou.MainActivity
+activity#com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen
 ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:54:9-62:20
 	android:exported
 		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:56:13-36
 	android:name
-		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:55:13-41
+		ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:55:13-57
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:57:13-61:29
 action#android.intent.action.MAIN

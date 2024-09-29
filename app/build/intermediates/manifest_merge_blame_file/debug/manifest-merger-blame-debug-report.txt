@@ -54,8 +54,8 @@
 34-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:19:13-53
 35        <activity
 35-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:20:9-22:40
-36            android:name="com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen"
-36-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:21:13-57
+36            android:name="com.interdiciplinar.viajou.MainActivity"
+36-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:21:13-41
 37            android:exported="false" />
 37-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:22:13-37
 38        <activity
@@ -132,8 +132,8 @@
 73-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:52:13-53
 74        <activity
 74-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:54:9-62:20
-75            android:name="com.interdiciplinar.viajou.MainActivity"
-75-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:55:13-41
+75            android:name="com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen"
+75-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:55:13-57
 76            android:exported="true" >
 76-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:56:13-36
 77            <intent-filter>
