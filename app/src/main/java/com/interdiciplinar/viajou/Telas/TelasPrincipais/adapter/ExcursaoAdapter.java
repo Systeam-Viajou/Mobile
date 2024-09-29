@@ -11,6 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.model.Excursao;
 import com.interdiciplinar.viajou.R;
+
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
@@ -40,12 +43,24 @@ public class ExcursaoAdapter extends RecyclerView.Adapter<ExcursaoAdapter.Excurs
         holder.empresaCardExcursoes.setText(excursao.getEmpresa());
         holder.locCardExcursoes.setText(excursao.getEndereco());
 
+        // Verificando acessibilidade e exibindo ícone correspondente
+        if (excursao.isAcessibilidade()) {
+            holder.iconAcssesExcur.setVisibility(View.VISIBLE);
+        } else {
+            holder.iconAcssesExcur.setVisibility(View.GONE);
+        }
+
         // Formatando as datas
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
         holder.dataCardExcursoes.setText(dateFormat.format(excursao.getData_inicio()));
 
-        // Preencher o preço
-        holder.precoCardExcursoes.setText(String.valueOf(excursao.getPreco_total()));
+        // Formatar o preço com separador de milhar e sem mostrar .0 para inteiros
+        DecimalFormat decimalFormat = new DecimalFormat("#,###.##");
+        DecimalFormatSymbols symbols = new DecimalFormatSymbols();
+        symbols.setGroupingSeparator('.');
+        symbols.setDecimalSeparator(',');
+        decimalFormat.setDecimalFormatSymbols(symbols);
+        holder.precoCardExcursoes.setText(decimalFormat.format(excursao.getPreco_total()));
 
         // Definindo quantidade de pessoas
         holder.qntdPessoasCardExcur.setText(excursao.getQntd_pessoas());
@@ -66,7 +81,7 @@ public class ExcursaoAdapter extends RecyclerView.Adapter<ExcursaoAdapter.Excurs
         TextView maxPessoasCardExcur;
         TextView precoCardExcursoes;
         Button btMaisInfoCardExcursoes;
-        ImageView imgCardExcursoes;
+        ImageView imgCardExcursoes, iconAcssesExcur;
 
         public ExcursaoViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -79,6 +94,7 @@ public class ExcursaoAdapter extends RecyclerView.Adapter<ExcursaoAdapter.Excurs
             precoCardExcursoes = itemView.findViewById(R.id.precoCardExcursoes);
             btMaisInfoCardExcursoes = itemView.findViewById(R.id.btMaisInfoCardExcursoes);
             imgCardExcursoes = itemView.findViewById(R.id.imgCardExcursoes);
+            iconAcssesExcur = itemView.findViewById(R.id.iconAcssesExcur);
         }
     }
 }
