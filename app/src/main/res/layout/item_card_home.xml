@@ -27,6 +27,14 @@
             app:layout_constraintTop_toTopOf="parent"
             app:shapeAppearanceOverlay="@style/redondo" />
 
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="28dp"
+            android:layout_height="26dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/iconeventohome" />
+
         <TextView
             android:id="@+id/tituloCardHome"
             android:layout_width="wrap_content"
@@ -39,6 +47,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imgCardHome" />
+
+        <ImageView
+            android:id="@+id/iconIdentCardHome"
+            android:layout_width="35dp"
+            android:layout_height="32dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
