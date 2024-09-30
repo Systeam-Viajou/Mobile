@@ -37,8 +37,13 @@
         android:layout_marginTop="42dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/fundo_input"
+        android:imeOptions="actionNext"
+        android:maxLength="1"
         android:ems="10"
-        android:inputType="text"
+        android:fontFamily="@font/spartan_bold"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/et_digit3"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -48,9 +53,14 @@
         android:layout_height="60dp"
         android:layout_marginTop="42dp"
         android:layout_marginEnd="10dp"
+        android:imeOptions="actionNext"
         android:background="@drawable/fundo_input"
+        android:maxLength="1"
         android:ems="10"
-        android:inputType="text"
+        android:fontFamily="@font/spartan_bold"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/et_digit2"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -60,9 +70,14 @@
         android:layout_height="60dp"
         android:layout_marginTop="42dp"
         android:layout_marginEnd="10dp"
+        android:imeOptions="actionNext"
         android:background="@drawable/fundo_input"
+        android:maxLength="1"
         android:ems="10"
-        android:inputType="text"
+        android:fontFamily="@font/spartan_bold"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/et_digit5"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -72,9 +87,14 @@
         android:layout_height="60dp"
         android:layout_marginTop="42dp"
         android:layout_marginEnd="10dp"
+        android:imeOptions="actionNext"
         android:background="@drawable/fundo_input"
+        android:maxLength="1"
         android:ems="10"
-        android:inputType="text"
+        android:fontFamily="@font/spartan_bold"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/et_digit4"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -84,9 +104,14 @@
         android:layout_height="60dp"
         android:layout_marginTop="42dp"
         android:layout_marginEnd="10dp"
+        android:imeOptions="actionNext"
         android:background="@drawable/fundo_input"
+        android:maxLength="1"
         android:ems="10"
-        android:inputType="text"
+        android:fontFamily="@font/spartan_bold"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/et_digit6"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -96,9 +121,14 @@
         android:layout_height="60dp"
         android:layout_marginTop="42dp"
         android:layout_marginEnd="20dp"
+        android:imeOptions="actionNext"
         android:background="@drawable/fundo_input"
+        android:maxLength="1"
         android:ems="10"
-        android:inputType="text"
+        android:fontFamily="@font/spartan_bold"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -134,7 +164,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/reenviar"
         android:layout_width="93dp"
         android:layout_height="21dp"
         android:layout_marginTop="4dp"
@@ -146,4 +176,15 @@
         android:textColor="#382469"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_digit6" />
+
+    <TextView
+        android:id="@+id/textTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/spartan"
+        android:text="2:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reenviar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,8 +9,17 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthInvalidUserException;
+import com.google.firebase.auth.FirebaseUser;
 import com.interdiciplinar.viajou.MainActivity;
 import com.interdiciplinar.viajou.R;
 
@@ -56,7 +65,15 @@ public class TelaLogin extends AppCompatActivity {
                 msgErroSenha.setVisibility(View.INVISIBLE);
                 msgErroEmail.setVisibility(View.INVISIBLE);
 
-                if (txtEmail.equals("") || txtSenha.equals("")){
+                if(txtEmail.equals("")){
+                    email.setBackground(getResources().getDrawable(R.drawable.fundo_erro));
+                    msgErroEmail.setVisibility(View.VISIBLE);
+                }
+                else if (txtSenha.equals("")) {
+                    senha.setBackground(getResources().getDrawable(R.drawable.fundo_erro));
+                    msgErroSenha.setVisibility(View.VISIBLE);
+                }
+                else if (txtEmail.equals("") && txtSenha.equals("")){
                     senha.setBackground(getResources().getDrawable(R.drawable.fundo_erro));
                     email.setBackground(getResources().getDrawable(R.drawable.fundo_erro));
                     msgErroSenha.setVisibility(View.VISIBLE);

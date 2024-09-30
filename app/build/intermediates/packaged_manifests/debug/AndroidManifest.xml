@@ -8,7 +8,13 @@
         android:minSdkVersion="30"
         android:targetSdkVersion="34" />
 
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
@@ -38,7 +44,7 @@
             android:name="com.interdiciplinar.viajou.MainActivity"
             android:exported="false" />
         <activity
-            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaSMS"
+            android:name="com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen"
             android:exported="false"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
@@ -50,7 +56,7 @@
             android:exported="false"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
-            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaPesquisa"
+            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaSMS"
             android:exported="false"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
@@ -74,8 +80,9 @@
             android:exported="false"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
-            android:name="com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen"
-            android:exported="true" >
+            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaPesquisa"
+            android:exported="true"
+            android:theme="@style/Base.Theme.Viajou" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -58,14 +58,15 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/telefone"
+            android:id="@+id/telefoneLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="16dp"
-            android:inputType="number"
-            android:hint="Telefone">
+            android:hint="Telefone"
+            android:inputType="number">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/telefone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/spartan"
@@ -89,7 +90,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/confirmarSenha"
+            android:id="@+id/confirmarSenhaLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="16dp"
@@ -97,6 +98,7 @@
             android:hint="Confirmar senha">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirmarSenha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/spartan"

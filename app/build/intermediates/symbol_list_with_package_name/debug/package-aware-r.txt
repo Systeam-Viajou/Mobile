@@ -1428,6 +1428,7 @@ color browser_actions_bg_grey
 color browser_actions_divider_color
 color browser_actions_text_color
 color browser_actions_title_color
+color button
 color button_material_dark
 color button_material_light
 color call_notification_answer_color
@@ -1493,6 +1494,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color m3_appbar_overlay_color
@@ -3110,6 +3112,7 @@ drawable facebook
 drawable fadecardeventos
 drawable feirafoto
 drawable festivalfoto
+drawable fundo_cadastro_erro
 drawable fundo_erro
 drawable fundo_genero
 drawable fundo_input
@@ -3396,6 +3399,7 @@ id collapseActionView
 id compress
 id confirm_button
 id confirmarSenha
+id confirmarSenhaLayout
 id constraint
 id container
 id content
@@ -3406,6 +3410,7 @@ id coordinator
 id cos
 id counterclockwise
 id cpf
+id cpfLayout
 id cradle
 id currentState
 id custom
@@ -3532,6 +3537,7 @@ id ignoreRequest
 id image
 id imageCalendar
 id imageView
+id imageView11
 id imageView2
 id imageView3
 id imageView4
@@ -3711,6 +3717,7 @@ id radio
 id ratio
 id rectangles
 id recyclerView
+id reenviar
 id report_drawn
 id reverseSawtooth
 id right
@@ -3766,6 +3773,7 @@ id snackbar_text
 id snap
 id snapMargins
 id sobrenome
+id sobrenomeLayout
 id south
 id spacer
 id special_effects_controller_view_tag
@@ -3807,6 +3815,7 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id telefone
+id telefoneLayout
 id text
 id text2
 id textEnd
@@ -3818,7 +3827,6 @@ id textView
 id textView14
 id textView15
 id textView2
-id textView4
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
