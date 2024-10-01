@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.interdiciplinar.viajou.app-mergeDebugResources-42:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "outputFile": "com.interdiciplinar.viajou.app-mergeDebugResources-50:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\joaopedro-ieg\\.gradle\\caches\\transforms-3\\fce6cbf64b6aefd900fe3a60fc1df73b\\transformed\\material-1.12.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "source": "C:\\Users\\joaopedro-ieg\\.gradle\\caches\\transforms-3\\8f0109dda9b4e153d0bb3d2e6dd78558\\transformed\\material-1.12.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
