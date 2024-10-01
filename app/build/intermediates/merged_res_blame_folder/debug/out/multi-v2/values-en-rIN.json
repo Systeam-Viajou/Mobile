@@ -4,24 +4,7 @@
             "outputFile": "com.interdiciplinar.viajou.app-mergeDebugResources-41:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\joaopedro-ieg\\.gradle\\caches\\transforms-3\\0463523385bc05071da955d504c9a1f1\\transformed\\navigation-ui-2.7.7\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,161",
-                        "endColumns": "105,116",
-                        "endOffsets": "156,273"
-                    },
-                    "to": {
-                        "startLines": "36,37",
-                        "startColumns": "4,4",
-                        "startOffsets": "3481,3587",
-                        "endColumns": "105,116",
-                        "endOffsets": "3582,3699"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\joaopedro-ieg\\.gradle\\caches\\transforms-3\\d74182935ff0b7920e40df7dae6a6e5a\\transformed\\appcompat-1.7.0\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\evellynnakamura-ieg\\.gradle\\caches\\transforms-3\\d74182935ff0b7920e40df7dae6a6e5a\\transformed\\appcompat-1.7.0\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\joaopedro-ieg\\.gradle\\caches\\transforms-3\\aaf657dd371bfc48f1473d56cd508ae8\\transformed\\core-1.13.0\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "source": "C:\\Users\\evellynnakamura-ieg\\.gradle\\caches\\transforms-3\\0463523385bc05071da955d504c9a1f1\\transformed\\navigation-ui-2.7.7\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,161",
+                        "endColumns": "105,116",
+                        "endOffsets": "156,273"
+                    },
+                    "to": {
+                        "startLines": "36,37",
+                        "startColumns": "4,4",
+                        "startOffsets": "3481,3587",
+                        "endColumns": "105,116",
+                        "endOffsets": "3582,3699"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\evellynnakamura-ieg\\.gradle\\caches\\transforms-3\\aaf657dd371bfc48f1473d56cd508ae8\\transformed\\core-1.13.0\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

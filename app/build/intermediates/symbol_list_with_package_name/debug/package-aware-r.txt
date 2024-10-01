@@ -3062,6 +3062,7 @@ drawable design_snackbar_background
 drawable divisao
 drawable facebook
 drawable fadecardeventos
+drawable fundo_card_home
 drawable fundo_genero
 drawable fundo_input
 drawable fundoimagens
@@ -3089,6 +3090,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
 drawable iconacsses
 drawable iconempresacardexcursoes
+drawable iconeventocardhome
 drawable iconeventosnavbar
 drawable iconexcursoesnavbar
 drawable iconfigurinhasnavbar
@@ -3098,6 +3100,7 @@ drawable iconloccardexcursoes
 drawable iconmoneycardexcursoes
 drawable iconpersoncardexcursoes
 drawable icons
+drawable iconturismocardhome
 drawable iconturismonavbar
 drawable imagemlogin
 drawable imagemlogo
@@ -3106,6 +3109,8 @@ drawable imgcardeventos
 drawable imgcardexcursoes
 drawable imgcardhome
 drawable imgcardturismos
+drawable imgcarrossel
+drawable imgsemcoteudo_home
 drawable indeterminate_static
 drawable linha_arredondada
 drawable linhacardeventos
@@ -3183,6 +3188,8 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable rotate_right
+drawable setadirecarrossel
+drawable setaesqcarrossel
 drawable spinner_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3305,6 +3312,7 @@ id cache_measures
 id cadastrar
 id callMeasure
 id cancel_button
+id carrosselRecycler
 id carryVelocity
 id center
 id centerCrop
@@ -3422,6 +3430,8 @@ id floating
 id forever
 id fragment_container_view_tag
 id frameLayout
+id frameLayout2
+id frameLayout3
 id frost
 id fullscreen_header
 id ghost_view
@@ -3444,6 +3454,7 @@ id iconAcssesEventos
 id iconAcssesExcur
 id iconDataExcursoes
 id iconEmpresaExcursoes
+id iconIdentCardHome
 id iconLocExcursoes
 id iconPerfilExcursoes
 id iconPrecoExcursoes
@@ -3465,6 +3476,7 @@ id imgCardEventos
 id imgCardExcursoes
 id imgCardHome
 id imgCardTurismos
+id imgCarrossel
 id immediateStop
 id included
 id indeterminate
@@ -3617,7 +3629,13 @@ id qntdPessoasCardExcur
 id radio
 id ratio
 id rectangles
-id recyclerView
+id recyclerContinuarHome
+id recyclerEventos
+id recyclerExcursoes
+id recyclerExperienciaHome
+id recyclerPertoHome
+id recyclerPopularesHome
+id recyclerRecomenHome
 id report_drawn
 id reverseSawtooth
 id right
@@ -3651,6 +3669,8 @@ id select_dialog_listview
 id selected
 id selection_type
 id senha
+id setaDireCarrossel
+id setaEsqueCarrrossel
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3753,6 +3773,11 @@ id transition_transform
 id triangle
 id turismos
 id txt
+id txtContinuarHome
+id txtExperienciaHome
+id txtPertoHome
+id txtPopularesHome
+id txtRecomendadosHome
 id unchecked
 id uniform
 id unlabeled
