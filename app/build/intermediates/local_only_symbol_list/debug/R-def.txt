@@ -34,6 +34,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable iconacsses
 drawable iconempresacardexcursoes
+drawable iconeventocardhome
 drawable iconeventosnavbar
 drawable iconexcursoesnavbar
 drawable iconfigurinhasnavbar
@@ -43,6 +44,7 @@ drawable iconloccardexcursoes
 drawable iconmoneycardexcursoes
 drawable iconpersoncardexcursoes
 drawable icons
+drawable iconturismocardhome
 drawable iconturismonavbar
 drawable imagemlogin
 drawable imagemlogo
@@ -114,6 +116,7 @@ id iconAcssesEventos
 id iconAcssesExcur
 id iconDataExcursoes
 id iconEmpresaExcursoes
+id iconIdentCardHome
 id iconLocExcursoes
 id iconPerfilExcursoes
 id iconPrecoExcursoes

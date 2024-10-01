@@ -9,228 +9,228 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <permission
-13-->[androidx.core:core:1.13.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\aaf657dd371bfc48f1473d56cd508ae8\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+13-->[androidx.core:core:1.13.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\aaf657dd371bfc48f1473d56cd508ae8\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
 14        android:name="com.interdiciplinar.viajou.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-14-->[androidx.core:core:1.13.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\aaf657dd371bfc48f1473d56cd508ae8\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+14-->[androidx.core:core:1.13.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\aaf657dd371bfc48f1473d56cd508ae8\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
 15        android:protectionLevel="signature" />
-15-->[androidx.core:core:1.13.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\aaf657dd371bfc48f1473d56cd508ae8\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+15-->[androidx.core:core:1.13.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\aaf657dd371bfc48f1473d56cd508ae8\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
 16
 17    <uses-permission android:name="com.interdiciplinar.viajou.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-17-->[androidx.core:core:1.13.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\aaf657dd371bfc48f1473d56cd508ae8\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
-17-->[androidx.core:core:1.13.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\aaf657dd371bfc48f1473d56cd508ae8\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+17-->[androidx.core:core:1.13.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\aaf657dd371bfc48f1473d56cd508ae8\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.13.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\aaf657dd371bfc48f1473d56cd508ae8\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 18
 19    <application
-19-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:7:5-67:19
+19-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:7:5-67:19
 20        android:allowBackup="true"
-20-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:8:9-35
+20-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:8:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.13.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\aaf657dd371bfc48f1473d56cd508ae8\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+21-->[androidx.core:core:1.13.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\aaf657dd371bfc48f1473d56cd508ae8\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 22        android:dataExtractionRules="@xml/data_extraction_rules"
-22-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:9:9-65
+22-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:9:9-65
 23        android:debuggable="true"
 24        android:extractNativeLibs="false"
 25        android:fullBackupContent="@xml/backup_rules"
-25-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:10:9-54
+25-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:10:9-54
 26        android:icon="@mipmap/ic_launcher"
-26-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:11:9-43
+26-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:11:9-43
 27        android:label="@string/app_name"
-27-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:12:9-41
+27-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:12:9-41
 28        android:supportsRtl="true"
-28-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:13:9-35
+28-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:13:9-35
 29        android:testOnly="true"
 30        android:theme="@style/Theme.FragmentAndroid" >
-30-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:14:9-53
+30-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:14:9-53
 31        <activity
-31-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:16:9-19:56
+31-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:16:9-19:56
 32            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaCadastro2"
-32-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:17:13-61
+32-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:17:13-61
 33            android:exported="false"
-33-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:18:13-37
+33-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:18:13-37
 34            android:theme="@style/Base.Theme.Viajou" />
-34-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:19:13-53
+34-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:19:13-53
 35        <activity
-35-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:20:9-22:40
+35-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:20:9-22:40
 36            android:name="com.interdiciplinar.viajou.MainActivity"
-36-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:21:13-41
+36-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:21:13-41
 37            android:exported="false" />
-37-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:22:13-37
+37-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:22:13-37
 38        <activity
-38-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:23:9-26:56
+38-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:23:9-26:56
 39            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaSMS"
-39-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:24:13-55
+39-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:24:13-55
 40            android:exported="false"
-40-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:25:13-37
+40-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:25:13-37
 41            android:theme="@style/Base.Theme.Viajou" />
-41-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:26:13-53
+41-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:26:13-53
 42        <activity
-42-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:27:9-30:56
+42-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:27:9-30:56
 43            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaLogin"
-43-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:28:13-57
+43-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:28:13-57
 44            android:exported="false"
-44-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:29:13-37
+44-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:29:13-37
 45            android:theme="@style/Base.Theme.Viajou" />
-45-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:30:13-53
+45-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:30:13-53
 46        <activity
-46-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:31:9-34:56
+46-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:31:9-34:56
 47            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaCadastro"
-47-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:32:13-60
+47-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:32:13-60
 48            android:exported="false"
-48-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:33:13-37
+48-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:33:13-37
 49            android:theme="@style/Base.Theme.Viajou" />
-49-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:34:13-53
+49-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:34:13-53
 50        <activity
-50-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:35:9-38:56
+50-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:35:9-38:56
 51            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaPesquisa"
-51-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:36:13-60
+51-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:36:13-60
 52            android:exported="false"
-52-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:37:13-37
+52-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:37:13-37
 53            android:theme="@style/Base.Theme.Viajou" />
-53-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:38:13-53
+53-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:38:13-53
 54        <activity
-54-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:39:9-41:39
+54-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:39:9-41:39
 55            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaEventosFragment"
-55-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:39:19-76
+55-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:39:19-76
 56            android:exported="false"
-56-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:41:13-37
+56-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:41:13-37
 57            android:theme="@style/Base.Theme.Viajou" />
-57-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:40:13-53
+57-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:40:13-53
 58        <activity
-58-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:42:9-44:39
+58-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:42:9-44:39
 59            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaExcursoesFragment"
-59-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:42:19-78
+59-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:42:19-78
 60            android:exported="false"
-60-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:44:13-37
+60-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:44:13-37
 61            android:theme="@style/Base.Theme.Viajou" />
-61-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:43:13-53
+61-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:43:13-53
 62        <activity
-62-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:45:9-47:39
+62-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:45:9-47:39
 63            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaFigurinhasFragment"
-63-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:45:19-79
+63-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:45:19-79
 64            android:exported="false"
-64-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:47:13-37
+64-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:47:13-37
 65            android:theme="@style/Base.Theme.Viajou" />
-65-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:46:13-53
+65-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:46:13-53
 66        <activity
-66-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:48:9-50:39
+66-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:48:9-50:39
 67            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaHomeFragment"
-67-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:48:19-73
+67-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:48:19-73
 68            android:exported="false"
-68-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:50:13-37
+68-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:50:13-37
 69            android:theme="@style/Base.Theme.Viajou" />
-69-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:49:13-53
+69-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:49:13-53
 70        <activity
-70-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:51:9-53:39
+70-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:51:9-53:39
 71            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaTurismosFragment"
-71-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:51:19-77
+71-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:51:19-77
 72            android:exported="false"
-72-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:53:13-37
+72-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:53:13-37
 73            android:theme="@style/Base.Theme.Viajou" />
-73-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:52:13-53
+73-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:52:13-53
 74        <activity
-74-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:54:9-62:20
+74-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:54:9-62:20
 75            android:name="com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen"
-75-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:55:13-57
+75-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:55:13-57
 76            android:exported="true" >
-76-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:56:13-36
+76-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:56:13-36
 77            <intent-filter>
-77-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:57:13-61:29
+77-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:57:13-61:29
 78                <action android:name="android.intent.action.MAIN" />
-78-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:58:17-69
-78-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:58:25-66
+78-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:58:17-69
+78-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:58:25-66
 79
 80                <category android:name="android.intent.category.LAUNCHER" />
-80-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:60:17-77
-80-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:60:27-74
+80-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:60:17-77
+80-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:60:27-74
 81            </intent-filter>
 82        </activity>
 83
 84        <meta-data
-84-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:64:9-66:57
+84-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:64:9-66:57
 85            android:name="preloaded_fonts"
-85-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:65:13-43
+85-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:65:13-43
 86            android:resource="@array/preloaded_fonts" />
-86-->C:\Users\evellynnakamura-ieg\AndroidStudios\AppViajou\Mobile\app\src\main\AndroidManifest.xml:66:13-54
+86-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:66:13-54
 87
 88        <provider
-88-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+88-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
 89            android:name="androidx.startup.InitializationProvider"
-89-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+89-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
 90            android:authorities="com.interdiciplinar.viajou.androidx-startup"
-90-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+90-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
 91            android:exported="false" >
-91-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+91-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
 92            <meta-data
-92-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+92-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
 93                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-93-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+93-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
 94                android:value="androidx.startup" />
-94-->[androidx.emoji2:emoji2:1.3.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+94-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\9dd2e9a74b40601020fbafb00a5f460a\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
 95            <meta-data
-95-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\90e800b5334f3277e7ac4e5d7420cebc\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+95-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\90e800b5334f3277e7ac4e5d7420cebc\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
 96                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-96-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\90e800b5334f3277e7ac4e5d7420cebc\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+96-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\90e800b5334f3277e7ac4e5d7420cebc\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
 97                android:value="androidx.startup" />
-97-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\90e800b5334f3277e7ac4e5d7420cebc\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+97-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\90e800b5334f3277e7ac4e5d7420cebc\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
 98            <meta-data
-98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
 99                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
 100                android:value="androidx.startup" />
-100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
 101        </provider>
 102
 103        <uses-library
-103-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+103-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
 104            android:name="androidx.window.extensions"
-104-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+104-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
 105            android:required="false" />
-105-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+105-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
 106        <uses-library
-106-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+106-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
 107            android:name="androidx.window.sidecar"
-107-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+107-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
 108            android:required="false" />
-108-->[androidx.window:window:1.0.0] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+108-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\ac01e5ddc0ca3c212e1127434ce398f6\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
 109
 110        <receiver
-110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
 111            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
 112            android:directBootAware="false"
-112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
 113            android:enabled="true"
-113-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+113-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
 114            android:exported="true"
-114-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+114-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
 115            android:permission="android.permission.DUMP" >
-115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
 116            <intent-filter>
-116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
 117                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-117-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-117-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
 118            </intent-filter>
 119            <intent-filter>
-119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
 120                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-120-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-120-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
 121            </intent-filter>
 122            <intent-filter>
-122-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
 123                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-123-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-123-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
 124            </intent-filter>
 125            <intent-filter>
-125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
 126                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-126-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-126-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\evellynnakamura-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2a28c13e568c32b009e24d033f77c7e8\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
 127            </intent-filter>
 128        </receiver>
 129    </application>

@@ -3096,6 +3096,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
 drawable iconacsses
 drawable iconempresacardexcursoes
+drawable iconeventocardhome
 drawable iconeventosnavbar
 drawable iconexcursoesnavbar
 drawable iconfigurinhasnavbar
@@ -3105,6 +3106,7 @@ drawable iconloccardexcursoes
 drawable iconmoneycardexcursoes
 drawable iconpersoncardexcursoes
 drawable icons
+drawable iconturismocardhome
 drawable iconturismonavbar
 drawable imagemlogin
 drawable imagemlogo
@@ -3469,6 +3471,7 @@ id iconAcssesEventos
 id iconAcssesExcur
 id iconDataExcursoes
 id iconEmpresaExcursoes
+id iconIdentCardHome
 id iconLocExcursoes
 id iconPerfilExcursoes
 id iconPrecoExcursoes

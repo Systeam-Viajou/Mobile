@@ -24,6 +24,10 @@
         "source": "com.interdiciplinar.viajou.app-main-46:/layout/activity_tela_login.xml"
     },
     {
+        "merged": "com.interdiciplinar.viajou.app-merged_res-44:/drawable_iconturismocardhome.xml.flat",
+        "source": "com.interdiciplinar.viajou.app-main-46:/drawable/iconturismocardhome.xml"
+    },
+    {
         "merged": "com.interdiciplinar.viajou.app-merged_res-44:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
         "source": "com.interdiciplinar.viajou.app-main-46:/mipmap-xhdpi/ic_launcher_foreground.webp"
     },
@@ -258,6 +262,10 @@
     {
         "merged": "com.interdiciplinar.viajou.app-merged_res-44:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
         "source": "com.interdiciplinar.viajou.app-main-46:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.interdiciplinar.viajou.app-merged_res-44:/drawable_iconeventocardhome.xml.flat",
+        "source": "com.interdiciplinar.viajou.app-main-46:/drawable/iconeventocardhome.xml"
     },
     {
         "merged": "com.interdiciplinar.viajou.app-merged_res-44:/layout_fragment_tela_eventos.xml.flat",
