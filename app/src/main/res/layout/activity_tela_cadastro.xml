@@ -80,7 +80,7 @@
                     android:id="@+id/dataNasc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:enabled="false"
+                    android:enabled="true"
                     android:fontFamily="@font/spartan"
                     android:textColor="#000000" />
             </com.google.android.material.textfield.TextInputLayout>
