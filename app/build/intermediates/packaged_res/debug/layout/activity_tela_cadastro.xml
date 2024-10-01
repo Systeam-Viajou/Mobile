@@ -29,25 +29,27 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/nome"
+            android:id="@+id/nomeLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="Nome">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/spartan" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/sobrenome"
+            android:id="@+id/sobrenomeLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="16dp"
             android:hint="Sobrenome">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sobrenome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/spartan" />
@@ -83,23 +85,34 @@
                     android:textColor="#000000" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
-        
-        <Spinner
-            android:id="@+id/spinnerGenero"
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/fundo_genero"
-            android:prompt="@string/selecione_genero" />
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerGenero"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@drawable/fundo_genero"
+                android:prompt="@string/selecione_genero" />
+
+
+        </LinearLayout>
+
+
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/cpf"
+            android:id="@+id/cpfLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="16dp"
             android:hint="CPF">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cpf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/spartan"
@@ -145,5 +158,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/carregando" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="53dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/vector" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
