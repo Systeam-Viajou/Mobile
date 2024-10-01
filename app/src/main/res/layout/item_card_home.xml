@@ -40,6 +40,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imgCardHome" />
 
+        <ImageView
+            android:id="@+id/iconIdentCardHome"
+            android:layout_width="35dp"
+            android:layout_height="32dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
