@@ -51,7 +51,7 @@ public class TelaHomeFragment extends Fragment {
         recyclerRecomendar = view.findViewById(R.id.recyclerRecomenHome);
         recyclerRecomendar.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
-        Button bt = view.findViewById(R.id.btTool);
+//        Button bt = view.findViewById(R.id.btTool);
 
         return view;
     }

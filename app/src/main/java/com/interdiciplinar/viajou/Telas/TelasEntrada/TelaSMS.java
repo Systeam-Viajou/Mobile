@@ -1,9 +1,13 @@
 package com.interdiciplinar.viajou.Telas.TelasEntrada;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.content.res.AppCompatResources;
+import androidx.core.graphics.drawable.DrawableCompat;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.telephony.SmsManager;
 import android.text.Editable;
@@ -20,11 +24,12 @@ import java.util.Random;
 
 public class TelaSMS extends AppCompatActivity {
     String pinGerado, telefone;
-    TextView reenviar;
+    TextView reenviar, textTimer;
     EditText etDigit1, etDigit2, etDigit3, etDigit4, etDigit5, etDigit6;
     boolean isPinValido = true; // Variável para controlar a validade do PIN
     Handler handler = new Handler(); // Handler para lidar com a expiração do PIN
     Runnable pinExpiracaoRunnable;
+    Drawable rotate_right;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +37,14 @@ public class TelaSMS extends AppCompatActivity {
         setContentView(R.layout.activity_tela_sms);
 
         reenviar = findViewById(R.id.reenviar);
+        textTimer = findViewById(R.id.textTimer);
+        rotate_right = AppCompatResources.getDrawable(this, R.drawable.rotate_right);
+
+        reenviar.setTextColor(getResources().getColor(R.color.gray));
+
+        rotate_right = DrawableCompat.wrap(rotate_right);
+        DrawableCompat.setTint(rotate_right, getResources().getColor(R.color.gray));
+        reenviar.setCompoundDrawablesWithIntrinsicBounds(rotate_right, null, null, null);
 
         Bundle bundle = getIntent().getExtras();
         telefone = bundle.getString("telefone");
@@ -70,8 +83,14 @@ public class TelaSMS extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 enviarSMS(); // Reenvia o SMS e reinicia o tempo de expiração
+                reenviar.setTextColor(getResources().getColor(R.color.gray));
+
+                rotate_right = DrawableCompat.wrap(rotate_right);
+                DrawableCompat.setTint(rotate_right, getResources().getColor(R.color.gray));
+                reenviar.setCompoundDrawablesWithIntrinsicBounds(rotate_right, null, null, null);
             }
         });
+        reenviar.setEnabled(false);
     }
 
     // Função para configurar TextWatchers
@@ -121,8 +140,6 @@ public class TelaSMS extends AppCompatActivity {
         String msg = "Código de verificação: " + pinGerado;
         sms.sendTextMessage(telefone, null, msg, null, null);
 
-        Toast.makeText(this, "PIN enviado: " + pinGerado, Toast.LENGTH_SHORT).show();
-
         // Iniciar a contagem regressiva para expiração do PIN
         iniciarTempoExpiracao();
     }
@@ -136,17 +153,29 @@ public class TelaSMS extends AppCompatActivity {
             handler.removeCallbacks(pinExpiracaoRunnable);
         }
 
-        // Configura o Runnable para expirar o PIN após 5 minutos (300000 milissegundos)
-        pinExpiracaoRunnable = new Runnable() {
-            @Override
-            public void run() {
-                isPinValido = false; // PIN expirou
+        // Inicia a contagem regressiva com CountDownTimer
+        new CountDownTimer(120000, 1000) { //  atualiza a cada 1 segundo
+            public void onTick(long millisUntilFinished) {
+                // Atualiza o TextView com o tempo restante formatado (mm:ss)
+                long minutes = millisUntilFinished / 60000;
+                long seconds = (millisUntilFinished % 60000) / 1000;
+                String timeRemaining = String.format("%02d:%02d", minutes, seconds);
+                textTimer.setText(timeRemaining);
+            }
+
+            public void onFinish() {
+                // Quando o tempo acabar, expira o PIN e notifica o usuário
+                isPinValido = false;
+                reenviar.setEnabled(true);
+                reenviar.setTextColor(getResources().getColor(R.color.reenviar));
+                DrawableCompat.setTint(rotate_right, getResources().getColor(R.color.reenviar));
+                reenviar.setCompoundDrawablesWithIntrinsicBounds(rotate_right, null, null, null);
                 Toast.makeText(TelaSMS.this, "PIN expirado. Solicite um novo.", Toast.LENGTH_LONG).show();
             }
-        };
+        }.start();
 
-
-        // Executa o Runnable após 5 minutos
-        handler.postDelayed(pinExpiracaoRunnable, 300000);
+        // Executa o Runnable após 2 minutos
+        handler.postDelayed(pinExpiracaoRunnable, 120000);
     }
+
 }
