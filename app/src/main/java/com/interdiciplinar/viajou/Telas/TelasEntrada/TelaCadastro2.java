@@ -1,21 +1,20 @@
 package com.interdiciplinar.viajou.Telas.TelasEntrada;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.Observer;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.os.Bundle;
+import android.os.Build;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -29,6 +28,8 @@ import android.Manifest;
 import com.interdiciplinar.viajou.Models.Usuario;
 import com.interdiciplinar.viajou.R;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import android.content.pm.PackageManager;
@@ -47,7 +48,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class TelaCadastro2 extends AppCompatActivity {
     Boolean retorno = false;
-    String txtNome, txtEmail, txtSenha, txtSobrenome, txtCpf, txtDataNasc, txtGenero, txtTelefone, txtUsername;
+    Boolean permissao;
+    String txtNome, txtEmail, txtSenha, txtSobrenome, txtCpf, txtDataNasc, txtGenero, txtTelefone, txtUsername, telefoneLimpo;
     Retrofit retrofit;
     int verificador = 0;
     TextInputEditText usernameEditText;
@@ -63,15 +65,71 @@ public class TelaCadastro2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_cadastro2);
-        requestSmsPermission();
 
-        String API = "https://apiviajou.onrender.com";
+        // Checa se as permissões de SMS já foram concedidas
+        if (!checkSMSPermissions()) {
+            // Se não foram concedidas, solicita as permissões
+            requestSMSPermissions();
+        } else {
+            // As permissões já foram concedidas, continue o fluxo normal
+        }
+
+        String API = "https://apiviajou.onrender.com/";
 
         usernameEditText = findViewById(R.id.user);
         emailEditText = findViewById(R.id.email);
         telefoneEditText = findViewById(R.id.telefone);
         senhaEditText = findViewById(R.id.senha);
         confirmarSenhaEditText = findViewById(R.id.confirmarSenha);
+
+        telefoneEditText.addTextChangedListener(new TextWatcher() {
+            private static final String MASK = "(##) #####-####";
+            private String unmasked = "";
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                String current = s.toString();
+                String clean = current.replaceAll("[^\\d]", "");
+                unmasked = clean;
+
+                if (clean.length() > 10) {
+                    clean = clean.substring(0, 11);
+                }
+
+                String formatted = format(clean);
+                if (!current.equals(formatted)) {
+                    telefoneEditText.setText(formatted);
+                    telefoneEditText.setSelection(formatted.length());
+                }
+            }
+
+            private String format(String s) {
+                StringBuilder formatted = new StringBuilder();
+                int i = 0;
+
+                for (char m : MASK.toCharArray()) {
+                    if (m != '#' && unmasked.length() > i) {
+                        formatted.append(m);
+                        continue;
+                    }
+                    try {
+                        formatted.append(unmasked.charAt(i));
+                    } catch (Exception ignored) {
+                    }
+                    i++;
+                }
+                return formatted.toString();
+            }
+        });
+
 
         // Configurar acesso API
         retrofit = new Retrofit.Builder()
@@ -80,6 +138,7 @@ public class TelaCadastro2 extends AppCompatActivity {
                 .build();
 
         Button bt = findViewById(R.id.button);
+
 
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,7 +155,8 @@ public class TelaCadastro2 extends AppCompatActivity {
                 txtUsername = ((EditText) findViewById(R.id.user)).getText().toString().trim();
                 String confirmarSenha = confirmarSenhaEditText.getText().toString().trim();
                 APIback = false;
-
+                telefoneLimpo = txtTelefone.replaceAll("[^\\d]", "");
+                verificador = 0;
 
                 if (txtUsername.isEmpty()) {
                     usernameEditText.setError("Username é obrigatório");
@@ -123,7 +183,6 @@ public class TelaCadastro2 extends AppCompatActivity {
                     return;
                 }
 
-                // Validação básica de telefone (exemplo)
                 if (!isValidTelefone(txtTelefone)) {
                     telefoneEditText.setError("Telefone inválido");
                     verificador = 1;
@@ -181,9 +240,10 @@ public class TelaCadastro2 extends AppCompatActivity {
 
             // Função de validação simples de telefone (pode ser aprimorada)
             private boolean isValidTelefone(String telefone) {
-                // Exemplo básico: verificar se tem 10 ou 11 dígitos
-                return telefone.matches("\\d{10,11}");
+                // Verificar se o telefone tem o formato esperado
+                return telefone.matches("\\(\\d{2}\\) \\d{5}-\\d{4}");
             }
+
         });
     }
 
@@ -212,7 +272,7 @@ public class TelaCadastro2 extends AppCompatActivity {
                                             @Override
                                             public void onComplete(@NonNull Task<Void> task) {
                                                 if (task.isSuccessful()) {
-                                                    Usuario usuario = new Usuario(uid, txtNome, txtSobrenome, txtDataNasc, txtUsername, txtEmail, txtTelefone, txtGenero, txtSenha, txtCpf);
+                                                    Usuario usuario = new Usuario(uid, txtNome, txtSobrenome, txtDataNasc, txtUsername, txtEmail, telefoneLimpo, txtGenero, txtSenha, txtCpf);
                                                     inserirUsuarioSpring(usuario);
                                                     // Finaliza a activity ou qualquer ação desejada
                                                     finish();
@@ -231,7 +291,7 @@ public class TelaCadastro2 extends AppCompatActivity {
     private void verificarUsernameSpring(String username) {
         // Inicializando Retrofit
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://apiviajou.onrender.com")
+                .baseUrl("https://apiviajou.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -275,7 +335,7 @@ public class TelaCadastro2 extends AppCompatActivity {
     private void verificarEmailSpring(String email) {
         // Inicializando Retrofit
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://apiviajou.onrender.com")
+                .baseUrl("https://apiviajou.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -345,33 +405,48 @@ public class TelaCadastro2 extends AppCompatActivity {
         if(verificador == 0){
             salvarUsuarioFirebase();
             Bundle bundle = new Bundle();
-            bundle.putString("telefone", txtTelefone);
+            bundle.putString("telefone", telefoneLimpo);
             Intent intent = new Intent(TelaCadastro2.this, TelaSMS.class);
             intent.putExtras(bundle);
             startActivity(intent);
         }
     }
 
-    private void requestSmsPermission() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_SMS) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_SMS}, SMS_PERMISSION_CODE);
-        }
+    // Método para checar se as permissões de SMS já foram concedidas
+    private boolean checkSMSPermissions() {
+        int receiveSMS = ContextCompat.checkSelfPermission(this, Manifest.permission.RECEIVE_SMS);
+        int readSMS = ContextCompat.checkSelfPermission(this, Manifest.permission.READ_SMS);
+        int sendSMS = ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS);
+
+        return receiveSMS == PackageManager.PERMISSION_GRANTED &&
+                readSMS == PackageManager.PERMISSION_GRANTED &&
+                sendSMS == PackageManager.PERMISSION_GRANTED;
     }
 
+    // Método para solicitar as permissões necessárias de SMS
+    private void requestSMSPermissions() {
+        ActivityCompat.requestPermissions(this,
+                new String[]{Manifest.permission.RECEIVE_SMS, Manifest.permission.READ_SMS, Manifest.permission.SEND_SMS},
+                SMS_PERMISSION_CODE);
+    }
+
+    // Lida com o resultado da solicitação de permissões
     @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
         if (requestCode == SMS_PERMISSION_CODE) {
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this, "Permissão de SMS concedida", Toast.LENGTH_SHORT).show();
+            // Verifica se todas as permissões foram concedidas
+            if (grantResults.length > 0 &&
+                    grantResults[0] == PackageManager.PERMISSION_GRANTED &&
+                    grantResults[1] == PackageManager.PERMISSION_GRANTED &&
+                    grantResults[2] == PackageManager.PERMISSION_GRANTED) {
+                // As permissões foram concedidas
+                Toast.makeText(this, "Permissões de SMS concedidas.", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, "Permissão de SMS negada", Toast.LENGTH_SHORT).show();
+                // As permissões foram negadas
+                Toast.makeText(this, "As permissões de SMS são necessárias para continuar.", Toast.LENGTH_LONG).show();
             }
         }
     }
-
-
-
-
-
 }

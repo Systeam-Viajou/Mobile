@@ -104,18 +104,18 @@ MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\joaopedro-i
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\bc677f3ec4bb3e6c29309e881379508a\transformed\recaptcha-18.4.0\AndroidManifest.xml:7:5-67
 	android:name
 		ADDED from C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:9:22-65
-uses-permission#android.permission.SEND_SMS
-ADDED from C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:10:5-68
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:10:5-69
 	android:name
-		ADDED from C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:10:22-65
+		ADDED from C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:10:22-67
 uses-permission#android.permission.READ_SMS
-ADDED from C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:11:5-67
+ADDED from C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:11:5-66
 	android:name
 		ADDED from C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:11:22-64
-uses-permission#android.permission.RECEIVE_SMS
-ADDED from C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:12:5-71
+uses-permission#android.permission.SEND_SMS
+ADDED from C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:12:5-66
 	android:name
-		ADDED from C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:12:22-68
+		ADDED from C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:12:22-64
 application
 ADDED from C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:14:5-75:19
 INJECTED from C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:14:5-75:19
