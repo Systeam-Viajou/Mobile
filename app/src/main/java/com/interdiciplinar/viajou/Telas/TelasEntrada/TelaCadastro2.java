@@ -2,10 +2,13 @@ package com.interdiciplinar.viajou.Telas.TelasEntrada;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Observer;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -22,10 +25,19 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
 import com.interdiciplinar.viajou.Api.ApiViajou;
+import android.Manifest;
 import com.interdiciplinar.viajou.Models.Usuario;
 import com.interdiciplinar.viajou.R;
 
 import java.util.concurrent.TimeUnit;
+
+import android.content.pm.PackageManager;
+import android.os.Bundle;
+import android.widget.Toast;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -44,11 +56,14 @@ public class TelaCadastro2 extends AppCompatActivity {
     TextInputEditText senhaEditText;
     TextInputEditText confirmarSenhaEditText;
 
+    private static final int SMS_PERMISSION_CODE = 100;
+
     Boolean APIback = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_cadastro2);
+        requestSmsPermission();
 
         String API = "https://apiviajou.onrender.com";
 
@@ -334,6 +349,24 @@ public class TelaCadastro2 extends AppCompatActivity {
             Intent intent = new Intent(TelaCadastro2.this, TelaSMS.class);
             intent.putExtras(bundle);
             startActivity(intent);
+        }
+    }
+
+    private void requestSmsPermission() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_SMS) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_SMS}, SMS_PERMISSION_CODE);
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == SMS_PERMISSION_CODE) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(this, "Permissão de SMS concedida", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, "Permissão de SMS negada", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
