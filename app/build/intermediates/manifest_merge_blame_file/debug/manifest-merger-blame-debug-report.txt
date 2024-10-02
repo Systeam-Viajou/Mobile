@@ -18,15 +18,15 @@
 15    <uses-permission android:name="android.permission.INTERNET" />
 15-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:9:5-68
 15-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:9:22-65
-16    <uses-permission android:name="android.permission.SEND_SMS" />
-16-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:10:5-68
-16-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:10:22-65
+16    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+16-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:10:5-69
+16-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:10:22-67
 17    <uses-permission android:name="android.permission.READ_SMS" />
-17-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:11:5-67
+17-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:11:5-66
 17-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:11:22-64
-18    <uses-permission android:name="android.permission.RECEIVE_SMS" />
-18-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:12:5-71
-18-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:12:22-68
+18    <uses-permission android:name="android.permission.SEND_SMS" />
+18-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:12:5-66
+18-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:12:22-64
 19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 19-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:26:5-79
 19-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:26:22-76

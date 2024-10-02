@@ -116,10 +116,6 @@
         "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-54:\\drawable\\fundo_selecionado.xml"
     },
     {
-        "merged": "com.interdiciplinar.viajou.app-merged_res-52:/layout_activity_tela_cadastro.xml.flat",
-        "source": "com.interdiciplinar.viajou.app-main-54:/layout/activity_tela_cadastro.xml"
-    },
-    {
         "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-52:\\drawable_exposicoesfoto.png.flat",
         "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-54:\\drawable\\exposicoesfoto.png"
     },
@@ -414,6 +410,10 @@
     {
         "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-52:\\drawable_iconempresacardexcursoes.xml.flat",
         "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-54:\\drawable\\iconempresacardexcursoes.xml"
+    },
+    {
+        "merged": "com.interdiciplinar.viajou.app-merged_res-52:/layout_fragment_tela_eventos.xml.flat",
+        "source": "com.interdiciplinar.viajou.app-main-54:/layout/fragment_tela_eventos.xml"
     },
     {
         "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-52:\\drawable_imgcardexcursoes.webp.flat",

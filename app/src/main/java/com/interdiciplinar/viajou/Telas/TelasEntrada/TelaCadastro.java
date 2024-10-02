@@ -27,8 +27,10 @@ public class TelaCadastro extends AppCompatActivity {
     boolean firstTime = true;
     private ArrayAdapter<String> adapter;
     private ArrayList<String> genderList;
-    String dataNascValor;
-    String genero = "Selecione";
+    String dataNascValor, cpfValor, mensagemErroData;
+    String genero = "Selecione o seu gênero";
+
+    TextInputEditText txtDtnasc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +38,7 @@ public class TelaCadastro extends AppCompatActivity {
         setContentView(R.layout.activity_tela_cadastro);
 
         Button bt = findViewById(R.id.button);
-        TextInputEditText txtDtnasc = findViewById(R.id.dataNasc);
+        txtDtnasc = findViewById(R.id.dataNasc);
         ImageView btCalendar = findViewById(R.id.imageCalendar);
         TextInputEditText nomeEditText = findViewById(R.id.nome);
         TextInputEditText sobrenomeEditText = findViewById(R.id.sobrenome);
@@ -123,6 +125,7 @@ public class TelaCadastro extends AppCompatActivity {
         });
 
         // Adicionando o TextWatcher para formatação de data
+        // Adicionando o TextWatcher para formatação de data
         txtDtnasc.addTextChangedListener(new TextWatcher() {
             boolean isUpdating;
 
@@ -158,17 +161,21 @@ public class TelaCadastro extends AppCompatActivity {
                 txtDtnasc.setSelection(formatted.length());
                 isUpdating = false;
 
-                // Verifica a idade ao digitar
+                // Verifica a validade da data ao digitar
                 if (formatted.length() == 10) {
-                    String[] dateParts = formatted.toString().split("/");
-                    int day = Integer.parseInt(dateParts[0]);
-                    int month = Integer.parseInt(dateParts[1]) - 1; // Meses começam em 0
-                    int year = Integer.parseInt(dateParts[2]);
-
-                    if (!isAgeValid(year, month, day)) {
-                        txtDtnasc.setError("Você deve ter 16 anos ou mais");
+                    if (!isValidDate(formatted.toString())) {
+                        txtDtnasc.setError("Data inválida");
                     } else {
-                        txtDtnasc.setError(null); // Limpa o erro se a idade for válida
+                        String[] dateParts = formatted.toString().split("/");
+                        int day = Integer.parseInt(dateParts[0]);
+                        int month = Integer.parseInt(dateParts[1]) - 1; // Meses começam em 0
+                        int year = Integer.parseInt(dateParts[2]);
+
+                        if (!isAgeValid(year, month, day)) {
+                            txtDtnasc.setError("Você deve ter 16 anos ou mais");
+                        } else {
+                            txtDtnasc.setError(null); // Limpa o erro se a idade for válida
+                        }
                     }
                 } else {
                     txtDtnasc.setError(null); // Limpa o erro se a entrada não estiver completa
@@ -176,93 +183,123 @@ public class TelaCadastro extends AppCompatActivity {
             }
         });
 
-        // Lista de gêneros
+
         genderList = new ArrayList<>();
+// Carrega o array de strings para a lista mutável
         String[] generos = getResources().getStringArray(R.array.opcoes_genero);
         for (String genero : generos) {
             genderList.add(genero);
         }
 
+// Use genderList como fonte de dados para o ArrayAdapter
         adapter = new ArrayAdapter<>(this, R.layout.spinner_item, R.id.spinner_text, genderList);
         adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
         spinnerGenero.setAdapter(adapter);
 
         spinnerGenero.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 genero = parentView.getItemAtPosition(position).toString();
+                spinnerGenero.setBackground(getResources().getDrawable(R.drawable.fundo_genero));
+                // Verifica se é a primeira vez e se o item selecionado não é o "Selecione o seu gênero"
                 if (firstTime && position != 0) {
-                    String selectedGenero = genderList.get(position);
-                    genderList.remove(0);
-                    adapter.notifyDataSetChanged();
+                    String selectedGenero = genderList.get(position); // Armazena o item selecionado
+                    genderList.remove(0); // Remove o item "Selecione o seu gênero"
+                    adapter.notifyDataSetChanged(); // Atualiza o spinner
 
-                    int newPosition = genderList.indexOf(selectedGenero);
-                    spinnerGenero.setSelection(newPosition);
-                    firstTime = false;
+                    // Agora ajusta o Spinner para selecionar o item correto novamente
+                    int newPosition = genderList.indexOf(selectedGenero); // Obtém a nova posição do item selecionado
+                    spinnerGenero.setSelection(newPosition); // Define o spinner na posição correta
+
+                    firstTime = false; // Não permite que remova novamente
                 }
             }
 
             @Override
-            public void onNothingSelected(AdapterView<?> parentView) {}
+            public void onNothingSelected(AdapterView<?> parentView) {
+                // Não faz nada
+            }
         });
 
-        //=------------------------- Verificando as variáveis
+
+
+        // Botão de cadastro
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String nome = nomeEditText.getText().toString().trim();
                 String sobrenome = sobrenomeEditText.getText().toString().trim();
-                String data = txtDtnasc.getText().toString().trim();
                 String cpf = cpfEditText.getText().toString().trim();
+                String dataNasc = txtDtnasc.getText().toString().trim();
 
-                // Verificar se os campos estão vazios
+                // Verificação dos campos
                 if (nome.isEmpty()) {
-                    nomeEditText.setError("Nome é obrigatório");
+                    nomeEditText.setError("Preencha este campo");
                     return;
                 }
 
                 if (sobrenome.isEmpty()) {
-                    sobrenomeEditText.setError("Sobrenome é obrigatório");
+                    sobrenomeEditText.setError("Preencha este campo");
                     return;
                 }
 
-                if (data.isEmpty()) {
-                    txtDtnasc.setError("Data de nascimento é obrigatória");
+                if (dataNasc.isEmpty()) {
+                    txtDtnasc.setError("Preencha este campo");
                     return;
                 }
 
+                if (!isValidDate(dataNasc)) {
+                    txtDtnasc.setError("Data inválida");
+                    return;
+                }
+
+                if (genero.equals("Selecione o seu gênero")) {
+                    spinnerGenero.setBackground(getResources().getDrawable(R.drawable.fundo_cadastro_erro));
+                    return;
+                }
+
+                if(genero.equals("Masculino")){
+                    genero = "M";
+                }else if(genero.equals("Feminino")){
+                    genero = "F";
+                }else if(genero.equals("Outro")){
+                    genero = "O";
+                }else{
+                    genero = "N";
+                }
+
+                // Verifica a validade do CPF
                 if (cpf.isEmpty()) {
-                    cpfEditText.setError("CPF é obrigatório");
+                    cpfEditText.setError("Preencha este campo");
                     return;
                 }
 
-                // Verificação da idade ao digitar
-                if (!isValidDate(txtDtnasc.getText().toString())) {
-                    txtDtnasc.setError("Data de nascimento inválida");
+                if (!isCPFValid(cpf)) {
+                    cpfEditText.setError("CPF inválido");
                     return;
                 }
 
-                String[] dateParts = data.split("/");
-                if (dateParts.length == 3) {
-                    int day = Integer.parseInt(dateParts[0]);
-                    int month = Integer.parseInt(dateParts[1]) - 1; // Meses começam em 0
-                    int year = Integer.parseInt(dateParts[2]);
+                // Verifica a idade ao clicar no botão de cadastro
+                String[] dateParts = dataNasc.split("/");
+                int day = Integer.parseInt(dateParts[0]);
+                int month = Integer.parseInt(dateParts[1]) - 1; // Meses começam em 0
+                int year = Integer.parseInt(dateParts[2]);
 
-                    if (!isAgeValid(year, month, day)) {
-                        txtDtnasc.setError("Você deve ter 16 anos ou mais");
-                        return;
-                    }
+                if (!isAgeValid(year, month, day)) {
+                    txtDtnasc.setError("Você deve ter 16 anos ou mais");
+                    return;
                 }
 
-                // A partir daqui, faça o que precisa fazer com os dados
-                Toast.makeText(TelaCadastro.this, "Cadastro realizado com sucesso!", Toast.LENGTH_SHORT).show();
+                String cpfLimpo = cpf.replaceAll("[^\\d]", "");
+
 
                 // Passando dados para a próxima atividade
                 Intent intent = new Intent(TelaCadastro.this, TelaCadastro2.class);
                 intent.putExtra("nome", nome);
                 intent.putExtra("sobrenome", sobrenome);
                 intent.putExtra("dataNasc", dataNascValor);
-                intent.putExtra("cpf", cpf);
+                intent.putExtra("cpf", cpfLimpo);
                 intent.putExtra("genero", genero);
                 startActivity(intent);
             }
@@ -284,7 +321,6 @@ public class TelaCadastro extends AppCompatActivity {
             calendar.setLenient(false);
             calendar.set(year, month - 1, day); // O mês começa em 0
             calendar.getTime(); // Se a data não for válida, uma exceção será lançada
-
             return true;
         } catch (Exception e) {
             return false;
@@ -292,6 +328,7 @@ public class TelaCadastro extends AppCompatActivity {
     }
 
     private boolean isAgeValid(int year, int month, int day) {
+
         Calendar today = Calendar.getInstance();
         int age = today.get(Calendar.YEAR) - year;
 
@@ -300,5 +337,38 @@ public class TelaCadastro extends AppCompatActivity {
         }
 
         return age >= 16; // Verifica se a idade é 16 anos ou mais
+    }
+
+    public static boolean isCPFValid(String cpf) {
+        cpf = cpf.replaceAll("[^\\d]", ""); // Remove qualquer caractere não numérico
+
+        if (cpf.length() != 11 || cpf.matches("(\\d)\\1{10}")) {
+            return false; // O CPF precisa ter 11 dígitos e não pode ter todos os dígitos iguais
+        }
+
+        int[] pesoCPF = {10, 9, 8, 7, 6, 5, 4, 3, 2};
+
+        try {
+            int soma = 0;
+            for (int i = 0; i < 9; i++) {
+                soma += Integer.parseInt(cpf.substring(i, i + 1)) * pesoCPF[i];
+            }
+
+            int primeiroDigitoVerificador = 11 - (soma % 11);
+            primeiroDigitoVerificador = (primeiroDigitoVerificador > 9) ? 0 : primeiroDigitoVerificador;
+
+            soma = 0;
+            int[] pesoCPF2 = {11, 10, 9, 8, 7, 6, 5, 4, 3, 2};
+            for (int i = 0; i < 10; i++) {
+                soma += Integer.parseInt(cpf.substring(i, i + 1)) * pesoCPF2[i];
+            }
+
+            int segundoDigitoVerificador = 11 - (soma % 11);
+            segundoDigitoVerificador = (segundoDigitoVerificador > 9) ? 0 : segundoDigitoVerificador;
+
+            return cpf.substring(9).equals("" + primeiroDigitoVerificador + segundoDigitoVerificador);
+        } catch (Exception e) {
+            return false;
+        }
     }
 }
