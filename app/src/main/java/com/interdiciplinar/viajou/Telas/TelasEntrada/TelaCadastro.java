@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -37,7 +37,7 @@ public class TelaCadastro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_cadastro);
 
-        Button bt = findViewById(R.id.button);
+        Button bt = findViewById(R.id.btErroInterno);
         txtDtnasc = findViewById(R.id.dataNasc);
         ImageView btCalendar = findViewById(R.id.imageCalendar);
         TextInputEditText nomeEditText = findViewById(R.id.nome);

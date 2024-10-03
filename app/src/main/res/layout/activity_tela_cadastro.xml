@@ -130,12 +130,12 @@
         android:text="Ao se cadastrar, você confirma que aceita os Temos e Condições e nossa Política de privacidade.*"
         android:textAlignment="center"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btErroInterno"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btErroInterno"
         android:layout_width="333dp"
         android:layout_height="61dp"
         android:layout_marginBottom="10dp"

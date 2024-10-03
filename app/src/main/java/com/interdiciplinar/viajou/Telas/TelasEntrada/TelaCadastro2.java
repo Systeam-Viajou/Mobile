@@ -8,12 +8,10 @@ import androidx.lifecycle.MutableLiveData;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.os.Build;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -29,19 +27,11 @@ import android.Manifest;
 import com.interdiciplinar.viajou.Models.Usuario;
 import com.interdiciplinar.viajou.R;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -143,7 +133,7 @@ public class TelaCadastro2 extends AppCompatActivity {
                 .baseUrl(API)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-        bt = findViewById(R.id.button);
+        bt = findViewById(R.id.btErroInterno);
 
 
         bt.setOnClickListener(new View.OnClickListener() {
