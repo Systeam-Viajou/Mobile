@@ -46,6 +46,8 @@ int anim nav_default_enter_anim 0x7f01002c
 int anim nav_default_exit_anim 0x7f01002d
 int anim nav_default_pop_enter_anim 0x7f01002e
 int anim nav_default_pop_exit_anim 0x7f01002f
+int anim slide_in_right 0x7f010030
+int anim slide_out_left 0x7f010031
 int animator design_appbar_state_list_animator 0x7f020000
 int animator design_fab_hide_motion_spec 0x7f020001
 int animator design_fab_show_motion_spec 0x7f020002
@@ -3587,6 +3589,7 @@ int id light 0x7f0a0144
 int id line1 0x7f0a0145
 int id line3 0x7f0a0146
 int id linear 0x7f0a0147
+int id linearLayout 0x7f0a0292
 int id linhaEventos 0x7f0a0148
 int id linhaExcur 0x7f0a0149
 int id listMode 0x7f0a014a
@@ -3719,6 +3722,7 @@ int id position 0x7f0a01c8
 int id postLayout 0x7f0a01c9
 int id precoCardExcursoes 0x7f0a01ca
 int id pressed 0x7f0a01cb
+int id progressBar 0x7f0a0293
 int id progress_circular 0x7f0a01cc
 int id progress_horizontal 0x7f0a01cd
 int id qntdPessoasCardExcur 0x7f0a01ce

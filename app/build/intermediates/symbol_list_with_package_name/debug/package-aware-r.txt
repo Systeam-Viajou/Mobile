@@ -47,6 +47,8 @@ anim nav_default_enter_anim
 anim nav_default_exit_anim
 anim nav_default_pop_enter_anim
 anim nav_default_pop_exit_anim
+anim slide_in_right
+anim slide_out_left
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -3588,6 +3590,7 @@ id light
 id line1
 id line3
 id linear
+id linearLayout
 id linhaEventos
 id linhaExcur
 id listMode
@@ -3720,6 +3723,7 @@ id position
 id postLayout
 id precoCardExcursoes
 id pressed
+id progressBar
 id progress_circular
 id progress_horizontal
 id qntdPessoasCardExcur

@@ -169,4 +169,14 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/vector" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="338dp"
+        android:layout_height="41dp"
+        android:text="Vamos realizar seu cadastro, precisamos apenas de algumas informações."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="14dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

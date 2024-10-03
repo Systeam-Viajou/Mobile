@@ -13,6 +13,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -34,6 +35,8 @@ import java.util.concurrent.TimeUnit;
 
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -47,16 +50,19 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class TelaCadastro2 extends AppCompatActivity {
+    ProgressBar progressBar;
     Boolean retorno = false;
     Boolean permissao;
     String txtNome, txtEmail, txtSenha, txtSobrenome, txtCpf, txtDataNasc, txtGenero, txtTelefone, txtUsername, telefoneLimpo;
     Retrofit retrofit;
+    Button bt;
     int verificador = 0;
     TextInputEditText usernameEditText;
     TextInputEditText emailEditText;
     TextInputEditText telefoneEditText;
     TextInputEditText senhaEditText;
     TextInputEditText confirmarSenhaEditText;
+    private ImageView loadingBar;
 
     private static final int SMS_PERMISSION_CODE = 100;
 
@@ -81,6 +87,7 @@ public class TelaCadastro2 extends AppCompatActivity {
         telefoneEditText = findViewById(R.id.telefone);
         senhaEditText = findViewById(R.id.senha);
         confirmarSenhaEditText = findViewById(R.id.confirmarSenha);
+        loadingBar = findViewById(R.id.imageView7);
 
         telefoneEditText.addTextChangedListener(new TextWatcher() {
             private static final String MASK = "(##) #####-####";
@@ -136,8 +143,7 @@ public class TelaCadastro2 extends AppCompatActivity {
                 .baseUrl(API)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-
-        Button bt = findViewById(R.id.button);
+        bt = findViewById(R.id.button);
 
 
         bt.setOnClickListener(new View.OnClickListener() {
@@ -159,6 +165,7 @@ public class TelaCadastro2 extends AppCompatActivity {
                 verificador = 0;
 
                 if (txtUsername.isEmpty()) {
+                    progressBar.setVisibility(View.INVISIBLE);
                     usernameEditText.setError("Username é obrigatório");
                     verificador = 1;
                     return;
@@ -231,6 +238,8 @@ public class TelaCadastro2 extends AppCompatActivity {
                     return;
                 }
 
+                bt.setEnabled(false);
+                progressBar.setVisibility(View.VISIBLE);
                 verificarUsernameSpring(txtUsername);
             }
 
@@ -314,10 +323,13 @@ public class TelaCadastro2 extends AppCompatActivity {
                 if (response.isSuccessful()) {
                     Usuario usuario = response.body();
                     if (usuario != null) {
+                        bt.setEnabled(true);
+                        progressBar.setVisibility(View.INVISIBLE);
                         usernameEditText.setError("Username já existe");
                         mutableLiveData.setValue(1);
                     }
                 } else {
+                    bt.setEnabled(true);
                     Log.e("POST_ERROR", "Código de erro: " + response.code());
                     Toast.makeText(TelaCadastro2.this, "Erro ao verificar username", Toast.LENGTH_SHORT).show();
                 }
@@ -325,6 +337,7 @@ public class TelaCadastro2 extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<Usuario> call, Throwable t) {
+                bt.setEnabled(true);
                 mutableLiveData.setValue(0);
                 Log.d("POST_SUCCESS", "Username disponível");
                 Log.e("POST_FAILURE", "Falha na requisição: " + t.getMessage());
@@ -356,10 +369,13 @@ public class TelaCadastro2 extends AppCompatActivity {
                 if (response.isSuccessful()) {
                     Usuario usuario = response.body();
                     if (usuario != null) {
+                        bt.setEnabled(true);
+                        progressBar.setVisibility(View.INVISIBLE);
                         emailEditText.setError("Email já existe");
                         mutableLiveData.setValue(1);
                     }
                 } else {
+                    bt.setEnabled(true);
                     Log.e("POST_ERROR", "Código de erro: " + response.code());
                     Toast.makeText(TelaCadastro2.this, "Erro ao verificar email", Toast.LENGTH_SHORT).show();
                 }
@@ -367,6 +383,7 @@ public class TelaCadastro2 extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<Usuario> call, Throwable t) {
+                bt.setEnabled(true);
                 mutableLiveData.setValue(0);
                 Log.d("POST_SUCCESS", "Username disponível");
                 Log.e("POST_FAILURE", "Falha na requisição: " + t.getMessage());
@@ -403,6 +420,7 @@ public class TelaCadastro2 extends AppCompatActivity {
 
     public void validacaoFinal(){
         if(verificador == 0){
+            progressBar.setVisibility(View.INVISIBLE);
             salvarUsuarioFirebase();
             Bundle bundle = new Bundle();
             bundle.putString("telefone", telefoneLimpo);

@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".Telas.TelasEntrada.TelaCadastro2">
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="89dp"
+        android:layout_height="85dp"
+        android:indeterminateTint="#F86D06D3"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
@@ -17,6 +30,7 @@
         app:srcCompat="@drawable/viajoupequeno" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="350dp"
         android:layout_height="430dp"
         android:orientation="vertical"
@@ -46,8 +60,8 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="16dp"
-            android:inputType="textEmailAddress"
-            android:hint="Email">
+            android:hint="Email"
+            android:inputType="textEmailAddress">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/email"
@@ -78,8 +92,8 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="16dp"
-            android:inputType="textPassword"
-            android:hint="Senha">
+            android:hint="Senha"
+            android:inputType="textPassword">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/senha"
@@ -87,6 +101,7 @@
                 android:layout_height="wrap_content                                                                                                                  "
                 android:fontFamily="@font/spartan"
                 android:inputType="text|textPassword" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -94,8 +109,8 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="16dp"
-            android:inputType="textPassword"
-            android:hint="Confirmar senha">
+            android:hint="Confirmar senha"
+            android:inputType="textPassword">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/confirmarSenha"

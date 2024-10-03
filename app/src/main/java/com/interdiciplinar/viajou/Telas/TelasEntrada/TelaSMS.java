@@ -121,8 +121,6 @@ public class TelaSMS extends AppCompatActivity {
         String msg = "Código de verificação: " + pinGerado;
         sms.sendTextMessage(telefone, null, msg, null, null);
 
-        Toast.makeText(this, "PIN enviado: " + pinGerado, Toast.LENGTH_SHORT).show();
-
         // Iniciar a contagem regressiva para expiração do PIN
         iniciarTempoExpiracao();
     }
