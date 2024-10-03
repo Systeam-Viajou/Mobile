@@ -1,4 +1,4 @@
-package com.interdiciplinar.viajou.Telas.TelasPrincipais.adapter;
+package com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.interdiciplinar.viajou.Telas.TelasPrincipais.model.Excursao;
+import com.interdiciplinar.viajou.Models.Excursao;
 import com.interdiciplinar.viajou.R;
 
 import java.text.DecimalFormat;

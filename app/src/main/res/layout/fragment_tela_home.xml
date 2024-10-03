@@ -12,6 +12,14 @@
         android:layout_height="match_parent"
         android:background="#FFFFFF">
 
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar_primaria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerExperienciaHome"
             android:layout_width="389dp"
@@ -145,7 +153,7 @@
             android:layout_height="198dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include"
             tools:listitem="@layout/item_carrossel_home" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

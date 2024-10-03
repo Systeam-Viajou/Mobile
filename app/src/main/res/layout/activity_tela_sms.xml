@@ -173,7 +173,7 @@
         android:drawablePadding="4dp"
         android:fontFamily="@font/spartan"
         android:text="Reenviar"
-        android:textColor="#382469"
+        android:textColor="@color/reenviar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_digit6" />
 
@@ -182,7 +182,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="20dp"
         android:fontFamily="@font/spartan"
         android:text="2:00"
         app:layout_constraintEnd_toEndOf="parent"

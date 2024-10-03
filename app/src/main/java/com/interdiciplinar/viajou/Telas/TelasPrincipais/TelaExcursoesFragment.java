@@ -10,8 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.interdiciplinar.viajou.R;
-import com.interdiciplinar.viajou.Telas.TelasPrincipais.adapter.ExcursaoAdapter;
-import com.interdiciplinar.viajou.Telas.TelasPrincipais.model.Excursao;
+import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.ExcursaoAdapter;
+import com.interdiciplinar.viajou.Models.Excursao;
 
 import java.util.ArrayList;
 import java.util.Calendar;

@@ -2163,6 +2163,7 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color reenviar
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -3119,6 +3120,7 @@ drawable fundo_card_home
 drawable fundo_erro
 drawable fundo_genero
 drawable fundo_input
+drawable fundo_pesquisa_toolbar
 drawable fundo_selecionado
 drawable fundoimagens
 drawable fundoimagens__1_
@@ -3149,6 +3151,8 @@ drawable ic_passkey
 drawable ic_password
 drawable ic_search_black_24
 drawable iconacsses
+drawable iconconfigtoolbarprimar
+drawable iconconfigtoolbarsecund
 drawable iconempresacardexcursoes
 drawable iconeventocardhome
 drawable iconeventosnavbar
@@ -3158,8 +3162,12 @@ drawable iconhomenavbar
 drawable iconhoracardexcursoes
 drawable iconloccardexcursoes
 drawable iconmoneycardexcursoes
+drawable iconperfiltoolbarsecund
 drawable iconpersoncardexcursoes
 drawable icons
+drawable iconsetavoltartollbarsecund
+drawable iconsinotoolbarprimar
+drawable iconsinotoolbarsecund
 drawable iconturismocardhome
 drawable iconturismonavbar
 drawable imagemlogin
@@ -3170,6 +3178,7 @@ drawable imgcardexcursoes
 drawable imgcardhome
 drawable imgcardturismos
 drawable imgcarrossel
+drawable imgperfiltoolbarprimar
 drawable imgsemcoteudo_home
 drawable indeterminate_static
 drawable joia
@@ -3540,6 +3549,7 @@ id iconIdentCardHome
 id iconLocExcursoes
 id iconPerfilExcursoes
 id iconPrecoExcursoes
+id iconToolbarSecund
 id icon_group
 id icon_only
 id ifRoom
@@ -3549,10 +3559,12 @@ id image
 id imageCalendar
 id imageView
 id imageView11
+id imageView12
 id imageView2
 id imageView3
 id imageView4
 id imageView5
+id imageView6
 id imageView7
 id imageView8
 id imageView9
@@ -3572,6 +3584,7 @@ id imgFeiras
 id imgFestival
 id imgShow
 id immediateStop
+id include
 id included
 id indeterminate
 id info
@@ -3766,6 +3779,7 @@ id search_go_btn
 id search_mag_icon
 id search_plate
 id search_src_text
+id search_view
 id search_voice_btn
 id select_dialog_listview
 id selected
@@ -3774,6 +3788,7 @@ id senha
 id senhaLayout
 id setaDireCarrossel
 id setaEsqueCarrrossel
+id setaVoltarToolbar
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3869,6 +3884,7 @@ id tituloCardEvento
 id tituloCardExcursoes
 id tituloCardHome
 id tituloCardTurismo
+id tituloToolbarSecund
 id toggle
 id top
 id topPanel
@@ -4138,6 +4154,8 @@ layout select_dialog_singlechoice_material
 layout spinner_dropdown_item
 layout spinner_item
 layout support_simple_spinner_dropdown_item
+layout toolbar_primaria
+layout toolbar_secundaria
 menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_foreground

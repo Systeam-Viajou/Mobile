@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.interdiciplinar.viajou.R;
 
@@ -50,6 +51,7 @@ public class TelaHomeFragment extends Fragment {
         recyclerRecomendar = view.findViewById(R.id.recyclerRecomenHome);
         recyclerRecomendar.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
+//        Button bt = view.findViewById(R.id.btTool);
 
         return view;
     }

@@ -12,8 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.interdiciplinar.viajou.R;
-import com.interdiciplinar.viajou.Telas.TelasPrincipais.adapter.EventoAdapter;
-import com.interdiciplinar.viajou.Telas.TelasPrincipais.model.Evento;
+import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.EventoAdapter;
+import com.interdiciplinar.viajou.Models.Evento;
 
 import java.util.ArrayList;
 import java.util.Calendar;

@@ -1,4 +1,4 @@
-package com.interdiciplinar.viajou.Telas.TelasPrincipais.model;
+package com.interdiciplinar.viajou.Models;
 
 import java.util.Date;
 
