@@ -1,4 +1,4 @@
-package com.interdiciplinar.viajou.Telas.TelasPrincipais.adapter;
+package com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.interdiciplinar.viajou.Telas.TelasPrincipais.model.Evento;
+import com.interdiciplinar.viajou.Models.Evento;
 import com.interdiciplinar.viajou.R;
 
 import java.text.SimpleDateFormat;
