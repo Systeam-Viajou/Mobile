@@ -6,7 +6,7 @@
     android:layout_height="50dp">
 
     <ImageView
-        android:id="@+id/imgPerfilToolbar"
+        android:id="@+id/imgPerfil"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginStart="20dp"
@@ -29,7 +29,7 @@
         app:searchIcon="@null"
         android:focusable="true"
         app:searchHintIcon="@null"
-        app:layout_constraintEnd_toStartOf="@+id/imgPerfilToolbar"
+        app:layout_constraintEnd_toStartOf="@+id/imgPerfil"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toEndOf="@+id/iconNotifiToolbar"
         app:layout_constraintTop_toTopOf="parent" />
