@@ -130,12 +130,12 @@
         android:text="Ao se cadastrar, você confirma que aceita os Temos e Condições e nossa Política de privacidade.*"
         android:textAlignment="center"
         android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btErroInterno"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btErroInterno"
         android:layout_width="333dp"
         android:layout_height="61dp"
         android:layout_marginBottom="10dp"
@@ -160,7 +160,7 @@
         app:srcCompat="@drawable/carregando" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/iconNotifiToolbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="280dp"
@@ -168,5 +168,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/vector" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="338dp"
+        android:layout_height="41dp"
+        android:text="Vamos realizar seu cadastro, precisamos apenas de algumas informações."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="14dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

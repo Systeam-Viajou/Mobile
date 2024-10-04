@@ -6,7 +6,7 @@
     android:layout_height="50dp">
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imgPerfilToolbar"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginStart="20dp"
@@ -16,33 +16,46 @@
         app:srcCompat="@drawable/imgperfiltoolbarprimar" />
 
     <androidx.appcompat.widget.SearchView
-        android:id="@+id/search_view"
-        android:layout_width="199dp"
-        android:layout_height="34dp"
+        android:id="@+id/pesquisar"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/fundo_pesquisa_toolbar"
         android:iconifiedByDefault="false"
         android:layoutDirection="rtl"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:queryHint="Pesquisar"
+        app:searchIcon="@null"
+        android:focusable="true"
+        app:searchHintIcon="@null"
+        app:layout_constraintEnd_toStartOf="@+id/imgPerfilToolbar"
         app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toEndOf="@+id/imageView11"
-        app:layout_constraintTop_toTopOf="parent"
-        app:queryHint="Pesquisar..." />
+        app:layout_constraintStart_toEndOf="@+id/iconNotifiToolbar"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/iconLupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/iconNotifiToolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iconlupa" />
+
+    <ImageView
+        android:id="@+id/iconNotifiToolbar"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginTop="9dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView12"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/iconConfigToolbar"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/iconsinotoolbarprimar" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/iconConfigToolbar"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"

@@ -2,6 +2,7 @@ package com.interdiciplinar.viajou.Telas.TelasPrincipais;
 
 import android.os.Bundle;
 
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -9,16 +10,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageView;
 
-import com.interdiciplinar.viajou.Models.Evento;
 import com.interdiciplinar.viajou.Models.Home;
 import com.interdiciplinar.viajou.R;
-import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.EventoAdapter;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.HomeRecomendarAdapter;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class TelaHomeFragment extends Fragment {
@@ -26,6 +24,9 @@ public class TelaHomeFragment extends Fragment {
     RecyclerView recyclerContinuar, recyclerRecomendar, recyclerPopulares, recyclerPerto, recyclerExperiencia;
     private HomeRecomendarAdapter recomendarAdapter, popularesAdapter, pertoAdapter, experienciaAdapter;
     private List<Home> continuarList, recomendarlist, popularesList, pertoList, experienciaList;
+    SearchView searchView;
+    SearchView.SearchAutoComplete searchEditText;
+    ImageView iconLupa;
 
     public TelaHomeFragment() {
         // Required empty public constructor
@@ -48,6 +49,9 @@ public class TelaHomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_tela_home, container, false);
 
+        searchView = view.findViewById(R.id.pesquisar);
+        iconLupa = view.findViewById(R.id.iconLupa);
+        searchEditText = searchView.findViewById(androidx.appcompat.R.id.search_src_text);
 
         recyclerContinuar = view.findViewById(R.id.recyclerContinuarHome);
         recyclerContinuar.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
@@ -76,6 +80,31 @@ public class TelaHomeFragment extends Fragment {
         recyclerRecomendar.setAdapter(recomendarAdapter);
 
 //        Button bt = view.findViewById(R.id.btTool);
+
+        // Define para que o campo de texto esteja sempre visível
+        searchView.setIconifiedByDefault(false);
+
+        // Garante que o foco vá para o campo de texto ao clicar na caixa de pesquisa
+        searchView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Força o campo de texto a receber o foco
+                searchEditText.requestFocus();
+            }
+        });
+
+        searchEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    // Se o campo de texto ganhar foco, esconde o ícone de lupa
+                    iconLupa.setVisibility(View.GONE);
+                } else {
+                    // Se o campo de texto perder foco, mostra o ícone de lupa novamente
+                    iconLupa.setVisibility(View.VISIBLE);
+                }
+            }
+        });
 
         return view;
     }

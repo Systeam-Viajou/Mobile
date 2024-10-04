@@ -38,6 +38,14 @@
         android:testOnly="true"
         android:theme="@style/Theme.FragmentAndroid" >
         <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasErro.TelaErroSMS"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasErro.TelaErroInterno"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaCadastro2"
             android:exported="false"
             android:theme="@style/Base.Theme.Viajou" />
