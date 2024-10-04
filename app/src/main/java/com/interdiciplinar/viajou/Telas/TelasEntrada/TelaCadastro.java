@@ -45,6 +45,61 @@ public class TelaCadastro extends AppCompatActivity {
         TextInputEditText cpfEditText = findViewById(R.id.cpf);
         Spinner spinnerGenero = findViewById(R.id.spinnerGenero);
 
+        nomeEditText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                nomeEditText.getText().toString().trim();
+                String input = s.toString();
+                // Permitir apenas letras com acentos e espaços
+                String filtered = input.replaceAll("[^\\p{L}\\s]", ""); // \p{L} permite letras em qualquer idioma, \s permite espaços
+
+                // Verifica se o texto foi alterado
+                if (!input.equals(filtered)) {
+                    // Atualiza o campo com o texto filtrado
+                    nomeEditText.setText(filtered);
+                    // Define a posição do cursor no final do texto
+                    nomeEditText.setSelection(filtered.length());
+                }
+            }
+        });
+        sobrenomeEditText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                sobrenomeEditText.getText().toString().trim();
+                String input = s.toString();
+                // Permitir apenas letras com acentos e espaços
+                String filtered = input.replaceAll("[^\\p{L}\\s]", ""); // \p{L} permite letras em qualquer idioma, \s permite espaços
+
+                // Verifica se o texto foi alterado
+                if (!input.equals(filtered)) {
+                    // Atualiza o campo com o texto filtrado
+                    sobrenomeEditText.setText(filtered);
+                    // Define a posição do cursor no final do texto
+                    sobrenomeEditText.setSelection(filtered.length());
+                }
+            }
+        });
+
         // Formatação do CPF
         cpfEditText.addTextChangedListener(new TextWatcher() {
             boolean isUpdating;
@@ -336,7 +391,13 @@ public class TelaCadastro extends AppCompatActivity {
             age--;
         }
 
-        return age >= 16; // Verifica se a idade é 16 anos ou mais
+        if(age >= 16){
+            dataNascValor = String.format("%04d-%02d-%02d", year, month + 1, day);
+            return true;
+        }else{
+            dataNascValor = String.format("%04d-%02d-%02d", year, month + 1, day);
+            return false;
+        }
     }
 
     public static boolean isCPFValid(String cpf) {

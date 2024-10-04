@@ -1,5 +1,7 @@
 R_DEF: Internal format may change without notice
 local
+anim slide_in_right
+anim slide_out_left
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
@@ -166,6 +168,8 @@ id imgFeiras
 id imgFestival
 id imgShow
 id include
+id linearLayout
+id linearLayout2
 id linhaEventos
 id linhaExcur
 id locCardExcursoes
@@ -179,6 +183,7 @@ id msgErroSenha
 id nome
 id nomeLayout
 id precoCardExcursoes
+id progressBar
 id qntdPessoasCardExcur
 id recyclerContinuarHome
 id recyclerEventos
@@ -206,6 +211,8 @@ id textTimer
 id textView
 id textView14
 id textView15
+id textView2
+id textView3
 id titu1
 id titu2
 id titu3

@@ -3604,6 +3604,7 @@ id line1
 id line3
 id linear
 id linearLayout
+id linearLayout2
 id linhaEventos
 id linhaExcur
 id listMode
@@ -3862,6 +3863,8 @@ id textTop
 id textView
 id textView14
 id textView15
+id textView2
+id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
