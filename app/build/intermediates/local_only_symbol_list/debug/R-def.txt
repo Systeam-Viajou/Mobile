@@ -45,7 +45,6 @@ drawable iconacsses
 drawable iconconfigtoolbarprimar
 drawable iconconfigtoolbarsecund
 drawable iconempresacardexcursoes
-drawable iconerrosms
 drawable iconeventocardhome
 drawable iconeventosnavbar
 drawable iconexcursoesnavbar
@@ -53,7 +52,6 @@ drawable iconfigurinhasnavbar
 drawable iconhomenavbar
 drawable iconhoracardexcursoes
 drawable iconloccardexcursoes
-drawable iconlupa
 drawable iconmoneycardexcursoes
 drawable iconperfiltoolbarsecund
 drawable iconpersoncardexcursoes
@@ -71,7 +69,6 @@ drawable imgcardexcursoes
 drawable imgcardhome
 drawable imgcardturismos
 drawable imgcarrossel
-drawable imgerrointerno
 drawable imgperfiltoolbarprimar
 drawable imgsemcoteudo_home
 drawable joia
@@ -96,8 +93,8 @@ id barraExcur
 id bottomNavigationView
 id btContinuar
 id btEntrar
-id btErroInterno
 id btMaisInfoCardExcursoes
+id button
 id cadastrar
 id carrosselRecycler
 id cifrao
@@ -109,7 +106,6 @@ id dataCardEventos
 id dataCardExcursoes
 id dataNasc
 id dataNascLayout
-id descriErroInterno
 id email
 id emailLayout
 id empresaCardExcursoes
@@ -137,22 +133,22 @@ id frameLayout3
 id home
 id iconAcssesEventos
 id iconAcssesExcur
-id iconConfigToolbar
 id iconDataExcursoes
 id iconEmpresaExcursoes
 id iconIdentCardHome
 id iconLocExcursoes
-id iconLupa
-id iconNotifiToolbar
 id iconPerfilExcursoes
 id iconPrecoExcursoes
 id iconToolbarSecund
 id imageCalendar
 id imageView
+id imageView11
+id imageView12
 id imageView2
 id imageView3
 id imageView4
 id imageView5
+id imageView6
 id imageView7
 id imageView8
 id imageView9
@@ -167,14 +163,13 @@ id imgCardExcursoes
 id imgCardHome
 id imgCardTurismos
 id imgCarrossel
-id imgErroInterno
 id imgExposicoes
 id imgFeiras
 id imgFestival
-id imgPerfilToolbar
 id imgShow
 id include
 id linearLayout
+id linearLayout2
 id linhaEventos
 id linhaExcur
 id locCardExcursoes
@@ -187,7 +182,6 @@ id msgErroEmail
 id msgErroSenha
 id nome
 id nomeLayout
-id pesquisar
 id precoCardExcursoes
 id progressBar
 id qntdPessoasCardExcur
@@ -199,6 +193,7 @@ id recyclerPertoHome
 id recyclerPopularesHome
 id recyclerRecomenHome
 id reenviar
+id search_view
 id senha
 id senhaLayout
 id setaDireCarrossel
@@ -217,6 +212,7 @@ id textView
 id textView14
 id textView15
 id textView2
+id textView3
 id titu1
 id titu2
 id titu3
@@ -226,7 +222,6 @@ id tituloCardEvento
 id tituloCardExcursoes
 id tituloCardHome
 id tituloCardTurismo
-id tituloErroInterno
 id tituloToolbarSecund
 id turismos
 id txt
@@ -246,8 +241,6 @@ layout activity_main
 layout activity_splash_screen
 layout activity_tela_cadastro
 layout activity_tela_cadastro2
-layout activity_tela_erro_interno
-layout activity_tela_erro_sms
 layout activity_tela_login
 layout activity_tela_pesquisa
 layout activity_tela_sms

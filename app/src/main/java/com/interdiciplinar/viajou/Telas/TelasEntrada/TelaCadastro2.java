@@ -41,7 +41,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class TelaCadastro2 extends AppCompatActivity {
     ProgressBar progressBar;
-    Boolean retorno = false;
+    Boolean retorno = true;
     Boolean permissao;
     String txtNome, txtEmail, txtSenha, txtSobrenome, txtCpf, txtDataNasc, txtGenero, txtTelefone, txtUsername, telefoneLimpo;
     Retrofit retrofit;
@@ -70,14 +70,41 @@ public class TelaCadastro2 extends AppCompatActivity {
             // As permissões já foram concedidas, continue o fluxo normal
         }
 
-        String API = "https://apiviajou.onrender.com/";
+        String API = "https://dev-ii-postgres-dev.onrender.com/";
 
         usernameEditText = findViewById(R.id.user);
         emailEditText = findViewById(R.id.email);
         telefoneEditText = findViewById(R.id.telefone);
         senhaEditText = findViewById(R.id.senha);
         confirmarSenhaEditText = findViewById(R.id.confirmarSenha);
-        loadingBar = findViewById(R.id.imageView7);
+
+        usernameEditText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                usernameEditText.getText().toString().trim();
+                String input = s.toString();
+                // Permitir apenas letras com acentos e espaços
+                String filtered = input.replaceAll("[^\\p{L}\\p{N}\\s]", ""); // \p{L} para letras, \p{N} para números e \s para espaços
+
+                // Verifica se o texto foi alterado
+                if (!input.equals(filtered)) {
+                    // Atualiza o campo com o texto filtrado
+                    usernameEditText.setText(filtered);
+                    // Define a posição do cursor no final do texto
+                    usernameEditText.setSelection(filtered.length());
+                }
+            }
+        });
 
         telefoneEditText.addTextChangedListener(new TextWatcher() {
             private static final String MASK = "(##) #####-####";
@@ -153,6 +180,7 @@ public class TelaCadastro2 extends AppCompatActivity {
                 APIback = false;
                 telefoneLimpo = txtTelefone.replaceAll("[^\\d]", "");
                 verificador = 0;
+                progressBar = findViewById(R.id.progressBar);
 
                 if (txtUsername.isEmpty()) {
                     progressBar.setVisibility(View.INVISIBLE);
@@ -246,51 +274,10 @@ public class TelaCadastro2 extends AppCompatActivity {
         });
     }
 
-    private void salvarUsuarioFirebase() {
-        FirebaseAuth autenticator = FirebaseAuth.getInstance();
-        autenticator.createUserWithEmailAndPassword(txtEmail, txtSenha)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Obter o usuário logado
-                            FirebaseUser userlogin = autenticator.getCurrentUser();
-
-                            if (userlogin != null) {
-                                // Obter o UID do Firebase
-                                String uid = userlogin.getUid();
-
-                                // Atualizar o perfil do usuário no Firebase
-                                UserProfileChangeRequest profile = new UserProfileChangeRequest.Builder()
-                                        .setDisplayName(txtUsername)
-                                        // Definir a URI da foto do perfil
-                                        .setPhotoUri(Uri.parse("https://i.imgur.com/MK4NUzI.jpg"))
-                                        .build();
-                                userlogin.updateProfile(profile)
-                                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                            @Override
-                                            public void onComplete(@NonNull Task<Void> task) {
-                                                if (task.isSuccessful()) {
-                                                    Usuario usuario = new Usuario(uid, txtNome, txtSobrenome, txtDataNasc, txtUsername, txtEmail, telefoneLimpo, txtGenero, txtSenha, txtCpf);
-                                                    inserirUsuarioSpring(usuario);
-                                                    // Finaliza a activity ou qualquer ação desejada
-                                                    finish();
-                                                }
-                                            }
-                                        });
-                            }
-
-                        } else {
-                            // Mostrar mensagem de erro
-                            Toast.makeText(TelaCadastro2.this, "Erro no cadastro: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
-    }
     private void verificarUsernameSpring(String username) {
-        // Inicializando Retrofit
+        // Inicializando Retrofit8
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://apiviajou.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -319,7 +306,9 @@ public class TelaCadastro2 extends AppCompatActivity {
                         mutableLiveData.setValue(1);
                     }
                 } else {
+                    progressBar.setVisibility(View.INVISIBLE);
                     bt.setEnabled(true);
+                    mutableLiveData.setValue(1);
                     Log.e("POST_ERROR", "Código de erro: " + response.code());
                     Toast.makeText(TelaCadastro2.this, "Erro ao verificar username", Toast.LENGTH_SHORT).show();
                 }
@@ -327,6 +316,7 @@ public class TelaCadastro2 extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<Usuario> call, Throwable t) {
+                progressBar.setVisibility(View.INVISIBLE);
                 bt.setEnabled(true);
                 mutableLiveData.setValue(0);
                 Log.d("POST_SUCCESS", "Username disponível");
@@ -338,7 +328,7 @@ public class TelaCadastro2 extends AppCompatActivity {
     private void verificarEmailSpring(String email) {
         // Inicializando Retrofit
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://apiviajou.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -365,6 +355,8 @@ public class TelaCadastro2 extends AppCompatActivity {
                         mutableLiveData.setValue(1);
                     }
                 } else {
+                    progressBar.setVisibility(View.INVISIBLE);
+                    mutableLiveData.setValue(1);
                     bt.setEnabled(true);
                     Log.e("POST_ERROR", "Código de erro: " + response.code());
                     Toast.makeText(TelaCadastro2.this, "Erro ao verificar email", Toast.LENGTH_SHORT).show();
@@ -373,6 +365,7 @@ public class TelaCadastro2 extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<Usuario> call, Throwable t) {
+                progressBar.setVisibility(View.INVISIBLE);
                 bt.setEnabled(true);
                 mutableLiveData.setValue(0);
                 Log.d("POST_SUCCESS", "Username disponível");
@@ -381,39 +374,26 @@ public class TelaCadastro2 extends AppCompatActivity {
         });
     }
 
-    private void inserirUsuarioSpring(Usuario usuario){
-
-
-        // criar a chamada
-        ApiViajou apiViajou = retrofit.create(ApiViajou.class);
-        Call<Usuario> call = apiViajou.inserirUsuario(usuario);
-
-        // executar a chamada
-        call.enqueue(new Callback<Usuario>() {
-                         public void onResponse(Call<Usuario> call, Response<Usuario> response) {
-                             if(response.isSuccessful()){
-                                 Usuario createdUser = response.body();
-                                 Log.d("POST_SUCCESS", "Usuário criado: " + createdUser.getUsername());
-                             }else{
-                                 Log.e("POST_ERROR", "Código de erro: " + response.code());
-                                 Toast.makeText(TelaCadastro2.this, "Erro", Toast.LENGTH_SHORT).show();
-                             }
-                         }
-                         public void onFailure(Call<Usuario> call, Throwable t) {
-                             Log.e("POST_FAILURE", "Falha na requisição: " + t.getMessage());
-                         }
-
-                     }
-
-        );
-    }
-
     public void validacaoFinal(){
+        if(!retorno){
+            // Levar para a tela de erro SMS
+            Toast.makeText(this, "Sem permissão sms", Toast.LENGTH_SHORT).show();
+            verificador = 1;
+        }
         if(verificador == 0){
             progressBar.setVisibility(View.INVISIBLE);
-            salvarUsuarioFirebase();
             Bundle bundle = new Bundle();
+
+            bundle.putString("nome", txtNome);
+            bundle.putString("sobrenome", txtSobrenome);
+            bundle.putString("dataNasc", txtDataNasc);
+            bundle.putString("username", txtUsername);
+            bundle.putString("email", txtEmail);
             bundle.putString("telefone", telefoneLimpo);
+            bundle.putString("genero", txtGenero);
+            bundle.putString("cpf", txtCpf);
+            bundle.putString("senha", txtSenha);
+
             Intent intent = new Intent(TelaCadastro2.this, TelaSMS.class);
             intent.putExtras(bundle);
             startActivity(intent);
@@ -449,12 +429,13 @@ public class TelaCadastro2 extends AppCompatActivity {
                     grantResults[0] == PackageManager.PERMISSION_GRANTED &&
                     grantResults[1] == PackageManager.PERMISSION_GRANTED &&
                     grantResults[2] == PackageManager.PERMISSION_GRANTED) {
-                // As permissões foram concedidas
-                Toast.makeText(this, "Permissões de SMS concedidas.", Toast.LENGTH_SHORT).show();
+                retorno = true;
             } else {
-                // As permissões foram negadas
+                retorno = false;
                 Toast.makeText(this, "As permissões de SMS são necessárias para continuar.", Toast.LENGTH_LONG).show();
+
             }
+
         }
     }
 }
