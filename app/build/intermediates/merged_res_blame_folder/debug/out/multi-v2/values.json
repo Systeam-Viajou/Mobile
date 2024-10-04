@@ -82,10 +82,10 @@
                     "from": {
                         "startLines": "4,1,12,3",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "133,17,433,64",
+                        "startOffsets": "129,16,421,61",
                         "endLines": "10,1,12,3",
                         "endColumns": "19,43,69,67",
-                        "endOffsets": "368,56,498,127"
+                        "endOffsets": "358,55,486,124"
                     },
                     "to": {
                         "startLines": "16,2040,2094,2218",

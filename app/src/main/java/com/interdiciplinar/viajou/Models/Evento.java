@@ -7,6 +7,7 @@ public class Evento {
     private String endereco;
     private boolean acessibilidade;
     private Date data_inicio;
+    private String imageUrl; // Nova propriedade para a URL da imagem
 
     public String getNome() {
         return nome;
@@ -38,5 +39,13 @@ public class Evento {
 
     public void setData_inicio(Date data_inicio) {
         this.data_inicio = data_inicio;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }

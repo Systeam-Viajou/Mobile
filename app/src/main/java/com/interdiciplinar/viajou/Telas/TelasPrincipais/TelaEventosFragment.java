@@ -1,16 +1,15 @@
-// Mocado
 package com.interdiciplinar.viajou.Telas.TelasPrincipais;
 
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.interdiciplinar.viajou.Api.ApiService;
+import com.interdiciplinar.viajou.Models.Photo;
 import com.interdiciplinar.viajou.R;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.EventoAdapter;
 import com.interdiciplinar.viajou.Models.Evento;
@@ -20,6 +19,12 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class TelaEventosFragment extends Fragment {
 
@@ -53,11 +58,44 @@ public class TelaEventosFragment extends Fragment {
         // Mockando os dados
         eventoList = getMockEventos();
 
-        // Inicializando o adapter com a lista de eventos mockados
-        eventoAdapter = new EventoAdapter(eventoList, getContext());
-        recyclerView.setAdapter(eventoAdapter);
+        // Buscar imagens da API e associá-las aos eventos
+        fetchImagesFromApi();
 
         return view;
+    }
+
+    // Método para buscar imagens da API
+    private void fetchImagesFromApi() {
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://jsonplaceholder.typicode.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        ApiService apiService = retrofit.create(ApiService.class);
+        Call<List<Photo>> call = apiService.getPhotos();
+
+        call.enqueue(new Callback<List<Photo>>() {
+            @Override
+            public void onResponse(Call<List<Photo>> call, Response<List<Photo>> response) {
+                if (response.isSuccessful()) {
+                    List<Photo> photos = response.body();
+
+                    // Assumindo que há mais fotos do que eventos, então associamos uma imagem a cada evento
+                    for (int i = 0; i < eventoList.size(); i++) {
+                        eventoList.get(i).setImageUrl(photos.get(i).getUrl()); // Associa uma imagem ao evento
+                    }
+
+                    // Inicializar o adapter com a lista de eventos e imagens
+                    eventoAdapter = new EventoAdapter(eventoList, getContext());
+                    recyclerView.setAdapter(eventoAdapter);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<Photo>> call, Throwable t) {
+                // Lidar com a falha da requisição
+            }
+        });
     }
 
     // Método que mocka os eventos com datas aleatórias
@@ -71,7 +109,6 @@ public class TelaEventosFragment extends Fragment {
         eventos.add(mockEvento("CCXP", "Rodovia dos imigrantes, São Paulo", true, getRandomDate()));
         eventos.add(mockEvento("Bienal do livro", "Distrito Anhembi, São Paulo", true, getRandomDate()));
         eventos.add(mockEvento("Só Track Boa Festival", "Neo Quimica Arena, São Paulo", false, getRandomDate()));
-
 
         return eventos;
     }
@@ -100,50 +137,3 @@ public class TelaEventosFragment extends Fragment {
         return calendar.getTime();
     }
 }
-
-
-
-// Não mocado
-//package com.interdiciplinar.viajou.Telas.TelasPrincipais;
-//
-//import android.os.Bundle;
-//
-//import androidx.fragment.app.Fragment;
-//
-//import android.view.LayoutInflater;
-//import android.view.View;
-//import android.view.ViewGroup;
-//
-//import com.interdiciplinar.viajou.R;
-//
-///**
-// * A simple {@link Fragment} subclass.
-// * Use the {@link TelaEventosFragment#newInstance} factory method to
-// * create an instance of this fragment.
-// */
-//public class TelaEventosFragment extends Fragment {
-//
-//    public TelaEventosFragment() {
-//        // Required empty public constructor
-//    }
-//
-//    // TODO: Rename and change types and number of parameters
-//    public static TelaEventosFragment newInstance() {
-//        TelaEventosFragment fragment = new TelaEventosFragment();
-//
-//        return fragment;
-//    }
-//
-//    @Override
-//    public void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//
-//    }
-//
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//                             Bundle savedInstanceState) {
-//        // Inflate the layout for this fragment
-//        return inflater.inflate(R.layout.fragment_tela_eventos, container, false);
-//    }
-//}

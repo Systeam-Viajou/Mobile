@@ -3154,6 +3154,7 @@ drawable iconacsses
 drawable iconconfigtoolbarprimar
 drawable iconconfigtoolbarsecund
 drawable iconempresacardexcursoes
+drawable iconerrosms
 drawable iconeventocardhome
 drawable iconeventosnavbar
 drawable iconexcursoesnavbar
@@ -3178,6 +3179,7 @@ drawable imgcardexcursoes
 drawable imgcardhome
 drawable imgcardturismos
 drawable imgcarrossel
+drawable imgerrointerno
 drawable imgperfiltoolbarprimar
 drawable imgsemcoteudo_home
 drawable indeterminate_static
@@ -3384,8 +3386,8 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btContinuar
 id btEntrar
+id btErroInterno
 id btMaisInfoCardExcursoes
-id button
 id buttonPanel
 id cache_measures
 id cadastrar
@@ -3444,6 +3446,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id descriErroInterno
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3579,6 +3582,7 @@ id imgCardExcursoes
 id imgCardHome
 id imgCardTurismos
 id imgCarrossel
+id imgErroInterno
 id imgExposicoes
 id imgFeiras
 id imgFestival
@@ -3862,6 +3866,7 @@ id textTop
 id textView
 id textView14
 id textView15
+id textView2
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3884,6 +3889,7 @@ id tituloCardEvento
 id tituloCardExcursoes
 id tituloCardHome
 id tituloCardTurismo
+id tituloErroInterno
 id tituloToolbarSecund
 id toggle
 id top
@@ -4058,6 +4064,8 @@ layout activity_main
 layout activity_splash_screen
 layout activity_tela_cadastro
 layout activity_tela_cadastro2
+layout activity_tela_erro_interno
+layout activity_tela_erro_sms
 layout activity_tela_login
 layout activity_tela_pesquisa
 layout activity_tela_sms

@@ -53,18 +53,9 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
             holder.iconAcssesEventos.setVisibility(View.GONE);
         }
 
-        // Formatando a data (dia e mês abreviado em português sem ponto final)
+        // Formatação da data
         SimpleDateFormat dayFormat = new SimpleDateFormat("dd", Locale.getDefault());
         SimpleDateFormat monthFormat = new SimpleDateFormat("MMM", new Locale("pt", "BR"));
-
-        // Personalizando os meses sem o ponto final
-        DateFormatSymbols dfs = new DateFormatSymbols(new Locale("pt", "BR")) {
-            @Override
-            public String[] getShortMonths() {
-                return new String[]{"jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"};
-            }
-        };
-        monthFormat.setDateFormatSymbols(dfs);
 
         String dia = dayFormat.format(evento.getData_inicio());
         String mes = monthFormat.format(evento.getData_inicio());
@@ -72,9 +63,9 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
         holder.dataCardEventos.setText(dia);
         holder.mesCardEventos.setText(mes);
 
-        // Carregando imagem com Glide (imagem dinâmica a partir de uma URL)
+        // Carregar imagem da API usando Glide
         Glide.with(context)
-                .load("https://lets.events/blog/wp-content/uploads/2022/12/direito-de-imagem-em-eventos.jpg") // Substitua pela URL da imagem correspondente ao evento
+                .load(evento.getImageUrl())  // Agora a URL da imagem é carregada dinamicamente da API
                 .into(holder.imgCardEventos);
     }
 
