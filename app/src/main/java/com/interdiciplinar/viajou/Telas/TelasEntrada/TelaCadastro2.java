@@ -26,12 +26,16 @@ import com.interdiciplinar.viajou.Api.ApiViajou;
 import android.Manifest;
 import com.interdiciplinar.viajou.Models.Usuario;
 import com.interdiciplinar.viajou.R;
+import com.interdiciplinar.viajou.Telas.TelasErro.TelaErroInterno;
+import com.interdiciplinar.viajou.Telas.TelasErro.TelaErroSMS;
 
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
+
+import java.util.Locale;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -172,7 +176,7 @@ public class TelaCadastro2 extends AppCompatActivity {
                 txtCpf = bundle.getString("cpf");
                 txtDataNasc = bundle.getString("dataNasc");
                 txtGenero = bundle.getString("genero");
-                txtEmail = ((EditText) findViewById(R.id.email)).getText().toString().trim();
+                txtEmail = ((EditText) findViewById(R.id.email)).getText().toString().trim().toLowerCase();
                 txtSenha = ((EditText) findViewById(R.id.senha)).getText().toString().trim();
                 txtTelefone = ((EditText) findViewById(R.id.telefone)).getText().toString().trim();
                 txtUsername = ((EditText) findViewById(R.id.user)).getText().toString().trim();
@@ -309,18 +313,24 @@ public class TelaCadastro2 extends AppCompatActivity {
                     progressBar.setVisibility(View.INVISIBLE);
                     bt.setEnabled(true);
                     mutableLiveData.setValue(1);
-                    Log.e("POST_ERROR", "Código de erro: " + response.code());
+                    Log.e("GET_ERROR", "Código de erro: " + response.code());
                     Toast.makeText(TelaCadastro2.this, "Erro ao verificar username", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(TelaCadastro2.this, TelaErroInterno.class);
+                    startActivity(intent);
                 }
             }
 
             @Override
             public void onFailure(Call<Usuario> call, Throwable t) {
-                progressBar.setVisibility(View.INVISIBLE);
-                bt.setEnabled(true);
-                mutableLiveData.setValue(0);
-                Log.d("POST_SUCCESS", "Username disponível");
-                Log.e("POST_FAILURE", "Falha na requisição: " + t.getMessage());
+                if(t.getMessage().equals("End of input at line 1 column 1 path $")){
+                    bt.setEnabled(true);
+                    mutableLiveData.setValue(0);
+                    Log.d("GET_FAILURE", "Username disponível: " + t.getMessage());
+                }
+                else{
+                    Intent intent = new Intent(TelaCadastro2.this, TelaErroInterno.class);
+                    startActivity(intent);
+                }
             }
         });
     }
@@ -358,41 +368,50 @@ public class TelaCadastro2 extends AppCompatActivity {
                     progressBar.setVisibility(View.INVISIBLE);
                     mutableLiveData.setValue(1);
                     bt.setEnabled(true);
-                    Log.e("POST_ERROR", "Código de erro: " + response.code());
-                    Toast.makeText(TelaCadastro2.this, "Erro ao verificar email", Toast.LENGTH_SHORT).show();
+                    Log.e("GET_ERROR", "Código de erro: " + response.code());
+                    Intent intent = new Intent(TelaCadastro2.this, TelaErroInterno.class);
+                    startActivity(intent);
                 }
             }
 
             @Override
             public void onFailure(Call<Usuario> call, Throwable t) {
-                progressBar.setVisibility(View.INVISIBLE);
-                bt.setEnabled(true);
-                mutableLiveData.setValue(0);
-                Log.d("POST_SUCCESS", "Username disponível");
-                Log.e("POST_FAILURE", "Falha na requisição: " + t.getMessage());
+                if(t.getMessage().equals("End of input at line 1 column 1 path $")){
+                    bt.setEnabled(true);
+                    mutableLiveData.setValue(0);
+                    Log.d("GET_FAILURE", "Email disponível: " + t.getMessage());
+                }
+                else{
+                    Intent intent = new Intent(TelaCadastro2.this, TelaErroInterno.class);
+                    startActivity(intent);
+                }
             }
         });
     }
 
     public void validacaoFinal(){
+        Bundle bundle = new Bundle();
+
+        bundle.putString("nome", txtNome);
+        bundle.putString("sobrenome", txtSobrenome);
+        bundle.putString("dataNasc", txtDataNasc);
+        bundle.putString("username", txtUsername);
+        bundle.putString("email", txtEmail);
+        bundle.putString("telefone", telefoneLimpo);
+        bundle.putString("genero", txtGenero);
+        bundle.putString("cpf", txtCpf);
+        bundle.putString("senha", txtSenha);
+
         if(!retorno){
-            // Levar para a tela de erro SMS
-            Toast.makeText(this, "Sem permissão sms", Toast.LENGTH_SHORT).show();
+            progressBar.setVisibility(View.INVISIBLE);
+            Intent intent = new Intent(TelaCadastro2.this, TelaErroSMS.class);
+            intent.putExtras(bundle);
+            startActivity(intent);
             verificador = 1;
         }
         if(verificador == 0){
             progressBar.setVisibility(View.INVISIBLE);
-            Bundle bundle = new Bundle();
 
-            bundle.putString("nome", txtNome);
-            bundle.putString("sobrenome", txtSobrenome);
-            bundle.putString("dataNasc", txtDataNasc);
-            bundle.putString("username", txtUsername);
-            bundle.putString("email", txtEmail);
-            bundle.putString("telefone", telefoneLimpo);
-            bundle.putString("genero", txtGenero);
-            bundle.putString("cpf", txtCpf);
-            bundle.putString("senha", txtSenha);
 
             Intent intent = new Intent(TelaCadastro2.this, TelaSMS.class);
             intent.putExtras(bundle);
@@ -432,8 +451,6 @@ public class TelaCadastro2 extends AppCompatActivity {
                 retorno = true;
             } else {
                 retorno = false;
-                Toast.makeText(this, "As permissões de SMS são necessárias para continuar.", Toast.LENGTH_LONG).show();
-
             }
 
         }

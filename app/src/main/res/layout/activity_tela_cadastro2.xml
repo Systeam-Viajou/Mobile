@@ -169,6 +169,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="@font/spartan_bold"
         android:text="Quase lá, falta pouco para viajar."
+        android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

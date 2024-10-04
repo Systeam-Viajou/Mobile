@@ -3154,6 +3154,7 @@ drawable iconacsses
 drawable iconconfigtoolbarprimar
 drawable iconconfigtoolbarsecund
 drawable iconempresacardexcursoes
+drawable iconerrosms
 drawable iconeventocardhome
 drawable iconeventosnavbar
 drawable iconexcursoesnavbar
@@ -3161,6 +3162,7 @@ drawable iconfigurinhasnavbar
 drawable iconhomenavbar
 drawable iconhoracardexcursoes
 drawable iconloccardexcursoes
+drawable iconlupa
 drawable iconmoneycardexcursoes
 drawable iconperfiltoolbarsecund
 drawable iconpersoncardexcursoes
@@ -3178,6 +3180,7 @@ drawable imgcardexcursoes
 drawable imgcardhome
 drawable imgcardturismos
 drawable imgcarrossel
+drawable imgerrointerno
 drawable imgperfiltoolbarprimar
 drawable imgsemcoteudo_home
 drawable indeterminate_static
@@ -3384,6 +3387,9 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btContinuar
 id btEntrar
+id btErroInterno
+id btErroSms
+id btErroSmsVoltar
 id btMaisInfoCardExcursoes
 id button
 id buttonPanel
@@ -3444,6 +3450,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id descriErroInterno
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3543,10 +3550,13 @@ id horizontal_only
 id icon
 id iconAcssesEventos
 id iconAcssesExcur
+id iconConfigToolbar
 id iconDataExcursoes
 id iconEmpresaExcursoes
 id iconIdentCardHome
 id iconLocExcursoes
+id iconLupa
+id iconNotifiToolbar
 id iconPerfilExcursoes
 id iconPrecoExcursoes
 id iconToolbarSecund
@@ -3559,12 +3569,10 @@ id image
 id imageCalendar
 id imageView
 id imageView11
-id imageView12
 id imageView2
 id imageView3
 id imageView4
 id imageView5
-id imageView6
 id imageView7
 id imageView8
 id imageView9
@@ -3579,9 +3587,11 @@ id imgCardExcursoes
 id imgCardHome
 id imgCardTurismos
 id imgCarrossel
+id imgErroInterno
 id imgExposicoes
 id imgFeiras
 id imgFestival
+id imgPerfilToolbar
 id imgShow
 id immediateStop
 id include
@@ -3732,6 +3742,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id pesquisar
 id pin
 id position
 id postLayout
@@ -3780,7 +3791,6 @@ id search_go_btn
 id search_mag_icon
 id search_plate
 id search_src_text
-id search_view
 id search_voice_btn
 id select_dialog_listview
 id selected
@@ -3887,6 +3897,7 @@ id tituloCardEvento
 id tituloCardExcursoes
 id tituloCardHome
 id tituloCardTurismo
+id tituloErroInterno
 id tituloToolbarSecund
 id toggle
 id top
@@ -4061,6 +4072,8 @@ layout activity_main
 layout activity_splash_screen
 layout activity_tela_cadastro
 layout activity_tela_cadastro2
+layout activity_tela_erro_interno
+layout activity_tela_erro_sms
 layout activity_tela_login
 layout activity_tela_pesquisa
 layout activity_tela_sms

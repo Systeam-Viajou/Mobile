@@ -7,7 +7,7 @@
     tools:context=".Telas.TelasErro.TelaErroInterno">
 
     <Button
-        android:id="@+id/btErroInterno"
+        android:id="@+id/btErroSms"
         android:layout_width="333dp"
         android:layout_height="61dp"
         android:layout_marginBottom="188dp"
@@ -19,11 +19,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/btErroSmsVoltar"
+        android:layout_width="333dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="#805CD8"
+        android:fontFamily="@font/spartan_bold"
+        android:text="Sair"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <ImageView
         android:id="@+id/imgErroInterno"
         android:layout_width="230dp"
         android:layout_height="200dp"
-        android:layout_marginTop="244dp"
+        android:layout_marginTop="180dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,11 +59,12 @@
 
     <TextView
         android:id="@+id/descriErroInterno"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="296dp"
+        android:layout_height="50dp"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/spartan"
         android:text="Vá para as configurações e permite o SMS"
+        android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -30,6 +30,7 @@ import com.google.firebase.auth.UserProfileChangeRequest;
 import com.interdiciplinar.viajou.Api.ApiViajou;
 import com.interdiciplinar.viajou.Models.Usuario;
 import com.interdiciplinar.viajou.R;
+import com.interdiciplinar.viajou.Telas.TelasErro.TelaErroInterno;
 
 import java.util.Random;
 
@@ -233,7 +234,7 @@ public class TelaSMS extends AppCompatActivity {
                                             @Override
                                             public void onComplete(@NonNull Task<Void> task) {
                                                 if (task.isSuccessful()) {
-                                                     Usuario usuario = new Usuario(uid, nome, sobrenome, dataNasc, username, email, telefone, genero, senha, cpf);
+                                                    Usuario usuario = new Usuario(uid, nome, sobrenome, dataNasc, username, email, telefone, genero, senha, cpf);
                                                     inserirUsuarioSpring(usuario);
                                                     // Finaliza a activity ou qualquer ação desejada
                                                     finish();
@@ -274,7 +275,13 @@ public class TelaSMS extends AppCompatActivity {
                              }
                          }
                          public void onFailure(Call<Usuario> call, Throwable t) {
-                             Log.e("POST_FAILURE", "Falha na requisição: " + t.getMessage());
+                             if(t.getMessage().equals("timeout")){
+                                 Intent intent = new Intent(TelaSMS.this, TelaErroInterno.class);
+                                 startActivity(intent);
+                             }
+                             else{
+                                 Log.e("POST_FAILURE", "Falha na requisição: " + t.getMessage());
+                             }
                          }
 
                      }

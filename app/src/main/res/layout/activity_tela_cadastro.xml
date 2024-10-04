@@ -143,12 +143,13 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="338dp"
-        android:layout_height="44dp"
+        android:layout_width="336dp"
+        android:layout_height="38dp"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/spartan_bold"
         android:text="Vamos realizar seu cadastro, precisamos apenas de algumas informações."
         android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
