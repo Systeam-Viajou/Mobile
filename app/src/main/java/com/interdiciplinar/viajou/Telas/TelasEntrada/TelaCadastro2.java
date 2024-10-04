@@ -73,7 +73,7 @@ public class TelaCadastro2 extends AppCompatActivity {
         String API = "https://apiviajou.onrender.com/";
 
         usernameEditText = findViewById(R.id.user);
-        emailEditText = findViewById(R.id.email);
+        emailEditText = findViewById(R.id.emailEsqueceuSenha);
         telefoneEditText = findViewById(R.id.telefone);
         senhaEditText = findViewById(R.id.senha);
         confirmarSenhaEditText = findViewById(R.id.confirmarSenha);
@@ -133,7 +133,7 @@ public class TelaCadastro2 extends AppCompatActivity {
                 .baseUrl(API)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-        bt = findViewById(R.id.btErroInterno);
+        bt = findViewById(R.id.button);
 
 
         bt.setOnClickListener(new View.OnClickListener() {
@@ -145,7 +145,7 @@ public class TelaCadastro2 extends AppCompatActivity {
                 txtCpf = bundle.getString("cpf");
                 txtDataNasc = bundle.getString("dataNasc");
                 txtGenero = bundle.getString("genero");
-                txtEmail = ((EditText) findViewById(R.id.email)).getText().toString().trim();
+                txtEmail = ((EditText) findViewById(R.id.emailEsqueceuSenha)).getText().toString().trim();
                 txtSenha = ((EditText) findViewById(R.id.senha)).getText().toString().trim();
                 txtTelefone = ((EditText) findViewById(R.id.telefone)).getText().toString().trim();
                 txtUsername = ((EditText) findViewById(R.id.user)).getText().toString().trim();

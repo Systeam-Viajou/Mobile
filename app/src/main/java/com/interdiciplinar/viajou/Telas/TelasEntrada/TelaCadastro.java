@@ -37,7 +37,7 @@ public class TelaCadastro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_cadastro);
 
-        Button bt = findViewById(R.id.btErroInterno);
+        Button bt = findViewById(R.id.button);
         txtDtnasc = findViewById(R.id.dataNasc);
         ImageView btCalendar = findViewById(R.id.imageCalendar);
         TextInputEditText nomeEditText = findViewById(R.id.nome);

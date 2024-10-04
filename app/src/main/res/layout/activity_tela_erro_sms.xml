@@ -7,23 +7,24 @@
     tools:context=".Telas.TelasErro.TelaErroInterno">
 
     <Button
-        android:id="@+id/btErroInterno"
+        android:id="@+id/button"
         android:layout_width="333dp"
         android:layout_height="61dp"
-        android:layout_marginBottom="188dp"
+        android:layout_marginBottom="100dp"
         android:backgroundTint="#805CD8"
         android:fontFamily="@font/spartan_bold"
         android:text="Ir para configuraçãoes"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriErroInterno" />
 
     <ImageView
         android:id="@+id/imgErroInterno"
         android:layout_width="230dp"
         android:layout_height="200dp"
-        android:layout_marginTop="244dp"
+        android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
