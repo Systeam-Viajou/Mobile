@@ -1,18 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".Telas.TelasPrincipais.TelaTurismosFragment">
 
-    <include
-        android:id="@+id/include"
-        layout="@layout/toolbar_primaria"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <include
+            android:id="@+id/include2"
+            layout="@layout/toolbar_primaria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtPertoTurismo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Perto de você"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include2" />
+
+        <View
+            android:id="@+id/linha1"
+            android:layout_width="3dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/linha_arredondada"
+            android:backgroundTint="#3A9D93"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPertoTurismo" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerPertoTurismo"
+            android:layout_width="388dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/linha1"
+            app:layout_constraintTop_toBottomOf="@+id/txtPertoTurismo"
+            tools:listitem="@layout/item_card_turismos" />
+
+        <TextView
+            android:id="@+id/txtParaVcTurismo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Para você"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerPertoTurismo" />
+
+        <View
+            android:id="@+id/linha2"
+            android:layout_width="3dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/linha_arredondada"
+            android:backgroundTint="#3A9D93"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtParaVcTurismo" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerParaVcTurismo"
+            android:layout_width="388dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/linha2"
+            app:layout_constraintTop_toBottomOf="@+id/txtParaVcTurismo"
+            tools:listitem="@layout/item_card_turismos" />
+
+        <TextView
+            android:id="@+id/txtViagemTurismo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Viagem no tempo"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerParaVcTurismo" />
+
+        <View
+            android:id="@+id/linha3"
+            android:layout_width="3dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/linha_arredondada"
+            android:backgroundTint="#3A9D93"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtViagemTurismo" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViagemTurismo"
+            android:layout_width="388dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/linha3"
+            app:layout_constraintTop_toBottomOf="@+id/txtViagemTurismo"
+            tools:listitem="@layout/item_card_turismos" />
+
+        <TextView
+            android:id="@+id/txtMelhorTurismo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Melhor de São Paulo"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerViagemTurismo" />
+
+        <View
+            android:id="@+id/linha4"
+            android:layout_width="3dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/linha_arredondada"
+            android:backgroundTint="#3A9D93"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMelhorTurismo" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerMelhorTurismo"
+            android:layout_width="388dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/linha4"
+            app:layout_constraintTop_toBottomOf="@+id/txtMelhorTurismo"
+            tools:listitem="@layout/item_card_turismos" />
+
+        <TextView
+            android:id="@+id/txtFamiliaTurismo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Para a Família"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerMelhorTurismo" />
+
+        <View
+            android:id="@+id/linha5"
+            android:layout_width="3dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/linha_arredondada"
+            android:backgroundTint="#3A9D93"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFamiliaTurismo" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerFamiliaTurismo"
+            android:layout_width="388dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/linha5"
+            app:layout_constraintTop_toBottomOf="@+id/txtFamiliaTurismo"
+            tools:listitem="@layout/item_card_turismos" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
