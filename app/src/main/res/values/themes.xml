@@ -14,6 +14,12 @@
         <item name="color">@color/white</item>
     </style>
 
+    <style name="circular" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">19dp</item>
+        <item name="color">@color/white</item>
+    </style>
+
     <style name="BottomNavigationView.Active" parent="TextAppearance.AppCompat.Caption">
         <item name="android:textSize">12sp</item>
         <item name="android:fillColor">#000</item>

@@ -7,36 +7,23 @@ import androidx.lifecycle.MutableLiveData;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.UserProfileChangeRequest;
 import com.interdiciplinar.viajou.Api.ApiViajou;
 import android.Manifest;
 import com.interdiciplinar.viajou.Models.Usuario;
 import com.interdiciplinar.viajou.R;
 import com.interdiciplinar.viajou.Telas.TelasErro.TelaErroInterno;
 import com.interdiciplinar.viajou.Telas.TelasErro.TelaErroSMS;
-
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-import androidx.annotation.NonNull;
-
-import java.util.Locale;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -164,7 +151,7 @@ public class TelaCadastro2 extends AppCompatActivity {
                 .baseUrl(API)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-        bt = findViewById(R.id.btErroInterno);
+        bt = findViewById(R.id.button);
 
 
         bt.setOnClickListener(new View.OnClickListener() {

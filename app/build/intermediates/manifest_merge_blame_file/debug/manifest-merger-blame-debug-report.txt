@@ -46,7 +46,7 @@
 26-->[androidx.core:core:1.13.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\cde61e7b8ce296e84f69f94c9c0bf6c6\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 27
 28    <application
-28-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:14:5-88:19
+28-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:14:5-100:19
 29        android:allowBackup="true"
 29-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:15:9-35
 30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -68,395 +68,419 @@
 39-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:21:9-53
 40        <activity
 40-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:23:9-26:56
-41            android:name="com.interdiciplinar.viajou.Telas.TelasErro.TelaErroSMS"
-41-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:24:13-56
+41            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaEsqueceuSenha3"
+41-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:24:13-66
 42            android:exported="false"
 42-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:25:13-37
 43            android:theme="@style/Base.Theme.Viajou" />
 43-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:26:13-53
 44        <activity
 44-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:27:9-30:56
-45            android:name="com.interdiciplinar.viajou.Telas.TelasErro.TelaErroInterno"
-45-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:28:13-60
+45            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaEsqueceuSenha2"
+45-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:28:13-66
 46            android:exported="false"
 46-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:29:13-37
 47            android:theme="@style/Base.Theme.Viajou" />
 47-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:30:13-53
 48        <activity
 48-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:31:9-34:56
-49            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaCadastro2"
-49-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:32:13-61
+49            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaEsqueceuSenha"
+49-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:32:13-65
 50            android:exported="false"
 50-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:33:13-37
 51            android:theme="@style/Base.Theme.Viajou" />
 51-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:34:13-53
 52        <activity
-52-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:35:9-37:40
-53            android:name="com.interdiciplinar.viajou.MainActivity"
-53-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:36:13-41
-54            android:exported="false" />
+52-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:35:9-38:56
+53            android:name="com.interdiciplinar.viajou.Telas.TelasErro.TelaErroSMS"
+53-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:36:13-56
+54            android:exported="false"
 54-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:37:13-37
-55        <activity
-55-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:38:9-41:56
-56            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaPesquisa"
-56-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:39:13-60
-57            android:exported="false"
-57-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:40:13-37
-58            android:theme="@style/Base.Theme.Viajou" />
-58-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:41:13-53
-59        <activity
-59-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:42:9-45:56
-60            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaLogin"
-60-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:43:13-57
-61            android:exported="false"
-61-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:44:13-37
-62            android:theme="@style/Base.Theme.Viajou" />
-62-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:45:13-53
-63        <activity
-63-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:46:9-49:56
-64            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaCadastro"
-64-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:47:13-60
-65            android:exported="false"
-65-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:48:13-37
-66            android:theme="@style/Base.Theme.Viajou" />
-66-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:49:13-53
+55            android:theme="@style/Base.Theme.Viajou" />
+55-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:38:13-53
+56        <activity
+56-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:39:9-42:56
+57            android:name="com.interdiciplinar.viajou.Telas.TelasErro.TelaErroInterno"
+57-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:40:13-60
+58            android:exported="false"
+58-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:41:13-37
+59            android:theme="@style/Base.Theme.Viajou" />
+59-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:42:13-53
+60        <activity
+60-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:43:9-46:56
+61            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaCadastro2"
+61-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:44:13-61
+62            android:exported="false"
+62-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:45:13-37
+63            android:theme="@style/Base.Theme.Viajou" />
+63-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:46:13-53
+64        <activity
+64-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:47:9-49:40
+65            android:name="com.interdiciplinar.viajou.MainActivity"
+65-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:48:13-41
+66            android:exported="false" />
+66-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:49:13-37
 67        <activity
 67-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:50:9-53:56
-68            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaSMS"
-68-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:51:13-55
+68            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaPesquisa"
+68-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:51:13-60
 69            android:exported="false"
 69-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:52:13-37
 70            android:theme="@style/Base.Theme.Viajou" />
 70-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:53:13-53
 71        <activity
 71-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:54:9-57:56
-72            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaEventosFragment"
-72-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:55:13-70
+72            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaLogin"
+72-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:55:13-57
 73            android:exported="false"
 73-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:56:13-37
 74            android:theme="@style/Base.Theme.Viajou" />
 74-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:57:13-53
 75        <activity
 75-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:58:9-61:56
-76            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaExcursoesFragment"
-76-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:59:13-72
+76            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaCadastro"
+76-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:59:13-60
 77            android:exported="false"
 77-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:60:13-37
 78            android:theme="@style/Base.Theme.Viajou" />
 78-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:61:13-53
 79        <activity
 79-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:62:9-65:56
-80            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaFigurinhasFragment"
-80-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:63:13-73
+80            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaSMS"
+80-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:63:13-55
 81            android:exported="false"
 81-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:64:13-37
 82            android:theme="@style/Base.Theme.Viajou" />
 82-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:65:13-53
 83        <activity
 83-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:66:9-69:56
-84            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaHomeFragment"
-84-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:67:13-67
+84            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaEventosFragment"
+84-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:67:13-70
 85            android:exported="false"
 85-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:68:13-37
 86            android:theme="@style/Base.Theme.Viajou" />
 86-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:69:13-53
 87        <activity
 87-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:70:9-73:56
-88            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaTurismosFragment"
-88-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:71:13-71
+88            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaExcursoesFragment"
+88-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:71:13-72
 89            android:exported="false"
 89-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:72:13-37
 90            android:theme="@style/Base.Theme.Viajou" />
 90-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:73:13-53
 91        <activity
-91-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:74:9-83:20
-92            android:name="com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen"
-92-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:75:13-57
-93            android:exported="true"
-93-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:76:13-36
-94            android:theme="@style/Base.Theme.Viajou" >
+91-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:74:9-77:56
+92            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaFigurinhasFragment"
+92-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:75:13-73
+93            android:exported="false"
+93-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:76:13-37
+94            android:theme="@style/Base.Theme.Viajou" />
 94-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:77:13-53
-95            <intent-filter>
-95-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:78:13-82:29
-96                <action android:name="android.intent.action.MAIN" />
-96-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:79:17-69
-96-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:79:25-66
-97
-98                <category android:name="android.intent.category.LAUNCHER" />
-98-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:81:17-77
-98-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:81:27-74
-99            </intent-filter>
-100        </activity>
-101
-102        <meta-data
-102-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:85:9-87:57
-103            android:name="preloaded_fonts"
-103-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:86:13-43
-104            android:resource="@array/preloaded_fonts" />
-104-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:87:13-54
-105
-106        <activity
-106-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:29:9-46:20
-107            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-107-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:30:13-80
-108            android:excludeFromRecents="true"
-108-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:31:13-46
-109            android:exported="true"
-109-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:32:13-36
-110            android:launchMode="singleTask"
-110-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:33:13-44
-111            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-111-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:34:13-72
-112            <intent-filter>
-112-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:35:13-45:29
-113                <action android:name="android.intent.action.VIEW" />
-113-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
-113-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
-114
-115                <category android:name="android.intent.category.DEFAULT" />
-115-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
-115-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
-116                <category android:name="android.intent.category.BROWSABLE" />
-116-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
-116-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
+95        <activity
+95-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:78:9-81:56
+96            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaHomeFragment"
+96-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:79:13-67
+97            android:exported="false"
+97-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:80:13-37
+98            android:theme="@style/Base.Theme.Viajou" />
+98-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:81:13-53
+99        <activity
+99-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:82:9-85:56
+100            android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaTurismosFragment"
+100-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:83:13-71
+101            android:exported="false"
+101-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:84:13-37
+102            android:theme="@style/Base.Theme.Viajou" />
+102-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:85:13-53
+103        <activity
+103-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:86:9-95:20
+104            android:name="com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen"
+104-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:87:13-57
+105            android:exported="true"
+105-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:88:13-36
+106            android:theme="@style/Base.Theme.Viajou" >
+106-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:89:13-53
+107            <intent-filter>
+107-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:90:13-94:29
+108                <action android:name="android.intent.action.MAIN" />
+108-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:91:17-69
+108-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:91:25-66
+109
+110                <category android:name="android.intent.category.LAUNCHER" />
+110-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:93:17-77
+110-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:93:27-74
+111            </intent-filter>
+112        </activity>
+113
+114        <meta-data
+114-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:97:9-99:57
+115            android:name="preloaded_fonts"
+115-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:98:13-43
+116            android:resource="@array/preloaded_fonts" />
+116-->C:\Users\joaopedro-ieg\Interdiciplinar\Viajou\Mobile\app\src\main\AndroidManifest.xml:99:13-54
 117
-118                <data
-118-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
-119                    android:host="firebase.auth"
-119-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
-120                    android:path="/"
-120-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
-121                    android:scheme="genericidp" />
-121-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
-122            </intent-filter>
-123        </activity>
-124        <activity
-124-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:47:9-64:20
-125            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-125-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:48:13-79
-126            android:excludeFromRecents="true"
-126-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:49:13-46
-127            android:exported="true"
-127-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:50:13-36
-128            android:launchMode="singleTask"
-128-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:51:13-44
-129            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-129-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:52:13-72
-130            <intent-filter>
-130-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:53:13-63:29
-131                <action android:name="android.intent.action.VIEW" />
-131-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
-131-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
-132
-133                <category android:name="android.intent.category.DEFAULT" />
-133-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
-133-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
-134                <category android:name="android.intent.category.BROWSABLE" />
-134-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
-134-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
-135
-136                <data
-136-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
-137                    android:host="firebase.auth"
-137-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
-138                    android:path="/"
-138-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
-139                    android:scheme="recaptcha" />
-139-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
-140            </intent-filter>
-141        </activity>
-142
-143        <service
-143-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:66:9-72:19
-144            android:name="com.google.firebase.components.ComponentDiscoveryService"
-144-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:67:13-84
-145            android:directBootAware="true"
-145-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
-146            android:exported="false" >
-146-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:68:13-37
-147            <meta-data
-147-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:69:13-71:85
-148                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-148-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:70:17-109
-149                android:value="com.google.firebase.components.ComponentRegistrar" />
-149-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:71:17-82
-150            <meta-data
-150-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2f2c624c04341e0e8806404021aed605\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
-151                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-151-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2f2c624c04341e0e8806404021aed605\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
-152                android:value="com.google.firebase.components.ComponentRegistrar" />
-152-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2f2c624c04341e0e8806404021aed605\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
-153            <meta-data
-153-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
-154                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-154-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
-155                android:value="com.google.firebase.components.ComponentRegistrar" />
-155-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
-156        </service>
-157
-158        <provider
-158-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
-159            android:name="com.google.firebase.provider.FirebaseInitProvider"
-159-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
-160            android:authorities="com.interdiciplinar.viajou.firebaseinitprovider"
-160-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
-161            android:directBootAware="true"
-161-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
-162            android:exported="false"
-162-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
-163            android:initOrder="100" />
-163-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
-164
-165        <service
-165-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
-166            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
-166-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
-167            android:enabled="true"
-167-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
-168            android:exported="false" >
-168-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
-169            <meta-data
-169-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
-170                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
-170-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
-171                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
-171-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
-172        </service>
-173
-174        <activity
-174-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
-175            android:name="androidx.credentials.playservices.HiddenActivity"
-175-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
-176            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
-176-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
-177            android:enabled="true"
-177-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
-178            android:exported="false"
-178-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
-179            android:fitsSystemWindows="true"
-179-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
-180            android:theme="@style/Theme.Hidden" >
-180-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
-181        </activity>
-182        <activity
-182-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
-183            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-183-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
-184            android:excludeFromRecents="true"
-184-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
-185            android:exported="false"
-185-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
-186            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-186-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
-187        <!--
-188            Service handling Google Sign-In user revocation. For apps that do not integrate with
-189            Google Sign-In, this service will never be started.
-190        -->
-191        <service
-191-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
-192            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-192-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
-193            android:exported="true"
-193-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
-194            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-194-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
-195            android:visibleToInstantApps="true" />
-195-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
-196
-197        <activity
-197-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2c0984a0813cddc3182b608e8d971a1d\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-198            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-198-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2c0984a0813cddc3182b608e8d971a1d\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-199            android:exported="false"
-199-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2c0984a0813cddc3182b608e8d971a1d\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-200            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-200-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2c0984a0813cddc3182b608e8d971a1d\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-201
-202        <provider
-202-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\6ef634ffec0aa68601d85989679e07c8\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-203            android:name="androidx.startup.InitializationProvider"
-203-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\6ef634ffec0aa68601d85989679e07c8\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-204            android:authorities="com.interdiciplinar.viajou.androidx-startup"
-204-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\6ef634ffec0aa68601d85989679e07c8\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-205            android:exported="false" >
-205-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\6ef634ffec0aa68601d85989679e07c8\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-206            <meta-data
-206-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\6ef634ffec0aa68601d85989679e07c8\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-207                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-207-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\6ef634ffec0aa68601d85989679e07c8\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-208                android:value="androidx.startup" />
-208-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\6ef634ffec0aa68601d85989679e07c8\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-209            <meta-data
-209-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\884988584c8900a7eafda686fcbe0623\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-210                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-210-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\884988584c8900a7eafda686fcbe0623\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-211                android:value="androidx.startup" />
-211-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\884988584c8900a7eafda686fcbe0623\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-212            <meta-data
-212-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-213                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-213-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-214                android:value="androidx.startup" />
-214-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-215        </provider>
-216
-217        <uses-library
-217-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5a1350c7f73aac9b462ef0531fcf7514\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-218            android:name="androidx.window.extensions"
-218-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5a1350c7f73aac9b462ef0531fcf7514\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-219            android:required="false" />
-219-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5a1350c7f73aac9b462ef0531fcf7514\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-220        <uses-library
-220-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5a1350c7f73aac9b462ef0531fcf7514\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-221            android:name="androidx.window.sidecar"
-221-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5a1350c7f73aac9b462ef0531fcf7514\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-222            android:required="false" />
-222-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5a1350c7f73aac9b462ef0531fcf7514\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-223
-224        <meta-data
-224-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\52aaebd7cc22dee271b4f8c80a914462\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
-225            android:name="com.google.android.gms.version"
-225-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\52aaebd7cc22dee271b4f8c80a914462\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
-226            android:value="@integer/google_play_services_version" />
-226-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\52aaebd7cc22dee271b4f8c80a914462\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
-227
-228        <receiver
-228-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-229            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-229-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-230            android:directBootAware="false"
-230-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-231            android:enabled="true"
-231-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-232            android:exported="true"
-232-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-233            android:permission="android.permission.DUMP" >
-233-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-234            <intent-filter>
-234-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-235                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-235-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-235-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-236            </intent-filter>
-237            <intent-filter>
-237-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-238                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-238-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-238-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-239            </intent-filter>
-240            <intent-filter>
-240-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-241                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-241-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-241-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-242            </intent-filter>
-243            <intent-filter>
-243-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-244                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-244-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-244-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-245            </intent-filter>
-246        </receiver>
-247    </application>
-248
-249</manifest>
+118        <activity
+118-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:29:9-46:20
+119            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+119-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:30:13-80
+120            android:excludeFromRecents="true"
+120-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:31:13-46
+121            android:exported="true"
+121-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:32:13-36
+122            android:launchMode="singleTask"
+122-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:33:13-44
+123            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+123-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:34:13-72
+124            <intent-filter>
+124-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:35:13-45:29
+125                <action android:name="android.intent.action.VIEW" />
+125-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
+125-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
+126
+127                <category android:name="android.intent.category.DEFAULT" />
+127-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
+127-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
+128                <category android:name="android.intent.category.BROWSABLE" />
+128-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
+128-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
+129
+130                <data
+130-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
+131                    android:host="firebase.auth"
+131-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
+132                    android:path="/"
+132-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
+133                    android:scheme="genericidp" />
+133-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
+134            </intent-filter>
+135        </activity>
+136        <activity
+136-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:47:9-64:20
+137            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+137-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:48:13-79
+138            android:excludeFromRecents="true"
+138-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:49:13-46
+139            android:exported="true"
+139-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:50:13-36
+140            android:launchMode="singleTask"
+140-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:51:13-44
+141            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+141-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:52:13-72
+142            <intent-filter>
+142-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:53:13-63:29
+143                <action android:name="android.intent.action.VIEW" />
+143-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
+143-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
+144
+145                <category android:name="android.intent.category.DEFAULT" />
+145-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
+145-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
+146                <category android:name="android.intent.category.BROWSABLE" />
+146-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
+146-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
+147
+148                <data
+148-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
+149                    android:host="firebase.auth"
+149-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
+150                    android:path="/"
+150-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
+151                    android:scheme="recaptcha" />
+151-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
+152            </intent-filter>
+153        </activity>
+154
+155        <service
+155-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:66:9-72:19
+156            android:name="com.google.firebase.components.ComponentDiscoveryService"
+156-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:67:13-84
+157            android:directBootAware="true"
+157-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+158            android:exported="false" >
+158-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:68:13-37
+159            <meta-data
+159-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:69:13-71:85
+160                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+160-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:70:17-109
+161                android:value="com.google.firebase.components.ComponentRegistrar" />
+161-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:71:17-82
+162            <meta-data
+162-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2f2c624c04341e0e8806404021aed605\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+163                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+163-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2f2c624c04341e0e8806404021aed605\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+164                android:value="com.google.firebase.components.ComponentRegistrar" />
+164-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2f2c624c04341e0e8806404021aed605\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+165            <meta-data
+165-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+166                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+166-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+167                android:value="com.google.firebase.components.ComponentRegistrar" />
+167-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+168        </service>
+169
+170        <provider
+170-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+171            android:name="com.google.firebase.provider.FirebaseInitProvider"
+171-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+172            android:authorities="com.interdiciplinar.viajou.firebaseinitprovider"
+172-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+173            android:directBootAware="true"
+173-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+174            android:exported="false"
+174-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+175            android:initOrder="100" />
+175-->[com.google.firebase:firebase-common:21.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\f2e128d1585c049ab61056152c240fbc\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+176
+177        <service
+177-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+178            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+178-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+179            android:enabled="true"
+179-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+180            android:exported="false" >
+180-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+181            <meta-data
+181-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+182                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+182-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+183                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+183-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+184        </service>
+185
+186        <activity
+186-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+187            android:name="androidx.credentials.playservices.HiddenActivity"
+187-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+188            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+188-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+189            android:enabled="true"
+189-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+190            android:exported="false"
+190-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+191            android:fitsSystemWindows="true"
+191-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+192            android:theme="@style/Theme.Hidden" >
+192-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b194ee44b9b4256b4858a19945e26ffd\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+193        </activity>
+194        <activity
+194-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+195            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+195-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+196            android:excludeFromRecents="true"
+196-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+197            android:exported="false"
+197-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+198            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+198-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+199        <!--
+200            Service handling Google Sign-In user revocation. For apps that do not integrate with
+201            Google Sign-In, this service will never be started.
+202        -->
+203        <service
+203-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+204            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+204-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+205            android:exported="true"
+205-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+206            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+206-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+207            android:visibleToInstantApps="true" />
+207-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5d6d030a0b100363ac13067acf0bec61\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+208
+209        <activity
+209-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2c0984a0813cddc3182b608e8d971a1d\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+210            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+210-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2c0984a0813cddc3182b608e8d971a1d\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+211            android:exported="false"
+211-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2c0984a0813cddc3182b608e8d971a1d\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+212            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+212-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\2c0984a0813cddc3182b608e8d971a1d\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+213
+214        <provider
+214-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\6ef634ffec0aa68601d85989679e07c8\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+215            android:name="androidx.startup.InitializationProvider"
+215-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\6ef634ffec0aa68601d85989679e07c8\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+216            android:authorities="com.interdiciplinar.viajou.androidx-startup"
+216-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\6ef634ffec0aa68601d85989679e07c8\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+217            android:exported="false" >
+217-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\6ef634ffec0aa68601d85989679e07c8\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+218            <meta-data
+218-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\6ef634ffec0aa68601d85989679e07c8\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+219                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+219-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\6ef634ffec0aa68601d85989679e07c8\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+220                android:value="androidx.startup" />
+220-->[androidx.emoji2:emoji2:1.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\6ef634ffec0aa68601d85989679e07c8\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+221            <meta-data
+221-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\884988584c8900a7eafda686fcbe0623\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+222                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+222-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\884988584c8900a7eafda686fcbe0623\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+223                android:value="androidx.startup" />
+223-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\884988584c8900a7eafda686fcbe0623\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+224            <meta-data
+224-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+225                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+225-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+226                android:value="androidx.startup" />
+226-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+227        </provider>
+228
+229        <uses-library
+229-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5a1350c7f73aac9b462ef0531fcf7514\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+230            android:name="androidx.window.extensions"
+230-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5a1350c7f73aac9b462ef0531fcf7514\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+231            android:required="false" />
+231-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5a1350c7f73aac9b462ef0531fcf7514\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+232        <uses-library
+232-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5a1350c7f73aac9b462ef0531fcf7514\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+233            android:name="androidx.window.sidecar"
+233-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5a1350c7f73aac9b462ef0531fcf7514\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+234            android:required="false" />
+234-->[androidx.window:window:1.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\5a1350c7f73aac9b462ef0531fcf7514\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+235
+236        <meta-data
+236-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\52aaebd7cc22dee271b4f8c80a914462\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+237            android:name="com.google.android.gms.version"
+237-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\52aaebd7cc22dee271b4f8c80a914462\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+238            android:value="@integer/google_play_services_version" />
+238-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\52aaebd7cc22dee271b4f8c80a914462\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+239
+240        <receiver
+240-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+241            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+241-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+242            android:directBootAware="false"
+242-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+243            android:enabled="true"
+243-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+244            android:exported="true"
+244-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+245            android:permission="android.permission.DUMP" >
+245-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+246            <intent-filter>
+246-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+247                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+247-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+247-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+248            </intent-filter>
+249            <intent-filter>
+249-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+250                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+250-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+250-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+251            </intent-filter>
+252            <intent-filter>
+252-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+253                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+253-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+253-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+254            </intent-filter>
+255            <intent-filter>
+255-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+256                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+256-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+256-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\b463ca2dd1967827651e03f20416b7bc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+257            </intent-filter>
+258        </receiver>
+259    </application>
+260
+261</manifest>

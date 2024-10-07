@@ -227,7 +227,7 @@ public class TelaSMS extends AppCompatActivity {
                                 UserProfileChangeRequest profile = new UserProfileChangeRequest.Builder()
                                         .setDisplayName(username)
                                         // Definir a URI da foto do perfil
-                                        .setPhotoUri(Uri.parse("https://i.imgur.com/MK4NUzI.jpg"))
+                                        .setPhotoUri(Uri.parse("https://img.lojasrenner.com.br/item/927856963/original/6.jpg"))
                                         .build();
                                 userlogin.updateProfile(profile)
                                         .addOnCompleteListener(new OnCompleteListener<Void>() {

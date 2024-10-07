@@ -18,6 +18,13 @@ import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.HomeRecomendarA
 
 import java.util.ArrayList;
 import java.util.List;
+import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class TelaHomeFragment extends Fragment {
 
@@ -26,7 +33,7 @@ public class TelaHomeFragment extends Fragment {
     private List<Home> continuarList, recomendarlist, popularesList, pertoList, experienciaList;
     SearchView searchView;
     SearchView.SearchAutoComplete searchEditText;
-    ImageView iconLupa;
+    ImageView iconLupa, iconToolbar;
 
     public TelaHomeFragment() {
         // Required empty public constructor
@@ -50,7 +57,9 @@ public class TelaHomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_tela_home, container, false);
 
         searchView = view.findViewById(R.id.pesquisar);
+
         iconLupa = view.findViewById(R.id.iconLupa);
+        iconToolbar = view.findViewById(R.id.imgPerfilToolbar);
         searchEditText = searchView.findViewById(androidx.appcompat.R.id.search_src_text);
 
         recyclerContinuar = view.findViewById(R.id.recyclerContinuarHome);
@@ -71,6 +80,13 @@ public class TelaHomeFragment extends Fragment {
 
         recyclerExperiencia = view.findViewById(R.id.recyclerExperienciaHome);
         recyclerExperiencia.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+
+        FirebaseAuth autenticar = FirebaseAuth.getInstance();
+        FirebaseUser userLogin = autenticar.getCurrentUser();
+
+        Glide.with(this).load(userLogin.getPhotoUrl())
+                .centerCrop()
+                .into((ImageView) iconToolbar);
 
         // Mockando os dados
         recomendarlist = getMockhomeRecomendar();

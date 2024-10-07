@@ -62,6 +62,8 @@ public class TelaErroSMS extends AppCompatActivity {
     }
 
     @Override
+
+
     protected void onResume() {
         super.onResume();
         // Verifica as permissões sempre que a Activity volta ao foco

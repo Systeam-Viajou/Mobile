@@ -1,19 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="50dp">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imgPerfilToolbar"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="9dp"
+        android:background="#D8D8D8"
+        android:src="@drawable/profilecircle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/imgperfiltoolbarprimar" />
+        app:shapeAppearanceOverlay="@style/circular" />
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/pesquisar"
@@ -23,16 +24,15 @@
         android:layout_marginTop="9dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/fundo_pesquisa_toolbar"
+        android:focusable="true"
         android:iconifiedByDefault="false"
         android:layoutDirection="rtl"
-        app:queryHint="Pesquisar"
-        app:searchIcon="@null"
-        android:focusable="true"
-        app:searchHintIcon="@null"
         app:layout_constraintEnd_toStartOf="@+id/imgPerfilToolbar"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toEndOf="@+id/iconNotifiToolbar"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="Pesquisar"
+        app:searchHintIcon="@null"
+        app:searchIcon="@null" />
 
     <ImageView
         android:id="@+id/iconLupa"
@@ -40,9 +40,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="17dp"
         android:layout_marginEnd="25dp"
+        android:src="@drawable/iconlupa"
         app:layout_constraintEnd_toStartOf="@+id/iconNotifiToolbar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconlupa" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/iconNotifiToolbar"
@@ -50,9 +50,9 @@
         android:layout_height="35dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="12dp"
+        android:src="@drawable/iconsinotoolbarprimar"
         app:layout_constraintEnd_toStartOf="@+id/iconConfigToolbar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconsinotoolbarprimar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/iconConfigToolbar"
@@ -60,9 +60,8 @@
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
+        android:src="@drawable/iconconfigtoolbarprimar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconconfigtoolbarprimar" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

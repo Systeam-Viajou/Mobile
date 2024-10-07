@@ -38,6 +38,18 @@
         android:testOnly="true"
         android:theme="@style/Theme.FragmentAndroid" >
         <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaEsqueceuSenha3"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaEsqueceuSenha2"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaEsqueceuSenha"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasErro.TelaErroSMS"
             android:exported="false"
             android:theme="@style/Base.Theme.Viajou" />
