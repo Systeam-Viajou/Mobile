@@ -1,5 +1,6 @@
 package com.interdiciplinar.viajou.Telas.TelasPrincipais;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.widget.SearchView;
@@ -25,6 +26,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaPerfil;
 
 public class TelaHomeFragment extends Fragment {
 
@@ -88,6 +90,15 @@ public class TelaHomeFragment extends Fragment {
                 .centerCrop()
                 .into((ImageView) iconToolbar);
 
+        iconToolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), TelaPerfil.class);
+                startActivity(intent);
+                getActivity().getSupportFragmentManager().popBackStack();
+            }
+        });
+
         // Mockando os dados
         recomendarlist = getMockhomeRecomendar();
 
@@ -123,6 +134,17 @@ public class TelaHomeFragment extends Fragment {
         });
 
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        FirebaseAuth autenticar = FirebaseAuth.getInstance();
+        FirebaseUser userLogin = autenticar.getCurrentUser();
+
+        Glide.with(this).load(userLogin.getPhotoUrl())
+                .centerCrop()
+                .into((ImageView) iconToolbar);
     }
 
     // Método que mocka os eventos com datas aleatórias

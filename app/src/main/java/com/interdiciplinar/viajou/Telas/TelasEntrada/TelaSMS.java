@@ -227,7 +227,7 @@ public class TelaSMS extends AppCompatActivity {
                                 UserProfileChangeRequest profile = new UserProfileChangeRequest.Builder()
                                         .setDisplayName(username)
                                         // Definir a URI da foto do perfil
-                                        .setPhotoUri(Uri.parse("https://img.lojasrenner.com.br/item/927856963/original/6.jpg"))
+                                        .setPhotoUri(Uri.parse("https://static.vecteezy.com/system/resources/previews/026/434/409/non_2x/default-avatar-profile-icon-social-media-user-photo-vector.jpg"))
                                         .build();
                                 userlogin.updateProfile(profile)
                                         .addOnCompleteListener(new OnCompleteListener<Void>() {

@@ -3109,6 +3109,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable divisao
+drawable edit
 drawable erroicon
 drawable exposicoesfoto
 drawable facebook
@@ -3164,6 +3165,7 @@ drawable iconhoracardexcursoes
 drawable iconloccardexcursoes
 drawable iconlupa
 drawable iconmoneycardexcursoes
+drawable iconperfiltoolbar
 drawable iconperfiltoolbarsecund
 drawable iconpersoncardexcursoes
 drawable icons
@@ -3181,10 +3183,10 @@ drawable imgcardhome
 drawable imgcardturismos
 drawable imgcarrossel
 drawable imgerrointerno
-drawable imgperfiltoolbarprimar
 drawable imgsemcoteudo_home
 drawable indeterminate_static
 drawable joia
+drawable leftperfilicon
 drawable linha_arredondada
 drawable linhacardeventos
 drawable m3_avd_hide_password
@@ -3260,8 +3262,10 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable opcaoconta
 drawable profilecircle
 drawable rotate_right
+drawable sair
 drawable setadirecarrossel
 drawable setaesqcarrossel
 drawable showfoto
@@ -3576,6 +3580,8 @@ id image
 id imageCalendar
 id imageView
 id imageView11
+id imageView13
+id imageView14
 id imageView2
 id imageView3
 id imageView4
@@ -3598,11 +3604,13 @@ id imgErroInterno
 id imgExposicoes
 id imgFeiras
 id imgFestival
+id imgPerfil
 id imgPerfilToolbar
 id imgShow
 id immediateStop
 id include
 id include2
+id include3
 id included
 id indeterminate
 id info
@@ -3790,6 +3798,7 @@ id right_side
 id rounded
 id row_index_key
 id rtl
+id sair
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3898,6 +3907,7 @@ id textView5
 id textView6
 id textView7
 id textView8
+id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3961,6 +3971,7 @@ id up
 id useLogo
 id user
 id username
+id usernamePerfil
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -4106,6 +4117,7 @@ layout activity_tela_esqueceu_senha
 layout activity_tela_esqueceu_senha2
 layout activity_tela_esqueceu_senha3
 layout activity_tela_login
+layout activity_tela_perfil
 layout activity_tela_pesquisa
 layout activity_tela_sms
 layout browser_actions_context_menu_page

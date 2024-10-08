@@ -21,20 +21,20 @@
                 {
                     "source": "C:\\Users\\joaopedro-ieg\\Interdiciplinar\\Viajou\\Mobile\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
-                        "startLines": "2,-1,-1,28,-1,11",
-                        "startColumns": "4,-1,-1,4,-1,4",
-                        "startOffsets": "102,-1,-1,1070,-1,451",
-                        "endLines": "7,-1,-1,40,-1,15",
-                        "endColumns": "12,-1,-1,12,-1,12",
-                        "endOffsets": "379,-1,-1,1750,-1,640"
+                        "startLines": "2,-1,-1,33,-1,17,-1",
+                        "startColumns": "4,-1,-1,4,-1,4,-1",
+                        "startOffsets": "102,-1,-1,1266,-1,648,-1",
+                        "endLines": "7,-1,-1,45,-1,21,-1",
+                        "endColumns": "12,-1,-1,12,-1,12,-1",
+                        "endOffsets": "379,-1,-1,1946,-1,838,-1"
                     },
                     "to": {
-                        "startLines": "2,8,12,23,62,72",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,228,431,1268,4708,5858",
-                        "endLines": "7,11,15,35,62,76",
-                        "endColumns": "12,12,12,12,59,12",
-                        "endOffsets": "223,426,631,1815,4763,6043"
+                        "startLines": "2,8,12,23,62,72,77",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,228,431,1268,4708,5858,6049",
+                        "endLines": "7,11,15,35,62,76,81",
+                        "endColumns": "12,12,12,12,59,12,12",
+                        "endOffsets": "223,426,631,1815,4763,6044,6234"
                     }
                 },
                 {
@@ -77,18 +77,18 @@
                     "from": {
                         "startLines": "2,-1,-1,33,-1,17,-1",
                         "startColumns": "4,-1,-1,4,-1,4,-1",
-                        "startOffsets": "102,-1,-1,1266,-1,648,-1",
+                        "startOffsets": "102,-1,-1,1265,-1,648,-1",
                         "endLines": "7,-1,-1,45,-1,21,-1",
                         "endColumns": "12,-1,-1,12,-1,12,-1",
-                        "endOffsets": "379,-1,-1,1946,-1,838,-1"
+                        "endOffsets": "379,-1,-1,1945,-1,837,-1"
                     },
                     "to": {
                         "startLines": "2,8,12,23,62,72,77",
                         "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,228,431,1268,4708,5858,6049",
+                        "startOffsets": "55,228,431,1268,4708,5858,6048",
                         "endLines": "7,11,15,35,62,76,81",
                         "endColumns": "12,12,12,12,59,12,12",
-                        "endOffsets": "223,426,631,1815,4763,6044,6234"
+                        "endOffsets": "223,426,631,1815,4763,6043,6233"
                     }
                 },
                 {

@@ -70,7 +70,7 @@
     <style name="Theme.Viajou" parent="Base.Theme.Viajou"/>
     <style name="circular" parent="">
         <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">18dp</item>
+        <item name="cornerSize">50%</item>
         <item name="color">@color/white</item>
     </style>
     <style name="redondo" parent="">

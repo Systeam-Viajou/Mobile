@@ -23,6 +23,7 @@ drawable carregando
 drawable carregandocompleto
 drawable cordinha
 drawable divisao
+drawable edit
 drawable erroicon
 drawable exposicoesfoto
 drawable facebook
@@ -55,6 +56,7 @@ drawable iconhoracardexcursoes
 drawable iconloccardexcursoes
 drawable iconlupa
 drawable iconmoneycardexcursoes
+drawable iconperfiltoolbar
 drawable iconperfiltoolbarsecund
 drawable iconpersoncardexcursoes
 drawable icons
@@ -72,14 +74,16 @@ drawable imgcardhome
 drawable imgcardturismos
 drawable imgcarrossel
 drawable imgerrointerno
-drawable imgperfiltoolbarprimar
 drawable imgsemcoteudo_home
 drawable joia
+drawable leftperfilicon
 drawable linha_arredondada
 drawable linhacardeventos
 drawable microsoftvetor
+drawable opcaoconta
 drawable profilecircle
 drawable rotate_right
+drawable sair
 drawable setadirecarrossel
 drawable setaesqcarrossel
 drawable showfoto
@@ -160,6 +164,8 @@ id iconToolbarSecund
 id imageCalendar
 id imageView
 id imageView11
+id imageView13
+id imageView14
 id imageView2
 id imageView3
 id imageView4
@@ -182,10 +188,12 @@ id imgErroInterno
 id imgExposicoes
 id imgFeiras
 id imgFestival
+id imgPerfil
 id imgPerfilToolbar
 id imgShow
 id include
 id include2
+id include3
 id linearLayout
 id linearLayout2
 id linha1
@@ -222,6 +230,7 @@ id recyclerPopularesHome
 id recyclerRecomenHome
 id recyclerViagemTurismo
 id reenviar
+id sair
 id senha
 id senhaLayout
 id setaDireCarrossel
@@ -246,6 +255,7 @@ id textView5
 id textView6
 id textView7
 id textView8
+id textView9
 id titu1
 id titu2
 id titu3
@@ -276,6 +286,7 @@ id txtRecomendadosHome
 id txtViagemTurismo
 id user
 id username
+id usernamePerfil
 layout activity_main
 layout activity_splash_screen
 layout activity_tela_cadastro
@@ -286,6 +297,7 @@ layout activity_tela_esqueceu_senha
 layout activity_tela_esqueceu_senha2
 layout activity_tela_esqueceu_senha3
 layout activity_tela_login
+layout activity_tela_perfil
 layout activity_tela_pesquisa
 layout activity_tela_sms
 layout fragment_tela_eventos
