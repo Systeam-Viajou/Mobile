@@ -1,4 +1,4 @@
-#Sat Oct 12 21:07:02 BRT 2024
+#Sun Oct 13 20:45:36 BRT 2024
 base.0=C\:\\Users\\evellynnakamura-ieg\\AndroidStudios\\AppViajou\\Mobile\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\evellynnakamura-ieg\\AndroidStudios\\AppViajou\\Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\evellynnakamura-ieg\\AndroidStudios\\AppViajou\\Mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex

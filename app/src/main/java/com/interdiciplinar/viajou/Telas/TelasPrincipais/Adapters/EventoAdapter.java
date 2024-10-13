@@ -79,9 +79,10 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
 
             holder.dataCardEventos.setText(dia);
             holder.mesCardEventos.setText(mes);
+
         } catch (DateTimeParseException e) {
             // Lidar com a exceção caso a data não esteja no formato esperado
-            holder.dataCardEventos.setText("Data inválida");
+            holder.dataCardEventos.setText("00");
             holder.mesCardEventos.setText("");
         }
 
