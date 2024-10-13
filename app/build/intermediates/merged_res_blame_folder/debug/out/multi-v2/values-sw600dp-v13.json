@@ -4,7 +4,7 @@
             "outputFile": "com.interdiciplinar.viajou.app-mergeDebugResources-50:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\joaopedro-ieg\\.gradle\\caches\\transforms-3\\8f0109dda9b4e153d0bb3d2e6dd78558\\transformed\\material-1.12.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\evellynnakamura-ieg\\.gradle\\caches\\transforms-3\\8f0109dda9b4e153d0bb3d2e6dd78558\\transformed\\material-1.12.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\joaopedro-ieg\\.gradle\\caches\\transforms-3\\d3a6e4ddc9ca854fc773343c96e9b2bf\\transformed\\appcompat-1.7.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\evellynnakamura-ieg\\.gradle\\caches\\transforms-3\\d3a6e4ddc9ca854fc773343c96e9b2bf\\transformed\\appcompat-1.7.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

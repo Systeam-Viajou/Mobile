@@ -1,42 +1,62 @@
 package com.interdiciplinar.viajou.Models;
 
+import java.math.BigDecimal;
+import java.time.ZonedDateTime;
 import java.util.Date;
 
 public class Evento {
-    private String nome;
-    private String endereco;
-    private boolean acessibilidade;
-    private Date data_inicio;
+    private int id;
+    private String dataInicio;
+    private String dataTermino;
+    private double precoPessoa;
+    private Atracao atracao;
+    private String dataDesativacao;
 
-    public String getNome() {
-        return nome;
+    public int getId() {
+        return id;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getEndereco() {
-        return endereco;
+    public String getDataInicio() {
+        return dataInicio;
     }
 
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
+    public void setDataInicio(String dataInicio) {
+        this.dataInicio = dataInicio;
     }
 
-    public boolean isAcessibilidade() {
-        return acessibilidade;
+    public String getDataTermino() {
+        return dataTermino;
     }
 
-    public void setAcessibilidade(boolean acessibilidade) {
-        this.acessibilidade = acessibilidade;
+    public void setDataTermino(String dataTermino) {
+        this.dataTermino = dataTermino;
     }
 
-    public Date getData_inicio() {
-        return data_inicio;
+    public double getPrecoPessoa() {
+        return precoPessoa;
     }
 
-    public void setData_inicio(Date data_inicio) {
-        this.data_inicio = data_inicio;
+    public void setPrecoPessoa(double precoPessoa) {
+        this.precoPessoa = precoPessoa;
+    }
+
+    public Atracao getAtracao() {
+        return atracao;
+    }
+
+    public void setAtracao(Atracao atracao) {
+        this.atracao = atracao;
+    }
+
+    public String getDataDesativacao() {
+        return dataDesativacao;
+    }
+
+    public void setDataDesativacao(String dataDesativacao) {
+        this.dataDesativacao = dataDesativacao;
     }
 }

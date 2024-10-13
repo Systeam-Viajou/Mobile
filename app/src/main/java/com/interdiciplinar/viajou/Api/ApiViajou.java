@@ -1,8 +1,11 @@
 package com.interdiciplinar.viajou.Api;
 
+import com.interdiciplinar.viajou.Models.Evento;
 import com.interdiciplinar.viajou.Models.Usuario;
 
 import retrofit2.Call;
+
+import java.util.List;
 import java.util.Map;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
@@ -22,4 +25,7 @@ public interface ApiViajou {
 
     @PATCH("/viajouapi/usuarios/atualizarParcial/{uid}")
     Call<String> atualizarParcial(@Path("uid") String uid, @Body Map<String, Object> atualizacoes);
+
+    @GET("/viajouapi/eventos/buscar")
+    Call<List<Evento>> buscarEvento();
 }

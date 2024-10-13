@@ -56,7 +56,7 @@
         <View
             android:id="@+id/linhaEventos"
             android:layout_width="2dp"
-            android:layout_height="58dp"
+            android:layout_height="70dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="12dp"
             android:background="@drawable/linha_arredondada"
@@ -66,10 +66,10 @@
 
         <TextView
             android:id="@+id/tituloCardEvento"
-            android:layout_width="245dp"
+            android:layout_width="250dp"
             android:layout_height="31dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="15dp"
             android:fontFamily="@font/spartan_bold"
             android:text="Título"
             android:textColor="#FFFFFF"
@@ -82,7 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/spartan_bold"
             android:text="09"
             android:textColor="#FFFFFF"
@@ -92,10 +92,10 @@
 
         <TextView
             android:id="@+id/localCardEvento"
-            android:layout_width="245dp"
-            android:layout_height="18dp"
+            android:layout_width="250dp"
+            android:layout_height="36dp"
             android:layout_marginTop="3dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="15dp"
             android:fontFamily="@font/spartan"
             android:text="Endereço"
             android:textColor="#FFFDFD"

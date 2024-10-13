@@ -15,11 +15,13 @@ import com.interdiciplinar.viajou.Models.Evento;
 import com.interdiciplinar.viajou.R;
 
 import java.text.SimpleDateFormat;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
-
 import java.text.DateFormatSymbols;
-
 
 public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoViewHolder> {
 
@@ -42,37 +44,48 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
     public void onBindViewHolder(@NonNull EventoViewHolder holder, int position) {
         Evento evento = eventos.get(position);
 
-        // Setando título, local e acessibilidade
-        holder.tituloCardEvento.setText(evento.getNome());
-        holder.localCardEvento.setText(evento.getEndereco());
+        // Acessando dados da atração dentro do evento
+        holder.tituloCardEvento.setText(evento.getAtracao().getNome());
+        holder.localCardEvento.setText(evento.getAtracao().getEndereco());
 
         // Verificando acessibilidade e exibindo ícone correspondente
-        if (evento.isAcessibilidade()) {
+        if (evento.getAtracao().isAcessibilidade()) {
             holder.iconAcssesEventos.setVisibility(View.VISIBLE);
         } else {
             holder.iconAcssesEventos.setVisibility(View.GONE);
         }
 
-        // Formatando a data (dia e mês abreviado em português sem ponto final)
-        SimpleDateFormat dayFormat = new SimpleDateFormat("dd", Locale.getDefault());
-        SimpleDateFormat monthFormat = new SimpleDateFormat("MMM", new Locale("pt", "BR"));
+        // Formatar a data de início
+        try {
+            // Convertendo a string da data para ZonedDateTime
+            ZonedDateTime dataInicio = ZonedDateTime.parse(evento.getDataInicio());
 
-        // Personalizando os meses sem o ponto final
-        DateFormatSymbols dfs = new DateFormatSymbols(new Locale("pt", "BR")) {
-            @Override
-            public String[] getShortMonths() {
-                return new String[]{"jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"};
-            }
-        };
-        monthFormat.setDateFormatSymbols(dfs);
+            // Formatando a data (dia e mês abreviado em português sem ponto final)
+            SimpleDateFormat dayFormat = new SimpleDateFormat("dd", Locale.getDefault());
+            SimpleDateFormat monthFormat = new SimpleDateFormat("MMM", new Locale("pt", "BR"));
 
-        String dia = dayFormat.format(evento.getData_inicio());
-        String mes = monthFormat.format(evento.getData_inicio());
+            // Personalizando os meses sem o ponto final
+            DateFormatSymbols dfs = new DateFormatSymbols(new Locale("pt", "BR")) {
+                @Override
+                public String[] getShortMonths() {
+                    return new String[]{"jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"};
+                }
+            };
+            monthFormat.setDateFormatSymbols(dfs);
 
-        holder.dataCardEventos.setText(dia);
-        holder.mesCardEventos.setText(mes);
+            // Convertendo as datas de início para exibição
+            String dia = dayFormat.format(Date.from(dataInicio.toInstant()));
+            String mes = monthFormat.format(Date.from(dataInicio.toInstant()));
 
-        // Carregando imagem com Glide (imagem dinâmica a partir de uma URL)
+            holder.dataCardEventos.setText(dia);
+            holder.mesCardEventos.setText(mes);
+        } catch (DateTimeParseException e) {
+            // Lidar com a exceção caso a data não esteja no formato esperado
+            holder.dataCardEventos.setText("Data inválida");
+            holder.mesCardEventos.setText("");
+        }
+
+        // Carregando imagem da URL da atração com Glide
         Glide.with(context)
                 .load("https://lets.events/blog/wp-content/uploads/2022/12/direito-de-imagem-em-eventos.jpg") // Substitua pela URL da imagem correspondente ao evento
                 .into(holder.imgCardEventos);
@@ -100,4 +113,3 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
         }
     }
 }
-
