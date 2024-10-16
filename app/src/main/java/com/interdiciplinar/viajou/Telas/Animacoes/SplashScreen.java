@@ -23,7 +23,7 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
                 abrirTela();
             }
-        }, 2000);
+        }, 3020);
 
 
 
@@ -31,6 +31,7 @@ public class SplashScreen extends AppCompatActivity {
     private void abrirTela() {
         Intent intent = new Intent(SplashScreen.this, TelaLogin.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         finish();
     }
 }

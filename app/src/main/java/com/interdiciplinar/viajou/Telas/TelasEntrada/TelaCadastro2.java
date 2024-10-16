@@ -331,7 +331,7 @@ public class TelaCadastro2 extends AppCompatActivity {
 
         // Criando a chamada para a API
         ApiViajou apiViajou = retrofit.create(ApiViajou.class);
-        Call<Usuario> call = apiViajou.buscarEmail(email);  // Supondo que exista um endpoint para verificar o username
+        Call<Usuario> call = apiViajou.buscarEmail(email);  // Supondo que exista um endpoint para verificar o email
 
         // Executar a chamada
 

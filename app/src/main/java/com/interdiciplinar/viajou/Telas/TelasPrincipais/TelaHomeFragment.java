@@ -95,7 +95,6 @@ public class TelaHomeFragment extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), TelaPerfil.class);
                 startActivity(intent);
-                getActivity().getSupportFragmentManager().popBackStack();
             }
         });
 
