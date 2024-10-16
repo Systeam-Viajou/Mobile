@@ -16,8 +16,6 @@ import com.interdiciplinar.viajou.R;
  * create an instance of this fragment.
  */
 public class TelaTurismosFragment extends Fragment {
-
-
     public TelaTurismosFragment() {
         // Required empty public constructor
     }

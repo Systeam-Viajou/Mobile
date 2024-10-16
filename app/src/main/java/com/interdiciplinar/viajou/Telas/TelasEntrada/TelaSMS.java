@@ -41,14 +41,14 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class TelaSMS extends AppCompatActivity {
-    String pinGerado, nome, sobrenome, email, username, senha, genero, dataNasc, cpf, telefone;
+    String pinGerado, telefone;
     TextView reenviar, textTimer;
     EditText etDigit1, etDigit2, etDigit3, etDigit4, etDigit5, etDigit6;
     boolean isPinValido = true; // Variável para controlar a validade do PIN
     Handler handler = new Handler(); // Handler para lidar com a expiração do PIN
     Runnable pinExpiracaoRunnable;
     Drawable rotate_right;
-
+    Bundle bundle;
     Retrofit retrofit;
 
     @Override
@@ -66,16 +66,7 @@ public class TelaSMS extends AppCompatActivity {
         DrawableCompat.setTint(rotate_right, getResources().getColor(R.color.gray));
         reenviar.setCompoundDrawablesWithIntrinsicBounds(rotate_right, null, null, null);
 
-        Bundle bundle = getIntent().getExtras();
-
-        nome = bundle.getString("nome");
-        sobrenome = bundle.getString("sobrenome");
-        email = bundle.getString("email");
-        username = bundle.getString("username");
-        senha = bundle.getString("senha");
-        genero = bundle.getString("genero");
-        dataNasc = bundle.getString("dataNasc");
-        cpf = bundle.getString("cpf");
+        bundle = getIntent().getExtras();
         telefone = bundle.getString("telefone");
 
         Button bt = findViewById(R.id.btContinuar);
@@ -99,10 +90,9 @@ public class TelaSMS extends AppCompatActivity {
                 String pinDigitado = etDigit1.getText().toString() + etDigit2.getText().toString() + etDigit3.getText().toString() + etDigit4.getText().toString() + etDigit5.getText().toString() + etDigit6.getText().toString();
 
                 if (!isPinValido) {
-                    Toast.makeText(TelaSMS.this, "PIN expirado. Por favor, solicite um novo.", Toast.LENGTH_LONG).show();
                 } else if (pinDigitado.equals(pinGerado)) {
-                    salvarUsuarioFirebase();
                     Intent intent = new Intent(TelaSMS.this, TelaPesquisa.class);
+                    intent.putExtras(bundle);
                     startActivity(intent);
                 } else {
                     Toast.makeText(TelaSMS.this, "PIN incorreto.", Toast.LENGTH_LONG).show();
@@ -207,86 +197,6 @@ public class TelaSMS extends AppCompatActivity {
 
         // Executa o Runnable após 2 minutos
         handler.postDelayed(pinExpiracaoRunnable, 120000);
-    }
-
-    private void salvarUsuarioFirebase() {
-        FirebaseAuth autenticator = FirebaseAuth.getInstance();
-        autenticator.createUserWithEmailAndPassword(email, senha)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Obter o usuário logado
-                            FirebaseUser userlogin = autenticator.getCurrentUser();
-
-                            if (userlogin != null) {
-                                // Obter o UID do Firebase
-                                String uid = userlogin.getUid();
-
-                                // Atualizar o perfil do usuário no Firebase
-                                UserProfileChangeRequest profile = new UserProfileChangeRequest.Builder()
-                                        .setDisplayName(username)
-                                        // Definir a URI da foto do perfil
-                                        .setPhotoUri(Uri.parse("https://static.vecteezy.com/system/resources/previews/026/434/409/non_2x/default-avatar-profile-icon-social-media-user-photo-vector.jpg"))
-                                        .build();
-                                userlogin.updateProfile(profile)
-                                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                            @Override
-                                            public void onComplete(@NonNull Task<Void> task) {
-                                                if (task.isSuccessful()) {
-                                                    Usuario usuario = new Usuario(uid, nome, sobrenome, dataNasc, username, email, telefone, genero, senha, cpf);
-                                                    inserirUsuarioSpring(usuario);
-                                                    // Finaliza a activity ou qualquer ação desejada
-                                                    finish();
-                                                }
-                                            }
-                                        });
-                            }
-
-                        } else {
-                            // Mostrar mensagem de erro
-                            Log.e("LOGIN_ERROR", "Erro no cadastro: " + task.getException().getMessage());
-                            //Toast.makeText(TelaSMS.this, "Erro no cadastro: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
-    }
-
-    private void inserirUsuarioSpring(Usuario usuario){
-        String API = "https://dev-ii-postgres-dev.onrender.com/";
-        // Configurar acesso API
-        retrofit = new Retrofit.Builder()
-                .baseUrl(API)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-
-        // criar a chamada
-        ApiViajou apiViajou = retrofit.create(ApiViajou.class);
-        Call<Usuario> call = apiViajou.inserirUsuario(usuario);
-
-        // executar a chamada
-        call.enqueue(new Callback<Usuario>() {
-                         public void onResponse(Call<Usuario> call, Response<Usuario> response) {
-                             if(response.isSuccessful()){
-                                 Usuario createdUser = response.body();
-                                 Log.d("POST_SUCCESS", "Usuário criado: " + createdUser.getUsername());
-                             }else{
-                                 Log.e("POST_ERROR", "Código de erro: " + response.code());
-                             }
-                         }
-                         public void onFailure(Call<Usuario> call, Throwable t) {
-                             if(t.getMessage().equals("timeout")){
-                                 Intent intent = new Intent(TelaSMS.this, TelaErroInterno.class);
-                                 startActivity(intent);
-                             }
-                             else{
-                                 Log.e("POST_FAILURE", "Falha na requisição: " + t.getMessage());
-                             }
-                         }
-
-                     }
-
-        );
     }
 
 }

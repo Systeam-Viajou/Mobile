@@ -11,6 +11,7 @@ MERGED from [androidx.navigation:navigation-fragment:2.7.7] C:\Users\joaopedro-i
 MERGED from [androidx.navigation:navigation-ui:2.7.7] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\e855280b79213b02c80817f39cbe6389\transformed\navigation-ui-2.7.7\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\8f0109dda9b4e153d0bb3d2e6dd78558\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\de68b0d8cc57f972760e4212da53a69f\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
+MERGED from [com.airbnb.android:lottie:6.5.2] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\db18d5f52b3d0bc9e5ae2bba95d77802\transformed\lottie-6.5.2\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\c4edea67a038e118b78794a189533a44\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\d3a6e4ddc9ca854fc773343c96e9b2bf\transformed\appcompat-1.7.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:17:1-75:12
@@ -143,6 +144,8 @@ MERGED from [com.google.android.material:material:1.12.0] C:\Users\joaopedro-ieg
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\8f0109dda9b4e153d0bb3d2e6dd78558\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\de68b0d8cc57f972760e4212da53a69f\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\de68b0d8cc57f972760e4212da53a69f\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [com.airbnb.android:lottie:6.5.2] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\db18d5f52b3d0bc9e5ae2bba95d77802\transformed\lottie-6.5.2\AndroidManifest.xml:7:5-20
+MERGED from [com.airbnb.android:lottie:6.5.2] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\db18d5f52b3d0bc9e5ae2bba95d77802\transformed\lottie-6.5.2\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\0a9cef662702ee28a95c0779d9e5e743\transformed\firebase-auth-23.0.0\AndroidManifest.xml:28:5-73:19
 MERGED from [com.github.bumptech.glide:glide:4.14.2] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\aeed2b82a4e29b2dd13a565f71ec8f92\transformed\glide-4.14.2\AndroidManifest.xml:9:5-20
@@ -379,6 +382,8 @@ MERGED from [com.google.android.material:material:1.12.0] C:\Users\joaopedro-ieg
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\8f0109dda9b4e153d0bb3d2e6dd78558\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\de68b0d8cc57f972760e4212da53a69f\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\de68b0d8cc57f972760e4212da53a69f\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.airbnb.android:lottie:6.5.2] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\db18d5f52b3d0bc9e5ae2bba95d77802\transformed\lottie-6.5.2\AndroidManifest.xml:5:5-44
+MERGED from [com.airbnb.android:lottie:6.5.2] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\db18d5f52b3d0bc9e5ae2bba95d77802\transformed\lottie-6.5.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\c4edea67a038e118b78794a189533a44\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\c4edea67a038e118b78794a189533a44\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\joaopedro-ieg\.gradle\caches\transforms-3\d3a6e4ddc9ca854fc773343c96e9b2bf\transformed\appcompat-1.7.0\AndroidManifest.xml:5:5-44

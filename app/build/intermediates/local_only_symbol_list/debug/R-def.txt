@@ -112,6 +112,7 @@ id btVerificarEmail
 id btVoltarLoginEsqSenha
 id button
 id cadastrar
+id carregandoPesquisa
 id carrosselRecycler
 id cifrao
 id confirmarSenha
@@ -167,7 +168,6 @@ id imageView11
 id imageView13
 id imageView14
 id imageView2
-id imageView3
 id imageView4
 id imageView5
 id imageView7
@@ -319,6 +319,8 @@ mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap iconapp
+raw splash
+raw splashanimation
 string app_name
 string gcm_defaultSenderId
 string google_api_key

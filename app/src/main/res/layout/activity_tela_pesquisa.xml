@@ -286,6 +286,18 @@
 
     </androidx.cardview.widget.CardView>
 
+    <ProgressBar
+        android:id="@+id/carregandoPesquisa"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:indeterminateTint="#F86D06D3"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/feiras"
         android:layout_width="344dp"
