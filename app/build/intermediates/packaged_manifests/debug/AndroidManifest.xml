@@ -46,6 +46,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.FragmentAndroid" >
         <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaNotificacao"
+            android:exported="false" />
+        <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaPerfil"
             android:exported="false" />
         <activity

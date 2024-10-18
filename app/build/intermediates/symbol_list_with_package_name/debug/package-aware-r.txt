@@ -3152,12 +3152,13 @@ drawable ic_passkey
 drawable ic_password
 drawable ic_search_black_24
 drawable iconacsses
+drawable iconaviaonotificacao
 drawable iconconfigtoolbarprimar
 drawable iconconfigtoolbarsecund
 drawable iconempresacardexcursoes
 drawable iconerrosms
 drawable iconeventocardhome
-drawable iconeventosnavbar
+drawable iconeventos
 drawable iconexcursoesnavbar
 drawable iconfigurinhasnavbar
 drawable iconhomenavbar
@@ -3185,6 +3186,7 @@ drawable imgcarrossel
 drawable imgerrointerno
 drawable imgsemcoteudo_home
 drawable indeterminate_static
+drawable ionavisonotificacao
 drawable joia
 drawable leftperfilicon
 drawable linha_arredondada
@@ -3433,6 +3435,7 @@ id confirm_button
 id confirmarSenha
 id confirmarSenhaLayout
 id constraint
+id constraintLayout
 id container
 id content
 id contentPanel
@@ -3604,16 +3607,18 @@ id imgErroInterno
 id imgExposicoes
 id imgFeiras
 id imgFestival
+id imgNotificacao
 id imgPerfil
 id imgPerfilToolbar
 id imgShow
 id immediateStop
 id include
-id include2
 id include3
+id include4
 id included
 id indeterminate
 id info
+id infoNotificacao
 id invisible
 id inward
 id italic
@@ -3931,6 +3936,7 @@ id tituloCardExcursoes
 id tituloCardHome
 id tituloCardTurismo
 id tituloErroInterno
+id tituloNotificacao
 id tituloToolbarSecund
 id toggle
 id top
@@ -4117,6 +4123,7 @@ layout activity_tela_esqueceu_senha
 layout activity_tela_esqueceu_senha2
 layout activity_tela_esqueceu_senha3
 layout activity_tela_login
+layout activity_tela_notificacao
 layout activity_tela_perfil
 layout activity_tela_pesquisa
 layout activity_tela_sms
@@ -4150,6 +4157,7 @@ layout item_card_excursoes
 layout item_card_home
 layout item_card_turismos
 layout item_carrossel_home
+layout item_notificacao
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

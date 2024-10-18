@@ -12,7 +12,7 @@
     <item
         android:id="@+id/eventos"
         android:title="Eventos"
-        android:icon="@drawable/iconeventosnavbar"/>
+        android:icon="@drawable/iconeventos"/>
     <item
         android:id="@+id/excursoes"
         android:title="Excursões"
