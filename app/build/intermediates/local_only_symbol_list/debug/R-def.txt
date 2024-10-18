@@ -21,6 +21,9 @@ drawable calendar
 drawable calendario
 drawable carregando
 drawable carregandocompleto
+drawable carroseu1
+drawable carroseu2
+drawable carroseu3
 drawable cordinha
 drawable divisao
 drawable edit
@@ -287,10 +290,12 @@ id txtViagemTurismo
 id user
 id username
 id usernamePerfil
+id viewPager
 layout activity_main
 layout activity_splash_screen
 layout activity_tela_cadastro
 layout activity_tela_cadastro2
+layout activity_tela_card_aberto
 layout activity_tela_erro_interno
 layout activity_tela_erro_sms
 layout activity_tela_esqueceu_senha
@@ -300,6 +305,7 @@ layout activity_tela_login
 layout activity_tela_perfil
 layout activity_tela_pesquisa
 layout activity_tela_sms
+layout carousel_item
 layout fragment_tela_eventos
 layout fragment_tela_excursoes
 layout fragment_tela_figurinhas

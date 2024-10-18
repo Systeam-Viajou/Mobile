@@ -3105,6 +3105,9 @@ drawable calendar
 drawable calendario
 drawable carregando
 drawable carregandocompleto
+drawable carroseu1
+drawable carroseu2
+drawable carroseu3
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -4003,6 +4006,7 @@ id user
 id username
 id usernamePerfil
 id vertical_only
+id viewPager
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -4141,6 +4145,7 @@ layout activity_main
 layout activity_splash_screen
 layout activity_tela_cadastro
 layout activity_tela_cadastro2
+layout activity_tela_card_aberto
 layout activity_tela_erro_interno
 layout activity_tela_erro_sms
 layout activity_tela_esqueceu_senha
@@ -4152,6 +4157,7 @@ layout activity_tela_pesquisa
 layout activity_tela_sms
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout carousel_item
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
