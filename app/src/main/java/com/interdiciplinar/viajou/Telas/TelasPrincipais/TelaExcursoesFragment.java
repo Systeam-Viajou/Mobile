@@ -92,7 +92,6 @@ public class TelaExcursoesFragment extends Fragment {
                     Log.e("ERRO", "Resposta vazia ou erro na resposta");
                 }
             }
-
             @Override
             public void onFailure(Call<List<Excursao>> call, Throwable throwable) {
                 Log.e("ERRO", "Falha ao carregar eventos: " + throwable.getMessage(), throwable);
@@ -100,5 +99,4 @@ public class TelaExcursoesFragment extends Fragment {
             }
         });
     }
-
 }

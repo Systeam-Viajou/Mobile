@@ -11,6 +11,7 @@ import com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaExcursoesFragment;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaFigurinhasFragment;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaHomeFragment;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaTurismosFragment;
+import com.interdiciplinar.viajou.Telas.TelasTour.TelaCardAberto;
 import com.interdiciplinar.viajou.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         openFragment(TelaHomeFragment.newInstance());
+
+        Fragment cardFragment = TelaCardAberto.newInstance();
+        openFragment(cardFragment);
 
         binding.bottomNavigationView.setOnItemSelectedListener(
                 item -> {

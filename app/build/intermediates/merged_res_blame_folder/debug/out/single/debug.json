@@ -96,6 +96,10 @@
         "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\layout\\item_card_turismos.xml"
     },
     {
+        "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_fundo_card.xml.flat",
+        "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\fundo_card.xml"
+    },
+    {
         "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_iconacsses.xml.flat",
         "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\iconacsses.xml"
     },
@@ -176,10 +180,6 @@
         "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\raw\\splash.json"
     },
     {
-        "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\layout_activity_tela_card_aberto.xml.flat",
-        "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\layout\\activity_tela_card_aberto.xml"
-    },
-    {
         "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\ic_launcher_background.xml"
     },
@@ -224,16 +224,16 @@
         "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\imagemlogo.png"
     },
     {
-        "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_borda_card_pesquisa.xml.flat",
+        "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\borda_card_pesquisa.xml"
     },
     {
         "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_viajoupequeno.xml.flat",
         "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\viajoupequeno.xml"
     },
     {
-        "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_borda_card_pesquisa.xml.flat",
-        "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\borda_card_pesquisa.xml"
+        "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\xml\\data_extraction_rules.xml"
     },
     {
         "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\layout_activity_main.xml.flat",
@@ -288,12 +288,16 @@
         "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\mipmap-mdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_sair.xml.flat",
-        "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\sair.xml"
+        "merged": "com.interdiciplinar.viajou.app-merged_res-53:/layout_carousel_item.xml.flat",
+        "source": "com.interdiciplinar.viajou.app-main-55:/layout/carousel_item.xml"
     },
     {
         "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_iconturismonavbar.xml.flat",
         "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\iconturismonavbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_sair.xml.flat",
+        "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\sair.xml"
     },
     {
         "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_calendario.xml.flat",
@@ -316,12 +320,12 @@
         "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\fundo_selecionado.xml"
     },
     {
-        "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_carroseu1.png.flat",
-        "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\carroseu1.png"
-    },
-    {
         "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\layout_activity_tela_perfil.xml.flat",
         "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\layout\\activity_tela_perfil.xml"
+    },
+    {
+        "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_carroseu1.png.flat",
+        "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\carroseu1.png"
     },
     {
         "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\layout_fragment_tela_turismos.xml.flat",
@@ -342,6 +346,10 @@
     {
         "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\layout_activity_tela_esqueceu_senha2.xml.flat",
         "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\layout\\activity_tela_esqueceu_senha2.xml"
+    },
+    {
+        "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\layout_fragment_tela_card_aberto.xml.flat",
+        "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\layout\\fragment_tela_card_aberto.xml"
     },
     {
         "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_iconsinotoolbarprimar.xml.flat",
@@ -472,10 +480,6 @@
         "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\apresentacaoesfoto.png"
     },
     {
-        "merged": "com.interdiciplinar.viajou.app-merged_res-53:/layout_activity_tela_card_aberto.xml.flat",
-        "source": "com.interdiciplinar.viajou.app-main-55:/layout/activity_tela_card_aberto.xml"
-    },
-    {
         "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\layout_carousel_item.xml.flat",
         "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\layout\\carousel_item.xml"
     },
@@ -490,6 +494,10 @@
     {
         "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\font_montserrat_thin.xml.flat",
         "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\font\\montserrat_thin.xml"
+    },
+    {
+        "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_icon_loc.xml.flat",
+        "source": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\icon_loc.xml"
     },
     {
         "merged": "C:\\Users\\joaopedro-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\layout_activity_tela_erro_interno.xml.flat",

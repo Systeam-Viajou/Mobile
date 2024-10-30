@@ -297,27 +297,26 @@ public class TelaCadastro2 extends AppCompatActivity {
                         mutableLiveData.setValue(1);
                     }
                 } else {
-                    progressBar.setVisibility(View.INVISIBLE);
-                    bt.setEnabled(true);
-                    mutableLiveData.setValue(1);
-                    Log.e("GET_ERROR", "Código de erro: " + response.code());
-                    Toast.makeText(TelaCadastro2.this, "Erro ao verificar username", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(TelaCadastro2.this, TelaErroInterno.class);
-                    startActivity(intent);
+                    if(response.code() == 404){
+                        Log.d("GET_MESSAGE", "Usuario (Username) não existente, tudo joia: " + response.code());
+                        mutableLiveData.setValue(0);
+                    }
+                    else{
+                        progressBar.setVisibility(View.INVISIBLE);
+                        bt.setEnabled(true);
+                        Log.e("GET_ERROR", "Código de erro: " + response.code());
+                        Intent intent = new Intent(TelaCadastro2.this, TelaErroInterno.class);
+                        startActivity(intent);
+                        mutableLiveData.setValue(1);
+                    }
                 }
             }
 
             @Override
             public void onFailure(Call<Usuario> call, Throwable t) {
-                if(t.getMessage().equals("End of input at line 1 column 1 path $")){
-                    bt.setEnabled(true);
-                    mutableLiveData.setValue(0);
-                    Log.d("GET_FAILURE", "Username disponível: " + t.getMessage());
-                }
-                else{
-                    Intent intent = new Intent(TelaCadastro2.this, TelaErroInterno.class);
-                    startActivity(intent);
-                }
+                Log.e("GET_ERROR", "Erro: " + t.getMessage());
+                Intent intent = new Intent(TelaCadastro2.this, TelaErroInterno.class);
+                startActivity(intent);
             }
         });
     }
@@ -352,26 +351,26 @@ public class TelaCadastro2 extends AppCompatActivity {
                         mutableLiveData.setValue(1);
                     }
                 } else {
-                    progressBar.setVisibility(View.INVISIBLE);
-                    mutableLiveData.setValue(1);
-                    bt.setEnabled(true);
-                    Log.e("GET_ERROR", "Código de erro: " + response.code());
-                    Intent intent = new Intent(TelaCadastro2.this, TelaErroInterno.class);
-                    startActivity(intent);
+                    if(response.code() == 404){
+                        Log.d("GET_MESSAGE", "Usuario (email) não existente, tudo joia: " + response.code());
+                        mutableLiveData.setValue(0);
+                    }
+                    else{
+                        progressBar.setVisibility(View.INVISIBLE);
+                        bt.setEnabled(true);
+                        Log.e("GET_ERROR", "Código de erro: " + response.code());
+                        Intent intent = new Intent(TelaCadastro2.this, TelaErroInterno.class);
+                        startActivity(intent);
+                        mutableLiveData.setValue(1);
+                    }
                 }
             }
 
             @Override
             public void onFailure(Call<Usuario> call, Throwable t) {
-                if(t.getMessage().equals("End of input at line 1 column 1 path $")){
-                    bt.setEnabled(true);
-                    mutableLiveData.setValue(0);
-                    Log.d("GET_FAILURE", "Email disponível: " + t.getMessage());
-                }
-                else{
-                    Intent intent = new Intent(TelaCadastro2.this, TelaErroInterno.class);
-                    startActivity(intent);
-                }
+                Log.e("GET_ERROR", "Erro: " + t.getMessage());
+                Intent intent = new Intent(TelaCadastro2.this, TelaErroInterno.class);
+                startActivity(intent);
             }
         });
     }

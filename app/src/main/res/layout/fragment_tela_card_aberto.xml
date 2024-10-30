@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0000"
+    android:backgroundTint="#FF0000"
+    tools:context=".Telas.TelasTour.TelaCardAberto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
+        app:shapeAppearanceOverlay="@style/TopRoundedCard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/edfs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-3dp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="Descrição"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="Titulo"
+                android:textColor="#000000"
+                android:textSize="23sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="64dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/iconacsses"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="233dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="-30dp"
+                android:layout_marginTop="-2dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:scaleX="0.60"
+                android:scaleY="0.60"
+                android:stepSize="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="9dp"
+                android:drawableLeft="@drawable/icon_loc"
+                android:drawablePadding="4dp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="TextView"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="1dp"
+                android:fillViewport="true"
+                app:layout_constraintBottom_toTopOf="@+id/btCoisa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edfs"
+                app:layout_constraintVertical_bias="0.112">
+
+                <TextView
+                    android:id="@+id/tvDescricao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spartan"
+                    android:lineSpacingExtra="2dp"
+                    android:text="   O Museu Catavento, inaugurado em 2009 em São Paulo no Palácio das Indústrias, é um museu interativo de ciência e tecnologia.
+   Dividido em quatro seções:
+   • Universo
+   • Vida
+   • Engenho
+   • Sociedade
+   Oferece experiências interativas em astronomia, biodiversidade, física, química, comunicação e transporte.
+   Além das exposições, realiza programas educacionais e visitas guiadas.
+   Localizado no centro da cidade, é um importante ponto turístico e educativo que une preservação histórica e inovação.\
+   O Museu Catavento, inaugurado em 2009 em São Paulo no Palácio das Indústrias, é um museu interativo de ciência e tecnologia.
+   Dividido em quatro seções:
+   • Universo
+   • Vida
+   • Engenho
+   • Sociedade
+   Oferece experiências interativas em astronomia, biodiversidade, física, química, comunicação e transporte.
+   Além das exposições, realiza programas educacionais e visitas guiadas.
+   Localizado no centro da cidade, é um importante ponto turístico e educativo que une preservação histórica e inovação.
+Oferece experiências interativas em astronomia, biodiversidade, física, química, comunicação e transporte.
+   Além das exposições, realiza programas educacionais e visitas guiadas.
+   Localizado no centro da cidade, é um importante ponto turístico e educativo que une preservação histórica e inovação.\
+   O Museu Catavento, inaugurado em 2009 em São Paulo no Palácio das Indústrias, é um museu interativo de ciência e tecnologia.
+   Dividido em quatro seções:
+   • Universo
+   • Vida
+   • Engenho
+   • Sociedade
+   Oferece experiências interativas em astronomia, biodiversidade, física, química, comunicação e transporte.
+   Além das exposições, realiza programas educacionais e visitas guiadas.
+   Localizado no centro da cidade, é um importante ponto turístico e educativo que une preservação histórica e inovação.
+Oferece experiências interativas em astronomia, biodiversidade, física, química, comunicação e transporte.
+   Além das exposições, realiza programas educacionais e visitas guiadas.
+   Localizado no centro da cidade, é um importante ponto turístico e educativo que une preservação histórica e inovação.\
+   O Museu Catavento, inaugurado em 2009 em São Paulo no Palácio das Indústrias, é um museu interativo de ciência e tecnologia.
+   Dividido em quatro seções:
+   • Universo
+   • Vida
+   • Engenho
+   • Sociedade
+   Oferece experiências interativas em astronomia, biodiversidade, física, química, comunicação e transporte.
+   Além das exposições, realiza programas educacionais e visitas guiadas.
+   Localizado no centro da cidade, é um importante ponto turístico e educativo que une preservação histórica e inovação."
+                    android:textSize="16sp" />
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/btCoisa"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="-5dp"
+                android:backgroundTint="#805CD8"
+                android:fontFamily="@font/spartan_bold"
+                android:text="Iniciar Tour Virtual"
+                android:textAppearance="@style/Base.Theme.Viajou"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:cornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/setaDireCarrossel"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/setadirecarrossel" />
+
+    <ImageView
+        android:id="@+id/setaEsqueCarrrossel"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/setaesqcarrossel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

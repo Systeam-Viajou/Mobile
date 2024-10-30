@@ -1,5 +1,6 @@
 package com.interdiciplinar.viajou.Api;
 
+import com.interdiciplinar.viajou.Models.Atracao;
 import com.interdiciplinar.viajou.Models.Evento;
 import com.interdiciplinar.viajou.Models.Excursao;
 import com.interdiciplinar.viajou.Models.Usuario;
@@ -29,6 +30,9 @@ public interface ApiViajou {
 
     @GET("/viajouapi/eventos/buscar")
     Call<List<Evento>> buscarEvento();
+
+    @GET("/viajouapi/atracoes/buscar")
+    Call<List<Atracao>> buscarAtracoes();
 
     @GET("/viajouapi/excursoes/buscar")
     Call<List<Excursao>> buscarExcursao();
