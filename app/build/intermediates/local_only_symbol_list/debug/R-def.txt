@@ -34,6 +34,7 @@ drawable fadecardeventos
 drawable feirafoto
 drawable festivalfoto
 drawable fundo_cadastro_erro
+drawable fundo_card
 drawable fundo_card_home
 drawable fundo_erro
 drawable fundo_genero
@@ -45,6 +46,7 @@ drawable fundoimagens__1_
 drawable google
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable icon_loc
 drawable iconacsses
 drawable iconconfigtoolbarprimar
 drawable iconconfigtoolbarsecund
@@ -105,6 +107,7 @@ id apresentacoesLayout
 id barraExcur
 id bottomNavigationView
 id btAvancar
+id btCoisa
 id btContinuar
 id btEntrar
 id btErroInterno
@@ -127,6 +130,7 @@ id dataCardExcursoes
 id dataNasc
 id dataNascLayout
 id descriErroInterno
+id edfs
 id email
 id emailEsqueceuSenha
 id emailLayout
@@ -173,6 +177,7 @@ id imageView14
 id imageView2
 id imageView4
 id imageView5
+id imageView6
 id imageView7
 id imageView8
 id imageView9
@@ -220,6 +225,7 @@ id pesquisar
 id precoCardExcursoes
 id progressBar
 id qntdPessoasCardExcur
+id ratingBar
 id recyclerContinuarHome
 id recyclerEventos
 id recyclerExcursoes
@@ -249,6 +255,8 @@ id telefone
 id telefoneLayout
 id textTimer
 id textView
+id textView10
+id textView11
 id textView14
 id textView15
 id textView2
@@ -271,6 +279,7 @@ id tituloCardTurismo
 id tituloErroInterno
 id tituloToolbarSecund
 id turismos
+id tvDescricao
 id txt
 id txt1
 id txt2
@@ -295,7 +304,6 @@ layout activity_main
 layout activity_splash_screen
 layout activity_tela_cadastro
 layout activity_tela_cadastro2
-layout activity_tela_card_aberto
 layout activity_tela_erro_interno
 layout activity_tela_erro_sms
 layout activity_tela_esqueceu_senha
@@ -306,6 +314,7 @@ layout activity_tela_perfil
 layout activity_tela_pesquisa
 layout activity_tela_sms
 layout carousel_item
+layout fragment_tela_card_aberto
 layout fragment_tela_eventos
 layout fragment_tela_excursoes
 layout fragment_tela_figurinhas
@@ -341,6 +350,7 @@ style BottomNavigationView.Active
 style BottomNavigationView.Inactive
 style Theme.FragmentAndroid
 style Theme.Viajou
+style TopRoundedCard
 style circular
 style redondo
 xml backup_rules

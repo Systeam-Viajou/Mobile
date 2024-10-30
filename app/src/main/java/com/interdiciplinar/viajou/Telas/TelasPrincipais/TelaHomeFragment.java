@@ -8,13 +8,19 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.interdiciplinar.viajou.Api.ApiViajou;
+import com.interdiciplinar.viajou.Models.Atracao;
+import com.interdiciplinar.viajou.Models.Excursao;
 import com.interdiciplinar.viajou.Models.Home;
 import com.interdiciplinar.viajou.R;
+import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.AtracaoAdapter;
+import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.ExcursaoAdapter;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.HomeRecomendarAdapter;
 
 import java.util.ArrayList;
@@ -22,11 +28,18 @@ import java.util.List;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaPerfil;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class TelaHomeFragment extends Fragment {
 
@@ -36,6 +49,7 @@ public class TelaHomeFragment extends Fragment {
     SearchView searchView;
     SearchView.SearchAutoComplete searchEditText;
     ImageView iconLupa, iconToolbar;
+    Retrofit retrofit;
 
     public TelaHomeFragment() {
         // Required empty public constructor
@@ -98,14 +112,9 @@ public class TelaHomeFragment extends Fragment {
             }
         });
 
-        // Mockando os dados
-        recomendarlist = getMockhomeRecomendar();
 
-        // Inicializando o adapter com a lista de eventos mockados
-        recomendarAdapter = new HomeRecomendarAdapter(recomendarlist, getContext());
-        recyclerRecomendar.setAdapter(recomendarAdapter);
 
-//        Button bt = view.findViewById(R.id.btTool);
+//        Button  cdfxbt = view.findViewById(R.id.btTool);
 
         // Define para que o campo de texto esteja sempre visível
         searchView.setIconifiedByDefault(false);
@@ -132,7 +141,40 @@ public class TelaHomeFragment extends Fragment {
             }
         });
 
+        pegandoDadosExcursao();
+
         return view;
+    }
+
+    private void pegandoDadosExcursao() {
+        // Inicializando Retrofit
+        retrofit = new Retrofit.Builder()
+                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        // Criando a chamada para a API
+        ApiViajou apiViajou = retrofit.create(ApiViajou.class);
+        Call<List<Atracao>> call = apiViajou.buscarAtracoes();
+
+        // Executar a chamada
+        call.enqueue(new Callback<List<Atracao>>() {
+            @Override
+            public void onResponse(Call<List<Atracao>> call, Response<List<Atracao>> response) {
+
+                if (response.isSuccessful() && response.body() != null) {
+                    List<Atracao> atracoes = response.body();
+                    recyclerContinuar.setAdapter(new AtracaoAdapter(atracoes, getContext()));
+                } else {
+                    Log.e("ERRO", "Resposta vazia ou erro na resposta");
+                }
+            }
+            @Override
+            public void onFailure(Call<List<Atracao>> call, Throwable throwable) {
+                Log.e("ERRO", "Falha ao carregar eventos: " + throwable.getMessage(), throwable);
+                Toast.makeText(getContext(), "Falha ao carregar excurções", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
@@ -144,32 +186,5 @@ public class TelaHomeFragment extends Fragment {
         Glide.with(this).load(userLogin.getPhotoUrl())
                 .centerCrop()
                 .into((ImageView) iconToolbar);
-    }
-
-    // Método que mocka os eventos com datas aleatórias
-    private List<Home> getMockhomeRecomendar() {
-        List<Home> recomendados = new ArrayList<>();
-
-        recomendados.add(mockHome("Av. Paulista", "https://guiaviajarmelhor.com.br/wp-content/uploads/2022/01/avenida-paulista-passeios-baratos.jpg", "turismo"));
-        recomendados.add(mockHome("Parque Ibirabuera", "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-sao-paulo-capa2019-04-820x430.jpg", "turismo"));
-        recomendados.add(mockHome("BGS", "https://s2-techtudo.glbimg.com/RXGM-wwhzTf7FVlyMIDnKdmTYdM=/0x0:768x476/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/7/Z/pex9eQQWu1dDxuBh3n3A/bgs-2023.jpg", "evento"));
-        recomendados.add(mockHome("Parque 2", "https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-sao-paulo-capa2019-04-820x430.jpg", "evento"));
-
-        return recomendados;
-    }
-
-    // Método auxiliar para mockar eventos
-    private Home mockHome(String nome, String urlImagem, String categoria) {
-        Home home = new Home();
-        home.setNome(nome);
-        home.setUrlImagem(urlImagem);
-        if (categoria.equals("turismo")) {
-            home.setCategoriaInt(1);
-        }
-        else if (categoria.equals("evento")) {
-            home.setCategoriaInt(2);
-        }
-        home.setCategoriaString(categoria);
-        return home;
     }
 }

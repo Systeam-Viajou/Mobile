@@ -117,7 +117,8 @@
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen"
-            android:exported="true" >
+            android:exported="true"
+            android:theme="@style/Base.Theme.Viajou" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -3142,6 +3142,7 @@ drawable fadecardeventos
 drawable feirafoto
 drawable festivalfoto
 drawable fundo_cadastro_erro
+drawable fundo_card
 drawable fundo_card_home
 drawable fundo_erro
 drawable fundo_genero
@@ -3176,6 +3177,7 @@ drawable ic_other_sign_in
 drawable ic_passkey
 drawable ic_password
 drawable ic_search_black_24
+drawable icon_loc
 drawable iconacsses
 drawable iconconfigtoolbarprimar
 drawable iconconfigtoolbarsecund
@@ -3419,6 +3421,7 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btAvancar
+id btCoisa
 id btContinuar
 id btEntrar
 id btErroInterno
@@ -3515,6 +3518,7 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id edfs
 id edge
 id edit_query
 id edit_text_id
@@ -3615,6 +3619,7 @@ id imageView14
 id imageView2
 id imageView4
 id imageView5
+id imageView6
 id imageView7
 id imageView8
 id imageView9
@@ -3804,6 +3809,7 @@ id progress_circular
 id progress_horizontal
 id qntdPessoasCardExcur
 id radio
+id ratingBar
 id ratio
 id rectangles
 id recyclerContinuarHome
@@ -3931,6 +3937,8 @@ id textStart
 id textTimer
 id textTop
 id textView
+id textView10
+id textView11
 id textView14
 id textView15
 id textView2
@@ -3981,6 +3989,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id turismos
+id tvDescricao
 id txt
 id txt1
 id txt2
@@ -4145,7 +4154,6 @@ layout activity_main
 layout activity_splash_screen
 layout activity_tela_cadastro
 layout activity_tela_cadastro2
-layout activity_tela_card_aberto
 layout activity_tela_erro_interno
 layout activity_tela_erro_sms
 layout activity_tela_esqueceu_senha
@@ -4174,6 +4182,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_tela_card_aberto
 layout fragment_tela_eventos
 layout fragment_tela_excursoes
 layout fragment_tela_figurinhas
@@ -5210,6 +5219,7 @@ style ThemeOverlay_MaterialComponents_TimePicker_Display_TextInputEditText
 style ThemeOverlay_MaterialComponents_Toolbar_Popup_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
+style TopRoundedCard
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

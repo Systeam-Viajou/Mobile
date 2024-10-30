@@ -45,6 +45,7 @@
         
         
         <item name="android:windowFullscreen">true</item>
+        <item name="android:forceDarkAllowed">false</item>
     </style>
     <style name="BottomNavigationView.Active" parent="TextAppearance.AppCompat.Caption">
         <item name="android:textSize">12sp</item>
@@ -68,6 +69,13 @@
         
     </style>
     <style name="Theme.Viajou" parent="Base.Theme.Viajou"/>
+    <style name="TopRoundedCard" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">40dp</item>
+        <item name="cornerSizeTopRight">40dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
     <style name="circular" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>

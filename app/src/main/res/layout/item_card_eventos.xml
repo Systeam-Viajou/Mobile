@@ -43,13 +43,13 @@
             android:id="@+id/mesCardEventos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="14dp"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/spartan_bold"
             android:text="Ago"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/linhaEventos"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/dataCardEventos" />
 
@@ -81,12 +81,12 @@
             android:id="@+id/dataCardEventos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/spartan_bold"
             android:text="09"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/linhaEventos"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

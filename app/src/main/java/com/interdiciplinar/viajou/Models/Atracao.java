@@ -1,7 +1,5 @@
 package com.interdiciplinar.viajou.Models;
 
-import java.time.ZonedDateTime;
-
 public class Atracao {
     private Long id;
     private String nome;
@@ -10,10 +8,21 @@ public class Atracao {
     private boolean acessibilidade;
     private double mediaClassificacao;
     private Categoria categoria;
+
+
+    private Tipo tipo;
     private String dataDesativacao;
 
     public Long getId() {
         return id;
+    }
+
+    public Tipo getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(Tipo tipo) {
+        this.tipo = tipo;
     }
 
     public void setId(Long id) {
