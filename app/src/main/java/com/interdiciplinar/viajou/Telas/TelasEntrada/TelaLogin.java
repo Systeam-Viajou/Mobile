@@ -56,7 +56,7 @@ public class TelaLogin extends AppCompatActivity {
         preferences = getSharedPreferences("LoginPrefs", MODE_PRIVATE);
         editor = preferences.edit();
 
-        // Verifica se o usuário está logado e se a preferência de "Manter Conectado" está ativa
+        // Verifica se o usuário está logado e se a preferência de "Manter Conectado" está ativa ||
         if (preferences.getBoolean("mantenhaConectado", false) && userLogin != null) {
             Intent intent = new Intent(TelaLogin.this, MainActivity.class);
             startActivity(intent);

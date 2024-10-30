@@ -89,7 +89,7 @@
         <activity
             android:name=".Telas.TelasPrincipais.TelaFigurinhasFragment"
             android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
+            android:theme="@style/Base.Theme.Viajou"/>
         <activity
             android:name=".Telas.TelasPrincipais.TelaHomeFragment"
             android:exported="false"
@@ -100,7 +100,8 @@
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name=".Telas.Animacoes.SplashScreen"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Base.Theme.Viajou">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
