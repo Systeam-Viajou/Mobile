@@ -4,6 +4,7 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="android:windowFullscreen">true</item>
+        <item name="android:forceDarkAllowed">false</item>
     </style>
 
     <style name="Theme.Viajou" parent="Base.Theme.Viajou" />

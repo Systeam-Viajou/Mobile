@@ -45,6 +45,7 @@
         
         
         <item name="android:windowFullscreen">true</item>
+        <item name="android:forceDarkAllowed">false</item>
     </style>
     <style name="BottomNavigationView.Active" parent="TextAppearance.AppCompat.Caption">
         <item name="android:textSize">12sp</item>
