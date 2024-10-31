@@ -3,6 +3,7 @@ package com.interdiciplinar.viajou.Api;
 import com.interdiciplinar.viajou.Models.Atracao;
 import com.interdiciplinar.viajou.Models.Evento;
 import com.interdiciplinar.viajou.Models.Excursao;
+import com.interdiciplinar.viajou.Models.Imagem;
 import com.interdiciplinar.viajou.Models.Usuario;
 
 import retrofit2.Call;
@@ -36,4 +37,7 @@ public interface ApiViajou {
 
     @GET("/viajouapi/excursoes/buscar")
     Call<List<Excursao>> buscarExcursao();
+
+    @GET("/viajouapi/mongo/imagens/{idAtracao}")
+    Call<Imagem> buscarImagem(@Path("idAtracao") Long idAtracao);
 }
