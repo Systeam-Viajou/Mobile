@@ -16,6 +16,8 @@ drawable apple
 drawable apresentacaoesfoto
 drawable borda_card_excursoes
 drawable borda_card_pesquisa
+drawable botaoxsair
+drawable bt_borda
 drawable cadeado
 drawable calendar
 drawable calendario
@@ -48,6 +50,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable icon_loc
 drawable iconacsses
+drawable iconaumentartelatourvirtual
 drawable iconconfigtoolbarprimar
 drawable iconconfigtoolbarsecund
 drawable iconempresacardexcursoes
@@ -68,6 +71,7 @@ drawable icons
 drawable iconsetavoltartollbarsecund
 drawable iconsinotoolbarprimar
 drawable iconsinotoolbarsecund
+drawable icontrezentostourvirtual
 drawable iconturismocardhome
 drawable iconturismonavbar
 drawable imagemlogin
@@ -79,6 +83,7 @@ drawable imgcardhome
 drawable imgcardturismos
 drawable imgcarrossel
 drawable imgerrointerno
+drawable imgfadetourvirtual
 drawable imgsemcoteudo_home
 drawable joia
 drawable leftperfilicon
@@ -89,6 +94,7 @@ drawable opcaoconta
 drawable profilecircle
 drawable rotate_right
 drawable sair
+drawable scrollbar_color
 drawable setadirecarrossel
 drawable setaesqcarrossel
 drawable showfoto
@@ -104,18 +110,21 @@ font spartan_bold
 id apple
 id apresentacoes
 id apresentacoesLayout
+id aumentarTelaTourVirtual
 id barraExcur
 id bottomNavigationView
 id btAvancar
-id btCoisa
 id btContinuar
 id btEntrar
 id btErroInterno
 id btErroSms
 id btErroSmsVoltar
+id btIniciarTour
 id btMaisInfoCardExcursoes
+id btProximoTourVirtual
 id btVerificarEmail
 id btVoltarLoginEsqSenha
+id btVoltarTourVirtual
 id button
 id cadastrar
 id carregandoPesquisa
@@ -130,6 +139,7 @@ id dataCardExcursoes
 id dataNasc
 id dataNascLayout
 id descriErroInterno
+id descricaoTourVirtual
 id edfs
 id email
 id emailEsqueceuSenha
@@ -148,6 +158,7 @@ id exposicoes
 id exposicoesLayout
 id facebook
 id fadeCardEventos
+id fadeTourVirtual
 id feiras
 id feirasLayout
 id festival
@@ -184,6 +195,7 @@ id imageView9
 id img1
 id img2
 id img3
+id img360TourVirtual
 id img4
 id img5
 id imgApresentacao
@@ -205,7 +217,9 @@ id include3
 id linearLayout
 id linearLayout2
 id linha1
+id linha1TourVirtual
 id linha2
+id linha2TourVirtual
 id linha3
 id linha4
 id linha5
@@ -257,8 +271,10 @@ id textTimer
 id textView
 id textView10
 id textView11
+id textView12
 id textView14
 id textView15
+id textView16
 id textView2
 id textView3
 id textView4
@@ -278,6 +294,7 @@ id tituloCardHome
 id tituloCardTurismo
 id tituloErroInterno
 id tituloToolbarSecund
+id tituloTourVirtual
 id turismos
 id tvDescricao
 id txt
@@ -300,6 +317,8 @@ id user
 id username
 id usernamePerfil
 id viewPager
+id webViewTourVirtual
+id xFecharTourVirtual
 layout activity_main
 layout activity_splash_screen
 layout activity_tela_cadastro
@@ -313,7 +332,11 @@ layout activity_tela_login
 layout activity_tela_perfil
 layout activity_tela_pesquisa
 layout activity_tela_sms
-layout carousel_item
+layout activity_tela_tour1
+layout activity_tela_tour2
+layout activity_tela_tour3
+layout activity_tela_tour4
+layout activity_tela_tour_conteudo
 layout fragment_tela_card_aberto
 layout fragment_tela_eventos
 layout fragment_tela_excursoes
@@ -324,6 +347,7 @@ layout item_card_eventos
 layout item_card_excursoes
 layout item_card_home
 layout item_card_turismos
+layout item_carousel
 layout item_carrossel_home
 layout spinner_dropdown_item
 layout spinner_item

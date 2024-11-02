@@ -93,16 +93,18 @@
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:fadeScrollbars="false"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="1dp"
                 android:fillViewport="true"
-                app:layout_constraintBottom_toTopOf="@+id/btCoisa"
+                app:layout_constraintBottom_toTopOf="@+id/btIniciarTour"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/edfs"
-                app:layout_constraintVertical_bias="0.112">
+                app:layout_constraintVertical_bias="0.112"
+                android:scrollbarThumbVertical="@drawable/scrollbar_color">
 
                 <TextView
                     android:id="@+id/tvDescricao"
@@ -157,7 +159,7 @@ Oferece experiências interativas em astronomia, biodiversidade, física, quími
             </ScrollView>
 
             <Button
-                android:id="@+id/btCoisa"
+                android:id="@+id/btIniciarTour"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="40dp"
