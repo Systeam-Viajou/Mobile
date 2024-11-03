@@ -4,72 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Telas.TelasErro.TelaErroInterno">
+    tools:context=".Telas.TelasErro.TelaErroWifi">
 
     <Button
-        android:id="@+id/btErroSms"
-        android:layout_width="333dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="15dp"
-        android:backgroundTint="#805CD8"
-        android:fontFamily="@font/spartan_bold"
-        android:text="Ir para configuraçãoes"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/btErroSmsVoltar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descriErroInterno" />
-
-    <Button
-        android:id="@+id/btErroSmsVoltar"
+        android:id="@+id/btErroWifi"
         android:layout_width="333dp"
         android:layout_height="61dp"
         android:layout_marginBottom="100dp"
         android:backgroundTint="#805CD8"
         android:fontFamily="@font/spartan_bold"
-        android:text="Sair"
+        android:text="Tente novamente"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriErroWifi" />
 
     <ImageView
-        android:id="@+id/imgErroInterno"
+        android:id="@+id/imgErroWifi"
         android:layout_width="230dp"
         android:layout_height="200dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iconerrosms" />
+        app:srcCompat="@drawable/imgerrowifi" />
 
     <TextView
-        android:id="@+id/tituloErroInterno"
+        android:id="@+id/textView12"
         android:layout_width="285dp"
         android:layout_height="59dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/spartan_bold"
-        android:text="Ops, parece que você não tem a permissão de SMS"
+        android:text="Parece que você está sem internet!"
         android:textAlignment="center"
         android:textColor="#413752"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgErroInterno" />
+        app:layout_constraintTop_toBottomOf="@+id/imgErroWifi" />
 
     <TextView
-        android:id="@+id/descriErroInterno"
-        android:layout_width="296dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="5dp"
+        android:id="@+id/descriErroWifi"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/spartan"
-        android:text="Vá para as configurações e permite o SMS"
+        android:text="Se conecte novamente para voltar ao aplicativo"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloErroInterno" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 </androidx.constraintlayout.widget.ConstraintLayout>
