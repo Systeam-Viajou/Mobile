@@ -46,78 +46,121 @@
         android:testOnly="true"
         android:theme="@style/Theme.FragmentAndroid" >
         <activity
-            android:name="com.interdiciplinar.viajou.Telas.TelasTour.TelaCardAberto"
+            android:name="com.interdiciplinar.viajou.Telas.TelasTour.TelaTourConteudo"
             android:exported="false"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasTour.TelaTour4"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasTour.TelaTour3"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasTour.TelaTour2"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasTour.TelaTour1"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasTour.TelaCardAberto"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaPerfil"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaEsqueceuSenha3"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaEsqueceuSenha2"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaEsqueceuSenha"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasErro.TelaErroSMS"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasErro.TelaErroInterno"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaCadastro2"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaPesquisa"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaLogin"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaCadastro"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaSMS"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaEventosFragment"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaExcursoesFragment"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaFigurinhasFragment"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaHomeFragment"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaTurismosFragment"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
