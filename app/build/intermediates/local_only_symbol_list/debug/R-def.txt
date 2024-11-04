@@ -14,6 +14,7 @@ color reenviar
 color white
 drawable apple
 drawable apresentacaoesfoto
+drawable bannerhome1
 drawable borda_card_excursoes
 drawable borda_card_pesquisa
 drawable botaoxsair
@@ -83,6 +84,7 @@ drawable imgcardhome
 drawable imgcardturismos
 drawable imgcarrossel
 drawable imgerrointerno
+drawable imgerrowifi
 drawable imgfadetourvirtual
 drawable imgsemcoteudo_home
 drawable joia
@@ -119,6 +121,7 @@ id btEntrar
 id btErroInterno
 id btErroSms
 id btErroSmsVoltar
+id btErroWifi
 id btIniciarTour
 id btMaisInfoCardExcursoes
 id btProximoTourVirtual
@@ -128,7 +131,6 @@ id btVoltarTourVirtual
 id button
 id cadastrar
 id carregandoPesquisa
-id carrosselRecycler
 id cifrao
 id confirmarSenha
 id confirmarSenhaLayout
@@ -139,6 +141,7 @@ id dataCardExcursoes
 id dataNasc
 id dataNascLayout
 id descriErroInterno
+id descriErroWifi
 id descricaoTourVirtual
 id edfs
 id email
@@ -186,6 +189,7 @@ id imageView11
 id imageView13
 id imageView14
 id imageView2
+id imageView3
 id imageView4
 id imageView5
 id imageView6
@@ -205,6 +209,7 @@ id imgCardHome
 id imgCardTurismos
 id imgCarrossel
 id imgErroInterno
+id imgErroWifi
 id imgExposicoes
 id imgFeiras
 id imgFestival
@@ -317,6 +322,7 @@ id user
 id username
 id usernamePerfil
 id viewPager
+id viewPagerHome
 id webViewTourVirtual
 id xFecharTourVirtual
 layout activity_main
@@ -325,6 +331,7 @@ layout activity_tela_cadastro
 layout activity_tela_cadastro2
 layout activity_tela_erro_interno
 layout activity_tela_erro_sms
+layout activity_tela_erro_wifi
 layout activity_tela_esqueceu_senha
 layout activity_tela_esqueceu_senha2
 layout activity_tela_esqueceu_senha3
@@ -343,6 +350,7 @@ layout fragment_tela_excursoes
 layout fragment_tela_figurinhas
 layout fragment_tela_home
 layout fragment_tela_turismos
+layout item_banner_home
 layout item_card_eventos
 layout item_card_excursoes
 layout item_card_home

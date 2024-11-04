@@ -80,6 +80,10 @@
         "source": "com.interdiciplinar.viajou.app-main-55:/drawable/iconperfiltoolbarsecund.xml"
     },
     {
+        "merged": "com.interdiciplinar.viajou.app-merged_res-53:/drawable_bannerhome1.png.flat",
+        "source": "com.interdiciplinar.viajou.app-main-55:/drawable/bannerhome1.png"
+    },
+    {
         "merged": "com.interdiciplinar.viajou.app-merged_res-53:/drawable_iconconfigtoolbarsecund.xml.flat",
         "source": "com.interdiciplinar.viajou.app-main-55:/drawable/iconconfigtoolbarsecund.xml"
     },
@@ -232,6 +236,10 @@
         "source": "com.interdiciplinar.viajou.app-main-55:/layout/activity_tela_perfil.xml"
     },
     {
+        "merged": "com.interdiciplinar.viajou.app-merged_res-53:/layout_item_banner_home.xml.flat",
+        "source": "com.interdiciplinar.viajou.app-main-55:/layout/item_banner_home.xml"
+    },
+    {
         "merged": "com.interdiciplinar.viajou.app-merged_res-53:/drawable_imgcardturismos.png.flat",
         "source": "com.interdiciplinar.viajou.app-main-55:/drawable/imgcardturismos.png"
     },
@@ -308,12 +316,16 @@
         "source": "com.interdiciplinar.viajou.app-main-55:/drawable/viajoou.png"
     },
     {
+        "merged": "com.interdiciplinar.viajou.app-merged_res-53:/drawable_fadecardeventos.png.flat",
+        "source": "com.interdiciplinar.viajou.app-main-55:/drawable/fadecardeventos.png"
+    },
+    {
         "merged": "com.interdiciplinar.viajou.app-merged_res-53:/mipmap-mdpi_ic_launcher.webp.flat",
         "source": "com.interdiciplinar.viajou.app-main-55:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.interdiciplinar.viajou.app-merged_res-53:/drawable_fadecardeventos.png.flat",
-        "source": "com.interdiciplinar.viajou.app-main-55:/drawable/fadecardeventos.png"
+        "merged": "com.interdiciplinar.viajou.app-merged_res-53:/drawable_imgerrowifi.png.flat",
+        "source": "com.interdiciplinar.viajou.app-main-55:/drawable/imgerrowifi.png"
     },
     {
         "merged": "com.interdiciplinar.viajou.app-merged_res-53:/layout_item_card_eventos.xml.flat",
@@ -334,6 +346,10 @@
     {
         "merged": "com.interdiciplinar.viajou.app-merged_res-53:/font_spartan.xml.flat",
         "source": "com.interdiciplinar.viajou.app-main-55:/font/spartan.xml"
+    },
+    {
+        "merged": "com.interdiciplinar.viajou.app-merged_res-53:/layout_activity_tela_erro_wifi.xml.flat",
+        "source": "com.interdiciplinar.viajou.app-main-55:/layout/activity_tela_erro_wifi.xml"
     },
     {
         "merged": "com.interdiciplinar.viajou.app-merged_res-53:/layout_activity_tela_tour_conteudo.xml.flat",

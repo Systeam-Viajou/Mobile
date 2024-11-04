@@ -46,6 +46,10 @@
         android:testOnly="true"
         android:theme="@style/Theme.FragmentAndroid" >
         <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasErro.TelaErroWifi"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasTour.TelaTourConteudo"
             android:exported="false"
             android:theme="@style/Base.Theme.Viajou" />
@@ -109,10 +113,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
-            android:name="com.interdiciplinar.viajou.MainActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasEntrada.TelaPesquisa"
             android:exported="false"
             android:screenOrientation="portrait"
@@ -157,6 +157,10 @@
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
+        <activity
+            android:name="com.interdiciplinar.viajou.MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.Animacoes.SplashScreen"
             android:exported="true"

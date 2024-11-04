@@ -7,6 +7,8 @@ import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -23,8 +25,11 @@ import com.interdiciplinar.viajou.Models.Atracao;
 import com.interdiciplinar.viajou.Models.Imagem;
 import com.interdiciplinar.viajou.R;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.AtracaoAdapter;
+import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.BannerHomeAdapter;
 import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaPerfil;
+import com.interdiciplinar.viajou.Telas.TelasTour.CarouselAdapter;
 
+import java.util.Arrays;
 import java.util.List;
 
 import retrofit2.Call;
@@ -40,6 +45,8 @@ public class TelaHomeFragment extends Fragment {
     private SearchView.SearchAutoComplete searchEditText;
     private ImageView iconLupa, iconToolbar;
     private Retrofit retrofit;
+
+    private ViewPager2 viewPager;
 
     public TelaHomeFragment() {
         // Required empty public constructor
@@ -62,7 +69,7 @@ public class TelaHomeFragment extends Fragment {
         iconLupa = view.findViewById(R.id.iconLupa);
         iconToolbar = view.findViewById(R.id.imgPerfilToolbar);
         searchEditText = searchView.findViewById(androidx.appcompat.R.id.search_src_text);
-
+        viewPager = view.findViewById(R.id.viewPagerHome);
         recyclerContinuar = view.findViewById(R.id.recyclerContinuarHome);
         recyclerContinuar.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
@@ -74,6 +81,16 @@ public class TelaHomeFragment extends Fragment {
             Intent intent = new Intent(getActivity(), TelaPerfil.class);
             startActivity(intent);
         });
+
+        // Lista de imagens (exemplo com drawable IDs)
+        List<Integer> imageList = Arrays.asList(
+                R.drawable.bannerhome1,
+                R.drawable.carroseu2,
+                R.drawable.carroseu3
+        );
+
+        BannerHomeAdapter adapter = new BannerHomeAdapter(getContext(), imageList);
+        viewPager.setAdapter(adapter);
 
         searchView.setIconifiedByDefault(false);
         searchView.setOnClickListener(v -> searchEditText.requestFocus());
