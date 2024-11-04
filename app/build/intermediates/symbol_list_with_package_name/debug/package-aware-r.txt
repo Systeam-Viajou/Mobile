@@ -3092,6 +3092,8 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable borda_card_excursoes
 drawable borda_card_pesquisa
+drawable botaoxsair
+drawable bt_borda
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3179,6 +3181,7 @@ drawable ic_password
 drawable ic_search_black_24
 drawable icon_loc
 drawable iconacsses
+drawable iconaumentartelatourvirtual
 drawable iconconfigtoolbarprimar
 drawable iconconfigtoolbarsecund
 drawable iconempresacardexcursoes
@@ -3199,6 +3202,7 @@ drawable icons
 drawable iconsetavoltartollbarsecund
 drawable iconsinotoolbarprimar
 drawable iconsinotoolbarsecund
+drawable icontrezentostourvirtual
 drawable iconturismocardhome
 drawable iconturismonavbar
 drawable imagemlogin
@@ -3210,6 +3214,7 @@ drawable imgcardhome
 drawable imgcardturismos
 drawable imgcarrossel
 drawable imgerrointerno
+drawable imgfadetourvirtual
 drawable imgsemcoteudo_home
 drawable indeterminate_static
 drawable joia
@@ -3293,6 +3298,7 @@ drawable opcaoconta
 drawable profilecircle
 drawable rotate_right
 drawable sair
+drawable scrollbar_color
 drawable setadirecarrossel
 drawable setaesqcarrossel
 drawable showfoto
@@ -3397,6 +3403,7 @@ id apresentacoesLayout
 id arc
 id asConfigured
 id async
+id aumentarTelaTourVirtual
 id auto
 id autoComplete
 id autoCompleteToEnd
@@ -3421,15 +3428,17 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btAvancar
-id btCoisa
 id btContinuar
 id btEntrar
 id btErroInterno
 id btErroSms
 id btErroSmsVoltar
+id btIniciarTour
 id btMaisInfoCardExcursoes
+id btProximoTourVirtual
 id btVerificarEmail
 id btVoltarLoginEsqSenha
+id btVoltarTourVirtual
 id button
 id buttonPanel
 id cache_measures
@@ -3491,6 +3500,7 @@ id default_activity_button
 id deltaRelative
 id dependency_ordering
 id descriErroInterno
+id descricaoTourVirtual
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3551,6 +3561,7 @@ id exposicoesLayout
 id facebook
 id fade
 id fadeCardEventos
+id fadeTourVirtual
 id feiras
 id feirasLayout
 id festival
@@ -3626,6 +3637,7 @@ id imageView9
 id img1
 id img2
 id img3
+id img360TourVirtual
 id img4
 id img5
 id imgApresentacao
@@ -3666,7 +3678,9 @@ id linear
 id linearLayout
 id linearLayout2
 id linha1
+id linha1TourVirtual
 id linha2
+id linha2TourVirtual
 id linha3
 id linha4
 id linha5
@@ -3939,8 +3953,10 @@ id textTop
 id textView
 id textView10
 id textView11
+id textView12
 id textView14
 id textView15
+id textView16
 id textView2
 id textView3
 id textView4
@@ -3973,6 +3989,7 @@ id tituloCardHome
 id tituloCardTurismo
 id tituloErroInterno
 id tituloToolbarSecund
+id tituloTourVirtual
 id toggle
 id top
 id topPanel
@@ -4024,6 +4041,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id webViewTourVirtual
 id west
 id wide
 id withText
@@ -4032,6 +4050,7 @@ id withinBounds
 id wrap
 id wrap_content
 id wrap_content_constrained
+id xFecharTourVirtual
 id x_left
 id x_right
 integer abc_config_activityDefaultDur
@@ -4163,9 +4182,13 @@ layout activity_tela_login
 layout activity_tela_perfil
 layout activity_tela_pesquisa
 layout activity_tela_sms
+layout activity_tela_tour1
+layout activity_tela_tour2
+layout activity_tela_tour3
+layout activity_tela_tour4
+layout activity_tela_tour_conteudo
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
-layout carousel_item
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -4194,6 +4217,7 @@ layout item_card_eventos
 layout item_card_excursoes
 layout item_card_home
 layout item_card_turismos
+layout item_carousel
 layout item_carrossel_home
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
