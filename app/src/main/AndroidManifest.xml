@@ -29,79 +29,126 @@
         android:theme="@style/Theme.FragmentAndroid"
         tools:targetApi="31">
         <activity
-            android:name=".Telas.TelasTour.TelaCardAberto"
-            android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
-        <activity
-            android:name=".Telas.TelasSecundarias.TelaPerfil"
-            android:exported="false" />
-        <activity
-            android:name=".Telas.TelasEntrada.TelaEsqueceuSenha3"
-            android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
-        <activity
-            android:name=".Telas.TelasEntrada.TelaEsqueceuSenha2"
-            android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
-        <activity
-            android:name=".Telas.TelasEntrada.TelaEsqueceuSenha"
-            android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
-        <activity
-            android:name=".Telas.TelasErro.TelaErroSMS"
-            android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
-        <activity
-            android:name=".Telas.TelasErro.TelaErroInterno"
-            android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
-        <activity
-            android:name=".Telas.TelasEntrada.TelaCadastro2"
-            android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Telas.TelasEntrada.TelaPesquisa"
-            android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
-        <activity
-            android:name=".Telas.TelasEntrada.TelaLogin"
-            android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
-        <activity
-            android:name=".Telas.TelasEntrada.TelaCadastro"
-            android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
-        <activity
-            android:name=".Telas.TelasEntrada.TelaSMS"
-            android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
-        <activity
-            android:name=".Telas.TelasPrincipais.TelaEventosFragment"
-            android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
-        <activity
-            android:name=".Telas.TelasPrincipais.TelaExcursoesFragment"
-            android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
-        <activity
-            android:name=".Telas.TelasPrincipais.TelaFigurinhasFragment"
+            android:name=".Telas.TelasErro.TelaErroWifi"
             android:exported="false"
             android:theme="@style/Base.Theme.Viajou"/>
         <activity
+            android:name=".Telas.TelasTour.TelaTourConteudo"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"/>
+        <activity
+            android:name=".Telas.TelasTour.TelaTour4"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasTour.TelaTour3"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasTour.TelaTour2"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasTour.TelaTour1"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasTour.TelaCardAberto"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasSecundarias.TelaPerfil"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasEntrada.TelaEsqueceuSenha3"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasEntrada.TelaEsqueceuSenha2"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasEntrada.TelaEsqueceuSenha"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasErro.TelaErroSMS"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasErro.TelaErroInterno"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasEntrada.TelaCadastro2"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasEntrada.TelaPesquisa"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasEntrada.TelaLogin"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasEntrada.TelaCadastro"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasEntrada.TelaSMS"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasPrincipais.TelaEventosFragment"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasPrincipais.TelaExcursoesFragment"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Telas.TelasPrincipais.TelaFigurinhasFragment"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".Telas.TelasPrincipais.TelaHomeFragment"
             android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Telas.TelasPrincipais.TelaTurismosFragment"
             android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Telas.Animacoes.SplashScreen"
             android:exported="true"
-            android:theme="@style/Base.Theme.Viajou">
+            android:theme="@style/Base.Theme.Viajou"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

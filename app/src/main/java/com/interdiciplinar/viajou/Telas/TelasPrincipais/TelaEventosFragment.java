@@ -144,9 +144,9 @@ public class TelaEventosFragment extends Fragment {
         progressBar.setVisibility(View.VISIBLE);
 
         OkHttpClient okHttpClient = new OkHttpClient.Builder()
-                .connectTimeout(60, TimeUnit.SECONDS) // tempo de conexão
-                .readTimeout(60, TimeUnit.SECONDS)    // tempo de leitura
-                .writeTimeout(30, TimeUnit.SECONDS)   // tempo de escrita
+                .connectTimeout(2, TimeUnit.MINUTES)  // Ajusta o tempo de conexão
+                .readTimeout(2, TimeUnit.MINUTES)     // Ajusta o tempo de leitura
+                .writeTimeout(2, TimeUnit.MINUTES)    // Ajusta o tempo de escrita
                 .build();
 
         // Inicializando Retrofit
