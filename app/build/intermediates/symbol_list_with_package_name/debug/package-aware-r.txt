@@ -3214,6 +3214,7 @@ drawable imgcardhome
 drawable imgcardturismos
 drawable imgcarrossel
 drawable imgerrointerno
+drawable imgerrowifi
 drawable imgfadetourvirtual
 drawable imgsemcoteudo_home
 drawable indeterminate_static
@@ -3433,6 +3434,7 @@ id btEntrar
 id btErroInterno
 id btErroSms
 id btErroSmsVoltar
+id btErroWifi
 id btIniciarTour
 id btMaisInfoCardExcursoes
 id btProximoTourVirtual
@@ -3500,6 +3502,7 @@ id default_activity_button
 id deltaRelative
 id dependency_ordering
 id descriErroInterno
+id descriErroWifi
 id descricaoTourVirtual
 id design_bottom_sheet
 id design_menu_item_action_area
@@ -3647,6 +3650,7 @@ id imgCardHome
 id imgCardTurismos
 id imgCarrossel
 id imgErroInterno
+id imgErroWifi
 id imgExposicoes
 id imgFeiras
 id imgFestival
@@ -4175,6 +4179,7 @@ layout activity_tela_cadastro
 layout activity_tela_cadastro2
 layout activity_tela_erro_interno
 layout activity_tela_erro_sms
+layout activity_tela_erro_wifi
 layout activity_tela_esqueceu_senha
 layout activity_tela_esqueceu_senha2
 layout activity_tela_esqueceu_senha3

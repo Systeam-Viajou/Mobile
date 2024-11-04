@@ -1,17 +1,23 @@
 package com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.interdiciplinar.viajou.Api.ApiViajou;
+import com.interdiciplinar.viajou.Models.Evento;
 import com.interdiciplinar.viajou.Models.Excursao;
+import com.interdiciplinar.viajou.Models.Imagem;
 import com.interdiciplinar.viajou.R;
 
 import java.text.DecimalFormat;
@@ -19,18 +25,34 @@ import java.text.DecimalFormatSymbols;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 import java.util.TimeZone;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ExcursaoAdapter extends RecyclerView.Adapter<ExcursaoAdapter.ExcursaoViewHolder> {
 
     private List<Excursao> excursaoList;
     private Context context;
+    private Map<Long, Imagem> imagensMap = new HashMap<>(); // Mapa para armazenar imagens por ID da atração
+    private Retrofit retrofit;
 
     public ExcursaoAdapter(List<Excursao> excursaoList, Context context) {
         this.excursaoList = excursaoList;
         this.context = context;
+
+        // Configurando Retrofit para chamada de API
+        this.retrofit = new Retrofit.Builder()
+                .baseUrl("https://dev-ii-mongo.onrender.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
     }
 
     @NonNull
@@ -79,10 +101,55 @@ public class ExcursaoAdapter extends RecyclerView.Adapter<ExcursaoAdapter.Excurs
         holder.qntdPessoasCardExcur.setText(String.valueOf(excursao.getQuantidadePessoas()));
         holder.maxPessoasCardExcur.setText(String.valueOf(excursao.getCapacidade()));
 
-        // Carregando imagem da URL da atração com Glide
-        Glide.with(context)
-                .load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxV1vJ8jbskaOt-Gr1M5dHJh-P8JOxoFSWVA&s") // Substitua pela URL da imagem correspondente a excursao
-                .into(holder.imgCardExcursoes);
+        // Verifica se a imagem já foi carregada para esta atração e exibe
+        if (imagensMap.containsKey(excursao.getAtracao().getId())) {
+            Imagem imagem = imagensMap.get(excursao.getAtracao().getId());
+            Glide.with(context)
+                    .load(imagem.getUrl()) // Substitua pelo método correto para obter a URL da imagem
+                    .into(holder.imgCardExcursoes);
+        } else {
+            // Placeholder enquanto a imagem é carregada
+            holder.imgCardExcursoes.setImageResource(R.drawable.imgcardexcursoes);
+            buscarImagem(excursao.getAtracao().getId(), holder);
+        }
+    }
+
+    // Método para buscar a imagem no banco e atualizar o ViewHolder
+    private void buscarImagem(Long atracaoId, ExcursaoAdapter.ExcursaoViewHolder holder) {
+        ApiViajou apiViajou = retrofit.create(ApiViajou.class);
+        Call<Imagem> call = apiViajou.buscarImagem(atracaoId);
+
+        call.enqueue(new Callback<Imagem>() {
+            @Override
+            public void onResponse(Call<Imagem> call, Response<Imagem> response) {
+                if (response.isSuccessful() && response.body() != null) {
+                    Imagem imagem = response.body();
+                    imagensMap.put(atracaoId, imagem); // Salva a imagem no mapa
+
+                    // Atualiza o ImageView com a imagem baixada
+                    Glide.with(context)
+                            .load(imagem.getUrl())
+                            .into(holder.imgCardExcursoes);
+                } else {
+                    Log.e("GET_ERROR", "Código de erro: " + response.code());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Imagem> call, Throwable t) {
+                Log.e("GET_ERROR", "Erro: " + t.getMessage());
+                if (context != null) {
+                    Toast.makeText(context, "Erro ao buscar imagem", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+
+    // Novo método para adicionar eventos à lista e atualizar a RecyclerView
+    public void adicionarExcursoes(List<Excursao> novasExcursoes) {
+        int posicaoInicial = excursaoList.size();
+        excursaoList.addAll(novasExcursoes);
+        notifyItemRangeInserted(posicaoInicial, novasExcursoes.size());
     }
 
 

@@ -46,6 +46,10 @@
         android:testOnly="true"
         android:theme="@style/Theme.FragmentAndroid" >
         <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasErro.TelaErroWifi"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasTour.TelaTourConteudo"
             android:exported="false"
             android:theme="@style/Base.Theme.Viajou" />
