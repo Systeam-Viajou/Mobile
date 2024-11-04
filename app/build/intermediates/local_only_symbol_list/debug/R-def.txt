@@ -14,6 +14,7 @@ color reenviar
 color white
 drawable apple
 drawable apresentacaoesfoto
+drawable bannerhome1
 drawable borda_card_excursoes
 drawable borda_card_pesquisa
 drawable cadeado
@@ -119,7 +120,6 @@ id btVoltarLoginEsqSenha
 id button
 id cadastrar
 id carregandoPesquisa
-id carrosselRecycler
 id cifrao
 id confirmarSenha
 id confirmarSenhaLayout
@@ -175,6 +175,7 @@ id imageView11
 id imageView13
 id imageView14
 id imageView2
+id imageView3
 id imageView4
 id imageView5
 id imageView6
@@ -300,6 +301,7 @@ id user
 id username
 id usernamePerfil
 id viewPager
+id viewPagerHome
 layout activity_main
 layout activity_splash_screen
 layout activity_tela_cadastro
@@ -320,6 +322,7 @@ layout fragment_tela_excursoes
 layout fragment_tela_figurinhas
 layout fragment_tela_home
 layout fragment_tela_turismos
+layout item_banner_home
 layout item_card_eventos
 layout item_card_excursoes
 layout item_card_home

@@ -22,7 +22,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerExperienciaHome"
             android:layout_width="match_parent"
-            android:layout_height="183dp"
+            android:layout_height="180dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:orientation="horizontal"
@@ -48,7 +48,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerPertoHome"
             android:layout_width="match_parent"
-            android:layout_height="183dp"
+            android:layout_height="180dp"
             android:layout_marginStart="0dp"
             android:layout_marginTop="10dp"
             android:orientation="horizontal"
@@ -73,7 +73,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerPopularesHome"
             android:layout_width="match_parent"
-            android:layout_height="183dp"
+            android:layout_height="180dp"
             android:layout_marginStart="0dp"
             android:layout_marginTop="10dp"
             android:orientation="horizontal"
@@ -98,7 +98,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerRecomenHome"
             android:layout_width="match_parent"
-            android:layout_height="183dp"
+            android:layout_height="180dp"
             android:layout_marginTop="10dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
@@ -135,22 +135,44 @@
             android:id="@+id/txtContinuarHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="215dp"
             android:fontFamily="@font/spartan_bold"
             android:text="Continuar Viajando"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/carrosselRecycler" />
+            app:layout_constraintTop_toBottomOf="@+id/include" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/carrosselRecycler"
+        <androidx.cardview.widget.CardView
             android:layout_width="0dp"
-            android:layout_height="198dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/txtContinuarHome"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/include"
-            tools:listitem="@layout/item_carrossel_home" />
+            app:layout_constraintTop_toBottomOf="@+id/include">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FF0000">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPagerHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

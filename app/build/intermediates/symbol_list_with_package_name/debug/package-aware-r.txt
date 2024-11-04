@@ -3090,6 +3090,7 @@ drawable apple
 drawable apresentacaoesfoto
 drawable avd_hide_password
 drawable avd_show_password
+drawable bannerhome1
 drawable borda_card_excursoes
 drawable borda_card_pesquisa
 drawable btn_checkbox_checked_mtrl
@@ -3437,7 +3438,6 @@ id cadastrar
 id callMeasure
 id cancel_button
 id carregandoPesquisa
-id carrosselRecycler
 id carryVelocity
 id center
 id centerCrop
@@ -3617,6 +3617,7 @@ id imageView11
 id imageView13
 id imageView14
 id imageView2
+id imageView3
 id imageView4
 id imageView5
 id imageView6
@@ -4016,6 +4017,7 @@ id username
 id usernamePerfil
 id vertical_only
 id viewPager
+id viewPagerHome
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -4190,6 +4192,7 @@ layout fragment_tela_home
 layout fragment_tela_turismos
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_banner_home
 layout item_card_eventos
 layout item_card_excursoes
 layout item_card_home

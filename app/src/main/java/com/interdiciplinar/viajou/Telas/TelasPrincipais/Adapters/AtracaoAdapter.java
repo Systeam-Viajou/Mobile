@@ -113,7 +113,9 @@ public class AtracaoAdapter extends RecyclerView.Adapter<AtracaoAdapter.AtracaoV
             @Override
             public void onFailure(Call<Imagem> call, Throwable t) {
                 Log.e("GET_ERROR", "Erro: " + t.getMessage());
-                Toast.makeText(context, "Erro ao buscar imagem", Toast.LENGTH_SHORT).show();
+                if (context != null) {
+                    Toast.makeText(context, "Erro ao buscar imagem", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

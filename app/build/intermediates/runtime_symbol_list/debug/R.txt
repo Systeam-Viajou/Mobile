@@ -3089,6 +3089,7 @@ int drawable apple 0x7f080079
 int drawable apresentacaoesfoto 0x7f08007a
 int drawable avd_hide_password 0x7f08007b
 int drawable avd_show_password 0x7f08007c
+int drawable bannerhome1 0x7f080153
 int drawable borda_card_excursoes 0x7f08007d
 int drawable borda_card_pesquisa 0x7f08007e
 int drawable btn_checkbox_checked_mtrl 0x7f08007f
@@ -3436,7 +3437,6 @@ int id cadastrar 0x7f0a007d
 int id callMeasure 0x7f0a007e
 int id cancel_button 0x7f0a007f
 int id carregandoPesquisa 0x7f0a0080
-int id carrosselRecycler 0x7f0a0081
 int id carryVelocity 0x7f0a0082
 int id center 0x7f0a0083
 int id centerCrop 0x7f0a0084
@@ -3616,6 +3616,7 @@ int id imageView11 0x7f0a0131
 int id imageView13 0x7f0a0132
 int id imageView14 0x7f0a0133
 int id imageView2 0x7f0a0134
+int id imageView3 0x7f0a02d8
 int id imageView4 0x7f0a0135
 int id imageView5 0x7f0a0136
 int id imageView6 0x7f0a0137
@@ -4015,6 +4016,7 @@ int id username 0x7f0a02c0
 int id usernamePerfil 0x7f0a02c1
 int id vertical_only 0x7f0a02c2
 int id viewPager 0x7f0a02c3
+int id viewPagerHome 0x7f0a02d7
 int id view_offset_helper 0x7f0a02c4
 int id view_transition 0x7f0a02c5
 int id view_tree_lifecycle_owner 0x7f0a02c6
@@ -4189,6 +4191,7 @@ int layout fragment_tela_home 0x7f0d0040
 int layout fragment_tela_turismos 0x7f0d0041
 int layout ime_base_split_test_activity 0x7f0d0042
 int layout ime_secondary_split_test_activity 0x7f0d0043
+int layout item_banner_home 0x7f0d008a
 int layout item_card_eventos 0x7f0d0044
 int layout item_card_excursoes 0x7f0d0045
 int layout item_card_home 0x7f0d0046
