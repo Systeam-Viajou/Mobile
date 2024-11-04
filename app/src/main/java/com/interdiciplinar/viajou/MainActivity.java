@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         openFragment(TelaHomeFragment.newInstance());
 
-        Fragment cardFragment = TelaCardAberto.newInstance();
+        Fragment cardFragment = TelaHomeFragment.newInstance();
         openFragment(cardFragment);
 
         binding.bottomNavigationView.setOnItemSelectedListener(

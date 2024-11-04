@@ -3213,6 +3213,7 @@ int drawable imgcardhome 0x7f0800f5
 int drawable imgcardturismos 0x7f0800f6
 int drawable imgcarrossel 0x7f0800f7
 int drawable imgerrointerno 0x7f0800f8
+int drawable imgerrowifi 0x7f080159
 int drawable imgfadetourvirtual 0x7f0800f9
 int drawable imgsemcoteudo_home 0x7f0800fa
 int drawable indeterminate_static 0x7f0800fb
@@ -3432,6 +3433,7 @@ int id btEntrar 0x7f0a0073
 int id btErroInterno 0x7f0a0074
 int id btErroSms 0x7f0a0075
 int id btErroSmsVoltar 0x7f0a0076
+int id btErroWifi 0x7f0a02e3
 int id btIniciarTour 0x7f0a0077
 int id btMaisInfoCardExcursoes 0x7f0a0078
 int id btProximoTourVirtual 0x7f0a0079
@@ -3499,6 +3501,7 @@ int id default_activity_button 0x7f0a00b6
 int id deltaRelative 0x7f0a00b7
 int id dependency_ordering 0x7f0a00b8
 int id descriErroInterno 0x7f0a00b9
+int id descriErroWifi 0x7f0a02e4
 int id descricaoTourVirtual 0x7f0a00ba
 int id design_bottom_sheet 0x7f0a00bb
 int id design_menu_item_action_area 0x7f0a00bc
@@ -3646,6 +3649,7 @@ int id imgCardHome 0x7f0a0149
 int id imgCardTurismos 0x7f0a014a
 int id imgCarrossel 0x7f0a014b
 int id imgErroInterno 0x7f0a014c
+int id imgErroWifi 0x7f0a02e5
 int id imgExposicoes 0x7f0a014d
 int id imgFeiras 0x7f0a014e
 int id imgFestival 0x7f0a014f
@@ -4174,6 +4178,7 @@ int layout activity_tela_cadastro 0x7f0d001e
 int layout activity_tela_cadastro2 0x7f0d001f
 int layout activity_tela_erro_interno 0x7f0d0020
 int layout activity_tela_erro_sms 0x7f0d0021
+int layout activity_tela_erro_wifi 0x7f0d008f
 int layout activity_tela_esqueceu_senha 0x7f0d0022
 int layout activity_tela_esqueceu_senha2 0x7f0d0023
 int layout activity_tela_esqueceu_senha3 0x7f0d0024

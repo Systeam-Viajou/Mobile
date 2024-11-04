@@ -83,6 +83,7 @@ drawable imgcardhome
 drawable imgcardturismos
 drawable imgcarrossel
 drawable imgerrointerno
+drawable imgerrowifi
 drawable imgfadetourvirtual
 drawable imgsemcoteudo_home
 drawable joia
@@ -119,6 +120,7 @@ id btEntrar
 id btErroInterno
 id btErroSms
 id btErroSmsVoltar
+id btErroWifi
 id btIniciarTour
 id btMaisInfoCardExcursoes
 id btProximoTourVirtual
@@ -139,6 +141,7 @@ id dataCardExcursoes
 id dataNasc
 id dataNascLayout
 id descriErroInterno
+id descriErroWifi
 id descricaoTourVirtual
 id edfs
 id email
@@ -205,6 +208,7 @@ id imgCardHome
 id imgCardTurismos
 id imgCarrossel
 id imgErroInterno
+id imgErroWifi
 id imgExposicoes
 id imgFeiras
 id imgFestival
@@ -325,6 +329,7 @@ layout activity_tela_cadastro
 layout activity_tela_cadastro2
 layout activity_tela_erro_interno
 layout activity_tela_erro_sms
+layout activity_tela_erro_wifi
 layout activity_tela_esqueceu_senha
 layout activity_tela_esqueceu_senha2
 layout activity_tela_esqueceu_senha3

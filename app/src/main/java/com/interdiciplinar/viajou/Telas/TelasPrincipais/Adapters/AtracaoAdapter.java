@@ -75,7 +75,7 @@ public class AtracaoAdapter extends RecyclerView.Adapter<AtracaoAdapter.AtracaoV
         if (imagensMap.containsKey(atracao.getId())) {
             Imagem imagem = imagensMap.get(atracao.getId());
             Glide.with(context)
-                    .load(imagem.getUrl()) // Substitua pelo método correto para obter a URL da imagem
+                    .load(imagem.getUrl())
                     .into(holder.imagemAtracao);
         } else {
             // Placeholder enquanto a imagem é carregada
@@ -113,7 +113,9 @@ public class AtracaoAdapter extends RecyclerView.Adapter<AtracaoAdapter.AtracaoV
             @Override
             public void onFailure(Call<Imagem> call, Throwable t) {
                 Log.e("GET_ERROR", "Erro: " + t.getMessage());
-                Toast.makeText(context, "Erro ao buscar imagem", Toast.LENGTH_SHORT).show();
+                if (context != null) {
+                    Toast.makeText(context, "Erro ao buscar imagem", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

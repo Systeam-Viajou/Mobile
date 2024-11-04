@@ -32,7 +32,9 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
+import okhttp3.OkHttpClient;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -136,10 +138,17 @@ public class TelaExcursoesFragment extends Fragment {
     private void pegandoDadosExcursao() {
         progressBar.setVisibility(View.VISIBLE);
 
+        OkHttpClient okHttpClient = new OkHttpClient.Builder()
+                .connectTimeout(3, TimeUnit.MINUTES)  // Ajusta o tempo de conexão
+                .readTimeout(3, TimeUnit.MINUTES)     // Ajusta o tempo de leitura
+                .writeTimeout(3, TimeUnit.MINUTES)    // Ajusta o tempo de escrita
+                .build();
+
         // Inicializando Retrofit
         retrofit = new Retrofit.Builder()
                 .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
+                .client(okHttpClient)
                 .build();
 
         // Criando a chamada para a API
