@@ -1,10 +1,12 @@
 package com.interdiciplinar.viajou.Telas.TelasPrincipais;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
@@ -37,6 +39,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import java. util. Collections;
 
 public class TelaHomeFragment extends Fragment {
 
@@ -45,8 +48,8 @@ public class TelaHomeFragment extends Fragment {
     private SearchView.SearchAutoComplete searchEditText;
     private ImageView iconLupa, iconToolbar;
     private Retrofit retrofit;
-
     private ViewPager2 viewPager;
+    private boolean dadosCarregados = false;
 
     public TelaHomeFragment() {
         // Required empty public constructor
@@ -71,6 +74,16 @@ public class TelaHomeFragment extends Fragment {
         searchEditText = searchView.findViewById(androidx.appcompat.R.id.search_src_text);
         viewPager = view.findViewById(R.id.viewPagerHome);
         recyclerContinuar = view.findViewById(R.id.recyclerContinuarHome);
+        recyclerRecomendar = view.findViewById(R.id.recyclerRecomenHome);
+        recyclerPopulares = view.findViewById(R.id.recyclerPopularesHome);
+        recyclerPerto = view.findViewById(R.id.recyclerPertoHome);
+        recyclerExperiencia = view.findViewById(R.id.recyclerExperienciaHome);
+
+        // Setando o adapter para o recycler
+        recyclerPopulares.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        recyclerPerto.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        recyclerExperiencia.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        recyclerRecomendar.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         recyclerContinuar.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
         FirebaseAuth autenticar = FirebaseAuth.getInstance();
@@ -84,24 +97,64 @@ public class TelaHomeFragment extends Fragment {
 
         // Lista de imagens (exemplo com drawable IDs)
         List<Integer> imageList = Arrays.asList(
-                R.drawable.bannerhome1,
-                R.drawable.carroseu2,
-                R.drawable.carroseu3
+                R.drawable.sotrackboa,
+                R.drawable.festivaldemusicajovem,
+                R.drawable.soundmotionwave
         );
 
         BannerHomeAdapter adapter = new BannerHomeAdapter(getContext(), imageList);
         viewPager.setAdapter(adapter);
 
+        ImageView btnLeft = view.findViewById(R.id.setaEsqueCarrrossel);
+        ImageView btnRight = view.findViewById(R.id.setaDireCarrossel);
+
+        if(imageList.size() == 1){
+            btnLeft.setVisibility(View.GONE);
+            btnRight.setVisibility(View.GONE);
+        }
+
+        // Listener para a seta da esquerda
+        btnLeft.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int currentItem = viewPager.getCurrentItem();
+                if (currentItem > 0) {
+                    viewPager.setCurrentItem(currentItem - 1, true);
+                }
+                else{
+                    viewPager.setCurrentItem(imageList.size(), true);
+                }
+            }
+        });
+
+        // Listener para a seta da direita
+        btnRight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int currentItem = viewPager.getCurrentItem();
+                if (currentItem < adapter.getItemCount() - 1) {
+                    viewPager.setCurrentItem(currentItem + 1, true);
+                }
+                else{
+                    viewPager.setCurrentItem(0, true);
+                }
+            }
+        });
+
         searchView.setIconifiedByDefault(false);
         searchView.setOnClickListener(v -> searchEditText.requestFocus());
         searchEditText.setOnFocusChangeListener((v, hasFocus) -> iconLupa.setVisibility(hasFocus ? View.GONE : View.VISIBLE));
 
-        pegarDadosAtracoes();
+        pegarRecomendadas();
+        pegarPopulares();
+        pegarPerto();
+        pegarExperiencia();
 
         return view;
+
     }
 
-    private void pegarDadosAtracoes() {
+    private void pegarRecomendadas() {
         retrofit = new Retrofit.Builder()
                 .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -118,7 +171,7 @@ public class TelaHomeFragment extends Fragment {
 
                     // Configura o adapter com a lista de atrações e o contexto atual
                     AtracaoAdapter atracaoAdapter = new AtracaoAdapter(atracoes, getContext());
-                    recyclerContinuar.setAdapter(atracaoAdapter);
+                    recyclerRecomendar.setAdapter(atracaoAdapter);
                 } else {
                     Log.e("ERRO", "Resposta vazia ou erro na resposta");
                 }
@@ -131,6 +184,99 @@ public class TelaHomeFragment extends Fragment {
             }
         });
     }
+
+    private void pegarPopulares() {
+        retrofit = new Retrofit.Builder()
+                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        ApiViajou apiViajou = retrofit.create(ApiViajou.class);
+        Call<List<Atracao>> call = apiViajou.buscarAtracoes();
+
+        call.enqueue(new Callback<List<Atracao>>() {
+            @Override
+            public void onResponse(Call<List<Atracao>> call, Response<List<Atracao>> response) {
+                if (response.isSuccessful() && response.body() != null) {
+                    List<Atracao> atracoes = response.body();
+
+                    // Configura o adapter com a lista de atrações e o contexto atual
+                    AtracaoAdapter atracaoAdapter = new AtracaoAdapter(atracoes, getContext());
+                    recyclerPopulares.setAdapter(atracaoAdapter);
+                } else {
+                    Log.e("ERRO", "Resposta vazia ou erro na resposta");
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<Atracao>> call, Throwable throwable) {
+                Log.e("ERRO", "Falha ao carregar atrações: " + throwable.getMessage(), throwable);
+                Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    private void pegarPerto() {
+        retrofit = new Retrofit.Builder()
+                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        ApiViajou apiViajou = retrofit.create(ApiViajou.class);
+        Call<List<Atracao>> call = apiViajou.buscarAtracoes();
+
+        call.enqueue(new Callback<List<Atracao>>() {
+            @Override
+            public void onResponse(Call<List<Atracao>> call, Response<List<Atracao>> response) {
+                if (response.isSuccessful() && response.body() != null) {
+                    List<Atracao> atracoes = response.body();
+
+                    // Configura o adapter com a lista de atrações e o contexto atual
+                    AtracaoAdapter atracaoAdapter = new AtracaoAdapter(atracoes, getContext());
+                    recyclerPerto.setAdapter(atracaoAdapter);
+                } else {
+                    Log.e("ERRO", "Resposta vazia ou erro na resposta");
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<Atracao>> call, Throwable throwable) {
+                Log.e("ERRO", "Falha ao carregar atrações: " + throwable.getMessage(), throwable);
+                Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+    private void pegarExperiencia() {
+        retrofit = new Retrofit.Builder()
+                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        ApiViajou apiViajou = retrofit.create(ApiViajou.class);
+        Call<List<Atracao>> call = apiViajou.buscarAtracoes();
+
+        call.enqueue(new Callback<List<Atracao>>() {
+            @Override
+            public void onResponse(Call<List<Atracao>> call, Response<List<Atracao>> response) {
+                if (response.isSuccessful() && response.body() != null) {
+                    List<Atracao> atracoes = response.body();
+
+                    // Configura o adapter com a lista de atrações e o contexto atual
+                    AtracaoAdapter atracaoAdapter = new AtracaoAdapter(atracoes, getContext());
+                    recyclerExperiencia.setAdapter(atracaoAdapter);
+                } else {
+                    Log.e("ERRO", "Resposta vazia ou erro na resposta");
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<Atracao>> call, Throwable throwable) {
+                Log.e("ERRO", "Falha ao carregar atrações: " + throwable.getMessage(), throwable);
+                Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
 
     @Override
     public void onResume() {

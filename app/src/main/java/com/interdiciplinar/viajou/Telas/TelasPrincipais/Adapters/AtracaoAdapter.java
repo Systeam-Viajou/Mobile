@@ -1,6 +1,10 @@
 package com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +14,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.MutableLiveData;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -19,6 +26,8 @@ import com.interdiciplinar.viajou.Models.Atracao;
 import com.interdiciplinar.viajou.Models.Imagem;
 import com.interdiciplinar.viajou.Models.Tipo;
 import com.interdiciplinar.viajou.R;
+import com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaHomeFragment;
+import com.interdiciplinar.viajou.Telas.TelasTour.TelaCardAberto;
 
 import java.util.HashMap;
 import java.util.List;
@@ -29,6 +38,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import androidx.fragment.app.FragmentTransaction;
 
 public class AtracaoAdapter extends RecyclerView.Adapter<AtracaoAdapter.AtracaoViewHolder> {
 
@@ -43,7 +53,7 @@ public class AtracaoAdapter extends RecyclerView.Adapter<AtracaoAdapter.AtracaoV
 
         // Configurando Retrofit para chamada de API
         this.retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-mongo.onrender.com/")
+                .baseUrl("https://dev-ii-mongo-prod.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }
@@ -66,7 +76,7 @@ public class AtracaoAdapter extends RecyclerView.Adapter<AtracaoAdapter.AtracaoV
         if (holder.tipo != null) {
             if (holder.tipo.getNome().equals("evento")) {
                 holder.icon.setImageResource(R.drawable.iconeventocardhome);
-            } else if (holder.tipo.getNome().equals("tour")) {
+            } else if (holder.tipo.getNome().equals("tour-virtual")) {
                 holder.icon.setImageResource(R.drawable.iconturismocardhome);
             }
         }
@@ -82,6 +92,37 @@ public class AtracaoAdapter extends RecyclerView.Adapter<AtracaoAdapter.AtracaoV
             holder.imagemAtracao.setImageResource(R.drawable.imgcardhome);
             buscarImagem(atracao.getId(), holder);
         }
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(holder.tipo.getNome().equals("tour-virtual")){
+                    // Instancia o fragmento que deseja abrir
+                    Fragment telaCardAberto = new TelaCardAberto();
+                    Bundle bundle = new Bundle();
+                    bundle.putLong("id", atracao.getId());
+                    telaCardAberto.setArguments(bundle);
+
+                    // Verifica se o contexto é uma instância de AppCompatActivity
+                    if (context instanceof AppCompatActivity) {
+                        FragmentManager fragmentManager = ((AppCompatActivity) context).getSupportFragmentManager();
+
+                        // Inicia a transação do fragmento
+                        fragmentManager.beginTransaction()
+                                .setCustomAnimations(
+                                        R.anim.vindo_de_baixo,  // Animação para o fragmento que entra
+                                        R.anim.indo_de_baixo    // Animação para o fragmento que sai
+                                )
+                                .replace(R.id.frameLayout, telaCardAberto) // Substitua 'R.id.container' pelo ID do layout onde deseja adicionar o fragmento
+                                .addToBackStack(null) // Adiciona à pilha de volta
+                                .commit();
+                    }
+                }
+                else{
+                    Toast.makeText(context, "Em Breve", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
     @Override
