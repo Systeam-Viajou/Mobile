@@ -29,29 +29,31 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="-3dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="@font/spartan_bold"
                 android:text="Descrição"
                 android:textColor="#000000"
                 android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
             <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
+                android:id="@+id/tituloCardAberto"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
                 android:fontFamily="@font/spartan_bold"
                 android:text="Titulo"
                 android:textColor="#000000"
                 android:textSize="23sp"
+                app:layout_constraintEnd_toStartOf="@+id/iconAcessHome"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/iconAcessHome"
                 android:layout_width="64dp"
                 android:layout_height="52dp"
                 android:layout_marginTop="14dp"
@@ -68,27 +70,28 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="-30dp"
                 android:layout_marginTop="-2dp"
-                android:isIndicator="false"
+                android:isIndicator="true"
                 android:numStars="5"
                 android:scaleX="0.60"
                 android:scaleY="0.60"
-                android:stepSize="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+                app:layout_constraintTop_toBottomOf="@+id/endereco" />
 
             <TextView
-                android:id="@+id/textView11"
-                android:layout_width="wrap_content"
+                android:id="@+id/endereco"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="9dp"
+                android:layout_marginEnd="10dp"
                 android:drawableLeft="@drawable/icon_loc"
                 android:drawablePadding="4dp"
                 android:fontFamily="@font/spartan_bold"
                 android:text="TextView"
                 android:textSize="13sp"
+                app:layout_constraintEnd_toStartOf="@+id/iconAcessHome"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                app:layout_constraintTop_toBottomOf="@+id/tituloCardAberto" />
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -162,8 +165,8 @@ Oferece experiências interativas em astronomia, biodiversidade, física, quími
                 android:id="@+id/btIniciarTour"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginEnd="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
                 android:layout_marginBottom="-5dp"
                 android:backgroundTint="#805CD8"
                 android:fontFamily="@font/spartan_bold"
@@ -177,6 +180,42 @@ Oferece experiências interativas em astronomia, biodiversidade, física, quími
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/qntAvaliacoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-15dp"
+                android:fontFamily="@font/spartan"
+                android:text="(0)"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-15dp"
+                android:fontFamily="@font/spartan"
+                android:text="Avaliações"
+                app:layout_constraintStart_toEndOf="@+id/qntAvaliacoes"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+
+            <TextView
+                android:id="@+id/valAvaliacoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-35dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="0.0"
+                android:textColor="#888888"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/ratingBar"
+                app:layout_constraintTop_toBottomOf="@+id/endereco" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>

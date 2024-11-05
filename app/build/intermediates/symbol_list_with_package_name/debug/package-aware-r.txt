@@ -28,6 +28,7 @@ anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
 anim fragment_fast_out_extra_slow_in
+anim indo_de_baixo
 anim linear_indeterminate_line1_head_interpolator
 anim linear_indeterminate_line1_tail_interpolator
 anim linear_indeterminate_line2_head_interpolator
@@ -49,6 +50,7 @@ anim nav_default_pop_enter_anim
 anim nav_default_pop_exit_anim
 anim slide_in_right
 anim slide_out_left
+anim vindo_de_baixo
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -3143,6 +3145,7 @@ drawable exposicoesfoto
 drawable facebook
 drawable fadecardeventos
 drawable feirafoto
+drawable festivaldemusicajovem
 drawable festivalfoto
 drawable fundo_cadastro_erro
 drawable fundo_card
@@ -3304,9 +3307,12 @@ drawable profilecircle
 drawable rotate_right
 drawable sair
 drawable scrollbar_color
+drawable semconteudo
 drawable setadirecarrossel
 drawable setaesqcarrossel
 drawable showfoto
+drawable sotrackboa
+drawable soundmotionwave
 drawable spinner_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3451,6 +3457,7 @@ id cache_measures
 id cadastrar
 id callMeasure
 id cancel_button
+id cardView
 id cardView1
 id carregandoPesquisa
 id carryVelocity
@@ -3549,6 +3556,7 @@ id empresaCardExcursoes
 id enabled
 id end
 id endToStart
+id endereco
 id enterAlways
 id enterAlwaysCollapsed
 id escape
@@ -3612,6 +3620,7 @@ id homeAsUp
 id honorRequest
 id horizontal_only
 id icon
+id iconAcessHome
 id iconAcssesEventos
 id iconAcssesExcur
 id iconConfigToolbar
@@ -3632,6 +3641,7 @@ id ignoreRequest
 id image
 id imageCalendar
 id imageView
+id imageView10
 id imageView11
 id imageView13
 id imageView14
@@ -3639,7 +3649,6 @@ id imageView2
 id imageView3
 id imageView4
 id imageView5
-id imageView6
 id imageView7
 id imageView8
 id imageView9
@@ -3834,6 +3843,7 @@ id pressed
 id progressBar
 id progress_circular
 id progress_horizontal
+id qntAvaliacoes
 id qntdPessoasCardExcur
 id radio
 id ratingBar
@@ -3964,7 +3974,6 @@ id textStart
 id textTimer
 id textTop
 id textView
-id textView10
 id textView11
 id textView12
 id textView14
@@ -3996,6 +4005,7 @@ id titu2
 id titu3
 id titu4
 id titu5
+id tituloCardAberto
 id tituloCardEvento
 id tituloCardExcursoes
 id tituloCardHome
@@ -4045,6 +4055,7 @@ id useLogo
 id user
 id username
 id usernamePerfil
+id valAvaliacoes
 id vertical_only
 id viewPager
 id viewPagerHome
