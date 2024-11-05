@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.interdiciplinar.viajou.Api.ApiViajou;
+import com.interdiciplinar.viajou.Models.Evento;
 import com.interdiciplinar.viajou.Models.Excursao;
 import com.interdiciplinar.viajou.Models.Imagem;
 import com.interdiciplinar.viajou.R;
@@ -104,18 +105,13 @@ public class ExcursaoAdapter extends RecyclerView.Adapter<ExcursaoAdapter.Excurs
         if (imagensMap.containsKey(excursao.getAtracao().getId())) {
             Imagem imagem = imagensMap.get(excursao.getAtracao().getId());
             Glide.with(context)
-                    .load(imagem.getUrl())
+                    .load(imagem.getUrl()) // Substitua pelo método correto para obter a URL da imagem
                     .into(holder.imgCardExcursoes);
         } else {
             // Placeholder enquanto a imagem é carregada
             holder.imgCardExcursoes.setImageResource(R.drawable.imgcardexcursoes);
             buscarImagem(excursao.getAtracao().getId(), holder);
         }
-    }
-
-    @Override
-    public int getItemCount() {
-        return excursaoList.size();
     }
 
     // Método para buscar a imagem no banco e atualizar o ViewHolder
@@ -147,6 +143,19 @@ public class ExcursaoAdapter extends RecyclerView.Adapter<ExcursaoAdapter.Excurs
                 }
             }
         });
+    }
+
+    // Novo método para adicionar eventos à lista e atualizar a RecyclerView
+    public void adicionarExcursoes(List<Excursao> novasExcursoes) {
+        int posicaoInicial = excursaoList.size();
+        excursaoList.addAll(novasExcursoes);
+        notifyItemRangeInserted(posicaoInicial, novasExcursoes.size());
+    }
+
+
+    @Override
+    public int getItemCount() {
+        return excursaoList.size();
     }
 
     static class ExcursaoViewHolder extends RecyclerView.ViewHolder {

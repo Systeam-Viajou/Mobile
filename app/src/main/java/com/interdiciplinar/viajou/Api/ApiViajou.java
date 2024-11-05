@@ -17,6 +17,7 @@ import retrofit2.http.GET;
 import retrofit2.http.PATCH;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface ApiViajou {
     @POST("/viajouapi/usuarios/inserir")
@@ -24,6 +25,12 @@ public interface ApiViajou {
 
     @GET("/viajouapi/usuarios/buscar/username/{username}")
     Call<Usuario> buscarUsername(@Path("username") String username);
+
+    @GET("/viajouapi/eventos/buscar/paginado")
+    Call<List<Evento>> buscarEventoPaginado(@Query("offset") int offset, @Query("limit") int limit);
+
+    @GET("/viajouapi/excursoes/buscar/paginado")
+    Call<List<Excursao>> buscarExcursaoPaginado(@Query("offset") int offset, @Query("limit") int limit);
 
     @GET("/viajouapi/usuarios/buscar/email/{email}")
     Call<Usuario> buscarEmail(@Path("email") String email);

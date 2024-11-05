@@ -28,6 +28,7 @@ import com.interdiciplinar.viajou.Models.Imagem;
 import com.interdiciplinar.viajou.R;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.AtracaoAdapter;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.BannerHomeAdapter;
+import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaNotificacao;
 import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaPerfil;
 import com.interdiciplinar.viajou.Telas.TelasTour.CarouselAdapter;
 
@@ -46,7 +47,7 @@ public class TelaHomeFragment extends Fragment {
     private RecyclerView recyclerContinuar, recyclerRecomendar, recyclerPopulares, recyclerPerto, recyclerExperiencia;
     private SearchView searchView;
     private SearchView.SearchAutoComplete searchEditText;
-    private ImageView iconLupa, iconToolbar;
+    private ImageView iconLupa, iconToolbar, iconNotifi;
     private Retrofit retrofit;
     private ViewPager2 viewPager;
     private boolean dadosCarregados = false;
@@ -85,6 +86,7 @@ public class TelaHomeFragment extends Fragment {
         recyclerExperiencia.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         recyclerRecomendar.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         recyclerContinuar.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        iconNotifi = view.findViewById(R.id.iconNotifiToolbar);
 
         FirebaseAuth autenticar = FirebaseAuth.getInstance();
         FirebaseUser userLogin = autenticar.getCurrentUser();
@@ -92,6 +94,11 @@ public class TelaHomeFragment extends Fragment {
 
         iconToolbar.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), TelaPerfil.class);
+            startActivity(intent);
+        });
+
+        iconNotifi.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), TelaNotificacao.class);
             startActivity(intent);
         });
 

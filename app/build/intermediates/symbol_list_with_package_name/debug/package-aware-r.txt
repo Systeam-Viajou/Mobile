@@ -3186,6 +3186,7 @@ drawable ic_search_black_24
 drawable icon_loc
 drawable iconacsses
 drawable iconaumentartelatourvirtual
+drawable iconaviaonotificacao
 drawable iconconfigtoolbarprimar
 drawable iconconfigtoolbarsecund
 drawable iconempresacardexcursoes
@@ -3455,6 +3456,7 @@ id cadastrar
 id callMeasure
 id cancel_button
 id cardView
+id cardView1
 id carregandoPesquisa
 id carryVelocity
 id center
@@ -3508,6 +3510,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id descNotificacao1
 id descriErroInterno
 id descriErroWifi
 id descricaoTourVirtual
@@ -3664,6 +3667,7 @@ id imgErroWifi
 id imgExposicoes
 id imgFeiras
 id imgFestival
+id imgNotificacao1
 id imgPerfil
 id imgPerfilToolbar
 id imgShow
@@ -3671,6 +3675,7 @@ id immediateStop
 id include
 id include2
 id include3
+id include4
 id included
 id indeterminate
 id info
@@ -4003,6 +4008,7 @@ id tituloCardExcursoes
 id tituloCardHome
 id tituloCardTurismo
 id tituloErroInterno
+id tituloNotificacao1
 id tituloToolbarSecund
 id tituloTourVirtual
 id toggle
@@ -4197,6 +4203,7 @@ layout activity_tela_esqueceu_senha
 layout activity_tela_esqueceu_senha2
 layout activity_tela_esqueceu_senha3
 layout activity_tela_login
+layout activity_tela_notificacao
 layout activity_tela_perfil
 layout activity_tela_pesquisa
 layout activity_tela_sms

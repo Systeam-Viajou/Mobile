@@ -20,7 +20,6 @@ import com.interdiciplinar.viajou.R;
 
 import java.text.SimpleDateFormat;
 import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.Date;
 import java.util.HashMap;
@@ -119,7 +118,6 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
         }
     }
 
-
     @Override
     public int getItemCount() {
         return eventos.size();
@@ -154,6 +152,13 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
                 }
             }
         });
+    }
+
+    // Novo método para adicionar eventos à lista e atualizar a RecyclerView
+    public void adicionarEventos(List<Evento> novosEventos) {
+        int posicaoInicial = eventos.size();
+        eventos.addAll(novosEventos);
+        notifyItemRangeInserted(posicaoInicial, novosEventos.size());
     }
 
     public static class EventoViewHolder extends RecyclerView.ViewHolder {
