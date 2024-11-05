@@ -4,9 +4,17 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.lifecycle.MutableLiveData;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -26,6 +34,7 @@ import com.interdiciplinar.viajou.MainActivity;
 import com.interdiciplinar.viajou.Models.Usuario;
 import com.interdiciplinar.viajou.R;
 import com.interdiciplinar.viajou.Telas.TelasErro.TelaErroInterno;
+import com.interdiciplinar.viajou.Telas.TelasSecundarias.NotificationReceiver;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -47,6 +56,7 @@ public class TelaPesquisa extends AppCompatActivity {
     boolean feiras = false;
     int verificador = 1;
     String nome, sobrenome, email, username, senha, genero, dataNasc, cpf, telefone;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -287,12 +297,51 @@ public class TelaPesquisa extends AppCompatActivity {
         );
     }
 
-    public void validacaoFinal(){
+    public void validacaoFinal() {
         progressBar.setVisibility(View.INVISIBLE);
         if(verificador == 0){
             Intent intent = new Intent(TelaPesquisa.this, MainActivity.class);
             startActivity(intent);
+            notificar();
             finish();
         }
+    }
+
+    public void notificar() {
+
+        // Criar notificação
+        Context context = getApplicationContext();
+        Intent intentAndroid = new Intent(context, NotificationReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, intentAndroid, PendingIntent.FLAG_IMMUTABLE);
+
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "ch_id")
+                .setSmallIcon(R.drawable.ic_launcher_foreground)
+                .setContentTitle("Seja muito bem vindo(a)!")
+                .setContentText("Conheça novos lugares para passear e se divertir!")
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setAutoCancel(true)
+                .setContentIntent(pendingIntent);
+
+
+        // Config Canal de Notificação
+        NotificationChannel channel = new NotificationChannel("ch_id", "Notificação", NotificationManager.IMPORTANCE_HIGH);
+        NotificationManager manager = context.getSystemService(NotificationManager.class);
+        manager.createNotificationChannel(channel);
+
+        // Show - Apresentar Notificação
+        NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(context);
+        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        notificationManagerCompat.notify(1, builder.build());
+
     }
 }

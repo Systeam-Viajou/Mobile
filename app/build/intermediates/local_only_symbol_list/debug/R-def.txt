@@ -52,6 +52,7 @@ drawable ic_launcher_foreground
 drawable icon_loc
 drawable iconacsses
 drawable iconaumentartelatourvirtual
+drawable iconaviaonotificacao
 drawable iconconfigtoolbarprimar
 drawable iconconfigtoolbarsecund
 drawable iconempresacardexcursoes
@@ -130,6 +131,7 @@ id btVoltarLoginEsqSenha
 id btVoltarTourVirtual
 id button
 id cadastrar
+id cardView1
 id carregandoPesquisa
 id cifrao
 id confirmarSenha
@@ -140,6 +142,7 @@ id dataCardEventos
 id dataCardExcursoes
 id dataNasc
 id dataNascLayout
+id descNotificacao1
 id descriErroInterno
 id descriErroWifi
 id descricaoTourVirtual
@@ -213,12 +216,14 @@ id imgErroWifi
 id imgExposicoes
 id imgFeiras
 id imgFestival
+id imgNotificacao1
 id imgPerfil
 id imgPerfilToolbar
 id imgShow
 id include
 id include2
 id include3
+id include4
 id linearLayout
 id linearLayout2
 id linha1
@@ -298,6 +303,7 @@ id tituloCardExcursoes
 id tituloCardHome
 id tituloCardTurismo
 id tituloErroInterno
+id tituloNotificacao1
 id tituloToolbarSecund
 id tituloTourVirtual
 id turismos
@@ -336,6 +342,7 @@ layout activity_tela_esqueceu_senha
 layout activity_tela_esqueceu_senha2
 layout activity_tela_esqueceu_senha3
 layout activity_tela_login
+layout activity_tela_notificacao
 layout activity_tela_perfil
 layout activity_tela_pesquisa
 layout activity_tela_sms
