@@ -180,6 +180,10 @@
         "source": "C:\\Users\\evellynnakamura-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\layout\\item_card_turismos.xml"
     },
     {
+        "merged": "C:\\Users\\evellynnakamura-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_imgresultnaoencontrado.png.flat",
+        "source": "C:\\Users\\evellynnakamura-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\imgresultnaoencontrado.png"
+    },
+    {
         "merged": "C:\\Users\\evellynnakamura-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_iconpersoncardexcursoes.xml.flat",
         "source": "C:\\Users\\evellynnakamura-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\iconpersoncardexcursoes.xml"
     },
@@ -312,10 +316,6 @@
         "source": "C:\\Users\\evellynnakamura-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\microsoftvetor.xml"
     },
     {
-        "merged": "com.interdiciplinar.viajou.app-merged_res-53:/layout_activity_tela_notificacao.xml.flat",
-        "source": "com.interdiciplinar.viajou.app-main-55:/layout/activity_tela_notificacao.xml"
-    },
-    {
         "merged": "C:\\Users\\evellynnakamura-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_profilecircle.png.flat",
         "source": "C:\\Users\\evellynnakamura-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\profilecircle.png"
     },
@@ -400,6 +400,10 @@
         "source": "C:\\Users\\evellynnakamura-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\carregando.xml"
     },
     {
+        "merged": "com.interdiciplinar.viajou.app-merged_res-53:/layout_fragment_tela_excursoes.xml.flat",
+        "source": "com.interdiciplinar.viajou.app-main-55:/layout/fragment_tela_excursoes.xml"
+    },
+    {
         "merged": "C:\\Users\\evellynnakamura-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
         "source": "C:\\Users\\evellynnakamura-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
     },
@@ -450,6 +454,10 @@
     {
         "merged": "C:\\Users\\evellynnakamura-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_icon_loc.xml.flat",
         "source": "C:\\Users\\evellynnakamura-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\icon_loc.xml"
+    },
+    {
+        "merged": "C:\\Users\\evellynnakamura-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_imgresultnaoencontradoquadrado.png.flat",
+        "source": "C:\\Users\\evellynnakamura-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-main-55:\\drawable\\imgresultnaoencontradoquadrado.png"
     },
     {
         "merged": "C:\\Users\\evellynnakamura-ieg\\.gradle\\daemon\\8.2\\com.interdiciplinar.viajou.app-merged_res-53:\\drawable_apple.png.flat",

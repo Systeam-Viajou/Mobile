@@ -33,17 +33,11 @@ public interface ApiViajou {
     @GET("/viajouapi/eventos/buscar")
     Call<List<Evento>> buscarEvento();
 
-    @GET("/viajouapi/eventos/buscar/paginado")
-    Call<List<Evento>> buscarEventoPaginado(@Query("offset") int offset, @Query("limit") int limit);
-
     @GET("/viajouapi/atracoes/buscar")
     Call<List<Atracao>> buscarAtracoes();
 
     @GET("/viajouapi/excursoes/buscar")
     Call<List<Excursao>> buscarExcursao();
-
-    @GET("/viajouapi/excursoes/buscar/paginado")
-    Call<List<Excursao>> buscarExcursaoPaginado(@Query("offset") int offset, @Query("limit") int limit);
 
     @GET("/viajouapi/mongo/imagens/{idAtracao}")
     Call<Imagem> buscarImagem(@Path("idAtracao") Long idAtracao);

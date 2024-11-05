@@ -3218,6 +3218,8 @@ drawable imgcarrossel
 drawable imgerrointerno
 drawable imgerrowifi
 drawable imgfadetourvirtual
+drawable imgresultnaoencontrado
+drawable imgresultnaoencontradoquadrado
 drawable imgsemcoteudo_home
 drawable indeterminate_static
 drawable joia
@@ -3661,6 +3663,7 @@ id imgFestival
 id imgNotificacao1
 id imgPerfil
 id imgPerfilToolbar
+id imgSemResultado
 id imgShow
 id immediateStop
 id include
