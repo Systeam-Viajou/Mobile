@@ -1,9 +1,11 @@
 package com.interdiciplinar.viajou.Api;
 
 import com.interdiciplinar.viajou.Models.Atracao;
+import com.interdiciplinar.viajou.Models.Classificacao;
 import com.interdiciplinar.viajou.Models.Evento;
 import com.interdiciplinar.viajou.Models.Excursao;
 import com.interdiciplinar.viajou.Models.Imagem;
+import com.interdiciplinar.viajou.Models.Tour;
 import com.interdiciplinar.viajou.Models.Usuario;
 
 import retrofit2.Call;
@@ -24,6 +26,12 @@ public interface ApiViajou {
     @GET("/viajouapi/usuarios/buscar/username/{username}")
     Call<Usuario> buscarUsername(@Path("username") String username);
 
+    @GET("/viajouapi/eventos/buscar/paginado")
+    Call<List<Evento>> buscarEventoPaginado(@Query("offset") int offset, @Query("limit") int limit);
+
+    @GET("/viajouapi/excursoes/buscar/paginado")
+    Call<List<Excursao>> buscarExcursaoPaginado(@Query("offset") int offset, @Query("limit") int limit);
+
     @GET("/viajouapi/usuarios/buscar/email/{email}")
     Call<Usuario> buscarEmail(@Path("email") String email);
 
@@ -33,18 +41,19 @@ public interface ApiViajou {
     @GET("/viajouapi/eventos/buscar")
     Call<List<Evento>> buscarEvento();
 
-    @GET("/viajouapi/eventos/buscar/paginado")
-    Call<List<Evento>> buscarEventoPaginado(@Query("offset") int offset, @Query("limit") int limit);
-
-    @GET("/viajouapi/atracoes/buscar")
+    @GET("/viajouapi/atracoes/aleatorias")
     Call<List<Atracao>> buscarAtracoes();
 
     @GET("/viajouapi/excursoes/buscar")
     Call<List<Excursao>> buscarExcursao();
 
-    @GET("/viajouapi/excursoes/buscar/paginado")
-    Call<List<Excursao>> buscarExcursaoPaginado(@Query("offset") int offset, @Query("limit") int limit);
-
     @GET("/viajouapi/mongo/imagens/{idAtracao}")
     Call<Imagem> buscarImagem(@Path("idAtracao") Long idAtracao);
+
+    @GET("/viajouapi/pontosturisticos/buscar/atracao/{id}")
+    Call<Tour> buscarTourPorAtracao(@Path("id") Long id);
+
+    @GET("/viajouapi/classificacoes/buscarPorAtracao/{id}")
+    Call<List<Classificacao>> buscarClassificacaoPorAtracao(@Path("id") Long id);
+
 }

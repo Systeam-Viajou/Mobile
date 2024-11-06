@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="none"
     tools:context=".Telas.TelasPrincipais.TelaHomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -121,7 +122,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerContinuarHome"
-            android:layout_width="match_parent"
+            android:layout_width="451dp"
             android:layout_height="180dp"
             android:layout_marginTop="8dp"
             android:orientation="horizontal"
@@ -130,6 +131,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtContinuarHome"
             tools:listitem="@layout/item_card_home" />
+
 
         <TextView
             android:id="@+id/txtContinuarHome"
@@ -144,6 +146,7 @@
             app:layout_constraintTop_toBottomOf="@+id/include" />
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="10dp"
@@ -173,6 +176,36 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="386dp"
+            android:layout_height="183dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/semconteudo"
+            app:layout_constraintBottom_toTopOf="@+id/txtRecomendadosHome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtContinuarHome" />
+
+        <ImageView
+            android:id="@+id/setaDireCarrossel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="@+id/cardView"
+            app:srcCompat="@drawable/setadirecarrossel" />
+
+        <ImageView
+            android:id="@+id/setaEsqueCarrrossel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView"
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="@+id/cardView"
+            app:srcCompat="@drawable/setaesqcarrossel" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
