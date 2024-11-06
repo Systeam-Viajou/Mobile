@@ -249,6 +249,7 @@ id imgNotificacao1
 id imgPerfil
 id imgPerfilToolbar
 id imgSemResultado
+id imgSemResultadoTurismo
 id imgShow
 id include
 id include2
@@ -291,6 +292,7 @@ id precoCardExcursoes
 id progressBar
 id progressBarImagem
 id progressBarInfo
+id progressBarResposta
 id qntAvaliacoes
 id qntdPessoasCardExcur
 id ratingBar
@@ -311,6 +313,7 @@ id reenviar
 id sair
 id scrollView2
 id scrollView3
+id scrollViewConteudo
 id senha
 id senhaLayout
 id setaDireCarrossel

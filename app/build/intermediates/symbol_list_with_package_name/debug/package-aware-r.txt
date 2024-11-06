@@ -3691,6 +3691,7 @@ id imgNotificacao1
 id imgPerfil
 id imgPerfilToolbar
 id imgSemResultado
+id imgSemResultadoTurismo
 id imgShow
 id immediateStop
 id include
@@ -3872,6 +3873,7 @@ id pressed
 id progressBar
 id progressBarImagem
 id progressBarInfo
+id progressBarResposta
 id progress_circular
 id progress_horizontal
 id qntAvaliacoes
@@ -3917,6 +3919,7 @@ id scrollIndicatorUp
 id scrollView
 id scrollView2
 id scrollView3
+id scrollViewConteudo
 id scrollable
 id search_badge
 id search_bar

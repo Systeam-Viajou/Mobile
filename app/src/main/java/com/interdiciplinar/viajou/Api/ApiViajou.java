@@ -38,6 +38,9 @@ public interface ApiViajou {
     @GET("/viajouapi/atracoes/aleatorias")
     Call<List<Atracao>> buscarAtracoes();
 
+    @GET("viajouapi/pontosturisticos/buscar")
+    Call<List<Tour>> buscarTurismo();
+
     @GET("viajouapi/pontosturisticos/aleatorios")
     Call<List<Tour>> buscarTurismoAleatorio();
 

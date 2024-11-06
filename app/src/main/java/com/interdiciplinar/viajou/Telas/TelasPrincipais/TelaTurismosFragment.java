@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.widget.SearchView;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,6 +16,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.ScrollView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -22,15 +25,21 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.interdiciplinar.viajou.Api.ApiViajou;
 import com.interdiciplinar.viajou.Models.Atracao;
+import com.interdiciplinar.viajou.Models.Evento;
 import com.interdiciplinar.viajou.Models.Tour;
 import com.interdiciplinar.viajou.R;
 
+import com.interdiciplinar.viajou.Telas.TelasErro.TelaErroInterno;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.AtracaoAdapter;
+import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.EventoAdapter;
+import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.RespostaTurismoAdapter;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.TourAdapter;
 import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaPerfil;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import okhttp3.OkHttpClient;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -44,6 +53,7 @@ import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaPerfil;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 
 public class TelaTurismosFragment extends Fragment {
@@ -51,14 +61,14 @@ public class TelaTurismosFragment extends Fragment {
 
     SearchView searchView;
     SearchView.SearchAutoComplete searchEditText;
-    ImageView iconLupa, iconToolbar, iconNotifi;
+    ImageView iconLupa, iconToolbar, iconNotifi, iconConfig, imgSemResultadoTurismo;
     private Retrofit retrofit;
 
-    private RecyclerView recyclerPertoTurismo;
-    private RecyclerView recyclerParaVcTurismo;
-    private RecyclerView recyclerViagemTurismo;
-    private RecyclerView recyclerMelhorTurismo;
-    private RecyclerView recyclerFamiliaTurismo;
+    private RecyclerView recyclerPertoTurismo, recyclerParaVcTurismo, recyclerViagemTurismo,
+            recyclerMelhorTurismo, recyclerFamiliaTurismo, recyclerResposta;
+    RespostaTurismoAdapter respostaAdapter;
+    ProgressBar progressBarResposta;
+    ScrollView scrollViewConteudo;
 
 
     public TelaTurismosFragment() {
@@ -90,6 +100,9 @@ public class TelaTurismosFragment extends Fragment {
         iconToolbar = view.findViewById(R.id.imgPerfilToolbar);
         searchEditText = searchView.findViewById(androidx.appcompat.R.id.search_src_text);
         iconNotifi = view.findViewById(R.id.iconNotifiToolbar);
+        progressBarResposta = view.findViewById(R.id.progressBarResposta);
+        imgSemResultadoTurismo = view.findViewById(R.id.imgSemResultadoTurismo);
+        scrollViewConteudo = view.findViewById(R.id.scrollViewConteudo);
 
         recyclerPertoTurismo = view.findViewById(R.id.recyclerPertoTurismo);
         recyclerPertoTurismo.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
@@ -101,11 +114,18 @@ public class TelaTurismosFragment extends Fragment {
         recyclerMelhorTurismo.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         recyclerFamiliaTurismo = view.findViewById(R.id.recyclerFamiliaTurismo);
         recyclerFamiliaTurismo.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        recyclerResposta = view.findViewById(R.id.recyclerResposta);
+        recyclerResposta.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+
+
+        respostaAdapter = new RespostaTurismoAdapter(new ArrayList<>(), getContext(), recyclerResposta, imgSemResultadoTurismo, scrollViewConteudo);
+        recyclerResposta.setAdapter(respostaAdapter);
 
         setupToolbarIcons();
         setupSearch();
 
 
+        pegarTurismos();
         pegarPerto();
         pegarParaVoce();
         pegarViagem();
@@ -113,6 +133,46 @@ public class TelaTurismosFragment extends Fragment {
         pegarFamilia();
 
         return view;
+    }
+
+    private void pegarTurismos() {
+        progressBarResposta.setVisibility(View.VISIBLE);
+
+        OkHttpClient okHttpClient = new OkHttpClient.Builder()
+                .connectTimeout(2, TimeUnit.MINUTES)
+                .readTimeout(2, TimeUnit.MINUTES)
+                .writeTimeout(2, TimeUnit.MINUTES)
+                .build();
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .client(okHttpClient)
+                .build();
+
+        ApiViajou apiViajou = retrofit.create(ApiViajou.class);
+        Call<List<Tour>> call = apiViajou.buscarTurismo();
+
+        call.enqueue(new Callback<List<Tour>>() {
+            @Override
+            public void onResponse(Call<List<Tour>> call, Response<List<Tour>> response) {
+                progressBarResposta.setVisibility(View.GONE);
+
+                if (response.isSuccessful() && response.body() != null) {
+                    respostaAdapter.adicionarTurismos(response.body());
+                } else {
+                    Log.e("ERRO", "Resposta vazia ou erro na resposta");
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<Tour>> call, Throwable throwable) {
+                progressBarResposta.setVisibility(View.GONE);
+                Log.e("ERRO", "Falha ao carregar turismos: " + throwable.getMessage(), throwable);
+                Toast.makeText(getContext(), "Falha ao carregar turismos", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getActivity(), TelaErroInterno.class));
+            }
+        });
     }
 
     private void setupToolbarIcons() {
@@ -139,6 +199,7 @@ public class TelaTurismosFragment extends Fragment {
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
+                respostaAdapter.filtrarTurismos(query);
                 return false;
             }
 
@@ -149,6 +210,7 @@ public class TelaTurismosFragment extends Fragment {
                 } else {
                     iconLupa.setVisibility(View.VISIBLE);
                 }
+                respostaAdapter.filtrarTurismos(newText);
                 return false;
             }
         });
