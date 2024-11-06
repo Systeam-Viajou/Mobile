@@ -7,6 +7,8 @@ import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager2.widget.ViewPager2;
+
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -22,6 +24,7 @@ import com.interdiciplinar.viajou.Api.ApiViajou;
 import com.interdiciplinar.viajou.Models.Atracao;
 import com.interdiciplinar.viajou.Models.Tour;
 import com.interdiciplinar.viajou.R;
+
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.AtracaoAdapter;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.TourAdapter;
 import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaPerfil;
@@ -34,12 +37,21 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+
+import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.BannerHomeAdapter;
+import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaNotificacao;
+import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaPerfil;
+
+import java.util.Arrays;
+import java.util.List;
+
+
 public class TelaTurismosFragment extends Fragment {
 
 
     SearchView searchView;
     SearchView.SearchAutoComplete searchEditText;
-    ImageView iconLupa, iconToolbar;
+    ImageView iconLupa, iconToolbar, iconNotifi;
     private Retrofit retrofit;
 
     private RecyclerView recyclerPertoTurismo;
@@ -47,6 +59,7 @@ public class TelaTurismosFragment extends Fragment {
     private RecyclerView recyclerViagemTurismo;
     private RecyclerView recyclerMelhorTurismo;
     private RecyclerView recyclerFamiliaTurismo;
+
 
     public TelaTurismosFragment() {
         // Required empty public constructor
@@ -76,6 +89,7 @@ public class TelaTurismosFragment extends Fragment {
         iconLupa = view.findViewById(R.id.iconLupa);
         iconToolbar = view.findViewById(R.id.imgPerfilToolbar);
         searchEditText = searchView.findViewById(androidx.appcompat.R.id.search_src_text);
+        iconNotifi = view.findViewById(R.id.iconNotifiToolbar);
 
         recyclerPertoTurismo = view.findViewById(R.id.recyclerPertoTurismo);
         recyclerPertoTurismo.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
@@ -88,47 +102,9 @@ public class TelaTurismosFragment extends Fragment {
         recyclerFamiliaTurismo = view.findViewById(R.id.recyclerFamiliaTurismo);
         recyclerFamiliaTurismo.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
+        setupToolbarIcons();
+        setupSearch();
 
-
-        FirebaseAuth autenticar = FirebaseAuth.getInstance();
-        FirebaseUser userLogin = autenticar.getCurrentUser();
-
-        Glide.with(this).load(userLogin.getPhotoUrl())
-                .centerCrop()
-                .into((ImageView) iconToolbar);
-
-        iconToolbar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), TelaPerfil.class);
-                startActivity(intent);
-            }
-        });
-
-        // Define para que o campo de texto esteja sempre visível
-        searchView.setIconifiedByDefault(false);
-
-        // Garante que o foco vá para o campo de texto ao clicar na caixa de pesquisa
-        searchView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Força o campo de texto a receber o foco
-                searchEditText.requestFocus();
-            }
-        });
-
-        searchEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (hasFocus) {
-                    // Se o campo de texto ganhar foco, esconde o ícone de lupa
-                    iconLupa.setVisibility(View.GONE);
-                } else {
-                    // Se o campo de texto perder foco, mostra o ícone de lupa novamente
-                    iconLupa.setVisibility(View.VISIBLE);
-                }
-            }
-        });
 
         pegarPerto();
         pegarParaVoce();
@@ -138,6 +114,57 @@ public class TelaTurismosFragment extends Fragment {
 
         return view;
     }
+
+    private void setupToolbarIcons() {
+        FirebaseAuth autenticar = FirebaseAuth.getInstance();
+        FirebaseUser userLogin = autenticar.getCurrentUser();
+        Glide.with(this).load(userLogin.getPhotoUrl()).centerCrop().into(iconToolbar);
+
+        iconToolbar.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), TelaPerfil.class);
+            startActivity(intent);
+        });
+
+        iconNotifi.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), TelaNotificacao.class);
+            startActivity(intent);
+        });
+    }
+
+    private void setupSearch() {
+        searchView.setIconifiedByDefault(false);
+
+        searchView.setOnClickListener(v -> searchView.requestFocus());
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                if (newText.length() > 0) {
+                    iconLupa.setVisibility(View.GONE);
+                } else {
+                    iconLupa.setVisibility(View.VISIBLE);
+                }
+                return false;
+            }
+        });
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        FirebaseAuth autenticar = FirebaseAuth.getInstance();
+        FirebaseUser userLogin = autenticar.getCurrentUser();
+
+        Glide.with(this).load(userLogin.getPhotoUrl())
+                .centerCrop()
+                .into((ImageView) iconToolbar);
+    }
+
 
     private void pegarPerto() {
         retrofit = new Retrofit.Builder()
@@ -289,18 +316,9 @@ public class TelaTurismosFragment extends Fragment {
             public void onFailure(Call<List<Tour>> call, Throwable throwable) {
                 Log.e("ERRO", "Falha ao carregar atrações: " + throwable.getMessage(), throwable);
                 Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
+
+
             }
         });
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        FirebaseAuth autenticar = FirebaseAuth.getInstance();
-        FirebaseUser userLogin = autenticar.getCurrentUser();
-
-        Glide.with(this).load(userLogin.getPhotoUrl())
-                .centerCrop()
-                .into((ImageView) iconToolbar);
     }
 }

@@ -3223,6 +3223,8 @@ drawable imgcarrossel
 drawable imgerrointerno
 drawable imgerrowifi
 drawable imgfadetourvirtual
+drawable imgresultnaoencontrado
+drawable imgresultnaoencontradoquadrado
 drawable imgsemcoteudo_home
 drawable indeterminate_static
 drawable joia
@@ -3488,6 +3490,7 @@ id confirm_button
 id confirmarSenha
 id confirmarSenhaLayout
 id constraint
+id constraintResposta
 id contaTelaPerfil
 id container
 id content
@@ -3679,6 +3682,7 @@ id imgFestival
 id imgNotificacao1
 id imgPerfil
 id imgPerfilToolbar
+id imgSemResultado
 id imgShow
 id immediateStop
 id include
@@ -3716,6 +3720,7 @@ id linha4
 id linha5
 id linhaEventos
 id linhaExcur
+id linhaResposta
 id listMode
 id list_item
 id loading
@@ -3874,6 +3879,7 @@ id recyclerPertoHome
 id recyclerPertoTurismo
 id recyclerPopularesHome
 id recyclerRecomenHome
+id recyclerResposta
 id recyclerViagemTurismo
 id reenviar
 id report_drawn
@@ -4064,6 +4070,7 @@ id txtPertoHome
 id txtPertoTurismo
 id txtPopularesHome
 id txtRecomendadosHome
+id txtResposta
 id txtViagemTurismo
 id unchecked
 id uniform
@@ -4234,7 +4241,6 @@ layout activity_tela_sms
 layout activity_tela_tour1
 layout activity_tela_tour2
 layout activity_tela_tour3
-layout activity_tela_tour4
 layout activity_tela_tour_conteudo
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
