@@ -23,7 +23,6 @@ drawable botaoxsair
 drawable bt_borda
 drawable cadeado
 drawable calendar
-drawable calendarevento
 drawable calendario
 drawable carregando
 drawable carregandocompleto
@@ -65,6 +64,7 @@ drawable iconeventocardhome
 drawable iconeventosnavbar
 drawable iconexcursoesnavbar
 drawable iconfigurinhasnavbar
+drawable iconformulariotollbarsecund
 drawable iconhomenavbar
 drawable iconhoracardexcursoes
 drawable iconloccardexcursoes
@@ -98,6 +98,7 @@ drawable linha_arredondada
 drawable linhacardeventos
 drawable microsoftvetor
 drawable opcaoconta
+drawable opcaoformulario
 drawable profilecircle
 drawable rotate_right
 drawable sair
@@ -126,6 +127,7 @@ id bottomNavigationView
 id btAvancar
 id btContinuar
 id btEntrar
+id btEnviarNomeForms
 id btErroInterno
 id btErroSms
 id btErroSmsVoltar
@@ -137,7 +139,6 @@ id btVerificarEmail
 id btVoltarLoginEsqSenha
 id btVoltarTourVirtual
 id button
-id button2
 id cadastrar
 id cardView
 id cardView1
@@ -145,6 +146,7 @@ id carregandoPesquisa
 id cifrao
 id confirmarSenha
 id confirmarSenhaLayout
+id contaTelaPerfil
 id cpf
 id cpfLayout
 id dataCardEventos
@@ -180,6 +182,7 @@ id feirasLayout
 id festival
 id festivalLayout
 id figurinhas
+id formularioTelaPerfil
 id frameLayout
 id frameLayout2
 id frameLayout3
@@ -201,14 +204,11 @@ id imageCalendar
 id imageView
 id imageView10
 id imageView11
-id imageView12
 id imageView13
-id imageView14
 id imageView2
 id imageView3
 id imageView4
 id imageView5
-id imageView6
 id imageView7
 id imageView8
 id imageView9
@@ -219,7 +219,6 @@ id img360TourVirtual
 id img4
 id img5
 id imgApresentacao
-id imgBanner
 id imgCardEventos
 id imgCardExcursoes
 id imgCardHome
@@ -238,7 +237,7 @@ id include
 id include2
 id include3
 id include4
-id informacoes
+id include5
 id linearLayout
 id linearLayout2
 id linha1
@@ -250,22 +249,22 @@ id linha4
 id linha5
 id linhaEventos
 id linhaExcur
+id loading
 id locCardExcursoes
 id localCardEvento
 id login
 id mantenhaConectado
-id materialCardView
 id maxPessoasCardExcur
 id mesCardEventos
 id msgErroEmail
 id msgErroSenha
 id nome
+id nomeFormulario
 id nomeLayout
+id nomePessoa
 id pesquisar
 id precoCardExcursoes
 id progressBar
-id progressBarImagem
-id progressBarInfo
 id qntAvaliacoes
 id qntdPessoasCardExcur
 id ratingBar
@@ -283,8 +282,6 @@ id recyclerRecomenHome
 id recyclerViagemTurismo
 id reenviar
 id sair
-id scrollView2
-id scrollView3
 id senha
 id senhaLayout
 id setaDireCarrossel
@@ -300,10 +297,8 @@ id telefone
 id telefoneLayout
 id textTimer
 id textView
-id textView10
 id textView11
 id textView12
-id textView13
 id textView14
 id textView15
 id textView16
@@ -351,9 +346,9 @@ id user
 id username
 id usernamePerfil
 id valAvaliacoes
-id videoView
-id view
+id viewPager
 id viewPagerHome
+id webView
 id webViewTourVirtual
 id xFecharTourVirtual
 layout activity_main
@@ -366,6 +361,7 @@ layout activity_tela_erro_wifi
 layout activity_tela_esqueceu_senha
 layout activity_tela_esqueceu_senha2
 layout activity_tela_esqueceu_senha3
+layout activity_tela_formulario
 layout activity_tela_login
 layout activity_tela_notificacao
 layout activity_tela_perfil
@@ -377,7 +373,6 @@ layout activity_tela_tour3
 layout activity_tela_tour4
 layout activity_tela_tour_conteudo
 layout fragment_tela_card_aberto
-layout fragment_tela_card_evento_aberto
 layout fragment_tela_eventos
 layout fragment_tela_excursoes
 layout fragment_tela_figurinhas
@@ -399,7 +394,6 @@ mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap iconapp
-raw animacao
 raw splash
 raw splashanimation
 string app_name
