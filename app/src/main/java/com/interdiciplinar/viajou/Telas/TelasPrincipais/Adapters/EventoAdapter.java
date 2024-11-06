@@ -18,9 +18,11 @@ import com.interdiciplinar.viajou.Models.Evento;
 import com.interdiciplinar.viajou.Models.Imagem;
 import com.interdiciplinar.viajou.R;
 
+import java.text.Normalizer;
 import java.text.SimpleDateFormat;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeParseException;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -39,15 +41,21 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
     private List<Evento> eventos;
     private Context context;
     private Map<Long, Imagem> imagensMap = new HashMap<>(); // Mapa para armazenar imagens por ID da atração
+    private List<Evento> eventosOriginais; // Lista completa de eventos
     private Retrofit retrofit;
+    private RecyclerView recyclerEventos;
+    private ImageView imgSemResultado;
 
-    public EventoAdapter(List<Evento> eventos, Context context) {
+    public EventoAdapter(List<Evento> eventos, Context context, RecyclerView recyclerEventos, ImageView imgSemResultado) {
         this.eventos = eventos;
         this.context = context;
+        this.eventosOriginais = new ArrayList<>(eventos); // Armazena uma cópia da lista completa
+        this.recyclerEventos = recyclerEventos;
+        this.imgSemResultado = imgSemResultado;
 
         // Configurando Retrofit para chamada de API
         this.retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-mongo.onrender.com/")
+                .baseUrl("https://dev-ii-mongo-prod.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }
@@ -158,7 +166,78 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
     public void adicionarEventos(List<Evento> novosEventos) {
         int posicaoInicial = eventos.size();
         eventos.addAll(novosEventos);
+        eventosOriginais.addAll(novosEventos);
         notifyItemRangeInserted(posicaoInicial, novosEventos.size());
+    }
+
+    public String removerAcentos(String texto) {
+        String normalizado = Normalizer.normalize(texto, Normalizer.Form.NFD);
+        return normalizado.replaceAll("\\p{M}", "");
+    }
+
+    // Método para filtrar eventos
+    public void filtrarEventos(String texto) {
+        if (texto.isEmpty()) {
+            // Quando o texto está vazio, restaura todos os eventos originais
+            eventos.clear();
+            eventos.addAll(eventosOriginais);
+
+            // Exibir a RecyclerView e esconder imgSemResultado
+            recyclerEventos.setVisibility(View.VISIBLE);
+            imgSemResultado.setVisibility(View.GONE);
+        } else {
+            // Filtrando eventos de acordo com o texto
+            List<Evento> eventosFiltrados = new ArrayList<>();
+            String textoLower = removerAcentos(texto.toLowerCase());
+
+            for (Evento evento : eventosOriginais) {
+                String nome = removerAcentos(evento.getAtracao().getNome().toLowerCase());
+                String data = evento.getDataInicio();
+
+                if (nome.contains(textoLower) || removerAcentos(formatarData(data)).contains(textoLower)) {
+                    eventosFiltrados.add(evento);
+                }
+            }
+
+            if (eventosFiltrados.isEmpty()) {
+                // Se não houver correspondências, mostra imgSemResultado e esconde recyclerEventos
+                recyclerEventos.setVisibility(View.GONE);
+                imgSemResultado.setVisibility(View.VISIBLE);
+            } else {
+                recyclerEventos.setVisibility(View.VISIBLE);
+                imgSemResultado.setVisibility(View.GONE);
+            }
+
+            // Atualiza a lista de eventos com os eventos filtrados
+            eventos.clear();
+            eventos.addAll(eventosFiltrados);
+        }
+        notifyDataSetChanged();
+    }
+
+
+    // Método para formatar a data para pesquisa
+    private String formatarData(String dataInicio) {
+        try {
+            ZonedDateTime data = ZonedDateTime.parse(dataInicio);
+            SimpleDateFormat dayFormat = new SimpleDateFormat("dd", Locale.getDefault());
+            SimpleDateFormat monthFormat = new SimpleDateFormat("MMM", new Locale("pt", "BR"));
+
+            // Personalizando os meses sem o ponto final
+            DateFormatSymbols dfs = new DateFormatSymbols(new Locale("pt", "BR")) {
+                @Override
+                public String[] getShortMonths() {
+                    return new String[]{"jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"};
+                }
+            };
+            monthFormat.setDateFormatSymbols(dfs);
+
+            String dia = dayFormat.format(Date.from(data.toInstant()));
+            String mes = monthFormat.format(Date.from(data.toInstant()));
+            return dia + " " + mes; // Retorna a data formatada
+        } catch (DateTimeParseException e) {
+            return ""; // Retorna string vazia se houver erro
+        }
     }
 
     public static class EventoViewHolder extends RecyclerView.ViewHolder {

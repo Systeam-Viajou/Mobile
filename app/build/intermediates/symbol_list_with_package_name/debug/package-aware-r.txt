@@ -3107,6 +3107,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable cadeado
 drawable calendar
+drawable calendarevento
 drawable calendario
 drawable carregando
 drawable carregandocompleto
@@ -3222,6 +3223,8 @@ drawable imgcarrossel
 drawable imgerrointerno
 drawable imgerrowifi
 drawable imgfadetourvirtual
+drawable imgresultnaoencontrado
+drawable imgresultnaoencontradoquadrado
 drawable imgsemcoteudo_home
 drawable indeterminate_static
 drawable joia
@@ -3453,6 +3456,7 @@ id btVerificarEmail
 id btVoltarLoginEsqSenha
 id btVoltarTourVirtual
 id button
+id button2
 id buttonPanel
 id cache_measures
 id cadastrar
@@ -3486,6 +3490,7 @@ id confirm_button
 id confirmarSenha
 id confirmarSenhaLayout
 id constraint
+id constraintResposta
 id contaTelaPerfil
 id container
 id content
@@ -3646,11 +3651,13 @@ id imageCalendar
 id imageView
 id imageView10
 id imageView11
+id imageView12
 id imageView13
 id imageView2
 id imageView3
 id imageView4
 id imageView5
+id imageView6
 id imageView7
 id imageView8
 id imageView9
@@ -3661,6 +3668,7 @@ id img360TourVirtual
 id img4
 id img5
 id imgApresentacao
+id imgBanner
 id imgCardEventos
 id imgCardExcursoes
 id imgCardHome
@@ -3674,6 +3682,7 @@ id imgFestival
 id imgNotificacao1
 id imgPerfil
 id imgPerfilToolbar
+id imgSemResultado
 id imgShow
 id immediateStop
 id include
@@ -3684,6 +3693,7 @@ id include5
 id included
 id indeterminate
 id info
+id informacoes
 id invisible
 id inward
 id italic
@@ -3710,6 +3720,7 @@ id linha4
 id linha5
 id linhaEventos
 id linhaExcur
+id linhaResposta
 id listMode
 id list_item
 id loading
@@ -3725,6 +3736,7 @@ id marquee
 id masked
 id match_constraint
 id match_parent
+id materialCardView
 id material_clock_display
 id material_clock_display_and_toggle
 id material_clock_face
@@ -3846,6 +3858,8 @@ id postLayout
 id precoCardExcursoes
 id pressed
 id progressBar
+id progressBarImagem
+id progressBarInfo
 id progress_circular
 id progress_horizontal
 id qntAvaliacoes
@@ -3865,6 +3879,7 @@ id recyclerPertoHome
 id recyclerPertoTurismo
 id recyclerPopularesHome
 id recyclerRecomenHome
+id recyclerResposta
 id recyclerViagemTurismo
 id reenviar
 id report_drawn
@@ -3888,6 +3903,8 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
+id scrollView3
 id scrollable
 id search_badge
 id search_bar
@@ -3979,8 +3996,10 @@ id textStart
 id textTimer
 id textTop
 id textView
+id textView10
 id textView11
 id textView12
+id textView13
 id textView14
 id textView15
 id textView16
@@ -4051,6 +4070,7 @@ id txtPertoHome
 id txtPertoTurismo
 id txtPopularesHome
 id txtRecomendadosHome
+id txtResposta
 id txtViagemTurismo
 id unchecked
 id uniform
@@ -4062,7 +4082,8 @@ id username
 id usernamePerfil
 id valAvaliacoes
 id vertical_only
-id viewPager
+id videoView
+id view
 id viewPagerHome
 id view_offset_helper
 id view_transition
@@ -4220,7 +4241,6 @@ layout activity_tela_sms
 layout activity_tela_tour1
 layout activity_tela_tour2
 layout activity_tela_tour3
-layout activity_tela_tour4
 layout activity_tela_tour_conteudo
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -4241,6 +4261,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_tela_card_aberto
+layout fragment_tela_card_evento_aberto
 layout fragment_tela_eventos
 layout fragment_tela_excursoes
 layout fragment_tela_figurinhas
@@ -4326,6 +4347,7 @@ mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap iconapp
 plurals mtrl_badge_content_description
+raw animacao
 raw firebase_common_keep
 raw splash
 raw splashanimation

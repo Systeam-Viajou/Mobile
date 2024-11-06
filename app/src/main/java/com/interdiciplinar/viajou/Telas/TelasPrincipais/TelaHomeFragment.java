@@ -28,10 +28,12 @@ import com.interdiciplinar.viajou.Models.Imagem;
 import com.interdiciplinar.viajou.R;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.AtracaoAdapter;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.BannerHomeAdapter;
+import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.EventoAdapter;
 import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaNotificacao;
 import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaPerfil;
 import com.interdiciplinar.viajou.Telas.TelasTour.CarouselAdapter;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -45,11 +47,13 @@ import java. util. Collections;
 public class TelaHomeFragment extends Fragment {
 
     private RecyclerView recyclerContinuar, recyclerRecomendar, recyclerPopulares, recyclerPerto, recyclerExperiencia;
+    private AtracaoAdapter atracaoAdapter;
     private SearchView searchView;
     private SearchView.SearchAutoComplete searchEditText;
     private ImageView iconLupa, iconToolbar, iconNotifi;
     private Retrofit retrofit;
     private ViewPager2 viewPager;
+    private SearchView pesquisar;
     private boolean dadosCarregados = false;
 
     public TelaHomeFragment() {
@@ -79,6 +83,7 @@ public class TelaHomeFragment extends Fragment {
         recyclerPopulares = view.findViewById(R.id.recyclerPopularesHome);
         recyclerPerto = view.findViewById(R.id.recyclerPertoHome);
         recyclerExperiencia = view.findViewById(R.id.recyclerExperienciaHome);
+        pesquisar = view.findViewById(R.id.pesquisar);
 
         // Setando o adapter para o recycler
         recyclerPopulares.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
@@ -88,6 +93,24 @@ public class TelaHomeFragment extends Fragment {
         recyclerContinuar.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         iconNotifi = view.findViewById(R.id.iconNotifiToolbar);
 
+        atracaoAdapter = new AtracaoAdapter(new ArrayList<>(), getContext());
+        pesquisar.setVisibility(View.INVISIBLE);
+        iconLupa.setVisibility(View.INVISIBLE);
+
+        setupToolbarIcons();
+        setupBanner(view);
+        setupSearch();
+
+        pegarRecomendadas();
+        pegarPopulares();
+        pegarPerto();
+        pegarExperiencia();
+
+        return view;
+
+    }
+
+    private void setupToolbarIcons() {
         FirebaseAuth autenticar = FirebaseAuth.getInstance();
         FirebaseUser userLogin = autenticar.getCurrentUser();
         Glide.with(this).load(userLogin.getPhotoUrl()).centerCrop().into(iconToolbar);
@@ -101,7 +124,9 @@ public class TelaHomeFragment extends Fragment {
             Intent intent = new Intent(getActivity(), TelaNotificacao.class);
             startActivity(intent);
         });
+    }
 
+    private void setupBanner(View view) {
         // Lista de imagens (exemplo com drawable IDs)
         List<Integer> imageList = Arrays.asList(
                 R.drawable.sotrackboa,
@@ -147,18 +172,29 @@ public class TelaHomeFragment extends Fragment {
                 }
             }
         });
+    }
 
+    private void setupSearch() {
         searchView.setIconifiedByDefault(false);
-        searchView.setOnClickListener(v -> searchEditText.requestFocus());
-        searchEditText.setOnFocusChangeListener((v, hasFocus) -> iconLupa.setVisibility(hasFocus ? View.GONE : View.VISIBLE));
 
-        pegarRecomendadas();
-        pegarPopulares();
-        pegarPerto();
-        pegarExperiencia();
+        searchView.setOnClickListener(v -> searchView.requestFocus());
 
-        return view;
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
 
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                if (newText.length() > 0) {
+                    iconLupa.setVisibility(View.GONE);
+                } else {
+                    iconLupa.setVisibility(View.VISIBLE);
+                }
+                return false;
+            }
+        });
     }
 
     private void pegarRecomendadas() {

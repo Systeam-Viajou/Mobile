@@ -101,6 +101,7 @@ public class TelaLogin extends AppCompatActivity {
                                             email.setBackground(getResources().getDrawable(R.drawable.fundo_erro));
                                             msgErroSenha.setVisibility(View.VISIBLE);
                                             msgErroEmail.setVisibility(View.VISIBLE);
+
                                         } catch (FirebaseAuthInvalidCredentialsException s) {
                                             senha.setBackground(getResources().getDrawable(R.drawable.fundo_erro));
                                             email.setBackground(getResources().getDrawable(R.drawable.fundo_erro));

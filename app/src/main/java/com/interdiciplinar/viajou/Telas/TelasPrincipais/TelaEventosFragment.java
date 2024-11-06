@@ -2,6 +2,8 @@ package com.interdiciplinar.viajou.Telas.TelasPrincipais;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,8 +23,9 @@ import com.google.firebase.auth.FirebaseUser;
 import com.interdiciplinar.viajou.Api.ApiViajou;
 import com.interdiciplinar.viajou.Models.Evento;
 import com.interdiciplinar.viajou.R;
-import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.EventoAdapter;
+import com.interdiciplinar.viajou.Telas.TelasErro.TelaErroInterno;
 import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaPerfil;
+import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.EventoAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,25 +41,15 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class TelaEventosFragment extends Fragment {
 
     private RecyclerView recyclerView;
-    private Retrofit retrofit;
     private EventoAdapter eventoAdapter;
-    private List<Evento> listaEventos = new ArrayList<>();
     private ProgressBar progressBar;
     private SearchView searchView;
-    private SearchView.SearchAutoComplete searchEditText;
-    private ImageView iconLupa, iconToolbar;
-    private boolean isCarregando = false;
-    private int limiteCarregamento = 10; // Define quantos eventos carregar de cada vez
+    private ImageView iconLupa, iconToolbar, imgSemResultado;
 
     public TelaEventosFragment() {}
 
     public static TelaEventosFragment newInstance() {
         return new TelaEventosFragment();
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
     }
 
     @Override
@@ -67,14 +60,23 @@ public class TelaEventosFragment extends Fragment {
         searchView = view.findViewById(R.id.pesquisar);
         iconLupa = view.findViewById(R.id.iconLupa);
         iconToolbar = view.findViewById(R.id.imgPerfilToolbar);
-        searchEditText = searchView.findViewById(androidx.appcompat.R.id.search_src_text);
         recyclerView = view.findViewById(R.id.recyclerEventos);
         progressBar = view.findViewById(R.id.progressBar);
+        imgSemResultado = view.findViewById(R.id.imgSemResultado);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        eventoAdapter = new EventoAdapter(new ArrayList<>(), getContext());
+        eventoAdapter = new EventoAdapter(new ArrayList<>(), getContext(), recyclerView, imgSemResultado);
         recyclerView.setAdapter(eventoAdapter);
 
+        setupToolbarIcons();
+        setupSearch();
+
+        pegarDadosEventos();
+
+        return view;
+    }
+
+    private void setupToolbarIcons() {
         FirebaseAuth autenticar = FirebaseAuth.getInstance();
         FirebaseUser userLogin = autenticar.getCurrentUser();
 
@@ -86,83 +88,58 @@ public class TelaEventosFragment extends Fragment {
             Intent intent = new Intent(getActivity(), TelaPerfil.class);
             startActivity(intent);
         });
+    }
 
+    private void setupSearch() {
         searchView.setIconifiedByDefault(false);
 
-        searchView.setOnClickListener(v -> searchEditText.requestFocus());
+        searchView.setOnClickListener(v -> searchView.requestFocus());
 
-        searchEditText.setOnFocusChangeListener((v, hasFocus) -> {
-            if (hasFocus) {
-                iconLupa.setVisibility(View.GONE);
-            } else {
-                iconLupa.setVisibility(View.VISIBLE);
-            }
-        });
-
-        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
-            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
-                super.onScrolled(recyclerView, dx, dy);
+            public boolean onQueryTextSubmit(String query) {
+                eventoAdapter.filtrarEventos(query);
+                return false;
+            }
 
-                LinearLayoutManager layoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
-                int totalItemCount = layoutManager.getItemCount();
-                int lastVisibleItem = layoutManager.findLastVisibleItemPosition();
-
-                if (!isCarregando && totalItemCount <= (lastVisibleItem + 3)) {
-                    carregarMaisEventos();
-                    isCarregando = true;
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                if (newText.length() > 0) {
+                    iconLupa.setVisibility(View.GONE);
+                } else {
+                    iconLupa.setVisibility(View.VISIBLE);
                 }
+                eventoAdapter.filtrarEventos(newText);
+                return false;
             }
         });
-
-        configurarRetrofit();
-        carregarMaisEventos(); // Carrega os primeiros itens
-
-        return view;
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        FirebaseAuth autenticar = FirebaseAuth.getInstance();
-        FirebaseUser userLogin = autenticar.getCurrentUser();
+    private void pegarDadosEventos() {
+        progressBar.setVisibility(View.VISIBLE);
 
-        Glide.with(this).load(userLogin.getPhotoUrl())
-                .centerCrop()
-                .into(iconToolbar);
-    }
-
-    private void configurarRetrofit() {
         OkHttpClient okHttpClient = new OkHttpClient.Builder()
                 .connectTimeout(2, TimeUnit.MINUTES)
                 .readTimeout(2, TimeUnit.MINUTES)
                 .writeTimeout(2, TimeUnit.MINUTES)
                 .build();
 
-        retrofit = new Retrofit.Builder()
+        Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(okHttpClient)
                 .build();
-    }
-
-    private void carregarMaisEventos() {
-        progressBar.setVisibility(View.VISIBLE);
 
         ApiViajou apiViajou = retrofit.create(ApiViajou.class);
-        Call<List<Evento>> call = apiViajou.buscarEventoPaginado(limiteCarregamento, limiteCarregamento + 10);
+        Call<List<Evento>> call = apiViajou.buscarEvento();
 
         call.enqueue(new Callback<List<Evento>>() {
             @Override
             public void onResponse(Call<List<Evento>> call, Response<List<Evento>> response) {
                 progressBar.setVisibility(View.GONE);
-                isCarregando = false;
 
                 if (response.isSuccessful() && response.body() != null) {
-                    List<Evento> novosEventos = response.body();
-                    listaEventos.addAll(novosEventos);
-                    eventoAdapter.adicionarEventos(novosEventos);
-                    limiteCarregamento += 10; // Atualiza o limite para a próxima chamada
+                    eventoAdapter.adicionarEventos(response.body());
                 } else {
                     Log.e("ERRO", "Resposta vazia ou erro na resposta");
                 }
@@ -171,9 +148,9 @@ public class TelaEventosFragment extends Fragment {
             @Override
             public void onFailure(Call<List<Evento>> call, Throwable throwable) {
                 progressBar.setVisibility(View.GONE);
-                isCarregando = false;
                 Log.e("ERRO", "Falha ao carregar eventos: " + throwable.getMessage(), throwable);
                 Toast.makeText(getContext(), "Falha ao carregar eventos", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getActivity(), TelaErroInterno.class));
             }
         });
     }

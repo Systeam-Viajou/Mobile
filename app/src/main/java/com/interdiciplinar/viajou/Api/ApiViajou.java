@@ -26,12 +26,6 @@ public interface ApiViajou {
     @GET("/viajouapi/usuarios/buscar/username/{username}")
     Call<Usuario> buscarUsername(@Path("username") String username);
 
-    @GET("/viajouapi/eventos/buscar/paginado")
-    Call<List<Evento>> buscarEventoPaginado(@Query("offset") int offset, @Query("limit") int limit);
-
-    @GET("/viajouapi/excursoes/buscar/paginado")
-    Call<List<Excursao>> buscarExcursaoPaginado(@Query("offset") int offset, @Query("limit") int limit);
-
     @GET("/viajouapi/usuarios/buscar/email/{email}")
     Call<Usuario> buscarEmail(@Path("email") String email);
 
@@ -44,6 +38,9 @@ public interface ApiViajou {
     @GET("/viajouapi/atracoes/aleatorias")
     Call<List<Atracao>> buscarAtracoes();
 
+    @GET("viajouapi/pontosturisticos/aleatorios")
+    Call<List<Tour>> buscarTurismoAleatorio();
+
     @GET("/viajouapi/excursoes/buscar")
     Call<List<Excursao>> buscarExcursao();
 
@@ -52,6 +49,9 @@ public interface ApiViajou {
 
     @GET("/viajouapi/pontosturisticos/buscar/atracao/{id}")
     Call<Tour> buscarTourPorAtracao(@Path("id") Long id);
+
+    @GET("/viajouapi/eventos/buscar/atracao/{id}")
+    Call<Evento> buscarEventoPorAtracao(@Path("id") Long id);
 
     @GET("/viajouapi/classificacoes/buscarPorAtracao/{id}")
     Call<List<Classificacao>> buscarClassificacaoPorAtracao(@Path("id") Long id);
