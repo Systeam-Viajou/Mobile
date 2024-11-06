@@ -21,7 +21,7 @@ Este repositório contém uma aplicação Java destinada à criação do aplicat
 ## Configuração Inicial
 
 1. Clone o repositório:
-git clone [https://github.com/Systeam-Viajou/RPA-PostgreSQL.git](https://github.com/Systeam-Viajou/Mobile.git)
+git clone https://github.com/Systeam-Viajou/Mobile.git
 
 2. Rode o projeto no emulador do Android Studio ou em um celular android.
 
