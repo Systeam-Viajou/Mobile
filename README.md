@@ -1,6 +1,6 @@
 # Mobile
 
-Este repositório contém uma aplicação Jva destinada à criação do aplicatio Viajou. Utilizando o Firebase e a api de Postgres E MongoDB.
+Este repositório contém uma aplicação Java destinada à criação do aplicatio Viajou. Utilizando o Firebase e a api de Postgres E MongoDB.
 
 ## Estrutura do Projeto
 
