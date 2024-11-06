@@ -22,8 +22,10 @@ import com.interdiciplinar.viajou.R;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
+import java.text.Normalizer;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -42,15 +44,21 @@ public class ExcursaoAdapter extends RecyclerView.Adapter<ExcursaoAdapter.Excurs
     private List<Excursao> excursaoList;
     private Context context;
     private Map<Long, Imagem> imagensMap = new HashMap<>(); // Mapa para armazenar imagens por ID da atração
+    private List<Excursao> excursoesOriginais; // Lista completa de eventos
     private Retrofit retrofit;
+    private RecyclerView recyclerExcursao;
+    private ImageView imgSemResultado;
 
-    public ExcursaoAdapter(List<Excursao> excursaoList, Context context) {
+    public ExcursaoAdapter(List<Excursao> excursaoList, Context context, RecyclerView recyclerExcursao, ImageView imgSemResultado) {
         this.excursaoList = excursaoList;
         this.context = context;
+        this.excursoesOriginais = new ArrayList<>(excursaoList); // Armazena uma cópia da lista completa
+        this.recyclerExcursao = recyclerExcursao;
+        this.imgSemResultado = imgSemResultado;
 
         // Configurando Retrofit para chamada de API
         this.retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-mongo.onrender.com/")
+                .baseUrl("https://dev-ii-mongo-prod.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }
@@ -149,7 +157,52 @@ public class ExcursaoAdapter extends RecyclerView.Adapter<ExcursaoAdapter.Excurs
     public void adicionarExcursoes(List<Excursao> novasExcursoes) {
         int posicaoInicial = excursaoList.size();
         excursaoList.addAll(novasExcursoes);
+        excursoesOriginais.addAll(novasExcursoes);
         notifyItemRangeInserted(posicaoInicial, novasExcursoes.size());
+    }
+
+    public String removerAcentos(String texto) {
+        String normalizado = Normalizer.normalize(texto, Normalizer.Form.NFD);
+        return normalizado.replaceAll("\\p{M}", "");
+    }
+
+    // Método para filtrar eventos
+    public void filtrarExcursoes(String texto) {
+        if (texto.isEmpty()) {
+            // Quando o texto está vazio, restaura todos os eventos originais
+            excursaoList.clear();
+            excursaoList.addAll(excursoesOriginais);
+
+            // Exibir a RecyclerView e esconder imgSemResultado
+            recyclerExcursao.setVisibility(View.VISIBLE);
+            imgSemResultado.setVisibility(View.GONE);
+        } else {
+            // Filtrando eventos de acordo com o texto
+            List<Excursao> excursoesFiltradas = new ArrayList<>();
+            String textoLower = removerAcentos(texto.toLowerCase());
+
+            for (Excursao excursao : excursoesOriginais) {
+                String nome = removerAcentos(excursao.getAtracao().getNome().toLowerCase());
+
+                if (nome.contains(textoLower)) {
+                    excursoesFiltradas.add(excursao);
+                }
+            }
+
+            if (excursoesFiltradas.isEmpty()) {
+                // Se não houver correspondências, mostra imgSemResultado e esconde recyclerExcursoes
+                recyclerExcursao.setVisibility(View.GONE);
+                imgSemResultado.setVisibility(View.VISIBLE);
+            } else {
+                recyclerExcursao.setVisibility(View.VISIBLE);
+                imgSemResultado.setVisibility(View.GONE);
+            }
+
+            // Atualiza a lista de excursoes com as excursoes filtradas
+            excursaoList.clear();
+            excursaoList.addAll(excursoesFiltradas);
+        }
+        notifyDataSetChanged();
     }
 
 

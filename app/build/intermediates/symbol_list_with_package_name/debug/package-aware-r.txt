@@ -3186,6 +3186,7 @@ drawable ic_password
 drawable ic_search_black_24
 drawable icon_loc
 drawable iconacsses
+drawable iconarearestrita
 drawable iconaumentartelatourvirtual
 drawable iconaviaonotificacao
 drawable iconconfigtoolbarprimar
@@ -3223,6 +3224,8 @@ drawable imgcarrossel
 drawable imgerrointerno
 drawable imgerrowifi
 drawable imgfadetourvirtual
+drawable imgresultnaoencontrado
+drawable imgresultnaoencontradoquadrado
 drawable imgsemcoteudo_home
 drawable indeterminate_static
 drawable joia
@@ -3302,8 +3305,12 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable opcaoajuda
+drawable opcaoarearestrita
 drawable opcaoconta
 drawable opcaoformulario
+drawable opcaoidioma
+drawable opcaonotificacao
 drawable profilecircle
 drawable rotate_right
 drawable sair
@@ -3399,6 +3406,7 @@ id activity_chooser_view_content
 id add
 id adjust_height
 id adjust_width
+id ajudaTelaConfiguracao
 id alertTitle
 id aligned
 id all
@@ -3413,6 +3421,7 @@ id apple
 id apresentacoes
 id apresentacoesLayout
 id arc
+id areaTelaConfiguracao
 id asConfigured
 id async
 id aumentarTelaTourVirtual
@@ -3488,6 +3497,7 @@ id confirm_button
 id confirmarSenha
 id confirmarSenhaLayout
 id constraint
+id constraintResposta
 id contaTelaPerfil
 id container
 id content
@@ -3640,6 +3650,7 @@ id iconPrecoExcursoes
 id iconToolbarSecund
 id icon_group
 id icon_only
+id idiomaTelaConfiguracao
 id ifRoom
 id ignore
 id ignoreRequest
@@ -3679,6 +3690,7 @@ id imgFestival
 id imgNotificacao1
 id imgPerfil
 id imgPerfilToolbar
+id imgSemResultado
 id imgShow
 id immediateStop
 id include
@@ -3686,6 +3698,8 @@ id include2
 id include3
 id include4
 id include5
+id include6
+id include7
 id included
 id indeterminate
 id info
@@ -3716,9 +3730,11 @@ id linha4
 id linha5
 id linhaEventos
 id linhaExcur
+id linhaResposta
 id listMode
 id list_item
 id loading
+id loadingArea
 id locCardExcursoes
 id localCardEvento
 id locale
@@ -3812,6 +3828,7 @@ id nomePessoa
 id none
 id normal
 id north
+id notificacoesTelaConfiguracao
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -3874,6 +3891,7 @@ id recyclerPertoHome
 id recyclerPertoTurismo
 id recyclerPopularesHome
 id recyclerRecomenHome
+id recyclerResposta
 id recyclerViagemTurismo
 id reenviar
 id report_drawn
@@ -4064,6 +4082,7 @@ id txtPertoHome
 id txtPertoTurismo
 id txtPopularesHome
 id txtRecomendadosHome
+id txtResposta
 id txtViagemTurismo
 id unchecked
 id uniform
@@ -4087,6 +4106,7 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id webView
+id webViewArea
 id webViewTourVirtual
 id west
 id wide
@@ -4217,8 +4237,10 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_splash_screen
+layout activity_tel_area_restrita
 layout activity_tela_cadastro
 layout activity_tela_cadastro2
+layout activity_tela_configuracao
 layout activity_tela_erro_interno
 layout activity_tela_erro_sms
 layout activity_tela_erro_wifi
