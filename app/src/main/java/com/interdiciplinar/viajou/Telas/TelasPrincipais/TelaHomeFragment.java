@@ -53,6 +53,7 @@ public class TelaHomeFragment extends Fragment {
     private ImageView iconLupa, iconToolbar, iconNotifi;
     private Retrofit retrofit;
     private ViewPager2 viewPager;
+    private SearchView pesquisar;
     private boolean dadosCarregados = false;
 
     public TelaHomeFragment() {
@@ -82,6 +83,7 @@ public class TelaHomeFragment extends Fragment {
         recyclerPopulares = view.findViewById(R.id.recyclerPopularesHome);
         recyclerPerto = view.findViewById(R.id.recyclerPertoHome);
         recyclerExperiencia = view.findViewById(R.id.recyclerExperienciaHome);
+        pesquisar = view.findViewById(R.id.pesquisar);
 
         // Setando o adapter para o recycler
         recyclerPopulares.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
@@ -92,6 +94,8 @@ public class TelaHomeFragment extends Fragment {
         iconNotifi = view.findViewById(R.id.iconNotifiToolbar);
 
         atracaoAdapter = new AtracaoAdapter(new ArrayList<>(), getContext());
+        pesquisar.setVisibility(View.INVISIBLE);
+        iconLupa.setVisibility(View.INVISIBLE);
 
         setupToolbarIcons();
         setupBanner(view);
