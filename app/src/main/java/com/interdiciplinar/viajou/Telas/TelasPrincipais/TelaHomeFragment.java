@@ -1,15 +1,15 @@
 package com.interdiciplinar.viajou.Telas.TelasPrincipais;
 
+import static android.content.Context.MODE_PRIVATE;
+
 import android.content.Intent;
-import android.media.Image;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.util.Log;
@@ -152,10 +152,13 @@ public class TelaHomeFragment extends Fragment {
         searchView.setOnClickListener(v -> searchEditText.requestFocus());
         searchEditText.setOnFocusChangeListener((v, hasFocus) -> iconLupa.setVisibility(hasFocus ? View.GONE : View.VISIBLE));
 
-        pegarRecomendadas();
-        pegarPopulares();
-        pegarPerto();
-        pegarExperiencia();
+        if (!dadosCarregados) {
+            pegarRecomendadas();
+            pegarPopulares();
+            pegarPerto();
+            pegarExperiencia();
+            dadosCarregados = true;
+        }
 
         return view;
 
@@ -168,7 +171,7 @@ public class TelaHomeFragment extends Fragment {
                 .build();
 
         ApiViajou apiViajou = retrofit.create(ApiViajou.class);
-        Call<List<Atracao>> call = apiViajou.buscarAtracoes();
+        Call<List<Atracao>> call = apiViajou.buscarAtracoesAleatoria();
 
         call.enqueue(new Callback<List<Atracao>>() {
             @Override
@@ -199,7 +202,7 @@ public class TelaHomeFragment extends Fragment {
                 .build();
 
         ApiViajou apiViajou = retrofit.create(ApiViajou.class);
-        Call<List<Atracao>> call = apiViajou.buscarAtracoes();
+        Call<List<Atracao>> call = apiViajou.buscarAtracoesAleatoria();
 
         call.enqueue(new Callback<List<Atracao>>() {
             @Override
@@ -230,7 +233,7 @@ public class TelaHomeFragment extends Fragment {
                 .build();
 
         ApiViajou apiViajou = retrofit.create(ApiViajou.class);
-        Call<List<Atracao>> call = apiViajou.buscarAtracoes();
+        Call<List<Atracao>> call = apiViajou.buscarAtracoesAleatoria();
 
         call.enqueue(new Callback<List<Atracao>>() {
             @Override
@@ -260,7 +263,7 @@ public class TelaHomeFragment extends Fragment {
                 .build();
 
         ApiViajou apiViajou = retrofit.create(ApiViajou.class);
-        Call<List<Atracao>> call = apiViajou.buscarAtracoes();
+        Call<List<Atracao>> call = apiViajou.buscarAtracoesAleatoria();
 
         call.enqueue(new Callback<List<Atracao>>() {
             @Override

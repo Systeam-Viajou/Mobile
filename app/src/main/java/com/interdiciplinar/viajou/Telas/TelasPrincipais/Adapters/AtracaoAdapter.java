@@ -26,6 +26,7 @@ import com.interdiciplinar.viajou.Models.Atracao;
 import com.interdiciplinar.viajou.Models.Imagem;
 import com.interdiciplinar.viajou.Models.Tipo;
 import com.interdiciplinar.viajou.R;
+import com.interdiciplinar.viajou.Telas.TelaEvento.TelaCardEventoAberto;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.TelaHomeFragment;
 import com.interdiciplinar.viajou.Telas.TelasTour.TelaCardAberto;
 
@@ -76,7 +77,7 @@ public class AtracaoAdapter extends RecyclerView.Adapter<AtracaoAdapter.AtracaoV
         if (holder.tipo != null) {
             if (holder.tipo.getNome().equals("evento")) {
                 holder.icon.setImageResource(R.drawable.iconeventocardhome);
-            } else if (holder.tipo.getNome().equals("tour-virtual")) {
+            } else if (holder.tipo.getNome().equals("tour-virtual") || holder.tipo.getNome().equals("ponto-turistico")) {
                 holder.icon.setImageResource(R.drawable.iconturismocardhome);
             }
         }
@@ -96,7 +97,7 @@ public class AtracaoAdapter extends RecyclerView.Adapter<AtracaoAdapter.AtracaoV
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(holder.tipo.getNome().equals("tour-virtual")){
+                if(holder.tipo.getNome().equals("tour-virtual") || holder.tipo.getNome().equals("ponto-turistico")){
                     // Instancia o fragmento que deseja abrir
                     Fragment telaCardAberto = new TelaCardAberto();
                     Bundle bundle = new Bundle();
@@ -119,7 +120,26 @@ public class AtracaoAdapter extends RecyclerView.Adapter<AtracaoAdapter.AtracaoV
                     }
                 }
                 else{
-                    Toast.makeText(context, "Em Breve", Toast.LENGTH_SHORT).show();
+                    // Instancia o fragmento que deseja abrir
+                    Fragment telaCardAberto = new TelaCardEventoAberto();
+                    Bundle bundle = new Bundle();
+                    bundle.putLong("id", atracao.getId());
+                    telaCardAberto.setArguments(bundle);
+
+                    // Verifica se o contexto é uma instância de AppCompatActivity
+                    if (context instanceof AppCompatActivity) {
+                        FragmentManager fragmentManager = ((AppCompatActivity) context).getSupportFragmentManager();
+
+                        // Inicia a transação do fragmento
+                        fragmentManager.beginTransaction()
+                                .setCustomAnimations(
+                                        R.anim.vindo_de_baixo,  // Animação para o fragmento que entra
+                                        R.anim.indo_de_baixo    // Animação para o fragmento que sai
+                                )
+                                .replace(R.id.frameLayout, telaCardAberto) // Substitua 'R.id.container' pelo ID do layout onde deseja adicionar o fragmento
+                                .addToBackStack(null) // Adiciona à pilha de volta
+                                .commit();
+                    }
                 }
             }
         });

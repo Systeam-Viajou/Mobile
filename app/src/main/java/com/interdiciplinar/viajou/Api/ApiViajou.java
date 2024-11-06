@@ -42,7 +42,10 @@ public interface ApiViajou {
     Call<List<Evento>> buscarEvento();
 
     @GET("/viajouapi/atracoes/aleatorias")
-    Call<List<Atracao>> buscarAtracoes();
+    Call<List<Atracao>> buscarAtracoesAleatoria();
+
+    @GET("viajouapi/pontosturisticos/aleatorios")
+    Call<List<Tour>> buscarTurismoAleatorio();
 
     @GET("/viajouapi/excursoes/buscar")
     Call<List<Excursao>> buscarExcursao();
@@ -52,6 +55,9 @@ public interface ApiViajou {
 
     @GET("/viajouapi/pontosturisticos/buscar/atracao/{id}")
     Call<Tour> buscarTourPorAtracao(@Path("id") Long id);
+
+    @GET("/viajouapi/eventos/buscar/atracao/{id}")
+    Call<Evento> buscarEventoPorAtracao(@Path("id") Long id);
 
     @GET("/viajouapi/classificacoes/buscarPorAtracao/{id}")
     Call<List<Classificacao>> buscarClassificacaoPorAtracao(@Path("id") Long id);

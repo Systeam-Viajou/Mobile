@@ -1,6 +1,7 @@
 package com.interdiciplinar.viajou.Telas.TelasTour;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,18 +12,23 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.interdiciplinar.viajou.Api.ApiViajou;
 import com.interdiciplinar.viajou.Models.Classificacao;
+import com.interdiciplinar.viajou.Models.Imagem;
 import com.interdiciplinar.viajou.Models.Tour;
 import com.interdiciplinar.viajou.Models.Usuario;
 import com.interdiciplinar.viajou.R;
 import com.interdiciplinar.viajou.Telas.TelasEntrada.TelaCadastro2;
 import com.interdiciplinar.viajou.Telas.TelasErro.TelaErroInterno;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -34,17 +40,22 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class TelaCardAberto extends Fragment {
 
-    ImageView btnLeft, btnRight, iconAcess;
+    ImageView btnLeft, btnRight, iconAcess, imgBanner;
     RatingBar avaliacao;
     TextView titulo;
 
+    ProgressBar progressBarImg, progressBarInfo;
     TextView qntAvaliacoes;
     TextView valClassificacao;
     TextView descricao;
     TextView endereco;
-    ViewPager2 viewPager;
     Long idAtracao;
 
+    List<Imagem> imageList = new ArrayList<>();
+
+    Bundle bundle = new Bundle();
+    Intent intent;
+    Button btIniciarTourVirtual;
     Tour tour;
 
     public TelaCardAberto() {
@@ -66,6 +77,7 @@ public class TelaCardAberto extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_tela_card_aberto, container, false);
+
         titulo = view.findViewById(R.id.tituloCardAberto);
         descricao = view.findViewById(R.id.tvDescricao);
         endereco = view.findViewById(R.id.endereco);
@@ -73,10 +85,24 @@ public class TelaCardAberto extends Fragment {
         avaliacao = view.findViewById(R.id.ratingBar);
         qntAvaliacoes = view.findViewById(R.id.qntAvaliacoes);
         valClassificacao = view.findViewById(R.id.valAvaliacoes);
+        imgBanner = view.findViewById(R.id.imgBanner);
+        btIniciarTourVirtual = view.findViewById(R.id.btIniciarTour);
+        btIniciarTourVirtual.setEnabled(false);
+        intent = new Intent(getContext(), TelaTour1.class);
+
+        btIniciarTourVirtual.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(intent);
+            }
+        });
+        progressBarImg = view.findViewById(R.id.progressBarImagem);
+        progressBarInfo = view.findViewById(R.id.progressBarInfo);
         iconAcess.setVisibility(view.GONE);
         titulo.setVisibility(view.INVISIBLE);
         descricao.setVisibility(view.INVISIBLE);
         endereco.setVisibility(view.INVISIBLE);
+
 
         Bundle args = getArguments();
         if (args != null) {
@@ -85,53 +111,40 @@ public class TelaCardAberto extends Fragment {
 
         carregarInformações(idAtracao);
         qntAvaliacoes(idAtracao);
-
-        viewPager = view.findViewById(R.id.viewPager);
-        btnRight = view.findViewById(R.id.setaDireCarrossel);
-        btnLeft = view.findViewById(R.id.setaEsqueCarrrossel);
-
-        // Lista de imagens (exemplo com drawable IDs)
-        List<Integer> imageList = Arrays.asList(
-                R.drawable.carroseu1,
-                R.drawable.carroseu2,
-                R.drawable.carroseu3
-        );
-
-        CarouselAdapter adapter = new CarouselAdapter(getContext(), imageList);
-        viewPager.setAdapter(adapter);
+        carregarImagens(idAtracao);
 
         if(imageList.size() == 1){
             btnLeft.setVisibility(View.GONE);
             btnRight.setVisibility(View.GONE);
         }
-
-        // Listener para a seta da esquerda
-        btnLeft.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int currentItem = viewPager.getCurrentItem();
-                if (currentItem > 0) {
-                    viewPager.setCurrentItem(currentItem - 1, true);
-                }
-                else{
-                    viewPager.setCurrentItem(imageList.size(), true);
-                }
-            }
-        });
-
-        // Listener para a seta da direita
-        btnRight.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int currentItem = viewPager.getCurrentItem();
-                if (currentItem < adapter.getItemCount() - 1) {
-                    viewPager.setCurrentItem(currentItem + 1, true);
-                }
-                else{
-                    viewPager.setCurrentItem(0, true);
-                }
-            }
-        });
+//
+//        // Listener para a seta da esquerda
+//        btnLeft.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                int currentItem = viewPager.getCurrentItem();
+//                if (currentItem > 0) {
+//                    viewPager.setCurrentItem(currentItem - 1, true);
+//                }
+//                else{
+//                    viewPager.setCurrentItem(imageList.size(), true);
+//                }
+//            }
+//        });
+//
+//        // Listener para a seta da direita
+//        btnRight.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                int currentItem = viewPager.getCurrentItem();
+//                if (currentItem < adapter.getItemCount() - 1) {
+//                    viewPager.setCurrentItem(currentItem + 1, true);
+//                }
+//                else{
+//                    viewPager.setCurrentItem(0, true);
+//                }
+//            }
+//        });
 
         return view;
     }
@@ -164,7 +177,11 @@ public class TelaCardAberto extends Fragment {
                     titulo.setVisibility(getView().VISIBLE);
                     descricao.setVisibility(getView().VISIBLE);
                     endereco.setVisibility(getView().VISIBLE);
-
+                    progressBarInfo.setVisibility(View.GONE);
+                    bundle.putString("nome", tour.getAtracao().getNome());
+                    bundle.putLong("idTour", tour.getId());
+                    intent.putExtras(bundle);
+                    btIniciarTourVirtual.setEnabled(true);
                 } else {
                     Log.e("GET_ERROR", "Código de erro: " + response.code());
                     Intent intent = new Intent(getActivity(), TelaErroInterno.class);
@@ -213,5 +230,40 @@ public class TelaCardAberto extends Fragment {
             }
         });
     }
+
+    private void carregarImagens(Long id) {
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://dev-ii-mongo-prod.onrender.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        ApiViajou apiViajou = retrofit.create(ApiViajou.class);
+        Call<Imagem> call = apiViajou.buscarImagem(id);
+
+        call.enqueue(new Callback<Imagem>() {
+            @Override
+            public void onResponse(Call<Imagem> call, Response<Imagem> response) {
+                if (response.isSuccessful()) {
+                    Imagem imagem = response.body();
+                    Glide.with(getContext())
+                            .load(imagem.getUrl())
+                            .into(imgBanner);
+                    progressBarImg.setVisibility(View.GONE);
+                } else {
+                    Log.e("GET_ERROR", "Código de erro: " + response.code());
+                    Intent intent = new Intent(getActivity(), TelaErroInterno.class);
+                    startActivity(intent);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Imagem> call, Throwable t) {
+                Log.e("GET_ERROR", "Erro: " + t.getMessage());
+                Intent intent = new Intent(getActivity(), TelaErroInterno.class);
+                startActivity(intent);
+            }
+        });
+    }
+
 
 }
