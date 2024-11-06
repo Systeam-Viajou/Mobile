@@ -15,6 +15,8 @@ Este repositório contém uma aplicação Jva destinada à criação do aplicati
 ## Funcionalidade
 
   1. **Conexão com Bancos de Dados**: Estabelece conexões com os bancos de dados PostgreSQL e MongoDB por meio da api, e o Firebase.
+  2. **Autenticação**: Autentifica a pessoa criando o cadastro para ela poder fazer o login novamente a qualquer momento
+  3. **Notificação**: Dispara uma notificação quando o usuário é cadastrado
 
 ## Configuração Inicial
 
