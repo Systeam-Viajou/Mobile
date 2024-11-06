@@ -55,6 +55,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable icon_loc
 drawable iconacsses
+drawable iconarearestrita
 drawable iconaumentartelatourvirtual
 drawable iconaviaonotificacao
 drawable iconconfigtoolbarprimar
@@ -100,8 +101,12 @@ drawable leftperfilicon
 drawable linha_arredondada
 drawable linhacardeventos
 drawable microsoftvetor
+drawable opcaoajuda
+drawable opcaoarearestrita
 drawable opcaoconta
 drawable opcaoformulario
+drawable opcaoidioma
+drawable opcaonotificacao
 drawable profilecircle
 drawable rotate_right
 drawable sair
@@ -121,9 +126,11 @@ font montserrat
 font montserrat_thin
 font spartan
 font spartan_bold
+id ajudaTelaConfiguracao
 id apple
 id apresentacoes
 id apresentacoesLayout
+id areaTelaConfiguracao
 id aumentarTelaTourVirtual
 id barraExcur
 id bottomNavigationView
@@ -205,6 +212,7 @@ id iconNotifiToolbar
 id iconPerfilExcursoes
 id iconPrecoExcursoes
 id iconToolbarSecund
+id idiomaTelaConfiguracao
 id imageCalendar
 id imageView
 id imageView10
@@ -247,6 +255,8 @@ id include2
 id include3
 id include4
 id include5
+id include6
+id include7
 id informacoes
 id linearLayout
 id linearLayout2
@@ -261,6 +271,7 @@ id linhaEventos
 id linhaExcur
 id linhaResposta
 id loading
+id loadingArea
 id locCardExcursoes
 id localCardEvento
 id login
@@ -274,6 +285,7 @@ id nome
 id nomeFormulario
 id nomeLayout
 id nomePessoa
+id notificacoesTelaConfiguracao
 id pesquisar
 id precoCardExcursoes
 id progressBar
@@ -370,12 +382,15 @@ id videoView
 id view
 id viewPagerHome
 id webView
+id webViewArea
 id webViewTourVirtual
 id xFecharTourVirtual
 layout activity_main
 layout activity_splash_screen
+layout activity_tel_area_restrita
 layout activity_tela_cadastro
 layout activity_tela_cadastro2
+layout activity_tela_configuracao
 layout activity_tela_erro_interno
 layout activity_tela_erro_sms
 layout activity_tela_erro_wifi

@@ -47,6 +47,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.FragmentAndroid" >
         <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasSecundarias.TelAreaRestrita"
+            android:exported="false" />
+        <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaConfiguracao"
+            android:exported="false" />
+        <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaFormulario"
             android:exported="false"
             android:theme="@style/Base.Theme.Viajou" />

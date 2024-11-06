@@ -29,6 +29,7 @@ import com.interdiciplinar.viajou.R;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.AtracaoAdapter;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.BannerHomeAdapter;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.EventoAdapter;
+import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaConfiguracao;
 import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaNotificacao;
 import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaPerfil;
 import com.interdiciplinar.viajou.Telas.TelasTour.CarouselAdapter;
@@ -50,7 +51,7 @@ public class TelaHomeFragment extends Fragment {
     private AtracaoAdapter atracaoAdapter;
     private SearchView searchView;
     private SearchView.SearchAutoComplete searchEditText;
-    private ImageView iconLupa, iconToolbar, iconNotifi;
+    private ImageView iconLupa, iconToolbar, iconNotifi, iconConfig;
     private Retrofit retrofit;
     private ViewPager2 viewPager;
     private SearchView pesquisar;
@@ -76,6 +77,8 @@ public class TelaHomeFragment extends Fragment {
         searchView = view.findViewById(R.id.pesquisar);
         iconLupa = view.findViewById(R.id.iconLupa);
         iconToolbar = view.findViewById(R.id.imgPerfilToolbar);
+        iconNotifi = view.findViewById(R.id.iconNotifiToolbar);
+        iconConfig = view.findViewById(R.id.iconConfigToolbar);
         searchEditText = searchView.findViewById(androidx.appcompat.R.id.search_src_text);
         viewPager = view.findViewById(R.id.viewPagerHome);
         recyclerContinuar = view.findViewById(R.id.recyclerContinuarHome);
@@ -91,7 +94,6 @@ public class TelaHomeFragment extends Fragment {
         recyclerExperiencia.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         recyclerRecomendar.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         recyclerContinuar.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
-        iconNotifi = view.findViewById(R.id.iconNotifiToolbar);
 
         atracaoAdapter = new AtracaoAdapter(new ArrayList<>(), getContext());
         pesquisar.setVisibility(View.INVISIBLE);
@@ -122,6 +124,11 @@ public class TelaHomeFragment extends Fragment {
 
         iconNotifi.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), TelaNotificacao.class);
+            startActivity(intent);
+        });
+
+        iconConfig.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), TelaConfiguracao.class);
             startActivity(intent);
         });
     }

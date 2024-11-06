@@ -3185,6 +3185,7 @@ int drawable ic_password 0x7f0800d9
 int drawable ic_search_black_24 0x7f0800da
 int drawable icon_loc 0x7f0800db
 int drawable iconacsses 0x7f0800dc
+int drawable iconarearestrita 0x7f080167
 int drawable iconaumentartelatourvirtual 0x7f0800dd
 int drawable iconaviaonotificacao 0x7f0800de
 int drawable iconconfigtoolbarprimar 0x7f0800df
@@ -3303,8 +3304,12 @@ int drawable notification_template_icon_bg 0x7f08014f
 int drawable notification_template_icon_low_bg 0x7f080150
 int drawable notification_tile_bg 0x7f080151
 int drawable notify_panel_notification_icon_bg 0x7f080152
+int drawable opcaoajuda 0x7f080168
+int drawable opcaoarearestrita 0x7f080169
 int drawable opcaoconta 0x7f080153
 int drawable opcaoformulario 0x7f080154
+int drawable opcaoidioma 0x7f08016a
+int drawable opcaonotificacao 0x7f08016b
 int drawable profilecircle 0x7f080155
 int drawable rotate_right 0x7f080156
 int drawable sair 0x7f080157
@@ -3400,6 +3405,7 @@ int id activity_chooser_view_content 0x7f0a0045
 int id add 0x7f0a0046
 int id adjust_height 0x7f0a0047
 int id adjust_width 0x7f0a0048
+int id ajudaTelaConfiguracao 0x7f0a030a
 int id alertTitle 0x7f0a0049
 int id aligned 0x7f0a004a
 int id all 0x7f0a004b
@@ -3414,6 +3420,7 @@ int id apple 0x7f0a0053
 int id apresentacoes 0x7f0a0054
 int id apresentacoesLayout 0x7f0a0055
 int id arc 0x7f0a0056
+int id areaTelaConfiguracao 0x7f0a030b
 int id asConfigured 0x7f0a0057
 int id async 0x7f0a0058
 int id aumentarTelaTourVirtual 0x7f0a0059
@@ -3642,6 +3649,7 @@ int id iconPrecoExcursoes 0x7f0a0137
 int id iconToolbarSecund 0x7f0a0138
 int id icon_group 0x7f0a0139
 int id icon_only 0x7f0a013a
+int id idiomaTelaConfiguracao 0x7f0a030c
 int id ifRoom 0x7f0a013b
 int id ignore 0x7f0a013c
 int id ignoreRequest 0x7f0a013d
@@ -3689,6 +3697,8 @@ int id include2 0x7f0a0166
 int id include3 0x7f0a0167
 int id include4 0x7f0a0168
 int id include5 0x7f0a0169
+int id include6 0x7f0a030d
+int id include7 0x7f0a030e
 int id included 0x7f0a016a
 int id indeterminate 0x7f0a016b
 int id info 0x7f0a016c
@@ -3723,6 +3733,7 @@ int id linhaResposta 0x7f0a0188
 int id listMode 0x7f0a0189
 int id list_item 0x7f0a018a
 int id loading 0x7f0a018b
+int id loadingArea 0x7f0a0312
 int id locCardExcursoes 0x7f0a018c
 int id localCardEvento 0x7f0a018d
 int id locale 0x7f0a018e
@@ -3816,6 +3827,7 @@ int id nomePessoa 0x7f0a01e5
 int id none 0x7f0a01e6
 int id normal 0x7f0a01e7
 int id north 0x7f0a01e8
+int id notificacoesTelaConfiguracao 0x7f0a0310
 int id notification_background 0x7f0a01e9
 int id notification_main_column 0x7f0a01ea
 int id notification_main_column_container 0x7f0a01eb
@@ -4093,6 +4105,7 @@ int id view_tree_view_model_store_owner 0x7f0a02fa
 int id visible 0x7f0a02fb
 int id visible_removing_fragment_view_tag 0x7f0a02fc
 int id webView 0x7f0a02fd
+int id webViewArea 0x7f0a0311
 int id webViewTourVirtual 0x7f0a02fe
 int id west 0x7f0a02ff
 int id wide 0x7f0a0300
@@ -4223,8 +4236,10 @@ int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
 int layout activity_main 0x7f0d001c
 int layout activity_splash_screen 0x7f0d001d
+int layout activity_tel_area_restrita 0x7f0d0093
 int layout activity_tela_cadastro 0x7f0d001e
 int layout activity_tela_cadastro2 0x7f0d001f
+int layout activity_tela_configuracao 0x7f0d0094
 int layout activity_tela_erro_interno 0x7f0d0020
 int layout activity_tela_erro_sms 0x7f0d0021
 int layout activity_tela_erro_wifi 0x7f0d0022
