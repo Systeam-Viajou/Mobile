@@ -34,6 +34,7 @@ import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.AtracaoAdapter;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.EventoAdapter;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.RespostaTurismoAdapter;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.TourAdapter;
+import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaConfiguracao;
 import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaPerfil;
 
 import java.util.ArrayList;
@@ -103,6 +104,7 @@ public class TelaTurismosFragment extends Fragment {
         progressBarResposta = view.findViewById(R.id.progressBarResposta);
         imgSemResultadoTurismo = view.findViewById(R.id.imgSemResultadoTurismo);
         scrollViewConteudo = view.findViewById(R.id.scrollViewConteudo);
+        iconConfig = view.findViewById(R.id.iconConfigToolbar);
 
         recyclerPertoTurismo = view.findViewById(R.id.recyclerPertoTurismo);
         recyclerPertoTurismo.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
@@ -187,6 +189,11 @@ public class TelaTurismosFragment extends Fragment {
 
         iconNotifi.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), TelaNotificacao.class);
+            startActivity(intent);
+        });
+
+        iconConfig.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), TelaConfiguracao.class);
             startActivity(intent);
         });
     }
