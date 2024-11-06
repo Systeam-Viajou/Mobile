@@ -145,6 +145,7 @@ id carregandoPesquisa
 id cifrao
 id confirmarSenha
 id confirmarSenhaLayout
+id constraintResposta
 id cpf
 id cpfLayout
 id dataCardEventos
@@ -247,6 +248,7 @@ id linha4
 id linha5
 id linhaEventos
 id linhaExcur
+id linhaResposta
 id locCardExcursoes
 id localCardEvento
 id login
@@ -274,6 +276,7 @@ id recyclerPertoHome
 id recyclerPertoTurismo
 id recyclerPopularesHome
 id recyclerRecomenHome
+id recyclerResposta
 id recyclerViagemTurismo
 id reenviar
 id sair
@@ -336,6 +339,7 @@ id txtPertoHome
 id txtPertoTurismo
 id txtPopularesHome
 id txtRecomendadosHome
+id txtResposta
 id txtViagemTurismo
 id user
 id username

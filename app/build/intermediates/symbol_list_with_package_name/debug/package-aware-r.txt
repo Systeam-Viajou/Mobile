@@ -3485,6 +3485,7 @@ id confirm_button
 id confirmarSenha
 id confirmarSenhaLayout
 id constraint
+id constraintResposta
 id container
 id content
 id contentPanel
@@ -3708,6 +3709,7 @@ id linha4
 id linha5
 id linhaEventos
 id linhaExcur
+id linhaResposta
 id listMode
 id list_item
 id locCardExcursoes
@@ -3860,6 +3862,7 @@ id recyclerPertoHome
 id recyclerPertoTurismo
 id recyclerPopularesHome
 id recyclerRecomenHome
+id recyclerResposta
 id recyclerViagemTurismo
 id reenviar
 id report_drawn
@@ -4046,6 +4049,7 @@ id txtPertoHome
 id txtPertoTurismo
 id txtPopularesHome
 id txtRecomendadosHome
+id txtResposta
 id txtViagemTurismo
 id unchecked
 id uniform

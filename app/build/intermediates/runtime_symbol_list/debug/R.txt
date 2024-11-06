@@ -3484,6 +3484,7 @@ int id confirm_button 0x7f0a009c
 int id confirmarSenha 0x7f0a009d
 int id confirmarSenhaLayout 0x7f0a009e
 int id constraint 0x7f0a009f
+int id constraintResposta 0x7f0a02f5
 int id container 0x7f0a00a0
 int id content 0x7f0a00a1
 int id contentPanel 0x7f0a00a2
@@ -3707,6 +3708,7 @@ int id linha4 0x7f0a017b
 int id linha5 0x7f0a017c
 int id linhaEventos 0x7f0a017d
 int id linhaExcur 0x7f0a017e
+int id linhaResposta 0x7f0a02f2
 int id listMode 0x7f0a017f
 int id list_item 0x7f0a0180
 int id locCardExcursoes 0x7f0a0181
@@ -3859,6 +3861,7 @@ int id recyclerPertoHome 0x7f0a0213
 int id recyclerPertoTurismo 0x7f0a0214
 int id recyclerPopularesHome 0x7f0a0215
 int id recyclerRecomenHome 0x7f0a0216
+int id recyclerResposta 0x7f0a02f3
 int id recyclerViagemTurismo 0x7f0a0217
 int id reenviar 0x7f0a0218
 int id report_drawn 0x7f0a0219
@@ -4045,6 +4048,7 @@ int id txtPertoHome 0x7f0a02cd
 int id txtPertoTurismo 0x7f0a02ce
 int id txtPopularesHome 0x7f0a02cf
 int id txtRecomendadosHome 0x7f0a02d0
+int id txtResposta 0x7f0a02f4
 int id txtViagemTurismo 0x7f0a02d1
 int id unchecked 0x7f0a02d2
 int id uniform 0x7f0a02d3

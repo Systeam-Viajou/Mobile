@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,14 +16,19 @@ import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.interdiciplinar.viajou.R;
+import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.BannerHomeAdapter;
+import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaNotificacao;
 import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaPerfil;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class TelaTurismosFragment extends Fragment {
 
 
     SearchView searchView;
     SearchView.SearchAutoComplete searchEditText;
-    ImageView iconLupa, iconToolbar;
+    ImageView iconLupa, iconToolbar, iconNotifi;
 
     public TelaTurismosFragment() {
         // Required empty public constructor
@@ -52,51 +58,51 @@ public class TelaTurismosFragment extends Fragment {
         iconLupa = view.findViewById(R.id.iconLupa);
         iconToolbar = view.findViewById(R.id.imgPerfilToolbar);
         searchEditText = searchView.findViewById(androidx.appcompat.R.id.search_src_text);
+        iconNotifi = view.findViewById(R.id.iconNotifiToolbar);
 
-
-
-
-        FirebaseAuth autenticar = FirebaseAuth.getInstance();
-        FirebaseUser userLogin = autenticar.getCurrentUser();
-
-        Glide.with(this).load(userLogin.getPhotoUrl())
-                .centerCrop()
-                .into((ImageView) iconToolbar);
-
-        iconToolbar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), TelaPerfil.class);
-                startActivity(intent);
-            }
-        });
-
-        // Define para que o campo de texto esteja sempre visível
-        searchView.setIconifiedByDefault(false);
-
-        // Garante que o foco vá para o campo de texto ao clicar na caixa de pesquisa
-        searchView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Força o campo de texto a receber o foco
-                searchEditText.requestFocus();
-            }
-        });
-
-        searchEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if (hasFocus) {
-                    // Se o campo de texto ganhar foco, esconde o ícone de lupa
-                    iconLupa.setVisibility(View.GONE);
-                } else {
-                    // Se o campo de texto perder foco, mostra o ícone de lupa novamente
-                    iconLupa.setVisibility(View.VISIBLE);
-                }
-            }
-        });
+        setupToolbarIcons();
+        setupSearch();
 
         return view;
+    }
+
+    private void setupToolbarIcons() {
+        FirebaseAuth autenticar = FirebaseAuth.getInstance();
+        FirebaseUser userLogin = autenticar.getCurrentUser();
+        Glide.with(this).load(userLogin.getPhotoUrl()).centerCrop().into(iconToolbar);
+
+        iconToolbar.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), TelaPerfil.class);
+            startActivity(intent);
+        });
+
+        iconNotifi.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), TelaNotificacao.class);
+            startActivity(intent);
+        });
+    }
+
+    private void setupSearch() {
+        searchView.setIconifiedByDefault(false);
+
+        searchView.setOnClickListener(v -> searchView.requestFocus());
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                if (newText.length() > 0) {
+                    iconLupa.setVisibility(View.GONE);
+                } else {
+                    iconLupa.setVisibility(View.VISIBLE);
+                }
+                return false;
+            }
+        });
     }
 
     @Override

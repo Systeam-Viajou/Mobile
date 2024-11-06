@@ -68,7 +68,7 @@ public class TelaEventosFragment extends Fragment {
         eventoAdapter = new EventoAdapter(new ArrayList<>(), getContext(), recyclerView, imgSemResultado);
         recyclerView.setAdapter(eventoAdapter);
 
-        setupFirebaseUser();
+        setupToolbarIcons();
         setupSearch();
 
         pegarDadosEventos();
@@ -76,7 +76,7 @@ public class TelaEventosFragment extends Fragment {
         return view;
     }
 
-    private void setupFirebaseUser() {
+    private void setupToolbarIcons() {
         FirebaseAuth autenticar = FirebaseAuth.getInstance();
         FirebaseUser userLogin = autenticar.getCurrentUser();
 

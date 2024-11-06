@@ -75,7 +75,7 @@ public class TelaExcursoesFragment extends Fragment {
         excursaoAdapter = new ExcursaoAdapter(new ArrayList<>(), getContext(), recyclerView, imgSemResultado);
         recyclerView.setAdapter(excursaoAdapter);
 
-        setupFirebaseUser();
+        setupToolbarIcons();
         setupSearch();
 
         pegarDadosExcursao();
@@ -83,7 +83,7 @@ public class TelaExcursoesFragment extends Fragment {
         return view;
     }
 
-    public void setupFirebaseUser() {
+    public void setupToolbarIcons() {
         FirebaseAuth autenticar = FirebaseAuth.getInstance();
         FirebaseUser userLogin = autenticar.getCurrentUser();
 
