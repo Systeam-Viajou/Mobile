@@ -4234,7 +4234,6 @@ layout activity_tela_sms
 layout activity_tela_tour1
 layout activity_tela_tour2
 layout activity_tela_tour3
-layout activity_tela_tour4
 layout activity_tela_tour_conteudo
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row

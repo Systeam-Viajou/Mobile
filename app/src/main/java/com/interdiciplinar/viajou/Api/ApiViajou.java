@@ -6,6 +6,7 @@ import com.interdiciplinar.viajou.Models.Evento;
 import com.interdiciplinar.viajou.Models.Excursao;
 import com.interdiciplinar.viajou.Models.Imagem;
 import com.interdiciplinar.viajou.Models.Tour;
+import com.interdiciplinar.viajou.Models.TourMongo;
 import com.interdiciplinar.viajou.Models.Usuario;
 
 import retrofit2.Call;
@@ -25,6 +26,9 @@ public interface ApiViajou {
 
     @GET("/viajouapi/usuarios/buscar/username/{username}")
     Call<Usuario> buscarUsername(@Path("username") String username);
+
+    @GET("/viajouapi/mongo/touresvirtuais/buscar/{idTurismo}")
+    Call<TourMongo> buscarTourVirtual(@Path("idTurismo") Long idTurismo);
 
     @GET("/viajouapi/eventos/buscar/paginado")
     Call<List<Evento>> buscarEventoPaginado(@Query("offset") int offset, @Query("limit") int limit);

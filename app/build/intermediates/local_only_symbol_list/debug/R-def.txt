@@ -23,6 +23,7 @@ drawable botaoxsair
 drawable bt_borda
 drawable cadeado
 drawable calendar
+drawable calendarevento
 drawable calendario
 drawable carregando
 drawable carregandocompleto
@@ -139,6 +140,7 @@ id btVerificarEmail
 id btVoltarLoginEsqSenha
 id btVoltarTourVirtual
 id button
+id button2
 id cadastrar
 id cardView
 id cardView1
@@ -204,11 +206,13 @@ id imageCalendar
 id imageView
 id imageView10
 id imageView11
+id imageView12
 id imageView13
 id imageView2
 id imageView3
 id imageView4
 id imageView5
+id imageView6
 id imageView7
 id imageView8
 id imageView9
@@ -219,6 +223,7 @@ id img360TourVirtual
 id img4
 id img5
 id imgApresentacao
+id imgBanner
 id imgCardEventos
 id imgCardExcursoes
 id imgCardHome
@@ -238,6 +243,7 @@ id include2
 id include3
 id include4
 id include5
+id informacoes
 id linearLayout
 id linearLayout2
 id linha1
@@ -254,6 +260,7 @@ id locCardExcursoes
 id localCardEvento
 id login
 id mantenhaConectado
+id materialCardView
 id maxPessoasCardExcur
 id mesCardEventos
 id msgErroEmail
@@ -265,6 +272,8 @@ id nomePessoa
 id pesquisar
 id precoCardExcursoes
 id progressBar
+id progressBarImagem
+id progressBarInfo
 id qntAvaliacoes
 id qntdPessoasCardExcur
 id ratingBar
@@ -282,6 +291,8 @@ id recyclerRecomenHome
 id recyclerViagemTurismo
 id reenviar
 id sair
+id scrollView2
+id scrollView3
 id senha
 id senhaLayout
 id setaDireCarrossel
@@ -297,8 +308,10 @@ id telefone
 id telefoneLayout
 id textTimer
 id textView
+id textView10
 id textView11
 id textView12
+id textView13
 id textView14
 id textView15
 id textView16
@@ -346,7 +359,8 @@ id user
 id username
 id usernamePerfil
 id valAvaliacoes
-id viewPager
+id videoView
+id view
 id viewPagerHome
 id webView
 id webViewTourVirtual
@@ -370,9 +384,9 @@ layout activity_tela_sms
 layout activity_tela_tour1
 layout activity_tela_tour2
 layout activity_tela_tour3
-layout activity_tela_tour4
 layout activity_tela_tour_conteudo
 layout fragment_tela_card_aberto
+layout fragment_tela_card_evento_aberto
 layout fragment_tela_eventos
 layout fragment_tela_excursoes
 layout fragment_tela_figurinhas
@@ -394,6 +408,7 @@ mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap iconapp
+raw animacao
 raw splash
 raw splashanimation
 string app_name
