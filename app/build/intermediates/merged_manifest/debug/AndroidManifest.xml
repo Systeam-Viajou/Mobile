@@ -47,8 +47,13 @@
         android:testOnly="true"
         android:theme="@style/Theme.FragmentAndroid" >
         <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaFormulario"
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou" />
+        <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaNotificacao"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasErro.TelaErroWifi"
             android:exported="false"

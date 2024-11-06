@@ -40,7 +40,7 @@ public class TelaPerfil extends AppCompatActivity {
     private static final int REQUEST_GALLERY = 2;
     EditText username;
     String usernameAtual;
-    ImageView imageProfile, iconPerfil, setaVoltarToolbar;
+    ImageView imageProfile, iconPerfil, setaVoltarToolbar, formulario;
     TextView tituloPagina;
 
     Retrofit retrofit = new Retrofit.Builder()
@@ -60,6 +60,7 @@ public class TelaPerfil extends AppCompatActivity {
         tituloPagina = findViewById(R.id.tituloToolbarSecund);
         iconPerfil = findViewById(R.id.iconToolbarSecund);
         setaVoltarToolbar = findViewById(R.id.setaVoltarToolbar);
+        formulario = findViewById(R.id.formularioTelaPerfil);
 
         tituloPagina.setText("Seu Perfil");
         iconPerfil.setImageResource(R.drawable.iconperfiltoolbarsecund);
@@ -84,6 +85,11 @@ public class TelaPerfil extends AppCompatActivity {
             Intent intent = new Intent(TelaPerfil.this, TelaLogin.class);
             startActivity(intent);
             finish();
+        });
+
+        formulario.setOnClickListener(v -> {
+            Intent intent =  new Intent(this, TelaFormulario.class);
+            startActivity(intent);
         });
     }
 
