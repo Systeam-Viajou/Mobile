@@ -211,7 +211,7 @@ public class TelaHomeFragment extends Fragment {
                 .build();
 
         ApiViajou apiViajou = retrofit.create(ApiViajou.class);
-        Call<List<Atracao>> call = apiViajou.buscarAtracoes();
+        Call<List<Atracao>> call = apiViajou.buscarAtracoesAleatoria();
 
         call.enqueue(new Callback<List<Atracao>>() {
             @Override
@@ -242,7 +242,7 @@ public class TelaHomeFragment extends Fragment {
                 .build();
 
         ApiViajou apiViajou = retrofit.create(ApiViajou.class);
-        Call<List<Atracao>> call = apiViajou.buscarAtracoes();
+        Call<List<Atracao>> call = apiViajou.buscarAtracoesAleatoria();
 
         call.enqueue(new Callback<List<Atracao>>() {
             @Override
@@ -273,7 +273,7 @@ public class TelaHomeFragment extends Fragment {
                 .build();
 
         ApiViajou apiViajou = retrofit.create(ApiViajou.class);
-        Call<List<Atracao>> call = apiViajou.buscarAtracoes();
+        Call<List<Atracao>> call = apiViajou.buscarAtracoesAleatoria();
 
         call.enqueue(new Callback<List<Atracao>>() {
             @Override
@@ -303,7 +303,7 @@ public class TelaHomeFragment extends Fragment {
                 .build();
 
         ApiViajou apiViajou = retrofit.create(ApiViajou.class);
-        Call<List<Atracao>> call = apiViajou.buscarAtracoes();
+        Call<List<Atracao>> call = apiViajou.buscarAtracoesAleatoria();
 
         call.enqueue(new Callback<List<Atracao>>() {
             @Override
