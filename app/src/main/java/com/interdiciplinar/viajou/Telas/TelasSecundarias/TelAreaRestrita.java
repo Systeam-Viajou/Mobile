@@ -38,7 +38,7 @@ public class TelAreaRestrita extends AppCompatActivity {
 
         setaVoltarToolbar.setOnClickListener(v -> finish());
 
-        webView.loadUrl("https://crud-lbk4.onrender.com/Viajou/");
+        webView.loadUrl("https://crud-lbk4.onrender.com");
         webView.getSettings().setJavaScriptEnabled(true); // permitindo o JavaScript
 
         webView.setWebViewClient(new WebViewClient(){ // cria uma classe para não abrir no navegador ou aplicativo
