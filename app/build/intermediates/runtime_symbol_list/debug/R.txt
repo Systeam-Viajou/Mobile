@@ -3144,6 +3144,7 @@ int drawable erroicon 0x7f0800b0
 int drawable exposicoesfoto 0x7f0800b1
 int drawable facebook 0x7f0800b2
 int drawable fadecardeventos 0x7f0800b3
+int drawable faderoxo 0x7f08016c
 int drawable feirafoto 0x7f0800b4
 int drawable festivaldemusicajovem 0x7f0800b5
 int drawable festivalfoto 0x7f0800b6
@@ -3423,7 +3424,6 @@ int id arc 0x7f0a0057
 int id areaTelaConfiguracao 0x7f0a0058
 int id asConfigured 0x7f0a0059
 int id async 0x7f0a005a
-int id aumentarTelaTourVirtual 0x7f0a005b
 int id auto 0x7f0a005c
 int id autoComplete 0x7f0a005d
 int id autoCompleteToEnd 0x7f0a005e
@@ -3463,6 +3463,7 @@ int id btVoltarLoginEsqSenha 0x7f0a007f
 int id btVoltarTourVirtual 0x7f0a0080
 int id button 0x7f0a0081
 int id button2 0x7f0a0082
+int id button3 0x7f0a0314
 int id buttonPanel 0x7f0a0083
 int id cache_measures 0x7f0a0084
 int id cadastrar 0x7f0a0085
@@ -3660,6 +3661,8 @@ int id imageView10 0x7f0a0144
 int id imageView11 0x7f0a0145
 int id imageView12 0x7f0a0146
 int id imageView13 0x7f0a0147
+int id imageView15 0x7f0a0315
+int id imageView16 0x7f0a0316
 int id imageView2 0x7f0a0148
 int id imageView3 0x7f0a0149
 int id imageView4 0x7f0a014a
@@ -3671,7 +3674,6 @@ int id imageView9 0x7f0a014f
 int id img1 0x7f0a0150
 int id img2 0x7f0a0151
 int id img3 0x7f0a0152
-int id img360TourVirtual 0x7f0a0153
 int id img4 0x7f0a0154
 int id img5 0x7f0a0155
 int id imgApresentacao 0x7f0a0156
@@ -3691,6 +3693,7 @@ int id imgPerfil 0x7f0a0163
 int id imgPerfilToolbar 0x7f0a0164
 int id imgSemResultado 0x7f0a0165
 int id imgShow 0x7f0a0166
+int id imgTourCompleto 0x7f0a0317
 int id immediateStop 0x7f0a0167
 int id include 0x7f0a0168
 int id include2 0x7f0a0169
@@ -3869,6 +3872,8 @@ int id postLayout 0x7f0a0215
 int id precoCardExcursoes 0x7f0a0216
 int id pressed 0x7f0a0217
 int id progressBar 0x7f0a0218
+int id progressBar2 0x7f0a0312
+int id progressBar3 0x7f0a0313
 int id progressBarImagem 0x7f0a0219
 int id progressBarInfo 0x7f0a021a
 int id progress_circular 0x7f0a021b
@@ -3877,8 +3882,10 @@ int id qntAvaliacoes 0x7f0a021d
 int id qntdPessoasCardExcur 0x7f0a021e
 int id radio 0x7f0a021f
 int id ratingBar 0x7f0a0220
+int id ratingBar2 0x7f0a0318
 int id ratio 0x7f0a0221
 int id rectangles 0x7f0a0222
+int id recycleRelacionados 0x7f0a0319
 int id recyclerContinuarHome 0x7f0a0223
 int id recyclerEventos 0x7f0a0224
 int id recyclerExcursoes 0x7f0a0225
@@ -4014,6 +4021,8 @@ int id textView13 0x7f0a02a6
 int id textView14 0x7f0a02a7
 int id textView15 0x7f0a02a8
 int id textView16 0x7f0a02a9
+int id textView17 0x7f0a031a
+int id textView18 0x7f0a031b
 int id textView2 0x7f0a02aa
 int id textView3 0x7f0a02ab
 int id textView4 0x7f0a02ac
@@ -4095,6 +4104,7 @@ int id valAvaliacoes 0x7f0a02f7
 int id vertical_only 0x7f0a02f8
 int id videoView 0x7f0a02f9
 int id view 0x7f0a02fa
+int id view2 0x7f0a031c
 int id viewPagerHome 0x7f0a02fb
 int id view_offset_helper 0x7f0a02fc
 int id view_transition 0x7f0a02fd
@@ -4102,6 +4112,7 @@ int id view_tree_lifecycle_owner 0x7f0a02fe
 int id view_tree_on_back_pressed_dispatcher_owner 0x7f0a02ff
 int id view_tree_saved_state_registry_owner 0x7f0a0300
 int id view_tree_view_model_store_owner 0x7f0a0301
+int id viewik 0x7f0a031d
 int id visible 0x7f0a0302
 int id visible_removing_fragment_view_tag 0x7f0a0303
 int id webView 0x7f0a0304
@@ -4255,6 +4266,7 @@ int layout activity_tela_sms 0x7f0d002d
 int layout activity_tela_tour1 0x7f0d002e
 int layout activity_tela_tour2 0x7f0d002f
 int layout activity_tela_tour3 0x7f0d0030
+int layout activity_tela_tour_completo 0x7f0d0095
 int layout activity_tela_tour_conteudo 0x7f0d0031
 int layout browser_actions_context_menu_page 0x7f0d0032
 int layout browser_actions_context_menu_row 0x7f0d0033

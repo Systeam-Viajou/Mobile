@@ -24,6 +24,8 @@ public interface ApiViajou {
     @POST("/viajouapi/usuarios/inserir")
     Call<Usuario> inserirUsuario(@Body Usuario usuario);
 
+    @POST("/viajouapi/classificacoes/inserir")
+    Call<Classificacao> inserirClassificacao(@Body Classificacao classificacao);
     @GET("/viajouapi/usuarios/buscar/username/{username}")
     Call<Usuario> buscarUsername(@Path("username") String username);
 
@@ -35,10 +37,8 @@ public interface ApiViajou {
 
     @GET("/viajouapi/excursoes/buscar/paginado")
     Call<List<Excursao>> buscarExcursaoPaginado(@Query("offset") int offset, @Query("limit") int limit);
-
     @GET("/viajouapi/usuarios/buscar/email/{email}")
     Call<Usuario> buscarEmail(@Path("email") String email);
-
     @PATCH("/viajouapi/usuarios/atualizarParcial/{uid}")
     Call<String> atualizarParcial(@Path("uid") String uid, @Body Map<String, Object> atualizacoes);
 
