@@ -52,6 +52,7 @@ public class TelaTour3 extends AppCompatActivity {
                 Intent intent = new Intent(TelaTour3.this, TelaTourConteudo.class);
                 intent.putExtras(bundle);
                 startActivity(intent);
+                finish();
             }
         }, 4000);;
     }

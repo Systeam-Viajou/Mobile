@@ -88,12 +88,12 @@ public class TelaCardAberto extends Fragment {
         imgBanner = view.findViewById(R.id.imgBanner);
         btIniciarTourVirtual = view.findViewById(R.id.btIniciarTour);
         btIniciarTourVirtual.setEnabled(false);
+        btIniciarTourVirtual.setVisibility(View.INVISIBLE);
         intent = new Intent(getContext(), TelaTour1.class);
 
         btIniciarTourVirtual.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(intent);
+            public void onClick(View v) {startActivity(intent);
             }
         });
         progressBarImg = view.findViewById(R.id.progressBarImagem);
@@ -173,6 +173,10 @@ public class TelaCardAberto extends Fragment {
                     if(tour.getAtracao().isAcessibilidade()){
                         iconAcess.setVisibility(getView().VISIBLE);
                     }
+                    if(tour.getAtracao().getTipo().getNome().equals("tour-virtual")){
+                        btIniciarTourVirtual.setEnabled(true);
+                        btIniciarTourVirtual.setVisibility(View.VISIBLE);
+                    }
                     valClassificacao.setText(String.format("%.2f", tour.getAtracao().getMediaClassificacao()));
                     titulo.setVisibility(getView().VISIBLE);
                     descricao.setVisibility(getView().VISIBLE);
@@ -180,8 +184,8 @@ public class TelaCardAberto extends Fragment {
                     progressBarInfo.setVisibility(View.GONE);
                     bundle.putString("nome", tour.getAtracao().getNome());
                     bundle.putLong("idTour", tour.getId());
+                    bundle.putLong("idAtracao", tour.getAtracao().getId());
                     intent.putExtras(bundle);
-                    btIniciarTourVirtual.setEnabled(true);
                 } else {
                     Log.e("GET_ERROR", "Código de erro: " + response.code());
                     Intent intent = new Intent(getActivity(), TelaErroInterno.class);

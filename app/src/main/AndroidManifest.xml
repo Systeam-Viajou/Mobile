@@ -31,6 +31,9 @@
         android:theme="@style/Theme.FragmentAndroid"
         tools:targetApi="31">
         <activity
+            android:name=".Telas.TelasTour.TelaTourCompleto"
+            android:exported="false" />
+        <activity
             android:name=".Telas.TelasSecundarias.TelAreaRestrita"
             android:exported="false" />
         <activity
@@ -51,11 +54,6 @@
         <activity
             android:name=".Telas.TelasTour.TelaTourConteudo"
             android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
-        <activity
-            android:name=".Telas.TelasTour.TelaTour4"
-            android:exported="false"
-            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name=".Telas.TelasTour.TelaTour3"

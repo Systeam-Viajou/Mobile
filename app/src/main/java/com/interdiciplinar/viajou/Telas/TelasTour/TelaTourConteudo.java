@@ -4,10 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.MutableLiveData;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.interdiciplinar.viajou.Api.ApiViajou;
@@ -27,8 +31,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class TelaTourConteudo extends AppCompatActivity {
     Retrofit retrofit;
+    WebView webView;
     Button btVoltar, btProximo;
     TextView descricao, titulo;
+    ProgressBar progressBarWeb, progressBarInfo;
     int whereIam = 0;
     List<Conteudo> conteudos;
     @Override
@@ -43,6 +49,11 @@ public class TelaTourConteudo extends AppCompatActivity {
         descricao = findViewById(R.id.descricaoTourVirtual);
         titulo = findViewById(R.id.tituloTourVirtual);
         btVoltar.setVisibility(View.INVISIBLE);
+        webView = findViewById(R.id.webViewTourVirtual);
+        descricao.setVisibility(View.INVISIBLE);
+        titulo.setVisibility(View.INVISIBLE);
+        progressBarWeb = findViewById(R.id.progressBar2);
+        progressBarInfo = findViewById(R.id.progressBar3);
 
         btVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,29 +68,53 @@ public class TelaTourConteudo extends AppCompatActivity {
             public void onClick(View view) {
                 whereIam++;
                 if (whereIam == conteudos.size()){
-
+                    Intent intent = new Intent(TelaTourConteudo.this, TelaTourCompleto.class);
+                    intent.putExtras(bundle);
+                    startActivity(intent);
+                    finish();
                 }
-                setConteudoTour();
+                else{
+                    setConteudoTour();
+                }
+
             }
         });
     }
 
     public void setConteudoTour(){
+        progressBarInfo.setVisibility(View.INVISIBLE);
         if(whereIam == 0){
             btVoltar.setVisibility(View.INVISIBLE);
-            btProximo.setVisibility(View.VISIBLE);
+            btProximo.setText("Próximo");
         }
         else if (whereIam == conteudos.size() - 1){
             btProximo.setText("Finlizar");
             btVoltar.setVisibility(View.VISIBLE);
         }
         else{
-            btProximo.setVisibility(View.VISIBLE);
+            btProximo.setText("Próximo");
             btVoltar.setVisibility(View.VISIBLE);
         }
 
         titulo.setText(conteudos.get(whereIam).getTitulo());
+        titulo.setVisibility(View.VISIBLE);
         descricao.setText(conteudos.get(whereIam).getDescricao());
+        descricao.setVisibility(View.VISIBLE);
+        webView.loadUrl(conteudos.get(whereIam).getUrlImagem());
+        webView.getSettings().setJavaScriptEnabled(true);
+
+        webView.setWebViewClient(new WebViewClient(){
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                super.onPageStarted(view, url, favicon);
+                progressBarWeb.setVisibility(View.VISIBLE);
+            }
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+                progressBarWeb.setVisibility(View.INVISIBLE);
+            }
+        });
     }
 
     private void pegarTourVirtual(Long id) {
