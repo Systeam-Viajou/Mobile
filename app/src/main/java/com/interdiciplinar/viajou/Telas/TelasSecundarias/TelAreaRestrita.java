@@ -38,6 +38,8 @@ public class TelAreaRestrita extends AppCompatActivity {
 
         setaVoltarToolbar.setOnClickListener(v -> finish());
 
+        loading.setVisibility(View.VISIBLE);
+
         webView.loadUrl("https://crud-lbk4.onrender.com");
         webView.getSettings().setJavaScriptEnabled(true); // permitindo o JavaScript
 
