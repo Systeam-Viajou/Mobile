@@ -24,6 +24,8 @@ import com.interdiciplinar.viajou.Api.ApiViajou;
 import com.interdiciplinar.viajou.Models.Evento;
 import com.interdiciplinar.viajou.R;
 import com.interdiciplinar.viajou.Telas.TelasErro.TelaErroInterno;
+import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaConfiguracao;
+import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaNotificacao;
 import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaPerfil;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.EventoAdapter;
 
@@ -44,7 +46,7 @@ public class TelaEventosFragment extends Fragment {
     private EventoAdapter eventoAdapter;
     private ProgressBar progressBar;
     private SearchView searchView;
-    private ImageView iconLupa, iconToolbar, imgSemResultado;
+    private ImageView iconLupa, iconToolbar, imgSemResultado, iconNotifi, iconConfig;
 
     public TelaEventosFragment() {}
 
@@ -63,6 +65,8 @@ public class TelaEventosFragment extends Fragment {
         recyclerView = view.findViewById(R.id.recyclerEventos);
         progressBar = view.findViewById(R.id.progressBar);
         imgSemResultado = view.findViewById(R.id.imgSemResultado);
+        iconNotifi = view.findViewById(R.id.iconNotifiToolbar);
+        iconConfig = view.findViewById(R.id.iconConfigToolbar);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         eventoAdapter = new EventoAdapter(new ArrayList<>(), getContext(), recyclerView, imgSemResultado);
@@ -79,13 +83,20 @@ public class TelaEventosFragment extends Fragment {
     private void setupToolbarIcons() {
         FirebaseAuth autenticar = FirebaseAuth.getInstance();
         FirebaseUser userLogin = autenticar.getCurrentUser();
-
-        Glide.with(this).load(userLogin.getPhotoUrl())
-                .centerCrop()
-                .into(iconToolbar);
+        Glide.with(this).load(userLogin.getPhotoUrl()).centerCrop().into(iconToolbar);
 
         iconToolbar.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), TelaPerfil.class);
+            startActivity(intent);
+        });
+
+        iconNotifi.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), TelaNotificacao.class);
+            startActivity(intent);
+        });
+
+        iconConfig.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), TelaConfiguracao.class);
             startActivity(intent);
         });
     }

@@ -25,6 +25,8 @@ import com.interdiciplinar.viajou.R;
 import com.interdiciplinar.viajou.Telas.TelasErro.TelaErroInterno;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.EventoAdapter;
 import com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters.ExcursaoAdapter;
+import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaConfiguracao;
+import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaNotificacao;
 import com.interdiciplinar.viajou.Telas.TelasSecundarias.TelaPerfil;
 
 import java.util.ArrayList;
@@ -46,7 +48,7 @@ public class TelaExcursoesFragment extends Fragment {
     private ProgressBar progressBar;
     private SearchView searchView;
     private SearchView.SearchAutoComplete searchEditText;
-    private ImageView iconLupa, iconToolbar, imgSemResultado;
+    private ImageView iconLupa, iconToolbar, imgSemResultado, iconNotifi, iconConfig;
 
     public TelaExcursoesFragment() {}
 
@@ -70,6 +72,8 @@ public class TelaExcursoesFragment extends Fragment {
         recyclerView = view.findViewById(R.id.recyclerExcursoes);
         progressBar = view.findViewById(R.id.progressBar);
         imgSemResultado = view.findViewById(R.id.imgSemResultado);
+        iconNotifi = view.findViewById(R.id.iconNotifiToolbar);
+        iconConfig = view.findViewById(R.id.iconConfigToolbar);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         excursaoAdapter = new ExcursaoAdapter(new ArrayList<>(), getContext(), recyclerView, imgSemResultado);
@@ -83,16 +87,23 @@ public class TelaExcursoesFragment extends Fragment {
         return view;
     }
 
-    public void setupToolbarIcons() {
+    private void setupToolbarIcons() {
         FirebaseAuth autenticar = FirebaseAuth.getInstance();
         FirebaseUser userLogin = autenticar.getCurrentUser();
-
-        Glide.with(this).load(userLogin.getPhotoUrl())
-                .centerCrop()
-                .into(iconToolbar);
+        Glide.with(this).load(userLogin.getPhotoUrl()).centerCrop().into(iconToolbar);
 
         iconToolbar.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), TelaPerfil.class);
+            startActivity(intent);
+        });
+
+        iconNotifi.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), TelaNotificacao.class);
+            startActivity(intent);
+        });
+
+        iconConfig.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), TelaConfiguracao.class);
             startActivity(intent);
         });
     }

@@ -6,6 +6,7 @@ import com.interdiciplinar.viajou.Models.Evento;
 import com.interdiciplinar.viajou.Models.Excursao;
 import com.interdiciplinar.viajou.Models.Imagem;
 import com.interdiciplinar.viajou.Models.Tour;
+import com.interdiciplinar.viajou.Models.TourMongo;
 import com.interdiciplinar.viajou.Models.Usuario;
 
 import retrofit2.Call;
@@ -23,12 +24,21 @@ public interface ApiViajou {
     @POST("/viajouapi/usuarios/inserir")
     Call<Usuario> inserirUsuario(@Body Usuario usuario);
 
+    @POST("/viajouapi/classificacoes/inserir")
+    Call<Classificacao> inserirClassificacao(@Body Classificacao classificacao);
     @GET("/viajouapi/usuarios/buscar/username/{username}")
     Call<Usuario> buscarUsername(@Path("username") String username);
 
+    @GET("/viajouapi/mongo/touresvirtuais/buscar/{idTurismo}")
+    Call<TourMongo> buscarTourVirtual(@Path("idTurismo") Long idTurismo);
+
+    @GET("/viajouapi/eventos/buscar/paginado")
+    Call<List<Evento>> buscarEventoPaginado(@Query("offset") int offset, @Query("limit") int limit);
+
+    @GET("/viajouapi/excursoes/buscar/paginado")
+    Call<List<Excursao>> buscarExcursaoPaginado(@Query("offset") int offset, @Query("limit") int limit);
     @GET("/viajouapi/usuarios/buscar/email/{email}")
     Call<Usuario> buscarEmail(@Path("email") String email);
-
     @PATCH("/viajouapi/usuarios/atualizarParcial/{uid}")
     Call<String> atualizarParcial(@Path("uid") String uid, @Body Map<String, Object> atualizacoes);
 
@@ -36,7 +46,10 @@ public interface ApiViajou {
     Call<List<Evento>> buscarEvento();
 
     @GET("/viajouapi/atracoes/aleatorias")
-    Call<List<Atracao>> buscarAtracoes();
+    Call<List<Atracao>> buscarAtracoesAleatoria();
+
+    @GET("viajouapi/pontosturisticos/buscar")
+    Call<List<Tour>> buscarTurismo();
 
     @GET("viajouapi/pontosturisticos/aleatorios")
     Call<List<Tour>> buscarTurismoAleatorio();
