@@ -34,6 +34,12 @@ public class Classificacao {
         this.usuario = usuario;
     }
 
+    public Classificacao(Float nota, Usuario usuario, Atracao atracao) {
+        this.nota = nota;
+        this.usuario = usuario;
+        this.atracao = atracao;
+    }
+
     public Atracao getAtracao() {
         return atracao;
     }

@@ -3145,6 +3145,7 @@ drawable erroicon
 drawable exposicoesfoto
 drawable facebook
 drawable fadecardeventos
+drawable faderoxo
 drawable feirafoto
 drawable festivaldemusicajovem
 drawable festivalfoto
@@ -3424,7 +3425,6 @@ id arc
 id areaTelaConfiguracao
 id asConfigured
 id async
-id aumentarTelaTourVirtual
 id auto
 id autoComplete
 id autoCompleteToEnd
@@ -3464,6 +3464,7 @@ id btVoltarLoginEsqSenha
 id btVoltarTourVirtual
 id button
 id button2
+id button3
 id buttonPanel
 id cache_measures
 id cadastrar
@@ -3661,6 +3662,8 @@ id imageView10
 id imageView11
 id imageView12
 id imageView13
+id imageView15
+id imageView16
 id imageView2
 id imageView3
 id imageView4
@@ -3672,7 +3675,6 @@ id imageView9
 id img1
 id img2
 id img3
-id img360TourVirtual
 id img4
 id img5
 id imgApresentacao
@@ -3692,6 +3694,7 @@ id imgPerfil
 id imgPerfilToolbar
 id imgSemResultado
 id imgShow
+id imgTourCompleto
 id immediateStop
 id include
 id include2
@@ -3870,6 +3873,8 @@ id postLayout
 id precoCardExcursoes
 id pressed
 id progressBar
+id progressBar2
+id progressBar3
 id progressBarImagem
 id progressBarInfo
 id progress_circular
@@ -3878,8 +3883,10 @@ id qntAvaliacoes
 id qntdPessoasCardExcur
 id radio
 id ratingBar
+id ratingBar2
 id ratio
 id rectangles
+id recycleRelacionados
 id recyclerContinuarHome
 id recyclerEventos
 id recyclerExcursoes
@@ -4015,6 +4022,8 @@ id textView13
 id textView14
 id textView15
 id textView16
+id textView17
+id textView18
 id textView2
 id textView3
 id textView4
@@ -4096,6 +4105,7 @@ id valAvaliacoes
 id vertical_only
 id videoView
 id view
+id view2
 id viewPagerHome
 id view_offset_helper
 id view_transition
@@ -4103,6 +4113,7 @@ id view_tree_lifecycle_owner
 id view_tree_on_back_pressed_dispatcher_owner
 id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
+id viewik
 id visible
 id visible_removing_fragment_view_tag
 id webView
@@ -4256,6 +4267,7 @@ layout activity_tela_sms
 layout activity_tela_tour1
 layout activity_tela_tour2
 layout activity_tela_tour3
+layout activity_tela_tour_completo
 layout activity_tela_tour_conteudo
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row

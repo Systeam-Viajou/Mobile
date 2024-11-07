@@ -47,6 +47,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.FragmentAndroid" >
         <activity
+            android:name="com.interdiciplinar.viajou.Telas.TelasTour.TelaTourCompleto"
+            android:exported="false" />
+        <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasSecundarias.TelAreaRestrita"
             android:exported="false" />
         <activity
@@ -67,11 +70,6 @@
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasTour.TelaTourConteudo"
             android:exported="false"
-            android:theme="@style/Base.Theme.Viajou" />
-        <activity
-            android:name="com.interdiciplinar.viajou.Telas.TelasTour.TelaTour4"
-            android:exported="false"
-            android:screenOrientation="portrait"
             android:theme="@style/Base.Theme.Viajou" />
         <activity
             android:name="com.interdiciplinar.viajou.Telas.TelasTour.TelaTour3"
