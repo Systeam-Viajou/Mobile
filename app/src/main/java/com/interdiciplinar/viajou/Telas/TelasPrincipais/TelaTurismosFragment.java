@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.widget.SearchView;
 import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -70,6 +71,7 @@ public class TelaTurismosFragment extends Fragment {
     RespostaTurismoAdapter respostaAdapter;
     ProgressBar progressBarResposta;
     ScrollView scrollViewConteudo;
+    ConstraintLayout constraintResposta;
 
 
     public TelaTurismosFragment() {
@@ -105,6 +107,7 @@ public class TelaTurismosFragment extends Fragment {
         imgSemResultadoTurismo = view.findViewById(R.id.imgSemResultadoTurismo);
         scrollViewConteudo = view.findViewById(R.id.scrollViewConteudo);
         iconConfig = view.findViewById(R.id.iconConfigToolbar);
+        constraintResposta = view.findViewById(R.id.constraintResposta);
 
         recyclerPertoTurismo = view.findViewById(R.id.recyclerPertoTurismo);
         recyclerPertoTurismo.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
@@ -120,7 +123,7 @@ public class TelaTurismosFragment extends Fragment {
         recyclerResposta.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
 
-        respostaAdapter = new RespostaTurismoAdapter(new ArrayList<>(), getContext(), recyclerResposta, imgSemResultadoTurismo, scrollViewConteudo);
+        respostaAdapter = new RespostaTurismoAdapter(new ArrayList<>(), getContext(), constraintResposta, imgSemResultadoTurismo, scrollViewConteudo);
         recyclerResposta.setAdapter(respostaAdapter);
 
         setupToolbarIcons();

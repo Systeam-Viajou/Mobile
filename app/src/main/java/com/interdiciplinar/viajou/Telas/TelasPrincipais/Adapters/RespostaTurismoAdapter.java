@@ -14,6 +14,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -45,15 +46,15 @@ public class RespostaTurismoAdapter extends RecyclerView.Adapter<RespostaTurismo
     private Map<Long, Imagem> imagensMap = new HashMap<>(); // Mapa para armazenar imagens por ID da atração
     private List<Tour> turismOriginais; // Lista completa de eventos
     private Retrofit retrofit2;
-    private RecyclerView recyclerTurismos;
+    private ConstraintLayout constraintResposta;
     private ImageView imgSemResultado;
     private ScrollView scrollviewConteudoTur;
 
-    public RespostaTurismoAdapter(List<Tour> tourList, Context context, RecyclerView recyclerTurismos, ImageView imgSemResultado, ScrollView scrollviewConteudoTur) {
+    public RespostaTurismoAdapter(List<Tour> tourList, Context context, ConstraintLayout constraintResposta, ImageView imgSemResultado, ScrollView scrollviewConteudoTur) {
         this.turismList = tourList;
         this.context = context;
         this.turismOriginais = new ArrayList<>(turismList); // Armazena uma cópia da lista completa
-        this.recyclerTurismos = recyclerTurismos;
+        this.constraintResposta = constraintResposta;
         this.imgSemResultado = imgSemResultado;
         this.scrollviewConteudoTur = scrollviewConteudoTur;
 
@@ -173,7 +174,7 @@ public class RespostaTurismoAdapter extends RecyclerView.Adapter<RespostaTurismo
             turismList.addAll(turismOriginais);
 
             // Exibir a RecyclerView e esconder imgSemResultado
-            recyclerTurismos.setVisibility(View.INVISIBLE);
+            constraintResposta.setVisibility(View.INVISIBLE);
             imgSemResultado.setVisibility(View.GONE);
             scrollviewConteudoTur.setVisibility(View.VISIBLE);
         } else {
@@ -191,11 +192,12 @@ public class RespostaTurismoAdapter extends RecyclerView.Adapter<RespostaTurismo
 
             if (turismosFiltrados.isEmpty()) {
                 // Se não houver correspondências, mostra imgSemResultado e esconde recyclerEventos
-                recyclerTurismos.setVisibility(View.INVISIBLE);
+                constraintResposta.setVisibility(View.INVISIBLE);
                 imgSemResultado.setVisibility(View.VISIBLE);
                 scrollviewConteudoTur.setVisibility(View.GONE);
             } else {
-                recyclerTurismos.setVisibility(View.VISIBLE);
+
+                constraintResposta.setVisibility(View.VISIBLE);
                 imgSemResultado.setVisibility(View.GONE);
                 scrollviewConteudoTur.setVisibility(View.GONE);
             }
