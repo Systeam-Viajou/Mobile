@@ -128,7 +128,6 @@ font montserrat_thin
 font spartan
 font spartan_bold
 id ajudaTelaConfiguracao
-id apple
 id apresentacoes
 id apresentacoesLayout
 id areaTelaConfiguracao
@@ -187,7 +186,6 @@ id eventos
 id excursoes
 id exposicoes
 id exposicoesLayout
-id facebook
 id fadeCardEventos
 id fadeTourVirtual
 id feiras
@@ -225,7 +223,6 @@ id imageView16
 id imageView2
 id imageView3
 id imageView4
-id imageView5
 id imageView6
 id imageView7
 id imageView8
@@ -245,8 +242,11 @@ id imgCarrossel
 id imgErroInterno
 id imgErroWifi
 id imgExposicoes
+id imgFacebook
 id imgFeiras
 id imgFestival
+id imgGoogle
+id imgMicrosoft
 id imgNotificacao1
 id imgPerfil
 id imgPerfilToolbar

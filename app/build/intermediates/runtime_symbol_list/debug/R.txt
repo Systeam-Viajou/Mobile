@@ -3417,7 +3417,6 @@ int id animateToEnd 0x7f0a0050
 int id animateToStart 0x7f0a0051
 int id antiClockwise 0x7f0a0052
 int id anticipate 0x7f0a0053
-int id apple 0x7f0a0054
 int id apresentacoes 0x7f0a0055
 int id apresentacoesLayout 0x7f0a0056
 int id arc 0x7f0a0057
@@ -3588,7 +3587,6 @@ int id expand_activities_button 0x7f0a00fb
 int id expanded_menu 0x7f0a00fc
 int id exposicoes 0x7f0a00fd
 int id exposicoesLayout 0x7f0a00fe
-int id facebook 0x7f0a00ff
 int id fade 0x7f0a0100
 int id fadeCardEventos 0x7f0a0101
 int id fadeTourVirtual 0x7f0a0102
@@ -3666,7 +3664,6 @@ int id imageView16 0x7f0a0149
 int id imageView2 0x7f0a014a
 int id imageView3 0x7f0a014b
 int id imageView4 0x7f0a014c
-int id imageView5 0x7f0a014d
 int id imageView6 0x7f0a014e
 int id imageView7 0x7f0a014f
 int id imageView8 0x7f0a0150
@@ -3686,8 +3683,11 @@ int id imgCarrossel 0x7f0a015d
 int id imgErroInterno 0x7f0a015e
 int id imgErroWifi 0x7f0a015f
 int id imgExposicoes 0x7f0a0160
+int id imgFacebook 0x7f0a0328
 int id imgFeiras 0x7f0a0161
 int id imgFestival 0x7f0a0162
+int id imgGoogle 0x7f0a0329
+int id imgMicrosoft 0x7f0a032a
 int id imgNotificacao1 0x7f0a0163
 int id imgPerfil 0x7f0a0164
 int id imgPerfilToolbar 0x7f0a0165

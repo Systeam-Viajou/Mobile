@@ -121,7 +121,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/facebook"
+        app:layout_constraintTop_toTopOf="@+id/imgFacebook"
         app:layout_constraintVertical_bias="0.333"
         app:srcCompat="@drawable/cordinha" />
 
@@ -149,19 +149,19 @@
         app:layout_constraintStart_toEndOf="@+id/txt" />
 
     <ImageView
-        android:id="@+id/apple"
+        android:id="@+id/imgMicrosoft"
         android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginTop="36dp"
         app:circularflow_defaultAngle="24112"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.259"
-        app:layout_constraintStart_toEndOf="@+id/facebook"
+        app:layout_constraintStart_toEndOf="@+id/imgFacebook"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@drawable/microsoftvetor" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imgGoogle"
         android:layout_width="69dp"
         android:layout_height="70dp"
         android:layout_marginStart="84dp"
@@ -171,7 +171,7 @@
         app:srcCompat="@drawable/google" />
 
     <ImageView
-        android:id="@+id/facebook"
+        android:id="@+id/imgFacebook"
         android:layout_width="47dp"
         android:layout_height="46dp"
         android:layout_marginTop="32dp"

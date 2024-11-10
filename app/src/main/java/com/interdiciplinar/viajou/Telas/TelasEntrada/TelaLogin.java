@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +31,7 @@ public class TelaLogin extends AppCompatActivity {
     SharedPreferences preferences;
     SharedPreferences.Editor editor;
     FirebaseAuth autentificar;
+    ImageView imgGoogle, imgFacebook, imgMicrosoft;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,10 @@ public class TelaLogin extends AppCompatActivity {
         msgErroSenha.setVisibility(View.INVISIBLE);
         msgErroEmail.setVisibility(View.INVISIBLE);
 
+        imgGoogle = findViewById(R.id.imgGoogle);
+        imgFacebook = findViewById(R.id.imgFacebook);
+        imgMicrosoft = findViewById(R.id.imgMicrosoft);
+
         EditText email = findViewById(R.id.emailLayout);
         EditText senha = findViewById(R.id.senhaLayout);
 
@@ -50,6 +56,27 @@ public class TelaLogin extends AppCompatActivity {
         btEntrar = findViewById(R.id.btEntrar);
         btCadastrar = findViewById(R.id.cadastrar);
         cbLembrar = findViewById(R.id.mantenhaConectado);
+
+        imgGoogle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(TelaLogin.this, "Em breve", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        imgFacebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(TelaLogin.this, "Em breve", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        imgMicrosoft.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(TelaLogin.this, "Em breve", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         autentificar = FirebaseAuth.getInstance();
         FirebaseUser userLogin = autentificar.getCurrentUser();
