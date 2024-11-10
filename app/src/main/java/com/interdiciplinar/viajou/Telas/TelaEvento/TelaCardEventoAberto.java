@@ -30,6 +30,7 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Locale;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -159,7 +160,7 @@ public class TelaCardEventoAberto extends Fragment {
                     }
                     String valorS = String.format("R$ %.2f", evento.getPrecoPessoa());
                     valor.setText(valorS + " por pessoa");
-                    valClassificacao.setText(String.format("%.2f", evento.getAtracao().getMediaClassificacao()));
+                    valClassificacao.setText(String.format(Locale.US, "%.1f", evento.getAtracao().getMediaClassificacao()));
                     DateTimeFormatter inputFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'").withZone(ZoneId.of("UTC"));
 
                     // Formatos desejados para saída

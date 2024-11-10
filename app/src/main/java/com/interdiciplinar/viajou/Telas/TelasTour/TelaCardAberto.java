@@ -31,6 +31,7 @@ import com.interdiciplinar.viajou.Telas.TelasErro.TelaErroInterno;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Locale;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -177,7 +178,8 @@ public class TelaCardAberto extends Fragment {
                         btIniciarTourVirtual.setEnabled(true);
                         btIniciarTourVirtual.setVisibility(View.VISIBLE);
                     }
-                    valClassificacao.setText(String.format("%.2f", tour.getAtracao().getMediaClassificacao()));
+
+                    valClassificacao.setText(String.format(Locale.US, "%.1f", tour.getAtracao().getMediaClassificacao()));
                     titulo.setVisibility(getView().VISIBLE);
                     descricao.setVisibility(getView().VISIBLE);
                     endereco.setVisibility(getView().VISIBLE);
