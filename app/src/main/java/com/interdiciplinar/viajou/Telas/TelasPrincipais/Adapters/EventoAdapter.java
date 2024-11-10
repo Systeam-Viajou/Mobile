@@ -1,6 +1,7 @@
 package com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -17,6 +21,8 @@ import com.interdiciplinar.viajou.Api.ApiViajou;
 import com.interdiciplinar.viajou.Models.Evento;
 import com.interdiciplinar.viajou.Models.Imagem;
 import com.interdiciplinar.viajou.R;
+import com.interdiciplinar.viajou.Telas.TelaEvento.TelaCardEventoAberto;
+import com.interdiciplinar.viajou.Telas.TelasTour.TelaCardAberto;
 
 import java.text.Normalizer;
 import java.text.SimpleDateFormat;
@@ -124,6 +130,32 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventoView
             holder.imgCardEventos.setImageResource(R.drawable.imgcardeventos);
             buscarImagem(evento.getAtracao().getId(), holder);
         }
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    // Instancia o fragmento que deseja abrir
+                    Fragment telaCardAberto = new TelaCardEventoAberto();
+                    Bundle bundle = new Bundle();
+                    bundle.putLong("id", evento.getAtracao().getId());
+                    telaCardAberto.setArguments(bundle);
+
+                    // Verifica se o contexto é uma instância de AppCompatActivity
+                    if (context instanceof AppCompatActivity) {
+                        FragmentManager fragmentManager = ((AppCompatActivity) context).getSupportFragmentManager();
+
+                        // Inicia a transação do fragmento
+                        fragmentManager.beginTransaction()
+                                .setCustomAnimations(
+                                        R.anim.vindo_de_baixo,  // Animação para o fragmento que entra
+                                        R.anim.indo_de_baixo    // Animação para o fragmento que sai
+                                )
+                                .replace(R.id.frameLayout, telaCardAberto) // Substitua 'R.id.container' pelo ID do layout onde deseja adicionar o fragmento
+                                .addToBackStack(null) // Adiciona à pilha de volta
+                                .commit();
+                    }
+            }
+        });
     }
 
     @Override
