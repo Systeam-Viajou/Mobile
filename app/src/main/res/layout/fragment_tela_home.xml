@@ -216,6 +216,50 @@
                 app:layout_constraintTop_toTopOf="@+id/cardView"
                 app:srcCompat="@drawable/setaesqcarrossel" />
 
+            <ProgressBar
+                android:id="@+id/progresRecomendado"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/recyclerRecomenHome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/recyclerRecomenHome" />
+
+            <ProgressBar
+                android:id="@+id/progressPopulares"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/recyclerPopularesHome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/recyclerPopularesHome" />
+
+            <ProgressBar
+                android:id="@+id/progressPerto"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/recyclerPertoHome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/recyclerPertoHome" />
+
+            <ProgressBar
+                android:id="@+id/progressExperiencia"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/recyclerExperienciaHome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/recyclerExperienciaHome" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

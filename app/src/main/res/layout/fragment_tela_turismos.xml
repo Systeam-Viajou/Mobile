@@ -200,6 +200,61 @@
                 app:layout_constraintTop_toBottomOf="@+id/txtFamiliaTurismo"
                 tools:listitem="@layout/item_card_turismos" />
 
+            <ProgressBar
+                android:id="@+id/progressPertoTurismo"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/recyclerPertoTurismo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/recyclerPertoTurismo"
+                app:layout_constraintTop_toTopOf="@+id/recyclerPertoTurismo" />
+
+            <ProgressBar
+                android:id="@+id/progressParaVcTurismo"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/recyclerParaVcTurismo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/recyclerParaVcTurismo"
+                app:layout_constraintTop_toTopOf="@+id/recyclerParaVcTurismo" />
+
+            <ProgressBar
+                android:id="@+id/progressViagemTurismo"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/recyclerViagemTurismo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/recyclerViagemTurismo"
+                app:layout_constraintTop_toTopOf="@+id/recyclerViagemTurismo" />
+
+            <ProgressBar
+                android:id="@+id/progressMelhorTurismo"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/recyclerMelhorTurismo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/recyclerMelhorTurismo"
+                app:layout_constraintTop_toTopOf="@+id/recyclerMelhorTurismo" />
+
+            <ProgressBar
+                android:id="@+id/progressFamiliaTurismo"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/recyclerFamiliaTurismo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/recyclerFamiliaTurismo"
+                app:layout_constraintTop_toTopOf="@+id/recyclerFamiliaTurismo" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

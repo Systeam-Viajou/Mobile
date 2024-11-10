@@ -17,6 +17,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -56,6 +57,7 @@ public class TelaHomeFragment extends Fragment {
     private ViewPager2 viewPager;
     private SearchView pesquisar;
     private boolean dadosCarregados = false;
+    private ProgressBar progresRecomendado, progressPopulares, progressPerto, progressExperiencia;
 
     public TelaHomeFragment() {
         // Required empty public constructor
@@ -87,6 +89,10 @@ public class TelaHomeFragment extends Fragment {
         recyclerPerto = view.findViewById(R.id.recyclerPertoHome);
         recyclerExperiencia = view.findViewById(R.id.recyclerExperienciaHome);
         pesquisar = view.findViewById(R.id.pesquisar);
+        progresRecomendado = view.findViewById(R.id.progresRecomendado);
+        progressPopulares = view.findViewById(R.id.progressPopulares);
+        progressPerto = view.findViewById(R.id.progressPerto);
+        progressExperiencia = view.findViewById(R.id.progressExperiencia);
 
         // Setando o adapter para o recycler
         recyclerPopulares.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
@@ -205,6 +211,8 @@ public class TelaHomeFragment extends Fragment {
     }
 
     private void pegarRecomendadas() {
+        progresRecomendado.setVisibility(View.VISIBLE);
+
         retrofit = new Retrofit.Builder()
                 .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -216,6 +224,8 @@ public class TelaHomeFragment extends Fragment {
         call.enqueue(new Callback<List<Atracao>>() {
             @Override
             public void onResponse(Call<List<Atracao>> call, Response<List<Atracao>> response) {
+                progresRecomendado.setVisibility(View.GONE);
+
                 if (response.isSuccessful() && response.body() != null) {
                     List<Atracao> atracoes = response.body();
 
@@ -229,6 +239,7 @@ public class TelaHomeFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<Atracao>> call, Throwable throwable) {
+                progresRecomendado.setVisibility(View.GONE);
                 Log.e("ERRO", "Falha ao carregar atrações: " + throwable.getMessage(), throwable);
                 Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
             }
@@ -236,6 +247,8 @@ public class TelaHomeFragment extends Fragment {
     }
 
     private void pegarPopulares() {
+        progressPopulares.setVisibility(View.VISIBLE);
+
         retrofit = new Retrofit.Builder()
                 .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -247,6 +260,8 @@ public class TelaHomeFragment extends Fragment {
         call.enqueue(new Callback<List<Atracao>>() {
             @Override
             public void onResponse(Call<List<Atracao>> call, Response<List<Atracao>> response) {
+                progressPopulares.setVisibility(View.GONE);
+
                 if (response.isSuccessful() && response.body() != null) {
                     List<Atracao> atracoes = response.body();
 
@@ -260,6 +275,7 @@ public class TelaHomeFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<Atracao>> call, Throwable throwable) {
+                progressPopulares.setVisibility(View.GONE);
                 Log.e("ERRO", "Falha ao carregar atrações: " + throwable.getMessage(), throwable);
                 Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
             }
@@ -267,6 +283,8 @@ public class TelaHomeFragment extends Fragment {
     }
 
     private void pegarPerto() {
+        progressPerto.setVisibility(View.VISIBLE);
+
         retrofit = new Retrofit.Builder()
                 .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -278,6 +296,8 @@ public class TelaHomeFragment extends Fragment {
         call.enqueue(new Callback<List<Atracao>>() {
             @Override
             public void onResponse(Call<List<Atracao>> call, Response<List<Atracao>> response) {
+                progressPerto.setVisibility(View.GONE);
+
                 if (response.isSuccessful() && response.body() != null) {
                     List<Atracao> atracoes = response.body();
 
@@ -291,12 +311,15 @@ public class TelaHomeFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<Atracao>> call, Throwable throwable) {
+                progressPerto.setVisibility(View.GONE);
                 Log.e("ERRO", "Falha ao carregar atrações: " + throwable.getMessage(), throwable);
                 Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
             }
         });
     }
     private void pegarExperiencia() {
+        progressExperiencia.setVisibility(View.VISIBLE);
+
         retrofit = new Retrofit.Builder()
                 .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -308,6 +331,8 @@ public class TelaHomeFragment extends Fragment {
         call.enqueue(new Callback<List<Atracao>>() {
             @Override
             public void onResponse(Call<List<Atracao>> call, Response<List<Atracao>> response) {
+                progressExperiencia.setVisibility(View.GONE);
+
                 if (response.isSuccessful() && response.body() != null) {
                     List<Atracao> atracoes = response.body();
 
@@ -321,6 +346,7 @@ public class TelaHomeFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<Atracao>> call, Throwable throwable) {
+                progressExperiencia.setVisibility(View.GONE);
                 Log.e("ERRO", "Falha ao carregar atrações: " + throwable.getMessage(), throwable);
                 Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
             }

@@ -69,7 +69,7 @@ public class TelaTurismosFragment extends Fragment {
     private RecyclerView recyclerPertoTurismo, recyclerParaVcTurismo, recyclerViagemTurismo,
             recyclerMelhorTurismo, recyclerFamiliaTurismo, recyclerResposta;
     RespostaTurismoAdapter respostaAdapter;
-    ProgressBar progressBarResposta;
+    ProgressBar progressBarResposta, progressPertoTurismo, progressParaVcTurismo, progressViagemTurismo, progressMelhorTurismo, progressFamiliaTurismo;
     ScrollView scrollViewConteudo;
     ConstraintLayout constraintResposta;
 
@@ -108,6 +108,11 @@ public class TelaTurismosFragment extends Fragment {
         scrollViewConteudo = view.findViewById(R.id.scrollViewConteudo);
         iconConfig = view.findViewById(R.id.iconConfigToolbar);
         constraintResposta = view.findViewById(R.id.constraintResposta);
+        progressPertoTurismo = view.findViewById(R.id.progressPertoTurismo);
+        progressParaVcTurismo = view.findViewById(R.id.progressParaVcTurismo);
+        progressViagemTurismo = view.findViewById(R.id.progressViagemTurismo);
+        progressMelhorTurismo = view.findViewById(R.id.progressMelhorTurismo);
+        progressFamiliaTurismo = view.findViewById(R.id.progressFamiliaTurismo);
 
         recyclerPertoTurismo = view.findViewById(R.id.recyclerPertoTurismo);
         recyclerPertoTurismo.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
@@ -239,6 +244,7 @@ public class TelaTurismosFragment extends Fragment {
 
 
     private void pegarPerto() {
+        progressPertoTurismo.setVisibility(View.VISIBLE);
         retrofit = new Retrofit.Builder()
                 .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -250,6 +256,8 @@ public class TelaTurismosFragment extends Fragment {
         call.enqueue(new Callback<List<Tour>>() {
             @Override
             public void onResponse(Call<List<Tour>> call, Response<List<Tour>> response) {
+                progressPertoTurismo.setVisibility(View.GONE);
+
                 if (response.isSuccessful() && response.body() != null) {
                     List<Tour> tours = response.body();
 
@@ -263,12 +271,16 @@ public class TelaTurismosFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<Tour>> call, Throwable throwable) {
+                progressPertoTurismo.setVisibility(View.GONE);
                 Log.e("ERRO", "Falha ao carregar atrações: " + throwable.getMessage(), throwable);
                 Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
             }
         });
     }
+
     private void pegarParaVoce() {
+        progressParaVcTurismo.setVisibility(View.VISIBLE);
+
         retrofit = new Retrofit.Builder()
                 .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -280,6 +292,8 @@ public class TelaTurismosFragment extends Fragment {
         call.enqueue(new Callback<List<Tour>>() {
             @Override
             public void onResponse(Call<List<Tour>> call, Response<List<Tour>> response) {
+                progressParaVcTurismo.setVisibility(View.GONE);
+
                 if (response.isSuccessful() && response.body() != null) {
                     List<Tour> tours = response.body();
 
@@ -293,6 +307,7 @@ public class TelaTurismosFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<Tour>> call, Throwable throwable) {
+                progressParaVcTurismo.setVisibility(View.GONE);
                 Log.e("ERRO", "Falha ao carregar atrações: " + throwable.getMessage(), throwable);
                 Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
             }
@@ -300,6 +315,8 @@ public class TelaTurismosFragment extends Fragment {
     }
 
     private void pegarViagem() {
+        progressViagemTurismo.setVisibility(View.VISIBLE);
+
         retrofit = new Retrofit.Builder()
                 .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -311,6 +328,8 @@ public class TelaTurismosFragment extends Fragment {
         call.enqueue(new Callback<List<Tour>>() {
             @Override
             public void onResponse(Call<List<Tour>> call, Response<List<Tour>> response) {
+                progressViagemTurismo.setVisibility(View.GONE);
+
                 if (response.isSuccessful() && response.body() != null) {
                     List<Tour> tours = response.body();
 
@@ -324,6 +343,7 @@ public class TelaTurismosFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<Tour>> call, Throwable throwable) {
+                progressViagemTurismo.setVisibility(View.GONE);
                 Log.e("ERRO", "Falha ao carregar atrações: " + throwable.getMessage(), throwable);
                 Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
             }
@@ -331,6 +351,8 @@ public class TelaTurismosFragment extends Fragment {
     }
 
     private void pegarMelhor() {
+        progressMelhorTurismo.setVisibility(View.VISIBLE);
+
         retrofit = new Retrofit.Builder()
                 .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -342,6 +364,8 @@ public class TelaTurismosFragment extends Fragment {
         call.enqueue(new Callback<List<Tour>>() {
             @Override
             public void onResponse(Call<List<Tour>> call, Response<List<Tour>> response) {
+                progressMelhorTurismo.setVisibility(View.GONE);
+
                 if (response.isSuccessful() && response.body() != null) {
                     List<Tour> tours = response.body();
 
@@ -355,6 +379,7 @@ public class TelaTurismosFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<Tour>> call, Throwable throwable) {
+                progressMelhorTurismo.setVisibility(View.GONE);
                 Log.e("ERRO", "Falha ao carregar atrações: " + throwable.getMessage(), throwable);
                 Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
             }
@@ -362,6 +387,8 @@ public class TelaTurismosFragment extends Fragment {
     }
 
     private void pegarFamilia() {
+        progressFamiliaTurismo.setVisibility(View.VISIBLE);
+
         retrofit = new Retrofit.Builder()
                 .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -373,6 +400,8 @@ public class TelaTurismosFragment extends Fragment {
         call.enqueue(new Callback<List<Tour>>() {
             @Override
             public void onResponse(Call<List<Tour>> call, Response<List<Tour>> response) {
+                progressFamiliaTurismo.setVisibility(View.GONE);
+
                 if (response.isSuccessful() && response.body() != null) {
                     List<Tour> tours = response.body();
 
@@ -386,10 +415,9 @@ public class TelaTurismosFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<Tour>> call, Throwable throwable) {
+                progressFamiliaTurismo.setVisibility(View.GONE);
                 Log.e("ERRO", "Falha ao carregar atrações: " + throwable.getMessage(), throwable);
                 Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
-
-
             }
         });
     }
