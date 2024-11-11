@@ -87,7 +87,7 @@ public class TelaTourCompleto extends AppCompatActivity {
 
     private void pegarRelacionados() {
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -119,7 +119,7 @@ public class TelaTourCompleto extends AppCompatActivity {
     private void pegarAtracao(Long id) {
         // Inicializando Retrofit
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -153,7 +153,7 @@ public class TelaTourCompleto extends AppCompatActivity {
     private void pegarUsuario(String nome) {
         // Inicializando Retrofit8
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -198,7 +198,7 @@ public class TelaTourCompleto extends AppCompatActivity {
 
     private void inserirClassificacoes(Classificacao classificacao) {
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

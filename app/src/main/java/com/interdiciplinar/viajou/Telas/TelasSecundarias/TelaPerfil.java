@@ -44,7 +44,7 @@ public class TelaPerfil extends AppCompatActivity {
     TextView tituloPagina;
 
     Retrofit retrofit = new Retrofit.Builder()
-            .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+            .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .build();
 

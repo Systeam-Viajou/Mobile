@@ -143,6 +143,7 @@ id btErroSmsVoltar
 id btErroWifi
 id btIniciarTour
 id btMaisInfoCardExcursoes
+id btMaisInfoEvento
 id btProximoTourVirtual
 id btVerificarEmail
 id btVoltarLoginEsqSenha

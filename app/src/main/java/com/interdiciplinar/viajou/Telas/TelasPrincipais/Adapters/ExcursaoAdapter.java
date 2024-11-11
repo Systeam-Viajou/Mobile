@@ -1,6 +1,8 @@
 package com.interdiciplinar.viajou.Telas.TelasPrincipais.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -120,6 +122,20 @@ public class ExcursaoAdapter extends RecyclerView.Adapter<ExcursaoAdapter.Excurs
             holder.imgCardExcursoes.setImageResource(R.drawable.imgcardexcursoes);
             buscarImagem(excursao.getAtracao().getId(), holder);
         }
+
+        holder.btMaisInfoCardExcursoes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = excursao.getEmpresa().getSiteEmpresa();
+                if (url != null && !url.isEmpty()) {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                    context.startActivity(intent);
+                } else {
+                    Toast.makeText(context, "URL inválida", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
     }
 
     // Método para buscar a imagem no banco e atualizar o ViewHolder

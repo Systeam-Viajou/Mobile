@@ -61,7 +61,7 @@ public class TelaCadastro2 extends AppCompatActivity {
             // As permissões já foram concedidas, continue o fluxo normal
         }
 
-        String API = "https://dev-ii-postgres-dev.onrender.com/";
+        String API = "https://dev-ii-postgres-feira.onrender.com/";
 
         usernameEditText = findViewById(R.id.user);
         emailEditText = findViewById(R.id.email);
@@ -268,7 +268,7 @@ public class TelaCadastro2 extends AppCompatActivity {
     private void verificarUsernameSpring(String username) {
         // Inicializando Retrofit8
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -324,7 +324,7 @@ public class TelaCadastro2 extends AppCompatActivity {
     private void verificarEmailSpring(String email) {
         // Inicializando Retrofit
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
