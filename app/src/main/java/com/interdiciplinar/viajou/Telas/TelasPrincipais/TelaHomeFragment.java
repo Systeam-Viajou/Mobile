@@ -241,8 +241,15 @@ public class TelaHomeFragment extends Fragment {
             public void onFailure(Call<List<Atracao>> call, Throwable throwable) {
                 progresRecomendado.setVisibility(View.GONE);
                 Log.e("ERRO", "Falha ao carregar atrações: " + throwable.getMessage(), throwable);
-                Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
+
+                // Verifica se o Fragment ainda está anexado antes de tentar mostrar a Toast
+                if (isAdded() && getContext() != null) {
+                    Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
+                } else {
+                    Log.e("ERRO", "Contexto ou Fragment não está mais disponível.");
+                }
             }
+
         });
     }
 

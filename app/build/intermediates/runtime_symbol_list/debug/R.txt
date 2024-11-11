@@ -3614,6 +3614,7 @@ int id fragment_container_view_tag 0x7f0a0115
 int id frameLayout 0x7f0a0116
 int id frameLayout2 0x7f0a0117
 int id frameLayout3 0x7f0a0118
+int id frameLayout4 0x7f0a0329
 int id frost 0x7f0a0119
 int id fullscreen_header 0x7f0a011a
 int id ghost_view 0x7f0a011b
@@ -3704,6 +3705,7 @@ int id include4 0x7f0a016f
 int id include5 0x7f0a0170
 int id include6 0x7f0a0171
 int id include7 0x7f0a0172
+int id include8 0x7f0a032a
 int id included 0x7f0a0173
 int id indeterminate 0x7f0a0174
 int id info 0x7f0a0175
@@ -4036,7 +4038,11 @@ int id textView15 0x7f0a02bb
 int id textView16 0x7f0a02bc
 int id textView17 0x7f0a02bd
 int id textView18 0x7f0a02be
+int id textView19 0x7f0a032b
 int id textView2 0x7f0a02bf
+int id textView20 0x7f0a032c
+int id textView21 0x7f0a032d
+int id textView22 0x7f0a032e
 int id textView3 0x7f0a02c0
 int id textView4 0x7f0a02c1
 int id textView5 0x7f0a02c2
