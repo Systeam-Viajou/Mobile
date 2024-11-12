@@ -86,6 +86,13 @@ public class TourAdapter extends RecyclerView.Adapter<TourAdapter.TourViewHolder
             buscarImagem(tour.getAtracao().getId(), holder);
         }
 
+        // Verificando acessibilidade e exibindo ícone correspondente
+        if (tour.getAtracao().isAcessibilidade()) {
+            holder.iconAcssesTurismo.setVisibility(View.VISIBLE);
+        } else {
+            holder.iconAcssesTurismo.setVisibility(View.GONE);
+        }
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -150,12 +157,13 @@ public class TourAdapter extends RecyclerView.Adapter<TourAdapter.TourViewHolder
 
     static class TourViewHolder extends RecyclerView.ViewHolder {
         TextView nomeTour;
-        ImageView imagemAtracao;
+        ImageView imagemAtracao, iconAcssesTurismo;
 
         public TourViewHolder(@NonNull View itemView) {
             super(itemView);
             nomeTour = itemView.findViewById(R.id.tituloCardTurismo);
             imagemAtracao = itemView.findViewById(R.id.imgCardTurismos);
+            iconAcssesTurismo = itemView.findViewById(R.id.iconAcssesTurismo);
         }
     }
 }

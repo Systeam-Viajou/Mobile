@@ -3643,6 +3643,7 @@ id icon
 id iconAcessHome
 id iconAcssesEventos
 id iconAcssesExcur
+id iconAcssesTurismo
 id iconConfigToolbar
 id iconDataExcursoes
 id iconEmpresaExcursoes
@@ -4267,6 +4268,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_splash_screen
+layout activity_splash_tablet
 layout activity_tel_area_restrita
 layout activity_tela_cadastro
 layout activity_tela_cadastro2
