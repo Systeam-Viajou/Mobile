@@ -2,10 +2,10 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="356dp"
+    android:layout_width="match_parent"
     android:layout_height="200dp"
-    android:layout_marginBottom="10dp"
     android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
     android:background="@drawable/borda_card_excursoes"
     app:cardCornerRadius="6dp">
 
@@ -68,13 +68,15 @@
 
         <ImageView
             android:id="@+id/imgCardExcursoes"
-            android:layout_width="175dp"
+            android:layout_width="0dp"
             android:layout_height="200dp"
+            android:layout_marginStart="100dp"
             android:adjustViewBounds="false"
             android:background="@drawable/borda_card_excursoes"
             android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dataCardExcursoes"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/imgcardexcursoes" />
 

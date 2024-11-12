@@ -11,6 +11,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -18,7 +19,6 @@ import com.interdiciplinar.viajou.Api.ApiViajou;
 import com.interdiciplinar.viajou.Models.Conteudo;
 import com.interdiciplinar.viajou.Models.TourMongo;
 import com.interdiciplinar.viajou.R;
-import com.interdiciplinar.viajou.Telas.TelasEntrada.TelaCadastro2;
 import com.interdiciplinar.viajou.Telas.TelasErro.TelaErroInterno;
 
 import java.util.List;
@@ -33,6 +33,7 @@ public class TelaTourConteudo extends AppCompatActivity {
     Retrofit retrofit;
     WebView webView;
     Button btVoltar, btProximo;
+    ImageView btSair;
     TextView descricao, titulo;
     ProgressBar progressBarWeb, progressBarInfo;
     int whereIam = 0;
@@ -46,6 +47,7 @@ public class TelaTourConteudo extends AppCompatActivity {
         pegarTourVirtual(id);
         btVoltar = findViewById(R.id.btVoltarTourVirtual);
         btProximo = findViewById(R.id.btProximoTourVirtual);
+        btSair = findViewById(R.id.fecharTourVirtual);
         descricao = findViewById(R.id.descricaoTourVirtual);
         titulo = findViewById(R.id.tituloTourVirtual);
         btVoltar.setVisibility(View.INVISIBLE);
@@ -54,6 +56,13 @@ public class TelaTourConteudo extends AppCompatActivity {
         titulo.setVisibility(View.INVISIBLE);
         progressBarWeb = findViewById(R.id.progressBar2);
         progressBarInfo = findViewById(R.id.progressBar3);
+
+        btSair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         btVoltar.setOnClickListener(new View.OnClickListener() {
             @Override

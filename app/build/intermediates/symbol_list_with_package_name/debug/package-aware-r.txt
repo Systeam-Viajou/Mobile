@@ -3418,6 +3418,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id apple
 id apresentacoes
 id apresentacoesLayout
 id arc
@@ -3588,9 +3589,11 @@ id expand_activities_button
 id expanded_menu
 id exposicoes
 id exposicoesLayout
+id facebook
 id fade
 id fadeCardEventos
 id fadeTourVirtual
+id fecharTourVirtual
 id feiras
 id feirasLayout
 id festival
@@ -3620,6 +3623,7 @@ id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
 id gone
+id google
 id graph
 id graph_wrap
 id group_divider
@@ -3657,7 +3661,6 @@ id image
 id imageCalendar
 id imageView
 id imageView10
-id imageView11
 id imageView12
 id imageView13
 id imageView15
@@ -3684,11 +3687,8 @@ id imgCarrossel
 id imgErroInterno
 id imgErroWifi
 id imgExposicoes
-id imgFacebook
 id imgFeiras
 id imgFestival
-id imgGoogle
-id imgMicrosoft
 id imgNotificacao1
 id imgPerfil
 id imgPerfilToolbar
@@ -3725,6 +3725,7 @@ id line3
 id linear
 id linearLayout
 id linearLayout2
+id linearLayoutDigits
 id linha1
 id linha1TourVirtual
 id linha2
@@ -4139,7 +4140,6 @@ id withinBounds
 id wrap
 id wrap_content
 id wrap_content_constrained
-id xFecharTourVirtual
 id x_left
 id x_right
 integer abc_config_activityDefaultDur

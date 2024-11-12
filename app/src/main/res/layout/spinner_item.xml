@@ -6,13 +6,15 @@
 
     <TextView
         android:id="@+id/spinner_text"
-        android:layout_width="344dp"
+        android:layout_width="0dp"
         android:layout_height="58dp"
         android:drawableRight="@drawable/vector"
         android:fontFamily="@font/spartan"
         android:gravity="center_vertical"
-        android:padding="8dp"
+        android:padding="12dp"
         android:textColor="#000"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

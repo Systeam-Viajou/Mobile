@@ -168,6 +168,7 @@ public class TelaTourCompleto extends AppCompatActivity {
             this.ususario = usuario;
             Classificacao classificacao = new Classificacao(ratingBar.getRating(), usuario, atracao);
             inserirClassificacoes(classificacao);
+            button.setEnabled(false);
             finish();
         });
         call.enqueue(new Callback<Usuario>() {

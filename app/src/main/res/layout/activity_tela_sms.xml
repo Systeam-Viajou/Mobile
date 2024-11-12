@@ -8,16 +8,18 @@
 
     <Button
         android:id="@+id/btContinuar"
-        android:layout_width="350dp"
+        android:layout_width="0dp"
         android:layout_height="53dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
         android:backgroundTint="#805CD8"
         android:fontFamily="@font/spartan_bold"
         android:text="Verificar"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_digit2" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutDigits" />
 
 
     <ImageView
@@ -30,107 +32,89 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/viajoupequeno" />
 
-    <EditText
-        android:id="@+id/et_digit2"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/fundo_input"
-        android:imeOptions="actionNext"
-        android:maxLength="1"
-        android:ems="10"
-        android:fontFamily="@font/spartan_bold"
-        android:gravity="center"
-        android:inputType="number"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/et_digit3"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-    <EditText
-        android:id="@+id/et_digit1"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="10dp"
-        android:imeOptions="actionNext"
-        android:background="@drawable/fundo_input"
-        android:maxLength="1"
-        android:ems="10"
-        android:fontFamily="@font/spartan_bold"
-        android:gravity="center"
-        android:inputType="number"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/et_digit2"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-    <EditText
-        android:id="@+id/et_digit4"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="10dp"
-        android:imeOptions="actionNext"
-        android:background="@drawable/fundo_input"
-        android:maxLength="1"
-        android:ems="10"
-        android:fontFamily="@font/spartan_bold"
-        android:gravity="center"
-        android:inputType="number"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/et_digit5"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-    <EditText
-        android:id="@+id/et_digit3"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="10dp"
-        android:imeOptions="actionNext"
-        android:background="@drawable/fundo_input"
-        android:maxLength="1"
-        android:ems="10"
-        android:fontFamily="@font/spartan_bold"
-        android:gravity="center"
-        android:inputType="number"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/et_digit4"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-    <EditText
-        android:id="@+id/et_digit5"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="10dp"
-        android:imeOptions="actionNext"
-        android:background="@drawable/fundo_input"
-        android:maxLength="1"
-        android:ems="10"
-        android:fontFamily="@font/spartan_bold"
-        android:gravity="center"
-        android:inputType="number"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/et_digit6"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-    <EditText
-        android:id="@+id/et_digit6"
-        android:layout_width="50dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="42dp"
+    <LinearLayout
+        android:id="@+id/linearLayoutDigits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:imeOptions="actionNext"
-        android:background="@drawable/fundo_input"
-        android:maxLength="1"
-        android:ems="10"
-        android:fontFamily="@font/spartan_bold"
-        android:gravity="center"
-        android:inputType="number"
-        android:textSize="24sp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+        <EditText
+            android:id="@+id/et_digit1"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="@drawable/fundo_input"
+            android:fontFamily="@font/spartan_bold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/et_digit2"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/fundo_input"
+            android:fontFamily="@font/spartan_bold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/et_digit3"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/fundo_input"
+            android:fontFamily="@font/spartan_bold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/et_digit4"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/fundo_input"
+            android:fontFamily="@font/spartan_bold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/et_digit5"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/fundo_input"
+            android:fontFamily="@font/spartan_bold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/et_digit6"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/fundo_input"
+            android:fontFamily="@font/spartan_bold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView14"
@@ -150,9 +134,9 @@
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="309dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="59dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="60dp"
         android:fontFamily="@font/spartan"
@@ -167,24 +151,21 @@
         android:id="@+id/reenviar"
         android:layout_width="93dp"
         android:layout_height="21dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="12dp"
         android:drawableLeft="@drawable/rotate_right"
         android:drawablePadding="4dp"
         android:fontFamily="@font/spartan"
         android:text="Reenviar"
         android:textColor="@color/reenviar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_digit6" />
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutDigits"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutDigits" />
 
     <TextView
         android:id="@+id/textTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
-        android:layout_marginEnd="20dp"
         android:fontFamily="@font/spartan"
         android:text="2:00"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/reenviar"
         app:layout_constraintTop_toBottomOf="@+id/reenviar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

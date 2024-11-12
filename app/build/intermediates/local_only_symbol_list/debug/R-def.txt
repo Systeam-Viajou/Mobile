@@ -128,6 +128,7 @@ font montserrat_thin
 font spartan
 font spartan_bold
 id ajudaTelaConfiguracao
+id apple
 id apresentacoes
 id apresentacoesLayout
 id areaTelaConfiguracao
@@ -186,8 +187,10 @@ id eventos
 id excursoes
 id exposicoes
 id exposicoesLayout
+id facebook
 id fadeCardEventos
 id fadeTourVirtual
+id fecharTourVirtual
 id feiras
 id feirasLayout
 id festival
@@ -197,6 +200,7 @@ id formularioTelaPerfil
 id frameLayout
 id frameLayout2
 id frameLayout3
+id google
 id home
 id iconAcessHome
 id iconAcssesEventos
@@ -215,7 +219,6 @@ id idiomaTelaConfiguracao
 id imageCalendar
 id imageView
 id imageView10
-id imageView11
 id imageView12
 id imageView13
 id imageView15
@@ -242,11 +245,8 @@ id imgCarrossel
 id imgErroInterno
 id imgErroWifi
 id imgExposicoes
-id imgFacebook
 id imgFeiras
 id imgFestival
-id imgGoogle
-id imgMicrosoft
 id imgNotificacao1
 id imgPerfil
 id imgPerfilToolbar
@@ -264,6 +264,7 @@ id include7
 id informacoes
 id linearLayout
 id linearLayout2
+id linearLayoutDigits
 id linha1
 id linha1TourVirtual
 id linha2
@@ -407,7 +408,6 @@ id viewik
 id webView
 id webViewArea
 id webViewTourVirtual
-id xFecharTourVirtual
 layout activity_main
 layout activity_splash_screen
 layout activity_tel_area_restrita

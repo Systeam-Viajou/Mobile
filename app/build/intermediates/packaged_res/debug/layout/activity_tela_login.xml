@@ -21,9 +21,11 @@
 
     <EditText
         android:id="@+id/senhaLayout"
-        android:layout_width="317dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/fundo_input"
         android:drawableLeft="@drawable/cadeado"
         android:drawablePadding="10dp"
@@ -33,15 +35,16 @@
         android:inputType="text|textPassword"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailLayout" />
 
     <EditText
         android:id="@+id/emailLayout"
-        android:layout_width="317dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/fundo_input"
         android:drawableLeft="@drawable/icons"
         android:drawablePadding="10dp"
@@ -57,9 +60,11 @@
 
     <Button
         android:id="@+id/btEntrar"
-        android:layout_width="320dp"
+        android:layout_width="0dp"
         android:layout_height="53dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
         android:backgroundTint="#805CD8"
         android:fontFamily="@font/spartan_bold"
         android:text="Entrar"
@@ -86,7 +91,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="32dp"
         android:fontFamily="@font/spartan_bold"
         android:text="Esqueceu sua senha?"
         android:textColor="#000000"
@@ -94,46 +99,43 @@
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
-        app:layout_constraintStart_toEndOf="@+id/mantenhaConectado"
         app:layout_constraintTop_toBottomOf="@+id/senhaLayout" />
 
     <CheckBox
         android:id="@+id/mantenhaConectado"
         android:layout_width="167dp"
         android:layout_height="35dp"
-        android:layout_marginStart="-6dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/spartan"
         android:text="Mantenha conectado"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/senhaLayout" />
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="347dp"
+        android:layout_width="0dp"
         android:layout_height="167dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imgFacebook"
-        app:layout_constraintVertical_bias="0.333"
         app:srcCompat="@drawable/cordinha" />
 
     <TextView
         android:id="@+id/txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
+        android:layout_marginStart="-85dp"
         android:layout_marginBottom="32dp"
         android:fontFamily="@font/spartan"
         android:text="Não está registrado?"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -149,29 +151,31 @@
         app:layout_constraintStart_toEndOf="@+id/txt" />
 
     <ImageView
-        android:id="@+id/imgMicrosoft"
+        android:id="@+id/apple"
         android:layout_width="45dp"
         android:layout_height="40dp"
         android:layout_marginTop="36dp"
         app:circularflow_defaultAngle="24112"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.259"
-        app:layout_constraintStart_toEndOf="@+id/imgFacebook"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toEndOf="@+id/facebook"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@drawable/microsoftvetor" />
 
     <ImageView
-        android:id="@+id/imgGoogle"
+        android:id="@+id/google"
         android:layout_width="69dp"
         android:layout_height="70dp"
-        android:layout_marginStart="84dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/facebook"
+        app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@drawable/google" />
 
     <ImageView
-        android:id="@+id/imgFacebook"
+        android:id="@+id/facebook"
         android:layout_width="47dp"
         android:layout_height="46dp"
         android:layout_marginTop="32dp"
@@ -183,8 +187,9 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="413dp"
-        android:layout_height="238dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

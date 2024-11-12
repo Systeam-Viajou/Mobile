@@ -43,9 +43,9 @@ public class TelaLogin extends AppCompatActivity {
         msgErroSenha.setVisibility(View.INVISIBLE);
         msgErroEmail.setVisibility(View.INVISIBLE);
 
-        imgGoogle = findViewById(R.id.imgGoogle);
-        imgFacebook = findViewById(R.id.imgFacebook);
-        imgMicrosoft = findViewById(R.id.imgMicrosoft);
+        imgGoogle = findViewById(R.id.google);
+        imgFacebook = findViewById(R.id.facebook);
+        imgMicrosoft = findViewById(R.id.apple);
 
         EditText email = findViewById(R.id.emailLayout);
         EditText senha = findViewById(R.id.senhaLayout);
