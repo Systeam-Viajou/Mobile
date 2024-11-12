@@ -155,7 +155,7 @@ public class TelaTurismosFragment extends Fragment {
                 .build();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(okHttpClient)
                 .build();
@@ -246,7 +246,7 @@ public class TelaTurismosFragment extends Fragment {
     private void pegarPerto() {
         progressPertoTurismo.setVisibility(View.VISIBLE);
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -282,7 +282,7 @@ public class TelaTurismosFragment extends Fragment {
         progressParaVcTurismo.setVisibility(View.VISIBLE);
 
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -318,7 +318,7 @@ public class TelaTurismosFragment extends Fragment {
         progressViagemTurismo.setVisibility(View.VISIBLE);
 
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -354,7 +354,7 @@ public class TelaTurismosFragment extends Fragment {
         progressMelhorTurismo.setVisibility(View.VISIBLE);
 
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -390,7 +390,7 @@ public class TelaTurismosFragment extends Fragment {
         progressFamiliaTurismo.setVisibility(View.VISIBLE);
 
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

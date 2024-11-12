@@ -153,7 +153,7 @@ public class TelaCardAberto extends Fragment {
     private void carregarInformações(Long id) {
         // Inicializando Retrofit
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -207,7 +207,7 @@ public class TelaCardAberto extends Fragment {
     private void qntAvaliacoes(Long id) {
         // Inicializando Retrofit
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

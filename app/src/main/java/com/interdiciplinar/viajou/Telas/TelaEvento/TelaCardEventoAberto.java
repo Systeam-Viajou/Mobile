@@ -3,6 +3,7 @@ package com.interdiciplinar.viajou.Telas.TelaEvento;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.metrics.Event;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,10 +12,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.interdiciplinar.viajou.Api.ApiViajou;
@@ -50,6 +53,8 @@ public class TelaCardEventoAberto extends Fragment {
     TextView descricao;
     TextView endereco;
     Long idAtracao;
+    Button btMaisInfo;
+    String url;
 
     public TelaCardEventoAberto() {
         // Required empty public constructor
@@ -81,6 +86,7 @@ public class TelaCardEventoAberto extends Fragment {
         horario = view.findViewById(R.id.textView10);
         valor = view.findViewById(R.id.textView12);
         data = view.findViewById(R.id.textView13);
+        btMaisInfo = view.findViewById(R.id.btMaisInfoEvento);
 
         progressBarImg = view.findViewById(R.id.progressBarImagem);
         progressBarInfo = view.findViewById(R.id.progressBarInfo);
@@ -101,6 +107,18 @@ public class TelaCardEventoAberto extends Fragment {
         carregarInformações(idAtracao);
         qntAvaliacoes(idAtracao);
         carregarImagens(idAtracao);
+
+        btMaisInfo.setEnabled(false);
+
+        btMaisInfo.setOnClickListener(v -> {
+            if (url != null && !url.isEmpty()) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent);
+            } else {
+                Toast.makeText(getContext(), "Link não disponível", Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
 //
 //        // Listener para a seta da esquerda
@@ -137,7 +155,7 @@ public class TelaCardEventoAberto extends Fragment {
     private void carregarInformações(Long id) {
         // Inicializando Retrofit
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -180,6 +198,8 @@ public class TelaCardEventoAberto extends Fragment {
                     horario.setText(horaFormatadaInicio);
                     data.setText(dataFormatadaInicio + " - " + dataFormatadaTermino);
 
+                    url = evento.getUrl();
+                    btMaisInfo.setEnabled(true);
 
                     horario.setVisibility(getView().VISIBLE);
                     data.setVisibility(getView().VISIBLE);
@@ -207,7 +227,7 @@ public class TelaCardEventoAberto extends Fragment {
     private void qntAvaliacoes(Long id) {
         // Inicializando Retrofit
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

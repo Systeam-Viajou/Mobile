@@ -251,7 +251,7 @@ public class TelaPesquisa extends AppCompatActivity {
     }
 
     private void inserirUsuarioSpring(Usuario usuario){
-        String API = "https://dev-ii-postgres-dev.onrender.com/";
+        String API = "https://dev-ii-postgres-feira.onrender.com/";
         // Configurar acesso API
         retrofit = new Retrofit.Builder()
                 .baseUrl(API)

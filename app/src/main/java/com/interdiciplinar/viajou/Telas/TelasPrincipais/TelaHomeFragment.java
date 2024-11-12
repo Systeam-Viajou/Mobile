@@ -214,7 +214,7 @@ public class TelaHomeFragment extends Fragment {
         progresRecomendado.setVisibility(View.VISIBLE);
 
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -241,8 +241,15 @@ public class TelaHomeFragment extends Fragment {
             public void onFailure(Call<List<Atracao>> call, Throwable throwable) {
                 progresRecomendado.setVisibility(View.GONE);
                 Log.e("ERRO", "Falha ao carregar atrações: " + throwable.getMessage(), throwable);
-                Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
+
+                // Verifica se o Fragment ainda está anexado antes de tentar mostrar a Toast
+                if (isAdded() && getContext() != null) {
+                    Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
+                } else {
+                    Log.e("ERRO", "Contexto ou Fragment não está mais disponível.");
+                }
             }
+
         });
     }
 
@@ -250,7 +257,7 @@ public class TelaHomeFragment extends Fragment {
         progressPopulares.setVisibility(View.VISIBLE);
 
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -277,8 +284,13 @@ public class TelaHomeFragment extends Fragment {
             public void onFailure(Call<List<Atracao>> call, Throwable throwable) {
                 progressPopulares.setVisibility(View.GONE);
                 Log.e("ERRO", "Falha ao carregar atrações: " + throwable.getMessage(), throwable);
-                Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
+
+                // Verifica se o Fragment ainda está anexado e o contexto está disponível
+                if (isAdded() && getContext() != null) {
+                    Toast.makeText(getContext(), "Falha ao carregar atrações", Toast.LENGTH_SHORT).show();
+                }
             }
+
         });
     }
 
@@ -286,7 +298,7 @@ public class TelaHomeFragment extends Fragment {
         progressPerto.setVisibility(View.VISIBLE);
 
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -321,7 +333,7 @@ public class TelaHomeFragment extends Fragment {
         progressExperiencia.setVisibility(View.VISIBLE);
 
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://dev-ii-postgres-dev.onrender.com/")
+                .baseUrl("https://dev-ii-postgres-feira.onrender.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

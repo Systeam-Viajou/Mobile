@@ -3458,6 +3458,7 @@ id btErroSmsVoltar
 id btErroWifi
 id btIniciarTour
 id btMaisInfoCardExcursoes
+id btMaisInfoEvento
 id btProximoTourVirtual
 id btVerificarEmail
 id btVoltarLoginEsqSenha
@@ -3617,6 +3618,7 @@ id fragment_container_view_tag
 id frameLayout
 id frameLayout2
 id frameLayout3
+id frameLayout4
 id frost
 id fullscreen_header
 id ghost_view
@@ -3704,6 +3706,7 @@ id include4
 id include5
 id include6
 id include7
+id include8
 id included
 id indeterminate
 id info
@@ -4037,7 +4040,11 @@ id textView15
 id textView16
 id textView17
 id textView18
+id textView19
 id textView2
+id textView20
+id textView21
+id textView22
 id textView3
 id textView4
 id textView5

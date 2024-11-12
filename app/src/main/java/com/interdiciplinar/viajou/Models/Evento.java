@@ -11,6 +11,7 @@ public class Evento {
     private double precoPessoa;
     private Atracao atracao;
     private String dataDesativacao;
+    private String url;
 
     public int getId() {
         return id;
@@ -58,5 +59,13 @@ public class Evento {
 
     public void setDataDesativacao(String dataDesativacao) {
         this.dataDesativacao = dataDesativacao;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
