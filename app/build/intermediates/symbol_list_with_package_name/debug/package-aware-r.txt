@@ -4399,6 +4399,7 @@ raw animacao
 raw firebase_common_keep
 raw splash
 raw splashanimation
+raw splashtablet
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

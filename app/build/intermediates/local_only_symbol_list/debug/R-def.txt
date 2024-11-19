@@ -466,6 +466,7 @@ mipmap iconapp
 raw animacao
 raw splash
 raw splashanimation
+raw splashtablet
 string app_name
 string gcm_defaultSenderId
 string google_api_key

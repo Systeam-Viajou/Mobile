@@ -92,12 +92,16 @@ public class TelaTourConteudo extends AppCompatActivity {
 
     public void setConteudoTour(){
         progressBarInfo.setVisibility(View.INVISIBLE);
-        if(whereIam == 0){
+        if(conteudos.size() == 1){
+            btProximo.setText("Finalizar");
+            btVoltar.setVisibility(View.INVISIBLE);
+        }
+        else if(whereIam == 0){
             btVoltar.setVisibility(View.INVISIBLE);
             btProximo.setText("Próximo");
         }
         else if (whereIam == conteudos.size() - 1){
-            btProximo.setText("Finlizar");
+            btProximo.setText("Finalizar");
             btVoltar.setVisibility(View.VISIBLE);
         }
         else{
